@@ -1,0 +1,140 @@
+{
+  "version": 1,
+  "note": "Chỉ gồm các mục đã quan sát được qua audit ban đầu. Chạy `ds-tokens.mjs suggest` trên dump đầy đủ để bổ sung. Chỉ người dùng được đổi status sang approved/rejected.",
+  "statuses": [
+    "proposed",
+    "approved",
+    "rejected",
+    "needs-decision"
+  ],
+  "items": [
+    {
+      "collection": "Alias",
+      "from": "component/badge/info/surface-rest",
+      "to": "component/badge/surface/info/rest",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/toast alert/surface-rest",
+      "to": "component/toast-alert/surface/default/rest",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/button/split button/surface-hover",
+      "to": "component/button/surface/split-button/hover",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/button/border/secondary/sub",
+      "to": "component/button/border/secondary/subtle",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/button/border/primary/select",
+      "to": "component/button/border/primary/selected",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "Alias/Primary - On Theme",
+      "to": null,
+      "reason": "Tên không theo vai trò; cần biết ý nghĩa (D3) trước khi đặt tên Semantic",
+      "status": "needs-decision",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Base",
+      "from": "color/red light/500",
+      "to": "color/red-light/500",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Base",
+      "from": "color/red dark/500",
+      "to": "color/red-dark/500",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/size/fs-display 2",
+      "to": "typography/size/fs-display-2",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Spacing",
+      "from": "spacing/xxs",
+      "to": "spacing/2xs",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Spacing",
+      "from": "spacing/1 (1px)",
+      "to": "spacing/1",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "TextStyles",
+      "from": "Brand/Body-lg/Semi",
+      "to": "brand/body-lg/semibold",
+      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
+      "status": "proposed",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/size/*",
+      "to": null,
+      "reason": "Thang kích thước đảo chiều; cần quyết định D4 rồi gán lại tên theo giá trị",
+      "status": "needs-decision",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "TextStyles",
+      "from": "Brand/Tini/*",
+      "to": "brand/tiny/*",
+      "reason": "Có thể là lỗi chính tả của 'Tiny' (D2)",
+      "status": "needs-decision",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Spacing",
+      "from": "radius/* (cùng collection với spacing/*)",
+      "to": null,
+      "reason": "Đề xuất tách collection Radius riêng (D6)",
+      "status": "needs-decision",
+      "source": "observed-in-figma"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/* (trong collection Alias)",
+      "to": null,
+      "reason": "Đề xuất tách collection Component khỏi Semantic (D6)",
+      "status": "needs-decision",
+      "source": "observed-in-figma"
+    }
+  ]
+}

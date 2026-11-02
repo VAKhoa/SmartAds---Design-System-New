@@ -1,0 +1,54 @@
+{
+  "family": "Public Sans",
+  "cssSource": "https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap",
+  "files": [
+    {
+      "file": "public-sans-400-italic.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpRgAct.ttf",
+      "style": "italic",
+      "weight": "400"
+    },
+    {
+      "file": "public-sans-500-italic.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tpjgAct.ttf",
+      "style": "italic",
+      "weight": "500"
+    },
+    {
+      "file": "public-sans-600-italic.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tqPhwct.ttf",
+      "style": "italic",
+      "weight": "600"
+    },
+    {
+      "file": "public-sans-700-italic.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwAs572Xtc6ZYQws9YVwnNDZpDyNjGolS673tq2hwct.ttf",
+      "style": "italic",
+      "weight": "700"
+    },
+    {
+      "file": "public-sans-400-normal.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuFpm5ww.ttf",
+      "style": "normal",
+      "weight": "400"
+    },
+    {
+      "file": "public-sans-500-normal.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuJJm5ww.ttf",
+      "style": "normal",
+      "weight": "500"
+    },
+    {
+      "file": "public-sans-600-normal.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymuyJ65ww.ttf",
+      "style": "normal",
+      "weight": "600"
+    },
+    {
+      "file": "public-sans-700-normal.ttf",
+      "source": "https://fonts.gstatic.com/s/publicsans/v21/ijwGs572Xtc6ZYQws9YVwllKVG8qX1oyOymu8Z65ww.ttf",
+      "style": "normal",
+      "weight": "700"
+    }
+  ]
+}

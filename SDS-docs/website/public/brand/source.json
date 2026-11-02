@@ -1,0 +1,25 @@
+{
+  "assets": [
+    "smartads-symbol.svg",
+    "smartads-wordmark.svg",
+    "smartads-powered-by.svg",
+    "smartads-fpt-online.svg"
+  ],
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "nodeId": "123:497",
+  "figmaUrl": "https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=123-497",
+  "description": "Original SVG layers of the full green SmartAds logo with Powered by FPT Online. Composed using the original Figma geometry; paths are unchanged.",
+  "exportDate": "2026-11-02",
+  "width": 294.75,
+  "height": 90,
+  "darkLogo": {
+    "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+    "nodeId": "15828:129796",
+    "files": [
+      "smartads-dark-symbol.svg",
+      "smartads-dark-wordmark.svg",
+      "smartads-dark-powered-by.svg",
+      "smartads-dark-fpt-online.svg"
+    ]
+  }
+}

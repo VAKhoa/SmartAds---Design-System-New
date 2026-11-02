@@ -1,0 +1,397 @@
+{
+  "kind": "variables",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collection": "Text",
+  "collectionId": "VariableCollectionId:938:385",
+  "modes": [
+    {
+      "id": "938:0",
+      "name": "Mode 1"
+    }
+  ],
+  "count": 21,
+  "variables": [
+    {
+      "id": "VariableID:939:385",
+      "collection": "Text",
+      "name": "typography/family/display",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Public Sans"
+      },
+      "resolvedValues": {
+        "Mode 1": "Public Sans"
+      }
+    },
+    {
+      "id": "VariableID:939:388",
+      "collection": "Text",
+      "name": "typography/size/fs-sm",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/10 (size 10)",
+          "variableId": "VariableID:939:405"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 10
+      }
+    },
+    {
+      "id": "VariableID:939:394",
+      "collection": "Text",
+      "name": "typography/size/fs-md",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/11 (size 11)",
+          "variableId": "VariableID:939:406"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 11
+      }
+    },
+    {
+      "id": "VariableID:939:395",
+      "collection": "Text",
+      "name": "typography/size/fs-lg",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/12 (size 12)",
+          "variableId": "VariableID:939:407"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 12
+      }
+    },
+    {
+      "id": "VariableID:939:396",
+      "collection": "Text",
+      "name": "typography/size/fs-2xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/14 (size 14)",
+          "variableId": "VariableID:939:408"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 14
+      }
+    },
+    {
+      "id": "VariableID:939:397",
+      "collection": "Text",
+      "name": "typography/size/fs-xs",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/16 (size 16)",
+          "variableId": "VariableID:939:409"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 16
+      }
+    },
+    {
+      "id": "VariableID:939:398",
+      "collection": "Text",
+      "name": "typography/size/fs-xxl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/18 (size 18)",
+          "variableId": "VariableID:939:410"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 18
+      }
+    },
+    {
+      "id": "VariableID:939:399",
+      "collection": "Text",
+      "name": "typography/size/fs-base 1",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/20 (size 20)",
+          "variableId": "VariableID:939:411"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 20
+      }
+    },
+    {
+      "id": "VariableID:939:400",
+      "collection": "Text",
+      "name": "typography/size/fs-title",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/32 (size 32)",
+          "variableId": "VariableID:939:412"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 32
+      }
+    },
+    {
+      "id": "VariableID:939:401",
+      "collection": "Text",
+      "name": "typography/size/fs-body",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/40 (size 40)",
+          "variableId": "VariableID:939:413"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 40
+      }
+    },
+    {
+      "id": "VariableID:939:404",
+      "collection": "Text",
+      "name": "typography/size/fs-hero",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/80 (size 80)",
+          "variableId": "VariableID:939:414"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 80
+      }
+    },
+    {
+      "id": "VariableID:939:418",
+      "collection": "Text",
+      "name": "typography/family/text",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Public Sans"
+      },
+      "resolvedValues": {
+        "Mode 1": "Public Sans"
+      }
+    },
+    {
+      "id": "VariableID:939:419",
+      "collection": "Text",
+      "name": "typography/weight/Regular",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Regular"
+      },
+      "resolvedValues": {
+        "Mode 1": "Regular"
+      }
+    },
+    {
+      "id": "VariableID:939:420",
+      "collection": "Text",
+      "name": "typography/weight/Semi",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Semi"
+      },
+      "resolvedValues": {
+        "Mode 1": "Semi"
+      }
+    },
+    {
+      "id": "VariableID:939:421",
+      "collection": "Text",
+      "name": "typography/weight/Bold",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Bold"
+      },
+      "resolvedValues": {
+        "Mode 1": "Bold"
+      }
+    },
+    {
+      "id": "VariableID:941:398",
+      "collection": "Text",
+      "name": "typography/size/fs-display",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/60 (size 60)",
+          "variableId": "VariableID:941:397"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 60
+      }
+    },
+    {
+      "id": "VariableID:1560:1408",
+      "collection": "Text",
+      "name": "typography/weight/Medium",
+      "type": "STRING",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": "Medium"
+      },
+      "resolvedValues": {
+        "Mode 1": "Medium"
+      }
+    },
+    {
+      "id": "VariableID:2143:29",
+      "collection": "Text",
+      "name": "typography/size/fs-base 3",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/28 (size 28)",
+          "variableId": "VariableID:2143:28"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 28
+      }
+    },
+    {
+      "id": "VariableID:3562:19910",
+      "collection": "Text",
+      "name": "typography/size/fs-base 2",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/24 (size 24)",
+          "variableId": "VariableID:3562:19704"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 24
+      }
+    },
+    {
+      "id": "VariableID:3826:23561",
+      "collection": "Text",
+      "name": "typography/size/fs-display 2",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/48 (size 48)",
+          "variableId": "VariableID:3826:23560"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 48
+      }
+    },
+    {
+      "id": "VariableID:4900:5252",
+      "collection": "Text",
+      "name": "typography/size/fs-xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Mode 1": {
+          "alias": "typography/text/13 (size 13)",
+          "variableId": "VariableID:4900:5253"
+        }
+      },
+      "resolvedValues": {
+        "Mode 1": 13
+      }
+    }
+  ]
+}

@@ -1,0 +1,5053 @@
+{
+  "kind": "styles",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "text": [
+    {
+      "id": "S:8ade607abf519b41920acb93b20428274c39acf7,",
+      "name": "Brand/Display-2xl/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 80,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:404"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:abe059d4f593007289c12b0f4fc2558d7bef14bf,",
+      "name": "Brand/Display-2xl/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 80,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:404"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:6581f8c3cdabace576dac94689e237ccc17f609a,",
+      "name": "Brand/Display-2xl/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 80,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:404"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:5adbb060322ac7138b01d0fcc8cd36d42865ec06,",
+      "name": "Brand/Display-2xl/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 80,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:404"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:da49bf833f3798cba652267e507f9251670fad71,",
+      "name": "Brand/Display-xl/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:941:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:81fc4f4a3f36573e5f22678775f060c1281c0e5d,",
+      "name": "Brand/Display-xl/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:941:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:69d6c7502be2f70365989aa7b13fa2f7d94e6c7e,",
+      "name": "Brand/Display-xl/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:941:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:513bac6b36418c039b62b0e68d7996c7d84154d9,",
+      "name": "Brand/Display-xl/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 60,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:941:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:60ad23d63d50a8b94bfa4ce7124317f41ccc7790,",
+      "name": "Brand/Display-lg/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3826:23561"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:5aa14f71f8396a4ba6eeae3fd60ddd5de2bbdd61,",
+      "name": "Brand/Display-lg/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3826:23561"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:69b84627dfbcb60a88233725d6059e0b17780f9f,",
+      "name": "Brand/Display-lg/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3826:23561"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:5bf96ab2c4acdc89112db491da63013c70c33528,",
+      "name": "Brand/Display-lg/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 48,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3826:23561"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:a4fe7c5adb89b4475db7e8d7a6bc718390510a00,",
+      "name": "Brand/Display-md/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:401"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:0299df4df6952ab1214bf075a18ab739faeaecdb,",
+      "name": "Brand/Display-md/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:401"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:4c81c411743b73469e2d49cc49f30a0347b43998,",
+      "name": "Brand/Display-md/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:401"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:fb18d5d3689fe0e44fcfe90f35e0b3c5c05ae489,",
+      "name": "Brand/Display-md/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 40,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:401"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:b93f39af930f6cb3a87e68caab060121e02f98a8,",
+      "name": "Brand/Display-sm/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:400"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:32bdbb385847f2549e94219c11e397a449021f75,",
+      "name": "Brand/Display-sm/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:400"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:f5a874f870c3c036883fea838d8281cd98ef1cf4,",
+      "name": "Brand/Display-sm/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:400"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:ed7816188423dd3fc997f1833e3a1b4519314856,",
+      "name": "Brand/Display-sm/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 32,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:400"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:167e0ca8b2ed21371d69aeff68d402c43e09df55,",
+      "name": "Brand/Display-xs/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2143:29"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:418"
+        }
+      }
+    },
+    {
+      "id": "S:a99fafdc4aa2f5d9e159b538d7da3f31aca8e39a,",
+      "name": "Brand/Display-xs/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2143:29"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:418"
+        }
+      }
+    },
+    {
+      "id": "S:0707125c942c5f89d3fa12b01dedb92ad66ce0ef,",
+      "name": "Brand/Display-xs/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2143:29"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:418"
+        }
+      }
+    },
+    {
+      "id": "S:902c83784902b7d227b4ebac83a3717ecd5ef2aa,",
+      "name": "Brand/Display-xs/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 28,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:2143:29"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:418"
+        }
+      }
+    },
+    {
+      "id": "S:0a5f40761fc44e51252fef1e4bd5a8c9d9bd794f,",
+      "name": "Brand/Body-xl/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3562:19704"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:ddb784087e360e74426a2c4394d9b80f93e98a76,",
+      "name": "Brand/Body-xl/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3562:19704"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:c9ca05a9e4dfcfa19654b9ab17af3246ed3f6724,",
+      "name": "Brand/Body-xl/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3562:19704"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:6dcdafc94968b2cc56e036a469b9889d63899fb8,",
+      "name": "Brand/Body-xl/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 24,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:3562:19704"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:30b8ff2440e333229faf4b705f325496d62ae6af,",
+      "name": "Brand/Body-lg/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:399"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:d393851dbb4157aa90b4694a9518c62fe80b4944,",
+      "name": "Brand/Body-lg/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:399"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:2988d14a9cd6a807db61995aae257e5bc9983824,",
+      "name": "Brand/Body-lg/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:399"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:1559db1735cb8ff601ef54df41ecd15f46388151,",
+      "name": "Brand/Body-lg/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:399"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:539c42ca7453af7a4e6ecbc9be131a9268bb3856,",
+      "name": "Brand/Body-md/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:c7322a7afeb70bc00f993032eff42631f08debef,",
+      "name": "Brand/Body-md/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:a7904441dd82beec3b6750c1a9462a3b70f373ef,",
+      "name": "Brand/Body-md/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:0ed2258c378f6b602027c49b5ffecfe8893ce99d,",
+      "name": "Brand/Body-md/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 18,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:398"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:0039c2c0c5eae7efa32bc3175e15aadd3b715acd,",
+      "name": "Brand/Body-sm/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:397"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:b28ce4abd316dd5fee62aa3574def9b4aa4d31dc,",
+      "name": "Brand/Body-sm/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:397"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:842a65064336f9059043f0ac2dfcb0694c9f22e7,",
+      "name": "Brand/Body-sm/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:397"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:939a069401f6cadc4f4ee43177ca87c7fe47db03,",
+      "name": "Brand/Body-sm/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:397"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:ec6bec736564e2c79cf1e7e55ad6828bdba50894,",
+      "name": "Brand/Body-xs/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:396"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:7e02f1480da290ad10f23149e5983fcfb45d9a17,",
+      "name": "Brand/Body-xs/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:396"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:ae557bb4b321b70fd253f4e8d879dbba043b0195,",
+      "name": "Brand/Body-xs/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:396"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:90b40f75ada5c72c48f665ca52b50ffe94a0a4fe,",
+      "name": "Brand/Body-xs/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:396"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:d6629947034280546c725e370c3c0a9eff41a3a1,",
+      "name": "Brand/Microscope/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4900:5252"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:fe904205a83f6a648702d9d8fe16aeec2e3476d5,",
+      "name": "Brand/Microscope/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4900:5252"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:f292581c870d514c8e12d92794c72e08c98a672a,",
+      "name": "Brand/Microscope/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4900:5252"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:5fd11227e100608895aa1f982e67b5e4a4ccc19f,",
+      "name": "Brand/Microscope/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4900:5252"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:075609a2175078c7770240c5965ab3aa88b02912,",
+      "name": "Brand/Body-caption/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:395"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:d8302d34fd3dd62df0bff8bafbf399ebfaed8b99,",
+      "name": "Brand/Body-caption/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:395"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:bf1525b7ccf9c0127624007029a04ffe36d2dc19,",
+      "name": "Brand/Body-caption/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:395"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:868ad855b2a11665c24f9a4b409452871d32b07e,",
+      "name": "Brand/Body-caption/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:395"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:78452a53991adf9580acda2790d9de0bee1a2bb1,",
+      "name": "Brand/Body-caption-sub/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110.00000238418579
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:394"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:4795735ae262138a9e136c765540c37546f4b162,",
+      "name": "Brand/Body-caption-sub/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110.00000238418579
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:394"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:519cd60c8f56681a877f352f3046f8f824fe78c3,",
+      "name": "Brand/Body-caption-sub/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110.00000238418579
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:394"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:cd6f976a7c5a9fd336958c6538084a55cdd28104,",
+      "name": "Brand/Body-caption-sub/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 11,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 110.00000238418579
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:394"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:a2a0463c0c370790334972d0b13a83e162f26071,",
+      "name": "Code/Regular",
+      "description": "",
+      "fontName": {
+        "family": "DM Mono",
+        "style": "Regular"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 139.9999976158142
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 2
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:395"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        }
+      }
+    },
+    {
+      "id": "S:cccf12d5dac69c79b98d599001156615c8e02d75,",
+      "name": "Ads/Merriweather/ads-merri-headline-xl-bold",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:d4f9ca28bbd8f64838a884f1ea9f8519497134a4,",
+      "name": "Ads/Merriweather/ads-merri-headline-xl-regular",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 20,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:307a7d2fddd22474265576409189280eba83badb,",
+      "name": "Ads/Merriweather/ads-merri-headline-lg-bold",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:e73e81a6a2c65aa85c844fe9aa0c4615be58c027,",
+      "name": "Ads/Merriweather/ads-merri-headline-lg-regular",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:214ed26d27a318dd21dcae3d7518a05dc68cc267,",
+      "name": "Ads/Merriweather/ads-merri-headline-md-regular",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:68674ed1ba334ad2025ab3f71c7a650aa6c533fe,",
+      "name": "Ads/Merriweather/ads-merri-headline-md-bold",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:1ee92cbf5e788700a4ca726f86dff1c584dfb31a,",
+      "name": "Ads/Merriweather/ads-merri-headline-sm-regular",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:65fac4d317997b4a47f994b9ee9fea44667a3a75,",
+      "name": "Ads/Merriweather/ads-merri-headline-sm-bold",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:203ab42a2ed646c599ee2c0c09d22e8bc4911383,",
+      "name": "Ads/Merriweather/ads-merri-subtitle-lg-bold",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700,
+          "wdth": 100
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:59564ef2e54542b5db5ea8354081de79038d1940,",
+      "name": "Ads/Merriweather/ads-merri-subtitle-lg-regular",
+      "description": "",
+      "fontName": {
+        "family": "Merriweather",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400,
+          "wdth": 100
+        }
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:f8b11bec949f513bf3a5e6447f8b1681b42662fc,",
+      "name": "Ads/Arial/ads-arial-tini-sm-medium",
+      "description": "",
+      "fontName": {
+        "family": "Arial",
+        "style": "Medium"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:5bb262217bb4944ad1f03444e84253369e97cafe,",
+      "name": "Ads/Arial/ads-arial-tini-sm-bold",
+      "description": "",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontSize": 12,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:655088af28b0fba65e0cf5bf9d73325a11f163a7,",
+      "name": "Ads/Arial/ads-arial-headline-sm-bold",
+      "description": "",
+      "fontName": {
+        "family": "Arial",
+        "style": "Regular"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:239b039dc225c8f9329154d8b7c89957ef8a93f8,",
+      "name": "Ads/Arial/ads-arial-headline-md-medium",
+      "description": "",
+      "fontName": {
+        "family": "Arial",
+        "style": "Medium"
+      },
+      "fontSize": 14,
+      "lineHeight": {
+        "unit": "AUTO"
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {}
+    },
+    {
+      "id": "S:c5bef74d7c4d729e3abde6214ee1a8cddf9a8031,",
+      "name": "Brand/Tini/Bold",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:388"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:421"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:bb61a9ca29ab272bb0d6fc6e93899c3d942c3a3e,",
+      "name": "Brand/Tini/Semi",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:388"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:420"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:517539549fce2540a6f93cc2744d22d0a93b673c,",
+      "name": "Brand/Tini/Medium",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Medium",
+        "variationSettings": {
+          "wght": 500
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:1560:1408"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:f61e691953813a3a9420b9ade0bf6ae78094818e,",
+      "name": "Brand/Tini/Regular",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Regular",
+        "variationSettings": {
+          "wght": 400
+        }
+      },
+      "fontSize": 10,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:388"
+        },
+        "fontStyle": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:419"
+        },
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        }
+      }
+    },
+    {
+      "id": "S:21ffe5b352afb4fdd443ed9f578fd059c3e47325,",
+      "name": "Brand/Microscope/Semi Balance",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "SemiBold",
+        "variationSettings": {
+          "wght": 600
+        }
+      },
+      "fontSize": 13,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        },
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:4900:5253"
+        }
+      }
+    },
+    {
+      "id": "S:3bb081ac44a0b84d9b42d9c0c85a4edd93d5c1d1,",
+      "name": "Brand/Body-sm/Bold Balance",
+      "description": "",
+      "fontName": {
+        "family": "Public Sans",
+        "style": "Bold",
+        "variationSettings": {
+          "wght": 700
+        }
+      },
+      "fontSize": 16,
+      "lineHeight": {
+        "unit": "PERCENT",
+        "value": 120.00000476837158
+      },
+      "letterSpacing": {
+        "unit": "PERCENT",
+        "value": 0
+      },
+      "paragraphSpacing": 0,
+      "paragraphIndent": 0,
+      "boundVariables": {
+        "fontFamily": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:385"
+        },
+        "fontSize": {
+          "type": "VARIABLE_ALIAS",
+          "id": "VariableID:939:409"
+        }
+      }
+    }
+  ],
+  "effect": [
+    {
+      "id": "S:40e3caa43adfcdc7a89d86ace87f24b714e6c119,",
+      "name": "Shadow/elevation-light/100",
+      "description": "Static card/dashboard widget",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 3,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": -1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:6ae8157f90955047174149b5074274bb40862163,",
+      "name": "Shadow/elevation-light/200",
+      "description": "Bento/dashboard widget tối đa nâng lên 300",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.03999999910593033
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:69e07034bcea74fc431ea11c2e88ce922f5a56f5,",
+      "name": "Shadow/elevation-light/300",
+      "description": "Hover &amp; Press &amp; Clickable Card % Alert",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 6,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.03999999910593033
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:4d99041c0a19bab11110980735633baf43962757,",
+      "name": "Shadow/elevation-light/400",
+      "description": "Dropdown/Menu",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -6,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:f26c726a95fcea0aabe38f5122f744f823dbf8be,",
+      "name": "Shadow/elevation-light/500",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:3d6de10cce38353cf5b0a9953f2a3499afd92d2d,",
+      "name": "Shadow/elevation-light/600",
+      "description": "Modal/dialog/snackbar",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 56,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.14000000059604645
+          },
+          "offset": {
+            "x": 0,
+            "y": 28
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0.06258822977542877,
+            "g": 0.09263458847999573,
+            "b": 0.15701963007450104,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:3eeb67bfdfd5cb566fdd5e115a690b535be52b75,",
+      "name": "Shadow/elevation-light/700",
+      "description": "Dragged item",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 32,
+          "boundVariables": {},
+          "color": {
+            "r": 0.06258822977542877,
+            "g": 0.09263458847999573,
+            "b": 0.15701963007450104,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 80,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.1599999964237213
+          },
+          "offset": {
+            "x": 0,
+            "y": 40
+          },
+          "spread": -16,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:fd28b402be22350e60f1f3b6de079b6b77e20414,",
+      "name": "Shadow/elevation-dark/100",
+      "description": "Static card/dashboard widget",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 3,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": -1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:370627225bf34cad645ddcb24623d7c796613dde,",
+      "name": "Shadow/elevation-dark/200",
+      "description": "Bento/dashboard widget tối đa nâng lên 300",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 4,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.03999999910593033
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:abd4a054b5a46bd7537a3897b339375a33b5d31b,",
+      "name": "Shadow/elevation-dark/300",
+      "description": "Hover &amp; Press &amp; Clickable Card % Alert",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 6,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.03999999910593033
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:869c0824b7fb35879cf4ae642e327c92f19109f3,",
+      "name": "Shadow/elevation-dark/400",
+      "description": "Dropdown/Menu",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -6,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05000000074505806
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:c4d2d9eff0b59d99e4a1bde012026f33b0ef03a2,",
+      "name": "Shadow/elevation-dark/500",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 8
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:00c243088b3f7151956a2ca0c4617070d2cc4ae4,",
+      "name": "Shadow/elevation-dark/600",
+      "description": "Modal/dialog/snackbar",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 56,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.14000000059604645
+          },
+          "offset": {
+            "x": 0,
+            "y": 28
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 12
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:fc9110ca7030997a0a93f242201aaedb8b69c17b,",
+      "name": "Shadow/elevation-dark/700",
+      "description": "Dragged item",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 32,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 16
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 80,
+          "boundVariables": {},
+          "color": {
+            "r": 1,
+            "g": 1,
+            "b": 1,
+            "a": 0.1599999964237213
+          },
+          "offset": {
+            "x": 0,
+            "y": 40
+          },
+          "spread": -16,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:182a78c6afd609c8af5f80cd03992e67ef2596d0,",
+      "name": "Shadow/semantic/element/floating-tooltip",
+      "description": "Tooltip &amp; Popover",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 12,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.11999999731779099
+          },
+          "offset": {
+            "x": 0,
+            "y": 4
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 10,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": -4
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:102420c3ec7bbab90e746b29ef37029b2d82e223,",
+      "name": "Shadow/semantic/element/navigation-sticky-bottom",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 0,
+            "y": 2
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:0e9fdf6a48d43da33ddb5e1ee5aa662530a4502d,",
+      "name": "Shadow/semantic/element/navigation-sticky-right",
+      "description": "Sticky sidebar menu",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 2,
+            "y": 0
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:98102d1075426c941feac7575acc82a339839e10,",
+      "name": "Shadow/semantic/element/pannel-right",
+      "description": "Modal/dialog/snackbar",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.019999999552965164
+          },
+          "offset": {
+            "x": 16,
+            "y": 0
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0.06258822977542877,
+            "g": 0.09263458847999573,
+            "b": 0.15701963007450104,
+            "a": 0.019999999552965164
+          },
+          "offset": {
+            "x": 2,
+            "y": 0
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:0683e0142afb67a26f96e668307dab9d4bbea07e,",
+      "name": "Shadow/semantic/element/pannel-left",
+      "description": "Modal/dialog/snackbar",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 24,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.019999999552965164
+          },
+          "offset": {
+            "x": -1616,
+            "y": 0
+          },
+          "spread": -12,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0.06258822977542877,
+            "g": 0.09263458847999573,
+            "b": 0.15701963007450104,
+            "a": 0.019999999552965164
+          },
+          "offset": {
+            "x": -2,
+            "y": 0
+          },
+          "spread": -8,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:873014a2ef55a989bd2a0df2bf1e66bda6d3a9d3,",
+      "name": "Shadow/semantic/element/tab-header-top",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 6,
+          "boundVariables": {},
+          "color": {
+            "r": 0.062745101749897,
+            "g": 0.0941176488995552,
+            "b": 0.1568627506494522,
+            "a": 0.03999999910593033
+          },
+          "offset": {
+            "x": 0,
+            "y": -2
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 16,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": -4
+          },
+          "spread": -4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:ff1db52edda236826fed26fe67d992e50b587d79,",
+      "name": "Focus/ring-primary-xs",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:8091a394c1a8e7733363a85a6c3a0d327304fbdc,",
+      "name": "Focus/ring-primary-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:f3879ffe16390b7417272ec23ad06a726bc6e682,",
+      "name": "Focus/ring-gray-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.8800000548362732,
+            "g": 0.8800000548362732,
+            "b": 0.8800000548362732,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:569779dd08fd85c3ebd382b541d53ea551a7d6d1,",
+      "name": "Focus/ring-gray-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.8800000548362732,
+            "g": 0.8800000548362732,
+            "b": 0.8800000548362732,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:8f16beb69ddce469db89c581bdc4ac8a7ed874bb,",
+      "name": "Focus/ring-info-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:12:847"
+            }
+          },
+          "color": {
+            "r": 0.239215686917305,
+            "g": 0.38823530077934265,
+            "b": 0.9411764740943909,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:1b253b8a1770956a9198d12a29d5cd62a7f9d994,",
+      "name": "Focus/ring-sucess-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:12:332"
+            }
+          },
+          "color": {
+            "r": 0.13333334028720856,
+            "g": 0.6039215922355652,
+            "b": 0.08627451211214066,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:1db05c58e1bbf2c9cf8cbc7a7a9ef0c961ab95ce,",
+      "name": "Focus/ring-danger-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:12:464"
+            }
+          },
+          "color": {
+            "r": 0.8901960849761963,
+            "g": 0.24313725531101227,
+            "b": 0.19607843458652496,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:6cf60a6acadedcda207d0b8dc610d62cab98b5ba,",
+      "name": "Focus/ring-danger-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:12:457"
+            }
+          },
+          "color": {
+            "r": 0.9882352948188782,
+            "g": 0.9254902005195618,
+            "b": 0.9215686321258545,
+            "a": 1
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:96945bb3504a3a6cca08f12de3137c5c22c1b8a8,",
+      "name": "Border/primary-line/border-width-1-70%",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3728:31047"
+            }
+          },
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 0.699999988079071
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 1,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:2c41c711bb38840b6ce539c95a1a1f0a0ba193f2,",
+      "name": "Border/primary-line/border-width-2-10%",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3728:31042"
+            }
+          },
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:304744b6b398574f42e4f1858434284e5ac1430a,",
+      "name": "Border/primary-line/border-width-4-10%",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3728:31042"
+            }
+          },
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:6823660564f72da04dc9a0ba0b18c44736aa44f3,",
+      "name": "Border/primary-line/border-width-4-15%",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:3728:31043"
+            }
+          },
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 0.15000000596046448
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:9797355031d32b2cd5e4b31136344b925a5ddda1,",
+      "name": "Focus/ringShadow-primary-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.01568627543747425,
+            "g": 0.5333333611488342,
+            "b": 0.2705882489681244,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:57229802a4780f337c0619a3e808e82d4566f48a,",
+      "name": "Focus/ringShadow-secondaryLight-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.48627451062202454,
+            "g": 0.7058823704719543,
+            "b": 0.6941176652908325,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:4e914ab83b9c30b9d3e9c6da142857dc313233c6,",
+      "name": "Focus/ringShadow-info-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.239215686917305,
+            "g": 0.38823530077934265,
+            "b": 0.9411764740943909,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:ff92798dbbece724913a658410f5199d03ed422e,",
+      "name": "Focus/ringShadow-warning-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.9803921580314636,
+            "g": 0.6784313917160034,
+            "b": 0.0784313753247261,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:493cf342c20b3592603214a3ec465d26438fe162,",
+      "name": "Focus/ringShadow-danger-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.8901960849761963,
+            "g": 0.24313725531101227,
+            "b": 0.19607843458652496,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:8ce2ee40ccfeb2d01f2723d5d9b68ba60c59f6ac,",
+      "name": "Focus/ringShadow-gray-lg",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.8800000548362732,
+            "g": 0.8800000548362732,
+            "b": 0.8800000548362732,
+            "a": 0.25
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:b3ec164a46d1772cc0cf9a37d4c4d5213841015b,",
+      "name": "Focus/ringShadow-link",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {},
+          "color": {
+            "r": 0.239215686917305,
+            "g": 0.38823530077934265,
+            "b": 0.9411764740943909,
+            "a": 0.20000000298023224
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 4,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        },
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 2,
+          "boundVariables": {},
+          "color": {
+            "r": 0.08627451211214066,
+            "g": 0.08627451211214066,
+            "b": 0.08627451211214066,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 1
+          },
+          "spread": 0,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:4d8c17583ed01db904d1ac8aa65e93f2f1f675e9,",
+      "name": "Shadow/semantic/edge/top-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 3,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": 0,
+            "y": -1
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:c7241502cc9dbd7029a0fa8b762b4a25e49e1313,",
+      "name": "Shadow/semantic/edge/left-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 8,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.05999999865889549
+          },
+          "offset": {
+            "x": -2,
+            "y": 0
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:d8c9076c7110e1b79ed20b0bd5ac1b0ff76648f4,",
+      "name": "Shadow/semantic/edge/right-sm",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 10,
+          "boundVariables": {},
+          "color": {
+            "r": 0,
+            "g": 0,
+            "b": 0,
+            "a": 0.07999999821186066
+          },
+          "offset": {
+            "x": 2,
+            "y": 0
+          },
+          "spread": -2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    },
+    {
+      "id": "S:91cd334fc6b9db8bf450c29bae9976711be770dc,",
+      "name": "Border/warning-line/border-width-2-10%",
+      "description": "",
+      "effects": [
+        {
+          "type": "DROP_SHADOW",
+          "visible": true,
+          "radius": 0,
+          "boundVariables": {
+            "color": {
+              "type": "VARIABLE_ALIAS",
+              "id": "VariableID:6192:140704"
+            }
+          },
+          "color": {
+            "r": 0.9803921580314636,
+            "g": 0.6784313917160034,
+            "b": 0.0784313753247261,
+            "a": 0.10000000149011612
+          },
+          "offset": {
+            "x": 0,
+            "y": 0
+          },
+          "spread": 2,
+          "blendMode": "NORMAL",
+          "showShadowBehindNode": false
+        }
+      ]
+    }
+  ],
+  "paint": [
+    {
+      "id": "S:03d7b00c0214b17f6fe1c51b91ce0c5bc1cfe2fe,",
+      "name": "Gradient/gradient-linear-avatar",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.09997009485960007,
+                "g": 0.8384613394737244,
+                "b": 0.4636211097240448,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.4307691156864166,
+                "g": 0.7343589663505554,
+                "b": 1,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              -0.4897661805152893,
+              -0.5655633211135864,
+              0.9885818958282471
+            ],
+            [
+              0.5655633211135864,
+              -0.4897661805152893,
+              0.4179471731185913
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:6ddc0e56cea6de53581a541931f7cab807d44e7d,",
+      "name": "Gradient/gradient-linear-neutral",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.9767777919769287,
+                "g": 0.9751389026641846,
+                "b": 0.9833333492279053,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.7124999761581421,
+                "g": 0.7124999761581421,
+                "b": 0.7124999761581421,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              1.484743595123291,
+              -0.6178188323974609,
+              -0.29678425192832947
+            ],
+            [
+              0.5944991111755371,
+              0.8130629658699036,
+              -0.17868167161941528
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:01091a6ea19c862d5a4dd6d5ad361ad8c7d841a3,",
+      "name": "Gradient/gradient-linear-dark",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.12941177189350128,
+                "g": 0.16862745583057404,
+                "b": 0.21176470816135406,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.07194444537162781,
+                "g": 0.09324073791503906,
+                "b": 0.11666666716337204,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              1.2783854007720947,
+              -0.46378830075263977,
+              -0.005963750649243593
+            ],
+            [
+              0.4437096118927002,
+              0.7000588178634644,
+              -0.017090782523155212
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:6e46a04bee334b3104022425f6a45636f27f55d0,",
+      "name": "Gradient/gradient-linear-primary",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.0011329681146889925,
+                "g": 0.1699478179216385,
+                "b": 0.07567458599805832,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.003799594007432461,
+                "g": 0.5699478387832642,
+                "b": 0.253787100315094,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              -1.1400256156921387,
+              -0.16805510222911835,
+              0.4689374566078186
+            ],
+            [
+              0.16805510222911835,
+              -0.3607112169265747,
+              0.867755115032196
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:bb17e97ef85196d697f4d5cfa841f10147d60bb3,",
+      "name": "Gradient/gradient-linear-ai-dina",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.800000011920929,
+                "g": 0.9098039269447327,
+                "b": 0.9960784316062927,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.8039215803146362,
+                "g": 0.6274510025978088,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.2415538728237152,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.5176470875740051,
+                "g": 0.5372549295425415,
+                "b": 0.9607843160629272,
+                "a": 1
+              },
+              "position": 0.4000000059604645,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.8039215803146362,
+                "g": 0.9450980424880981,
+                "b": 1,
+                "a": 1
+              },
+              "position": 0.7132536768913269,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.7098039388656616,
+                "g": 0.5686274766921997,
+                "b": 0.9137254953384399,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              0.5286579728126526,
+              0.603797197341919,
+              -0.06449448317289352
+            ],
+            [
+              -0.603797197341919,
+              0.5286579728126526,
+              0.5279759764671326
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:bb4498d68a6a5990f3d349b913d8edfc6ce8cdbe,",
+      "name": "Gradient/gradient-linear-blur-chatDina",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.9882352948188782,
+                "g": 0.9882352948188782,
+                "b": 0.9921568632125854,
+                "a": 0
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.9882352948188782,
+                "g": 0.9882352948188782,
+                "b": 0.9921568632125854,
+                "a": 0.800000011920929
+              },
+              "position": 0.5,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.9882352948188782,
+                "g": 0.9882352948188782,
+                "b": 0.9921568632125854,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              6.123234262925839e-17,
+              1,
+              0
+            ],
+            [
+              -1,
+              6.123234262925839e-17,
+              1
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "id": "S:23bd0975b801f12b018fb92ea7a473781e52346b,",
+      "name": "Gradient/gradient-linear-siver",
+      "description": "",
+      "paints": [
+        {
+          "type": "GRADIENT_LINEAR",
+          "visible": true,
+          "opacity": 1,
+          "blendMode": "NORMAL",
+          "gradientStops": [
+            {
+              "color": {
+                "r": 0.658823549747467,
+                "g": 0.658823549747467,
+                "b": 0.6509804129600525,
+                "a": 1
+              },
+              "position": 0,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.4117647111415863,
+                "g": 0.4117647111415863,
+                "b": 0.4117647111415863,
+                "a": 1
+              },
+              "position": 0.4516448378562927,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.9764705896377563,
+                "g": 0.9725490212440491,
+                "b": 0.9647058844566345,
+                "a": 1
+              },
+              "position": 0.6650000214576721,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.8313725590705872,
+                "g": 0.8313725590705872,
+                "b": 0.8313725590705872,
+                "a": 1
+              },
+              "position": 0.824999988079071,
+              "boundVariables": {}
+            },
+            {
+              "color": {
+                "r": 0.49803921580314636,
+                "g": 0.49803921580314636,
+                "b": 0.49803921580314636,
+                "a": 1
+              },
+              "position": 1,
+              "boundVariables": {}
+            }
+          ],
+          "gradientTransform": [
+            [
+              -0.6916495561599731,
+              -0.8229754567146301,
+              1.2272335290908813
+            ],
+            [
+              0.8229754567146301,
+              -0.6916495561599731,
+              0.5207601189613342
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "id": "S:308be77502ea63d1b71dfc40be0a3c6e1d3416be,",
+      "name": "Grid/Body Layout",
+      "description": "",
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.1411764770746231,
+            "g": 0.5960784554481506,
+            "b": 0.9843137264251709,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 12,
+          "alignment": "STRETCH",
+          "count": 12,
+          "offset": 20,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 128,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 128,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 46,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 46,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "S:3b2f566bd8fb484a669b8a1a1ed688454893cce9,",
+      "name": "Grid/Chat Dina",
+      "description": "",
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 20,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 20,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 12,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 12,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 1,
+            "g": 0,
+            "b": 0,
+            "a": 0.10000000149011612
+          },
+          "gutterSize": 20,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.16470588743686676,
+            "g": 0.8901960849761963,
+            "b": 0.6313725709915161,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "STRETCH",
+          "count": 1,
+          "offset": 20,
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "S:2757315024a19343839a9da154d938fbd97acf2c,",
+      "name": "Grid/Sidebar",
+      "description": "",
+      "layoutGrids": [
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 10,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 10,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 10,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 10,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 16,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 16,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 16,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 16,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.16316941380500793,
+            "g": 0.8884614706039429,
+            "b": 0.6305798888206482,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "STRETCH",
+          "count": 1,
+          "offset": 10,
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "S:5c2c2375d26b094b8be0f53221bae6cc11f776d4,",
+      "name": "Grid/Body Content",
+      "description": "",
+      "layoutGrids": [
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        }
+      ]
+    },
+    {
+      "id": "S:e2dc01ef90d587a7838fedccaa8c25362c30ebf0,",
+      "name": "Grid/Creative",
+      "description": "",
+      "layoutGrids": [
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 1,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "ROWS",
+          "visible": true,
+          "color": {
+            "r": 0.06666667014360428,
+            "g": 0.4117647111415863,
+            "b": 0.6901960968971252,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 1,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MIN",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        },
+        {
+          "pattern": "COLUMNS",
+          "visible": true,
+          "color": {
+            "r": 0.5921568870544434,
+            "g": 0.27843138575553894,
+            "b": 1,
+            "a": 0.20000000298023224
+          },
+          "gutterSize": 20,
+          "alignment": "MAX",
+          "count": 1,
+          "sectionSize": 20,
+          "offset": 0,
+          "boundVariables": {}
+        }
+      ]
+    }
+  ]
+}

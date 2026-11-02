@@ -1,0 +1,758 @@
+{
+  "kind": "variables",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collection": "Viewport Desktop",
+  "collectionId": "VariableCollectionId:2252:10504",
+  "modes": [
+    {
+      "id": "2252:0",
+      "name": "1280-sm"
+    },
+    {
+      "id": "2258:0",
+      "name": "1366-md"
+    },
+    {
+      "id": "2258:1",
+      "name": "1440-lg"
+    },
+    {
+      "id": "15669:0",
+      "name": "1536-lg"
+    },
+    {
+      "id": "2433:0",
+      "name": "1920-xl"
+    }
+  ],
+  "count": 19,
+  "variables": [
+    {
+      "id": "VariableID:2252:10505",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-xs",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/224",
+          "variableId": "VariableID:2247:10480"
+        },
+        "1366-md": {
+          "alias": "space/256",
+          "variableId": "VariableID:2247:10481"
+        },
+        "1440-lg": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1536-lg": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1920-xl": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 224,
+        "1366-md": 256,
+        "1440-lg": 280,
+        "1536-lg": 280,
+        "1920-xl": 280
+      }
+    },
+    {
+      "id": "VariableID:2254:178",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-sm",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1366-md": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1440-lg": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1536-lg": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        },
+        "1920-xl": {
+          "alias": "space/280",
+          "variableId": "VariableID:2247:10482"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 280,
+        "1366-md": 280,
+        "1440-lg": 280,
+        "1536-lg": 280,
+        "1920-xl": 280
+      }
+    },
+    {
+      "id": "VariableID:2254:179",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-6xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        },
+        "1366-md": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        },
+        "1440-lg": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        },
+        "1536-lg": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        },
+        "1920-xl": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1280,
+        "1366-md": 1280,
+        "1440-lg": 1280,
+        "1536-lg": 1280,
+        "1920-xl": 1280
+      }
+    },
+    {
+      "id": "VariableID:2254:180",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-md",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/320",
+          "variableId": "VariableID:2247:10483"
+        },
+        "1366-md": {
+          "alias": "space/320",
+          "variableId": "VariableID:2247:10483"
+        },
+        "1440-lg": {
+          "alias": "space/320",
+          "variableId": "VariableID:2247:10483"
+        },
+        "1536-lg": {
+          "alias": "space/320",
+          "variableId": "VariableID:2247:10483"
+        },
+        "1920-xl": {
+          "alias": "space/320",
+          "variableId": "VariableID:2247:10483"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 320,
+        "1366-md": 320,
+        "1440-lg": 320,
+        "1536-lg": 320,
+        "1920-xl": 320
+      }
+    },
+    {
+      "id": "VariableID:2254:181",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-lg",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/384",
+          "variableId": "VariableID:2247:10484"
+        },
+        "1366-md": {
+          "alias": "space/384",
+          "variableId": "VariableID:2247:10484"
+        },
+        "1440-lg": {
+          "alias": "space/384",
+          "variableId": "VariableID:2247:10484"
+        },
+        "1536-lg": {
+          "alias": "space/384",
+          "variableId": "VariableID:2247:10484"
+        },
+        "1920-xl": {
+          "alias": "space/384",
+          "variableId": "VariableID:2247:10484"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 384,
+        "1366-md": 384,
+        "1440-lg": 384,
+        "1536-lg": 384,
+        "1920-xl": 384
+      }
+    },
+    {
+      "id": "VariableID:2254:182",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-5xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1024",
+          "variableId": "VariableID:2252:10493"
+        },
+        "1366-md": {
+          "alias": "space/1024",
+          "variableId": "VariableID:2252:10493"
+        },
+        "1440-lg": {
+          "alias": "space/1024",
+          "variableId": "VariableID:2252:10493"
+        },
+        "1536-lg": {
+          "alias": "space/1024",
+          "variableId": "VariableID:2252:10493"
+        },
+        "1920-xl": {
+          "alias": "space/1024",
+          "variableId": "VariableID:2252:10493"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1024,
+        "1366-md": 1024,
+        "1440-lg": 1024,
+        "1536-lg": 1024,
+        "1920-xl": 1024
+      }
+    },
+    {
+      "id": "VariableID:2254:183",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/480",
+          "variableId": "VariableID:2252:10488"
+        },
+        "1366-md": {
+          "alias": "space/480",
+          "variableId": "VariableID:2252:10488"
+        },
+        "1440-lg": {
+          "alias": "space/480",
+          "variableId": "VariableID:2252:10488"
+        },
+        "1536-lg": {
+          "alias": "space/480",
+          "variableId": "VariableID:2252:10488"
+        },
+        "1920-xl": {
+          "alias": "space/480",
+          "variableId": "VariableID:2252:10488"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 480,
+        "1366-md": 480,
+        "1440-lg": 480,
+        "1536-lg": 480,
+        "1920-xl": 480
+      }
+    },
+    {
+      "id": "VariableID:2254:184",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-2xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/560",
+          "variableId": "VariableID:2252:10489"
+        },
+        "1366-md": {
+          "alias": "space/560",
+          "variableId": "VariableID:2252:10489"
+        },
+        "1440-lg": {
+          "alias": "space/560",
+          "variableId": "VariableID:2252:10489"
+        },
+        "1536-lg": {
+          "alias": "space/560",
+          "variableId": "VariableID:2252:10489"
+        },
+        "1920-xl": {
+          "alias": "space/560",
+          "variableId": "VariableID:2252:10489"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 560,
+        "1366-md": 560,
+        "1440-lg": 560,
+        "1536-lg": 560,
+        "1920-xl": 560
+      }
+    },
+    {
+      "id": "VariableID:2254:185",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-4xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/720",
+          "variableId": "VariableID:2252:10491"
+        },
+        "1366-md": {
+          "alias": "space/720",
+          "variableId": "VariableID:2252:10491"
+        },
+        "1440-lg": {
+          "alias": "space/720",
+          "variableId": "VariableID:2252:10491"
+        },
+        "1536-lg": {
+          "alias": "space/720",
+          "variableId": "VariableID:2252:10491"
+        },
+        "1920-xl": {
+          "alias": "space/720",
+          "variableId": "VariableID:2252:10491"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 720,
+        "1366-md": 720,
+        "1440-lg": 720,
+        "1536-lg": 720,
+        "1920-xl": 720
+      }
+    },
+    {
+      "id": "VariableID:2254:186",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-3xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/640",
+          "variableId": "VariableID:2252:10490"
+        },
+        "1366-md": {
+          "alias": "space/640",
+          "variableId": "VariableID:2252:10490"
+        },
+        "1440-lg": {
+          "alias": "space/640",
+          "variableId": "VariableID:2252:10490"
+        },
+        "1536-lg": {
+          "alias": "space/640",
+          "variableId": "VariableID:2252:10490"
+        },
+        "1920-xl": {
+          "alias": "space/640",
+          "variableId": "VariableID:2252:10490"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 640,
+        "1366-md": 640,
+        "1440-lg": 640,
+        "1536-lg": 640,
+        "1920-xl": 640
+      }
+    },
+    {
+      "id": "VariableID:2254:187",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-7xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        },
+        "1366-md": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        },
+        "1440-lg": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        },
+        "1536-lg": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        },
+        "1920-xl": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1366,
+        "1366-md": 1366,
+        "1440-lg": 1366,
+        "1536-lg": 1366,
+        "1920-xl": 1366
+      }
+    },
+    {
+      "id": "VariableID:2254:188",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-8xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        },
+        "1366-md": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        },
+        "1440-lg": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        },
+        "1536-lg": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        },
+        "1920-xl": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1440,
+        "1366-md": 1440,
+        "1440-lg": 1440,
+        "1536-lg": 1440,
+        "1920-xl": 1440
+      }
+    },
+    {
+      "id": "VariableID:2254:189",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-10xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        },
+        "1366-md": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        },
+        "1440-lg": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        },
+        "1536-lg": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        },
+        "1920-xl": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1920,
+        "1366-md": 1920,
+        "1440-lg": 1920,
+        "1536-lg": 1920,
+        "1920-xl": 1920
+      }
+    },
+    {
+      "id": "VariableID:2433:193",
+      "collection": "Viewport Desktop",
+      "name": "Screen/Container/size-screen-width",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1280",
+          "variableId": "VariableID:2252:10494"
+        },
+        "1366-md": {
+          "alias": "space/1366",
+          "variableId": "VariableID:2252:10497"
+        },
+        "1440-lg": {
+          "alias": "space/1440",
+          "variableId": "VariableID:2252:10495"
+        },
+        "1536-lg": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        },
+        "1920-xl": {
+          "alias": "space/1920",
+          "variableId": "VariableID:2252:10498"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1280,
+        "1366-md": 1366,
+        "1440-lg": 1440,
+        "1536-lg": 1563,
+        "1920-xl": 1920
+      }
+    },
+    {
+      "id": "VariableID:2436:193",
+      "collection": "Viewport Desktop",
+      "name": "Screen/Container/size-screen-padding",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "spacing/xl",
+          "variableId": "VariableID:4754:32692"
+        },
+        "1366-md": {
+          "alias": "spacing/xl",
+          "variableId": "VariableID:4754:32692"
+        },
+        "1440-lg": {
+          "alias": "spacing/xl",
+          "variableId": "VariableID:4754:32692"
+        },
+        "1536-lg": {
+          "alias": "spacing/xl",
+          "variableId": "VariableID:4754:32692"
+        },
+        "1920-xl": {
+          "alias": "spacing/xl",
+          "variableId": "VariableID:4754:32692"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 20,
+        "1366-md": 20,
+        "1440-lg": 20,
+        "1536-lg": 20,
+        "1920-xl": 20
+      }
+    },
+    {
+      "id": "VariableID:2438:194",
+      "collection": "Viewport Desktop",
+      "name": "Screen/Navigation/size-navigation-width",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": 1029,
+        "1366-md": 1116,
+        "1440-lg": 1182,
+        "1536-lg": 1637,
+        "1920-xl": 1637
+      },
+      "resolvedValues": {
+        "1280-sm": 1029,
+        "1366-md": 1116,
+        "1440-lg": 1182,
+        "1536-lg": 1637,
+        "1920-xl": 1637
+      }
+    },
+    {
+      "id": "VariableID:2587:9967",
+      "collection": "Viewport Desktop",
+      "name": "Screen/Sidebar/Expanded",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/248",
+          "variableId": "VariableID:15669:16109"
+        },
+        "1366-md": {
+          "alias": "space/248",
+          "variableId": "VariableID:15669:16109"
+        },
+        "1440-lg": {
+          "alias": "space/248",
+          "variableId": "VariableID:15669:16109"
+        },
+        "1536-lg": {
+          "alias": "space/248",
+          "variableId": "VariableID:15669:16109"
+        },
+        "1920-xl": {
+          "alias": "space/248",
+          "variableId": "VariableID:15669:16109"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 248,
+        "1366-md": 248,
+        "1440-lg": 248,
+        "1536-lg": 248,
+        "1920-xl": 248
+      }
+    },
+    {
+      "id": "VariableID:2589:9968",
+      "collection": "Viewport Desktop",
+      "name": "Screen/Sidebar/Collapsed",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/84",
+          "variableId": "VariableID:15669:16110"
+        },
+        "1366-md": {
+          "alias": "space/84",
+          "variableId": "VariableID:15669:16110"
+        },
+        "1440-lg": {
+          "alias": "space/84",
+          "variableId": "VariableID:15669:16110"
+        },
+        "1536-lg": {
+          "alias": "space/84",
+          "variableId": "VariableID:15669:16110"
+        },
+        "1920-xl": {
+          "alias": "space/84",
+          "variableId": "VariableID:15669:16110"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 84,
+        "1366-md": 84,
+        "1440-lg": 84,
+        "1536-lg": 84,
+        "1920-xl": 84
+      }
+    },
+    {
+      "id": "VariableID:15669:16107",
+      "collection": "Viewport Desktop",
+      "name": "Width/wd-9xl",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "1280-sm": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        },
+        "1366-md": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        },
+        "1440-lg": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        },
+        "1536-lg": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        },
+        "1920-xl": {
+          "alias": "space/1536",
+          "variableId": "VariableID:15669:16108"
+        }
+      },
+      "resolvedValues": {
+        "1280-sm": 1563,
+        "1366-md": 1563,
+        "1440-lg": 1563,
+        "1536-lg": 1563,
+        "1920-xl": 1563
+      }
+    }
+  ]
+}

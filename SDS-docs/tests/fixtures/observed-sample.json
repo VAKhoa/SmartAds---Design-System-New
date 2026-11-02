@@ -1,0 +1,26 @@
+{
+  "kind": "variables",
+  "collection": "Alias",
+  "modes": ["Light"],
+  "variables": [
+    { "collection": "Alias", "name": "component/badge/info/surface-rest", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "component/toast alert/surface-rest", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "component/button/split button/surface-hover", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "component/button/border/secondary/sub", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "component/button/border/primary/select", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "component/button/border/focus/focus", "type": "COLOR", "values": { "Light": "#ffffff" } },
+    { "collection": "Alias", "name": "Alias/Primary - On Theme", "type": "COLOR", "values": { "Light": "#27272A" } },
+    { "collection": "Alias", "name": "text/secondary", "type": "COLOR", "values": { "Light": "#7b7d80" } },
+    { "collection": "Base", "name": "color/red light/500", "type": "COLOR", "values": { "Light": "#e33e32" } },
+    { "collection": "Base", "name": "color/red dark/500", "type": "COLOR", "values": { "Light": "#d71920" } },
+    { "collection": "Base", "name": "color/primary/500", "type": "COLOR", "values": { "Light": "#048845" } },
+    { "collection": "Base", "name": "typography/size/fs-xs", "type": "FLOAT", "values": { "Light": 16 } },
+    { "collection": "Base", "name": "typography/size/fs-lg", "type": "FLOAT", "values": { "Light": 12 } },
+    { "collection": "Base", "name": "typography/size/fs-display 2", "type": "FLOAT", "values": { "Light": 48 } },
+    { "collection": "Spacing", "name": "spacing/xxs", "type": "FLOAT", "values": { "Light": 2 } },
+    { "collection": "Spacing", "name": "spacing/xs", "type": "FLOAT", "values": { "Light": 4 } },
+    { "collection": "Spacing", "name": "spacing/1 (1px)", "type": "FLOAT", "values": { "Light": 1 } },
+    { "collection": "TextStyles", "name": "Brand/Body-lg/Semi", "type": "TEXT_STYLE", "values": { "Light": 20 } },
+    { "collection": "TextStyles", "name": "brand/body-lg/bold", "type": "TEXT_STYLE", "values": { "Light": 20 } }
+  ]
+}

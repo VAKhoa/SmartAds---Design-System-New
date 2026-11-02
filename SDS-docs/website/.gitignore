@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+test-results/
+playwright-report/
+.cache/
+src/styles/figma.generated.css
+src/data/docs.generated.json
+
+src/data/site.generated.json

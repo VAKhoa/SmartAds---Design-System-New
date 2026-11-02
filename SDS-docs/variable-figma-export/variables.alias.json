@@ -1,0 +1,6869 @@
+{
+  "kind": "variables",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collection": "Alias",
+  "collectionId": "VariableCollectionId:4:16",
+  "modes": [
+    {
+      "id": "4:2",
+      "name": "Accessible (Light Mode)"
+    },
+    {
+      "id": "12:1",
+      "name": "Accessible (Dark Mode)"
+    }
+  ],
+  "count": 293,
+  "variables": [
+    {
+      "id": "VariableID:12:849",
+      "collection": "Alias",
+      "name": "background/neutral",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:12:850",
+      "collection": "Alias",
+      "name": "background/inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:12:851",
+      "collection": "Alias",
+      "name": "background/secondary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/50",
+          "variableId": "VariableID:4:17"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f0f0",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:12:852",
+      "collection": "Alias",
+      "name": "background/secondary-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/50",
+          "variableId": "VariableID:4:17"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f1f1f",
+        "Accessible (Dark Mode)": "#f0f0f0"
+      }
+    },
+    {
+      "id": "VariableID:12:853",
+      "collection": "Alias",
+      "name": "text/primary-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:15:24",
+      "collection": "Alias",
+      "name": "text/gray-on-surface",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7b7d80",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:15:156",
+      "collection": "Alias",
+      "name": "text/accent",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:15:157",
+      "collection": "Alias",
+      "name": "text/accent-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/600",
+          "variableId": "VariableID:12:846"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/300",
+          "variableId": "VariableID:12:843"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#385ada",
+        "Accessible (Dark Mode)": "#7d96f5"
+      }
+    },
+    {
+      "id": "VariableID:25:25",
+      "collection": "Alias",
+      "name": "text/accent-pressed",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#2b46aa",
+        "Accessible (Dark Mode)": "#a6b7f8"
+      }
+    },
+    {
+      "id": "VariableID:37:33",
+      "collection": "Alias",
+      "name": "text/accent-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#a6b7f8",
+        "Accessible (Dark Mode)": "#2b46aa"
+      }
+    },
+    {
+      "id": "VariableID:43:39",
+      "collection": "Alias",
+      "name": "text/info",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:44:41",
+      "collection": "Alias",
+      "name": "text/info-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/900",
+          "variableId": "VariableID:12:840"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eceffe",
+        "Accessible (Dark Mode)": "#1a2a65"
+      }
+    },
+    {
+      "id": "VariableID:44:42",
+      "collection": "Alias",
+      "name": "text/success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:44:43",
+      "collection": "Alias",
+      "name": "text/success-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/200",
+          "variableId": "VariableID:12:327"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/700",
+          "variableId": "VariableID:12:329"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#99d194",
+        "Accessible (Dark Mode)": "#186d10"
+      }
+    },
+    {
+      "id": "VariableID:44:45",
+      "collection": "Alias",
+      "name": "text/danger",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:44:46",
+      "collection": "Alias",
+      "name": "text/danger-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/200",
+          "variableId": "VariableID:12:460"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/700",
+          "variableId": "VariableID:12:461"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f2a6a1",
+        "Accessible (Dark Mode)": "#a12c24"
+      }
+    },
+    {
+      "id": "VariableID:44:47",
+      "collection": "Alias",
+      "name": "text/on-primary-black-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:44:48",
+      "collection": "Alias",
+      "name": "text/on-primary-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:44:49",
+      "collection": "Alias",
+      "name": "text/primary-black",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:44:51",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-neutral",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:44:52",
+      "collection": "Alias",
+      "name": "surface/elevation",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:44:53",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:44:54",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:44:55",
+      "collection": "Alias",
+      "name": "component/icon/common/accent",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:44:56",
+      "collection": "Alias",
+      "name": "component/icon/common/accent-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/600",
+          "variableId": "VariableID:12:846"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/300",
+          "variableId": "VariableID:12:843"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#385ada",
+        "Accessible (Dark Mode)": "#7d96f5"
+      }
+    },
+    {
+      "id": "VariableID:44:57",
+      "collection": "Alias",
+      "name": "component/icon/common/accent-pressed",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#2b46aa",
+        "Accessible (Dark Mode)": "#a6b7f8"
+      }
+    },
+    {
+      "id": "VariableID:44:58",
+      "collection": "Alias",
+      "name": "component/icon/common/accent-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#a6b7f8",
+        "Accessible (Dark Mode)": "#2b46aa"
+      }
+    },
+    {
+      "id": "VariableID:44:90",
+      "collection": "Alias",
+      "name": "component/icon/common/info",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:44:91",
+      "collection": "Alias",
+      "name": "component/icon/common/info-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/900",
+          "variableId": "VariableID:12:840"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eceffe",
+        "Accessible (Dark Mode)": "#1a2a65"
+      }
+    },
+    {
+      "id": "VariableID:44:92",
+      "collection": "Alias",
+      "name": "component/icon/common/success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:47:93",
+      "collection": "Alias",
+      "name": "component/icon/common/success-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/200",
+          "variableId": "VariableID:12:327"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/700",
+          "variableId": "VariableID:12:329"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#99d194",
+        "Accessible (Dark Mode)": "#186d10"
+      }
+    },
+    {
+      "id": "VariableID:47:94",
+      "collection": "Alias",
+      "name": "component/icon/common/danger",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:49:95",
+      "collection": "Alias",
+      "name": "component/icon/common/danger-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/200",
+          "variableId": "VariableID:12:460"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/900",
+          "variableId": "VariableID:12:466"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f2a6a1",
+        "Accessible (Dark Mode)": "#5f1a15"
+      }
+    },
+    {
+      "id": "VariableID:49:96",
+      "collection": "Alias",
+      "name": "component/icon/common/white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:50:97",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-black-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:50:101",
+      "collection": "Alias",
+      "name": "surface/accent",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:50:102",
+      "collection": "Alias",
+      "name": "surface/accent-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:50:103",
+      "collection": "Alias",
+      "name": "surface/accent-pressed",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#2b46aa",
+        "Accessible (Dark Mode)": "#a6b7f8"
+      }
+    },
+    {
+      "id": "VariableID:50:104",
+      "collection": "Alias",
+      "name": "surface/accent-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/700",
+          "variableId": "VariableID:12:845"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#a6b7f8",
+        "Accessible (Dark Mode)": "#2b46aa"
+      }
+    },
+    {
+      "id": "VariableID:50:105",
+      "collection": "Alias",
+      "name": "surface/info",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:50:106",
+      "collection": "Alias",
+      "name": "surface/info-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/900",
+          "variableId": "VariableID:12:840"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eceffe",
+        "Accessible (Dark Mode)": "#1a2a65"
+      }
+    },
+    {
+      "id": "VariableID:50:107",
+      "collection": "Alias",
+      "name": "surface/success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:50:109",
+      "collection": "Alias",
+      "name": "surface/danger",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:50:110",
+      "collection": "Alias",
+      "name": "surface/danger-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/50",
+          "variableId": "VariableID:12:457"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/900",
+          "variableId": "VariableID:12:466"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fceceb",
+        "Accessible (Dark Mode)": "#5f1a15"
+      }
+    },
+    {
+      "id": "VariableID:50:113",
+      "collection": "Alias",
+      "name": "surface/primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:50:114",
+      "collection": "Alias",
+      "name": "surface/primary-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/600",
+          "variableId": "VariableID:6:29"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#047c3f",
+        "Accessible (Dark Mode)": "#036131"
+      }
+    },
+    {
+      "id": "VariableID:50:115",
+      "collection": "Alias",
+      "name": "surface/primary-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/800",
+          "variableId": "VariableID:7:31"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#036131",
+        "Accessible (Dark Mode)": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:50:116",
+      "collection": "Alias",
+      "name": "surface/primary-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:55:144",
+      "collection": "Alias",
+      "name": "border/primary-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#036131",
+        "Accessible (Dark Mode)": "#036131"
+      }
+    },
+    {
+      "id": "VariableID:55:145",
+      "collection": "Alias",
+      "name": "border/primary-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/200",
+          "variableId": "VariableID:6:25"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8cc8a9",
+        "Accessible (Dark Mode)": "#036131"
+      }
+    },
+    {
+      "id": "VariableID:55:146",
+      "collection": "Alias",
+      "name": "border/secondary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/500",
+          "variableId": "VariableID:10:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/500",
+          "variableId": "VariableID:10:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8c8c8c",
+        "Accessible (Dark Mode)": "#8c8c8c"
+      }
+    },
+    {
+      "id": "VariableID:55:147",
+      "collection": "Alias",
+      "name": "border/secondary-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/700",
+          "variableId": "VariableID:10:30"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/300",
+          "variableId": "VariableID:10:26"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#636363",
+        "Accessible (Dark Mode)": "#cecece"
+      }
+    },
+    {
+      "id": "VariableID:55:148",
+      "collection": "Alias",
+      "name": "border/secondary-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/100",
+          "variableId": "VariableID:10:24"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/700",
+          "variableId": "VariableID:10:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e8e8e8",
+        "Accessible (Dark Mode)": "#636363"
+      }
+    },
+    {
+      "id": "VariableID:55:150",
+      "collection": "Alias",
+      "name": "text/secondary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7b7d80",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:55:151",
+      "collection": "Alias",
+      "name": "text/secondary-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:55:152",
+      "collection": "Alias",
+      "name": "text/secondary-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#9ea1a5"
+      }
+    },
+    {
+      "id": "VariableID:150:705",
+      "collection": "Alias",
+      "name": "border/primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:150:706",
+      "collection": "Alias",
+      "name": "text/primary-green",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:150:707",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-green",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:154:4026",
+      "collection": "Alias",
+      "name": "foreground/on-bg",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:154:4038",
+      "collection": "Alias",
+      "name": "foreground/on-bg-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#9ea1a5",
+        "Accessible (Dark Mode)": "#9ea1a5"
+      }
+    },
+    {
+      "id": "VariableID:154:4039",
+      "collection": "Alias",
+      "name": "foreground/on-bg-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7b7d80",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:154:4040",
+      "collection": "Alias",
+      "name": "foreground/on-background-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#f0f2f4"
+      }
+    },
+    {
+      "id": "VariableID:154:4041",
+      "collection": "Alias",
+      "name": "background/gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:159:361",
+      "collection": "Alias",
+      "name": "surface/gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:159:363",
+      "collection": "Alias",
+      "name": "border/gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#f0f2f4"
+      }
+    },
+    {
+      "id": "VariableID:160:443",
+      "collection": "Alias",
+      "name": "component/icon/common/secondary-gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#9ea1a5",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:160:444",
+      "collection": "Alias",
+      "name": "surface/neutral-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:160:463",
+      "collection": "Alias",
+      "name": "surface/gray-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:180:9220",
+      "collection": "Alias",
+      "name": "component/icon/common/secondary-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:182:9489",
+      "collection": "Alias",
+      "name": "border/gray-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:197:639",
+      "collection": "Alias",
+      "name": "border/error",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:197:767",
+      "collection": "Alias",
+      "name": "border/success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:197:894",
+      "collection": "Alias",
+      "name": "border/gray-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:199:1021",
+      "collection": "Alias",
+      "name": "border/warning",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:200:1156",
+      "collection": "Alias",
+      "name": "text/warning",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:205:4227",
+      "collection": "Alias",
+      "name": "text/primary-gray-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:205:4228",
+      "collection": "Alias",
+      "name": "component/icon/common/primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#9ea1a5",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:403:5528",
+      "collection": "Alias",
+      "name": "border/white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:403:5529",
+      "collection": "Alias",
+      "name": "border/black",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:411:2466",
+      "collection": "Alias",
+      "name": "surface/info-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/800",
+          "variableId": "VariableID:12:841"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#223684"
+      }
+    },
+    {
+      "id": "VariableID:411:2468",
+      "collection": "Alias",
+      "name": "border/info",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:411:2469",
+      "collection": "Alias",
+      "name": "border/info-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/800",
+          "variableId": "VariableID:12:841"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#223684"
+      }
+    },
+    {
+      "id": "VariableID:411:2470",
+      "collection": "Alias",
+      "name": "border/info-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/200",
+          "variableId": "VariableID:12:842"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/900",
+          "variableId": "VariableID:12:840"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#a6b7f8",
+        "Accessible (Dark Mode)": "#1a2a65"
+      }
+    },
+    {
+      "id": "VariableID:411:5207",
+      "collection": "Alias",
+      "name": "surface/danger-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/100",
+          "variableId": "VariableID:12:459"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/800",
+          "variableId": "VariableID:12:458"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6c3bf",
+        "Accessible (Dark Mode)": "#7d221c"
+      }
+    },
+    {
+      "id": "VariableID:411:5208",
+      "collection": "Alias",
+      "name": "border/error-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/100",
+          "variableId": "VariableID:12:459"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/800",
+          "variableId": "VariableID:12:458"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6c3bf",
+        "Accessible (Dark Mode)": "#7d221c"
+      }
+    },
+    {
+      "id": "VariableID:411:5209",
+      "collection": "Alias",
+      "name": "border/error-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/200",
+          "variableId": "VariableID:12:460"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/900",
+          "variableId": "VariableID:12:466"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f2a6a1",
+        "Accessible (Dark Mode)": "#5f1a15"
+      }
+    },
+    {
+      "id": "VariableID:411:5210",
+      "collection": "Alias",
+      "name": "component/icon/common/danger-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/100",
+          "variableId": "VariableID:12:459"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/800",
+          "variableId": "VariableID:12:458"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6c3bf",
+        "Accessible (Dark Mode)": "#7d221c"
+      }
+    },
+    {
+      "id": "VariableID:411:5212",
+      "collection": "Alias",
+      "name": "text/info-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/800",
+          "variableId": "VariableID:12:841"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#223684"
+      }
+    },
+    {
+      "id": "VariableID:411:5213",
+      "collection": "Alias",
+      "name": "component/icon/common/info-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/800",
+          "variableId": "VariableID:12:841"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#223684"
+      }
+    },
+    {
+      "id": "VariableID:416:6030",
+      "collection": "Alias",
+      "name": "surface/success-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/50",
+          "variableId": "VariableID:12:324"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/900",
+          "variableId": "VariableID:12:456"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ecffea",
+        "Accessible (Dark Mode)": "#0e4109"
+      }
+    },
+    {
+      "id": "VariableID:416:6031",
+      "collection": "Alias",
+      "name": "surface/success-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/800",
+          "variableId": "VariableID:12:325"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#bae0b7",
+        "Accessible (Dark Mode)": "#13550c"
+      }
+    },
+    {
+      "id": "VariableID:416:6033",
+      "collection": "Alias",
+      "name": "border/success-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/200",
+          "variableId": "VariableID:12:327"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/900",
+          "variableId": "VariableID:12:456"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#99d194",
+        "Accessible (Dark Mode)": "#0e4109"
+      }
+    },
+    {
+      "id": "VariableID:416:6034",
+      "collection": "Alias",
+      "name": "border/success-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/800",
+          "variableId": "VariableID:12:325"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#bae0b7",
+        "Accessible (Dark Mode)": "#13550c"
+      }
+    },
+    {
+      "id": "VariableID:437:4444",
+      "collection": "Alias",
+      "name": "component/icon/common/secondary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7b7d80",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:437:5390",
+      "collection": "Alias",
+      "name": "border/secondary-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/200",
+          "variableId": "VariableID:10:25"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e1e1e1",
+        "Accessible (Dark Mode)": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:447:2018",
+      "collection": "Alias",
+      "name": "component/checkbox/enable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "surface/primary",
+          "variableId": "VariableID:50:113"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/800",
+          "variableId": "VariableID:7:31"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:447:2020",
+      "collection": "Alias",
+      "name": "component/checkbox/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "surface/primary-hover",
+          "variableId": "VariableID:50:114"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#047c3f",
+        "Accessible (Dark Mode)": "#9ea1a5"
+      }
+    },
+    {
+      "id": "VariableID:447:2021",
+      "collection": "Alias",
+      "name": "component/checkbox/disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "surface/primary-disable",
+          "variableId": "VariableID:50:116"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:471:2228",
+      "collection": "Alias",
+      "name": "component/radio/enable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/800",
+          "variableId": "VariableID:7:31"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:471:2229",
+      "collection": "Alias",
+      "name": "component/radio/elevation",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:471:2230",
+      "collection": "Alias",
+      "name": "component/radio/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#9ea1a5"
+      }
+    },
+    {
+      "id": "VariableID:471:2231",
+      "collection": "Alias",
+      "name": "component/radio/disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/900",
+          "variableId": "VariableID:12:323"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:471:2232",
+      "collection": "Alias",
+      "name": "component/radio/focus-green",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/50",
+          "variableId": "VariableID:4:14"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/800",
+          "variableId": "VariableID:7:31"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e6f3ec",
+        "Accessible (Dark Mode)": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:506:1837",
+      "collection": "Alias",
+      "name": "surface/gray-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:506:1874",
+      "collection": "Alias",
+      "name": "surface/gray-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/100",
+          "variableId": "VariableID:10:24"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e8e8e8",
+        "Accessible (Dark Mode)": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:540:3168",
+      "collection": "Alias",
+      "name": "surface/primary-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:1047:451",
+      "collection": "Alias",
+      "name": "text/gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/700",
+          "variableId": "VariableID:12:320"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#9ea1a5",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:1101:5799",
+      "collection": "Alias",
+      "name": "surface/sidebar-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green light/200",
+          "variableId": "VariableID:2490:1967"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green light/100",
+          "variableId": "VariableID:1101:5798"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dffcdd",
+        "Accessible (Dark Mode)": "#edfeec"
+      }
+    },
+    {
+      "id": "VariableID:1443:5908",
+      "collection": "Alias",
+      "name": "component/icon/common/on-primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/800",
+          "variableId": "VariableID:12:315"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7b7d80",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:1473:2237",
+      "collection": "Alias",
+      "name": "component/icon/common/warning-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/900",
+          "variableId": "VariableID:200:1155"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fde6b6",
+        "Accessible (Dark Mode)": "#694908"
+      }
+    },
+    {
+      "id": "VariableID:1473:2238",
+      "collection": "Alias",
+      "name": "component/icon/common/warning-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/200",
+          "variableId": "VariableID:200:1150"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/900",
+          "variableId": "VariableID:200:1155"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fdd993",
+        "Accessible (Dark Mode)": "#694908"
+      }
+    },
+    {
+      "id": "VariableID:1473:2240",
+      "collection": "Alias",
+      "name": "component/icon/common/warning",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/800",
+          "variableId": "VariableID:200:1154"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#8a5f0b"
+      }
+    },
+    {
+      "id": "VariableID:1474:833",
+      "collection": "Alias",
+      "name": "surface/warning",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:1474:834",
+      "collection": "Alias",
+      "name": "surface/warning-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/800",
+          "variableId": "VariableID:12:325"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fde6b6",
+        "Accessible (Dark Mode)": "#13550c"
+      }
+    },
+    {
+      "id": "VariableID:1474:835",
+      "collection": "Alias",
+      "name": "surface/warning-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/50",
+          "variableId": "VariableID:200:1145"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/900",
+          "variableId": "VariableID:12:456"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fff7e8",
+        "Accessible (Dark Mode)": "#0e4109"
+      }
+    },
+    {
+      "id": "VariableID:1474:836",
+      "collection": "Alias",
+      "name": "text/warning-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fde6b6",
+        "Accessible (Dark Mode)": "#fde6b6"
+      }
+    },
+    {
+      "id": "VariableID:1474:837",
+      "collection": "Alias",
+      "name": "text/warning-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/50",
+          "variableId": "VariableID:200:1145"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/50",
+          "variableId": "VariableID:200:1145"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fff7e8",
+        "Accessible (Dark Mode)": "#fff7e8"
+      }
+    },
+    {
+      "id": "VariableID:1962:24",
+      "collection": "Alias",
+      "name": "background/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:2176:2111",
+      "collection": "Alias",
+      "name": "border/gray-stronger",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:2187:1329",
+      "collection": "Alias",
+      "name": "surface/box",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green light/50",
+          "variableId": "VariableID:2186:1328"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green light/50",
+          "variableId": "VariableID:2186:1328"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f4fff4",
+        "Accessible (Dark Mode)": "#f4fff4"
+      }
+    },
+    {
+      "id": "VariableID:2490:1966",
+      "collection": "Alias",
+      "name": "surface/sidebar-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green light/100",
+          "variableId": "VariableID:1101:5798"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green light/100",
+          "variableId": "VariableID:1101:5798"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#edfeec",
+        "Accessible (Dark Mode)": "#edfeec"
+      }
+    },
+    {
+      "id": "VariableID:2615:14847",
+      "collection": "Alias",
+      "name": "component/icon/common/primary-weak-inverse",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c4043",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:2624:186",
+      "collection": "Alias",
+      "name": "component/divider/divider-bland",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:2624:187",
+      "collection": "Alias",
+      "name": "component/divider/divider-subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:2624:188",
+      "collection": "Alias",
+      "name": "component/divider/divider-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:2624:189",
+      "collection": "Alias",
+      "name": "component/divider/divider-strong",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/400",
+          "variableId": "VariableID:12:319"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e5e9ed",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:3597:71380",
+      "collection": "Alias",
+      "name": "overlay/primary/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/10",
+          "variableId": "VariableID:3728:31042"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/90",
+          "variableId": "VariableID:3728:31051"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488451a",
+        "Accessible (Dark Mode)": "#048845e5"
+      }
+    },
+    {
+      "id": "VariableID:3597:71382",
+      "collection": "Alias",
+      "name": "overlay/primary/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/15",
+          "variableId": "VariableID:3728:31043"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/85",
+          "variableId": "VariableID:3728:31050"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884526",
+        "Accessible (Dark Mode)": "#048845d9"
+      }
+    },
+    {
+      "id": "VariableID:3597:71383",
+      "collection": "Alias",
+      "name": "overlay/primary/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/20",
+          "variableId": "VariableID:3728:31044"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/80",
+          "variableId": "VariableID:3728:31049"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884533",
+        "Accessible (Dark Mode)": "#048845cc"
+      }
+    },
+    {
+      "id": "VariableID:3597:71384",
+      "collection": "Alias",
+      "name": "overlay/primary/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/25",
+          "variableId": "VariableID:3728:31045"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/75",
+          "variableId": "VariableID:3728:31048"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884540",
+        "Accessible (Dark Mode)": "#048845bf"
+      }
+    },
+    {
+      "id": "VariableID:3597:71385",
+      "collection": "Alias",
+      "name": "overlay/primary/30",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/30",
+          "variableId": "VariableID:3728:31046"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/70",
+          "variableId": "VariableID:3728:31047"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488454d",
+        "Accessible (Dark Mode)": "#048845b2"
+      }
+    },
+    {
+      "id": "VariableID:3610:22671",
+      "collection": "Alias",
+      "name": "border/primary-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/700",
+          "variableId": "VariableID:6:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#036131"
+      }
+    },
+    {
+      "id": "VariableID:3611:38096",
+      "collection": "Alias",
+      "name": "text/info-weak",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:3611:38412",
+      "collection": "Alias",
+      "name": "text/on-primary-black-weak",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c4043",
+        "Accessible (Dark Mode)": "#3c4043"
+      }
+    },
+    {
+      "id": "VariableID:3728:31020",
+      "collection": "Alias",
+      "name": "background/primary-selected",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/50",
+          "variableId": "VariableID:4:14"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/800",
+          "variableId": "VariableID:7:31"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e6f3ec",
+        "Accessible (Dark Mode)": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:3728:31021",
+      "collection": "Alias",
+      "name": "background/sucess",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/50",
+          "variableId": "VariableID:12:324"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/800",
+          "variableId": "VariableID:12:325"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ecffea",
+        "Accessible (Dark Mode)": "#13550c"
+      }
+    },
+    {
+      "id": "VariableID:3728:31022",
+      "collection": "Alias",
+      "name": "overlay/danger/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/10",
+          "variableId": "VariableID:3728:31027"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/20",
+          "variableId": "VariableID:3728:31034"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e321a",
+        "Accessible (Dark Mode)": "#e33e3233"
+      }
+    },
+    {
+      "id": "VariableID:3728:31023",
+      "collection": "Alias",
+      "name": "overlay/danger/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/15",
+          "variableId": "VariableID:3728:31033"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/25",
+          "variableId": "VariableID:3728:31035"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e3226",
+        "Accessible (Dark Mode)": "#e33e3240"
+      }
+    },
+    {
+      "id": "VariableID:3728:31024",
+      "collection": "Alias",
+      "name": "overlay/danger/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/20",
+          "variableId": "VariableID:3728:31034"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/30",
+          "variableId": "VariableID:3728:31036"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e3233",
+        "Accessible (Dark Mode)": "#e33e324d"
+      }
+    },
+    {
+      "id": "VariableID:3728:31025",
+      "collection": "Alias",
+      "name": "overlay/danger/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/25",
+          "variableId": "VariableID:3728:31035"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/30",
+          "variableId": "VariableID:3728:31036"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e3240",
+        "Accessible (Dark Mode)": "#e33e324d"
+      }
+    },
+    {
+      "id": "VariableID:3728:31026",
+      "collection": "Alias",
+      "name": "overlay/danger/30",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/30",
+          "variableId": "VariableID:3728:31036"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/30",
+          "variableId": "VariableID:3728:31036"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e324d",
+        "Accessible (Dark Mode)": "#e33e324d"
+      }
+    },
+    {
+      "id": "VariableID:3821:31572",
+      "collection": "Alias",
+      "name": "overlay/primary/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/50",
+          "variableId": "VariableID:3821:29152"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/70",
+          "variableId": "VariableID:3728:31047"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884580",
+        "Accessible (Dark Mode)": "#048845b2"
+      }
+    },
+    {
+      "id": "VariableID:3821:31573",
+      "collection": "Alias",
+      "name": "overlay/primary/70",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/70",
+          "variableId": "VariableID:3728:31047"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/70",
+          "variableId": "VariableID:3728:31047"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845b2",
+        "Accessible (Dark Mode)": "#048845b2"
+      }
+    },
+    {
+      "id": "VariableID:3821:31574",
+      "collection": "Alias",
+      "name": "overlay/danger/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/50",
+          "variableId": "VariableID:3821:31571"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/20",
+          "variableId": "VariableID:3728:31034"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e3280",
+        "Accessible (Dark Mode)": "#e33e3233"
+      }
+    },
+    {
+      "id": "VariableID:3821:31575",
+      "collection": "Alias",
+      "name": "overlay/danger/70",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/70",
+          "variableId": "VariableID:3728:31041"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/20",
+          "variableId": "VariableID:3728:31034"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32b2",
+        "Accessible (Dark Mode)": "#e33e3233"
+      }
+    },
+    {
+      "id": "VariableID:4079:34021",
+      "collection": "Alias",
+      "name": "border/primary-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/50",
+          "variableId": "VariableID:4:14"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary light/50",
+          "variableId": "VariableID:4904:7409"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e6f3ec",
+        "Accessible (Dark Mode)": "#f2f8f7"
+      }
+    },
+    {
+      "id": "VariableID:4313:99089",
+      "collection": "Alias",
+      "name": "overlay/default/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/gray/10",
+          "variableId": "VariableID:4313:99092"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/gray/10",
+          "variableId": "VariableID:4313:99092"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#5e5f611a",
+        "Accessible (Dark Mode)": "#5e5f611a"
+      }
+    },
+    {
+      "id": "VariableID:4313:99090",
+      "collection": "Alias",
+      "name": "overlay/default/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/gray/15",
+          "variableId": "VariableID:4313:99093"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/gray/15",
+          "variableId": "VariableID:4313:99093"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#5e5f6126",
+        "Accessible (Dark Mode)": "#5e5f6126"
+      }
+    },
+    {
+      "id": "VariableID:4313:99091",
+      "collection": "Alias",
+      "name": "overlay/default/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/gray/20",
+          "variableId": "VariableID:4313:99094"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/gray/20",
+          "variableId": "VariableID:4313:99094"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#5e5f6133",
+        "Accessible (Dark Mode)": "#5e5f6133"
+      }
+    },
+    {
+      "id": "VariableID:4313:99096",
+      "collection": "Alias",
+      "name": "overlay/default/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/gray/25",
+          "variableId": "VariableID:4313:99095"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/gray/25",
+          "variableId": "VariableID:4313:99095"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#5e5f6140",
+        "Accessible (Dark Mode)": "#5e5f6140"
+      }
+    },
+    {
+      "id": "VariableID:4608:8571",
+      "collection": "Alias",
+      "name": "component/state layers/on-color/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/8",
+          "variableId": "VariableID:4609:5690"
+        },
+        "Accessible (Dark Mode)": "#04884514"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884514",
+        "Accessible (Dark Mode)": "#04884514"
+      }
+    },
+    {
+      "id": "VariableID:4610:5693",
+      "collection": "Alias",
+      "name": "component/state layers/on-color/focus",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/10",
+          "variableId": "VariableID:3728:31042"
+        },
+        "Accessible (Dark Mode)": "#0488451a"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488451a",
+        "Accessible (Dark Mode)": "#0488451a"
+      }
+    },
+    {
+      "id": "VariableID:4610:5694",
+      "collection": "Alias",
+      "name": "component/state layers/on-color/press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/15",
+          "variableId": "VariableID:3728:31043"
+        },
+        "Accessible (Dark Mode)": "#04884526"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884526",
+        "Accessible (Dark Mode)": "#04884526"
+      }
+    },
+    {
+      "id": "VariableID:4610:5695",
+      "collection": "Alias",
+      "name": "component/state layers/on-color/dragged",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/20",
+          "variableId": "VariableID:3728:31044"
+        },
+        "Accessible (Dark Mode)": "#04884533"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884533",
+        "Accessible (Dark Mode)": "#04884533"
+      }
+    },
+    {
+      "id": "VariableID:4865:59700",
+      "collection": "Alias",
+      "name": "component/button/surface/primary-accent/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:4865:59707",
+      "collection": "Alias",
+      "name": "component/button/surface/primary-subdued/select",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green light/50",
+          "variableId": "VariableID:2186:1328"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green light/50",
+          "variableId": "VariableID:2186:1328"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f4fff4",
+        "Accessible (Dark Mode)": "#f4fff4"
+      }
+    },
+    {
+      "id": "VariableID:4865:59708",
+      "collection": "Alias",
+      "name": "component/button/surface/integrity/tertiary-fg",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/10",
+          "variableId": "VariableID:1618:4896"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/10",
+          "variableId": "VariableID:1618:4896"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fdfdfd",
+        "Accessible (Dark Mode)": "#fdfdfd"
+      }
+    },
+    {
+      "id": "VariableID:4869:47979",
+      "collection": "Alias",
+      "name": "component/button/surface/integrity/tertiary-fg-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c3c3c",
+        "Accessible (Dark Mode)": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:4900:55141",
+      "collection": "Alias",
+      "name": "component/button/surface/primary-subdued/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green light/200",
+          "variableId": "VariableID:2490:1967"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green light/200",
+          "variableId": "VariableID:2490:1967"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dffcdd",
+        "Accessible (Dark Mode)": "#dffcdd"
+      }
+    },
+    {
+      "id": "VariableID:4921:8802",
+      "collection": "Alias",
+      "name": "component/button/surface/secondary/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:4925:8850",
+      "collection": "Alias",
+      "name": "component/button/border/secondary/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:4925:54294",
+      "collection": "Alias",
+      "name": "component/button/border/primary/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:4949:69059",
+      "collection": "Alias",
+      "name": "component/button/border/primary/select",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/100",
+          "variableId": "VariableID:6:24"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/100",
+          "variableId": "VariableID:6:24"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#b1dac5",
+        "Accessible (Dark Mode)": "#b1dac5"
+      }
+    },
+    {
+      "id": "VariableID:4949:69162",
+      "collection": "Alias",
+      "name": "component/button/border/secondary/sub",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:4957:4924",
+      "collection": "Alias",
+      "name": "text/link",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:4957:4925",
+      "collection": "Alias",
+      "name": "text/link-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:4957:4966",
+      "collection": "Alias",
+      "name": "component/icon/common/link",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/300",
+          "variableId": "VariableID:12:843"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/300",
+          "variableId": "VariableID:12:843"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#7d96f5",
+        "Accessible (Dark Mode)": "#7d96f5"
+      }
+    },
+    {
+      "id": "VariableID:4957:4967",
+      "collection": "Alias",
+      "name": "component/icon/common/link-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:4957:4987",
+      "collection": "Alias",
+      "name": "component/button/surface/integrity/link-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#f2f5ff",
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f2f5ff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:4957:4989",
+      "collection": "Alias",
+      "name": "component/button/border/link/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:4957:5890",
+      "collection": "Alias",
+      "name": "component/button/surface/secondary/link-subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:4957:5891",
+      "collection": "Alias",
+      "name": "component/button/border/link/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:4957:6792",
+      "collection": "Alias",
+      "name": "component/button/surface/info/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:4957:7244",
+      "collection": "Alias",
+      "name": "component/button/border/info/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:4957:7246",
+      "collection": "Alias",
+      "name": "component/button/surface/info/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eceffe",
+        "Accessible (Dark Mode)": "#eceffe"
+      }
+    },
+    {
+      "id": "VariableID:5122:6955",
+      "collection": "Alias",
+      "name": "component/icon/file/file-gray",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#dce1e8",
+        "Accessible (Dark Mode)": "#dce1e8"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dce1e8",
+        "Accessible (Dark Mode)": "#dce1e8"
+      }
+    },
+    {
+      "id": "VariableID:5122:6956",
+      "collection": "Alias",
+      "name": "component/icon/file/file-accent",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/400",
+          "variableId": "VariableID:12:844"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#6482f3",
+        "Accessible (Dark Mode)": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:5122:6959",
+      "collection": "Alias",
+      "name": "component/icon/file/file-red",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#fc5144",
+        "Accessible (Dark Mode)": "#fc5144"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fc5144",
+        "Accessible (Dark Mode)": "#fc5144"
+      }
+    },
+    {
+      "id": "VariableID:5192:155887",
+      "collection": "Alias",
+      "name": "component/creative assets/border-asset",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#b2efac",
+        "Accessible (Dark Mode)": "#b2efac"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#b2efac",
+        "Accessible (Dark Mode)": "#b2efac"
+      }
+    },
+    {
+      "id": "VariableID:5192:155888",
+      "collection": "Alias",
+      "name": "component/creative assets/surface-asset",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#ecffea",
+        "Accessible (Dark Mode)": "#ecffea"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ecffea",
+        "Accessible (Dark Mode)": "#ecffea"
+      }
+    },
+    {
+      "id": "VariableID:5219:85339",
+      "collection": "Alias",
+      "name": "component/badge/sucess/surface-success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5339:104165",
+      "collection": "Alias",
+      "name": "component/badge/info/border-rest",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5339:104166",
+      "collection": "Alias",
+      "name": "component/badge/info/surface-rest",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/50",
+          "variableId": "VariableID:12:591"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eceffe",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5339:104167",
+      "collection": "Alias",
+      "name": "component/badge/info/surface-action",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5339:104168",
+      "collection": "Alias",
+      "name": "component/badge/info/border-action",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5339:104169",
+      "collection": "Alias",
+      "name": "component/badge/info/text-info",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/500",
+          "variableId": "VariableID:12:847"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f0",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5405:78327",
+      "collection": "Alias",
+      "name": "component/tags/surface-primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/500",
+          "variableId": "VariableID:6:28"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#048845",
+        "Accessible (Dark Mode)": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:5473:69050",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/google-red",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#e74133",
+        "Accessible (Dark Mode)": "#e74133"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e74133",
+        "Accessible (Dark Mode)": "#e74133"
+      }
+    },
+    {
+      "id": "VariableID:5473:69051",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/google-yellow",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#f9bb00",
+        "Accessible (Dark Mode)": "#f9bb00"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f9bb00",
+        "Accessible (Dark Mode)": "#f9bb00"
+      }
+    },
+    {
+      "id": "VariableID:5473:69052",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/google-green",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#32a753",
+        "Accessible (Dark Mode)": "#32a753"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#32a753",
+        "Accessible (Dark Mode)": "#32a753"
+      }
+    },
+    {
+      "id": "VariableID:5473:69053",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/google-blue",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#3e82f1",
+        "Accessible (Dark Mode)": "#3e82f1"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3e82f1",
+        "Accessible (Dark Mode)": "#3e82f1"
+      }
+    },
+    {
+      "id": "VariableID:5473:69054",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/facebook-blue",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#1977f3",
+        "Accessible (Dark Mode)": "#1977f3"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1977f3",
+        "Accessible (Dark Mode)": "#1977f3"
+      }
+    },
+    {
+      "id": "VariableID:5473:69055",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/facebook-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5473:69056",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/apple-black",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#000000"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#000000",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:5473:69057",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/apple-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5473:69058",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/fpt-green",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/brand/fpt/T",
+          "variableId": "VariableID:1059:15"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/brand/fpt/T",
+          "variableId": "VariableID:1059:15"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#16b14b",
+        "Accessible (Dark Mode)": "#16b14b"
+      }
+    },
+    {
+      "id": "VariableID:5473:69059",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/fpt-yellow",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/brand/fpt/P",
+          "variableId": "VariableID:1059:14"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/brand/fpt/P",
+          "variableId": "VariableID:1059:14"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f27227",
+        "Accessible (Dark Mode)": "#f27227"
+      }
+    },
+    {
+      "id": "VariableID:5473:69060",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/fpt-blue",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/brand/fpt/F",
+          "variableId": "VariableID:1059:13"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/brand/fpt/F",
+          "variableId": "VariableID:1059:13"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1169b0",
+        "Accessible (Dark Mode)": "#1169b0"
+      }
+    },
+    {
+      "id": "VariableID:5473:69061",
+      "collection": "Alias",
+      "name": "component/logo/3rd-party/fpt-blue-online",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#1268b1",
+        "Accessible (Dark Mode)": "#1268b1"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1268b1",
+        "Accessible (Dark Mode)": "#1268b1"
+      }
+    },
+    {
+      "id": "VariableID:5473:119553",
+      "collection": "Alias",
+      "name": "component/icon/common/on-secondary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c3c3c",
+        "Accessible (Dark Mode)": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:5642:60799",
+      "collection": "Alias",
+      "name": "component/toast alert/surface-rest",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c4043",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5648:73409",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-close",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/700",
+          "variableId": "VariableID:10:30"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/700",
+          "variableId": "VariableID:10:30"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#636363",
+        "Accessible (Dark Mode)": "#636363"
+      }
+    },
+    {
+      "id": "VariableID:5648:75505",
+      "collection": "Alias",
+      "name": "component/toast alert/action-text",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/100",
+          "variableId": "VariableID:6:24"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#b1dac5",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5714:472",
+      "collection": "Alias",
+      "name": "sematic/ai/ai-gradient-mesh-40",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-purple",
+          "variableId": "VariableID:5728:35"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-purple",
+          "variableId": "VariableID:5728:35"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8489f5",
+        "Accessible (Dark Mode)": "#8489f5"
+      }
+    },
+    {
+      "id": "VariableID:5719:168708",
+      "collection": "Alias",
+      "name": "sematic/ai/ai-gradient-mesh-71",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-light-blue",
+          "variableId": "VariableID:5728:36"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-light-blue",
+          "variableId": "VariableID:5728:36"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cdf1ff",
+        "Accessible (Dark Mode)": "#cdf1ff"
+      }
+    },
+    {
+      "id": "VariableID:5719:168709",
+      "collection": "Alias",
+      "name": "sematic/ai/ai-gradient-mesh-100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-violet",
+          "variableId": "VariableID:5728:37"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-violet",
+          "variableId": "VariableID:5728:37"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#b591e9",
+        "Accessible (Dark Mode)": "#b591e9"
+      }
+    },
+    {
+      "id": "VariableID:5719:168710",
+      "collection": "Alias",
+      "name": "sematic/ai/ai-gradient-mesh-24",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-pink",
+          "variableId": "VariableID:5728:38"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-pink",
+          "variableId": "VariableID:5728:38"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cda0ff",
+        "Accessible (Dark Mode)": "#cda0ff"
+      }
+    },
+    {
+      "id": "VariableID:5719:168711",
+      "collection": "Alias",
+      "name": "sematic/ai/ai-gradient-mesh-0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-2light-blue",
+          "variableId": "VariableID:5728:39"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-2light-blue",
+          "variableId": "VariableID:5728:39"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cce8fe",
+        "Accessible (Dark Mode)": "#cce8fe"
+      }
+    },
+    {
+      "id": "VariableID:5999:136483",
+      "collection": "Alias",
+      "name": "component/card/card-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:5999:136484",
+      "collection": "Alias",
+      "name": "component/card/card-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:5999:137751",
+      "collection": "Alias",
+      "name": "text/disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/300",
+          "variableId": "VariableID:10:26"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cecece",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:6014:117545",
+      "collection": "Alias",
+      "name": "component/text input/surface-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/semantic tokens/color-ai-white",
+          "variableId": "VariableID:6014:117546"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/semantic tokens/color-ai-white",
+          "variableId": "VariableID:6014:117546"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6f8fa",
+        "Accessible (Dark Mode)": "#f6f8fa"
+      }
+    },
+    {
+      "id": "VariableID:6020:83190",
+      "collection": "Alias",
+      "name": "component/digital verify code/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:6020:83192",
+      "collection": "Alias",
+      "name": "component/digital verify code/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:6036:129441",
+      "collection": "Alias",
+      "name": "text/secondary-black (main)",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f1f1f",
+        "Accessible (Dark Mode)": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:6036:135072",
+      "collection": "Alias",
+      "name": "component/icon/common/secondary-black (main)",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f1f1f",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:6047:6816",
+      "collection": "Alias",
+      "name": "text/secondary-black (700)",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c3c3c",
+        "Accessible (Dark Mode)": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:6047:125697",
+      "collection": "Alias",
+      "name": "component/checkbox/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:6047:125779",
+      "collection": "Alias",
+      "name": "component/radio/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/white",
+          "variableId": "VariableID:5:181"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black",
+          "variableId": "VariableID:5:180"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:6116:121160",
+      "collection": "Alias",
+      "name": "text/secondary-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f1f1f",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:6178:43967",
+      "collection": "Alias",
+      "name": "component/table/surface/tab-header",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#f6f8fa",
+        "Accessible (Dark Mode)": "#f6f8fa"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6f8fa",
+        "Accessible (Dark Mode)": "#f6f8fa"
+      }
+    },
+    {
+      "id": "VariableID:6187:1591",
+      "collection": "Alias",
+      "name": "component/table/surface/row-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/50",
+          "variableId": "VariableID:12:191"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#fcfcfd"
+      }
+    },
+    {
+      "id": "VariableID:6192:140709",
+      "collection": "Alias",
+      "name": "overlay/warning/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/yellow/10",
+          "variableId": "VariableID:6192:140704"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/yellow/10",
+          "variableId": "VariableID:6192:140704"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad141a",
+        "Accessible (Dark Mode)": "#faad141a"
+      }
+    },
+    {
+      "id": "VariableID:6192:140763",
+      "collection": "Alias",
+      "name": "overlay/info/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/blue/10",
+          "variableId": "VariableID:6192:140760"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/blue/10",
+          "variableId": "VariableID:6192:140760"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f01a",
+        "Accessible (Dark Mode)": "#3d63f01a"
+      }
+    },
+    {
+      "id": "VariableID:6195:172964",
+      "collection": "Alias",
+      "name": "component/avatar/border-contrast",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/10",
+          "variableId": "VariableID:11865:502"
+        },
+        "Accessible (Dark Mode)": "#ffffff1f"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0000001a",
+        "Accessible (Dark Mode)": "#ffffff1f"
+      }
+    },
+    {
+      "id": "VariableID:6200:175626",
+      "collection": "Alias",
+      "name": "component/tooltip/surface-bg-black",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/900",
+          "variableId": "VariableID:12:159"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f1f1f",
+        "Accessible (Dark Mode)": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:6202:176794",
+      "collection": "Alias",
+      "name": "component/tooltip/text-sub",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/300",
+          "variableId": "VariableID:10:26"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/300",
+          "variableId": "VariableID:10:26"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cecece",
+        "Accessible (Dark Mode)": "#cecece"
+      }
+    },
+    {
+      "id": "VariableID:6243:107373",
+      "collection": "Alias",
+      "name": "component/button/surface/warning/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:6243:107374",
+      "collection": "Alias",
+      "name": "component/button/surface/warning/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/50",
+          "variableId": "VariableID:200:1145"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/50",
+          "variableId": "VariableID:200:1145"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fff7e8",
+        "Accessible (Dark Mode)": "#fff7e8"
+      }
+    },
+    {
+      "id": "VariableID:6243:109180",
+      "collection": "Alias",
+      "name": "component/button/surface/danger/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:6243:109181",
+      "collection": "Alias",
+      "name": "component/button/surface/danger/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/50",
+          "variableId": "VariableID:12:457"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/50",
+          "variableId": "VariableID:12:457"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fceceb",
+        "Accessible (Dark Mode)": "#fceceb"
+      }
+    },
+    {
+      "id": "VariableID:6254:12537",
+      "collection": "Alias",
+      "name": "component/button/border/danger/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red dark/500",
+          "variableId": "VariableID:5714:601"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#d71920"
+      }
+    },
+    {
+      "id": "VariableID:6254:12539",
+      "collection": "Alias",
+      "name": "component/button/border/warning/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:6256:12537",
+      "collection": "Alias",
+      "name": "component/button/split button/opacity-line",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/400",
+          "variableId": "VariableID:6:27"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/400",
+          "variableId": "VariableID:6:27"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#36a06a",
+        "Accessible (Dark Mode)": "#36a06a"
+      }
+    },
+    {
+      "id": "VariableID:6256:12538",
+      "collection": "Alias",
+      "name": "component/button/split button/surface-hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/600",
+          "variableId": "VariableID:6:29"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/600",
+          "variableId": "VariableID:6:29"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#047c3f",
+        "Accessible (Dark Mode)": "#047c3f"
+      }
+    },
+    {
+      "id": "VariableID:6533:145886",
+      "collection": "Alias",
+      "name": "component/button group/group-icon-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/800",
+          "variableId": "VariableID:12:158"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c3c3c",
+        "Accessible (Dark Mode)": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:6533:145894",
+      "collection": "Alias",
+      "name": "component/button group/group-text",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/base/black-weak",
+          "variableId": "VariableID:2615:14848"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3c4043",
+        "Accessible (Dark Mode)": "#3c4043"
+      }
+    },
+    {
+      "id": "VariableID:6661:167014",
+      "collection": "Alias",
+      "name": "component/icon/common/success-disable",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#bae0b7",
+        "Accessible (Dark Mode)": "#bae0b7"
+      }
+    },
+    {
+      "id": "VariableID:7519:128831",
+      "collection": "Alias",
+      "name": "component/badge/primary/surface-primary",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/8",
+          "variableId": "VariableID:4609:5690"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884514",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:7519:223099",
+      "collection": "Alias",
+      "name": "component/state layers/on-color/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/4",
+          "variableId": "VariableID:7519:223098"
+        },
+        "Accessible (Dark Mode)": "#04884514"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488450a",
+        "Accessible (Dark Mode)": "#04884514"
+      }
+    },
+    {
+      "id": "VariableID:7519:223100",
+      "collection": "Alias",
+      "name": "overlay/primary/4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/4",
+          "variableId": "VariableID:7519:223098"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/90",
+          "variableId": "VariableID:3728:31051"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488450a",
+        "Accessible (Dark Mode)": "#048845e5"
+      }
+    },
+    {
+      "id": "VariableID:8938:242471",
+      "collection": "Alias",
+      "name": "component/divider/dashed-divider-default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/500",
+          "variableId": "VariableID:12:322"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#dfe3e8",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:8938:270812",
+      "collection": "Alias",
+      "name": "component/divider/dashed-divider-strong",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:8949:17005",
+      "collection": "Alias",
+      "name": "component/skeleton/base",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/400",
+          "variableId": "VariableID:12:319"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e5e9ed",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:8978:20613",
+      "collection": "Alias",
+      "name": "component/skeleton/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/200",
+          "variableId": "VariableID:12:317"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:9927:365318",
+      "collection": "Alias",
+      "name": "component/chips/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "surface/elevation",
+          "variableId": "VariableID:44:52"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:10398:266535",
+      "collection": "Alias",
+      "name": "component/chips/selected",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/10",
+          "variableId": "VariableID:3728:31042"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/10",
+          "variableId": "VariableID:3728:31042"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488451a",
+        "Accessible (Dark Mode)": "#0488451a"
+      }
+    },
+    {
+      "id": "VariableID:10440:61089",
+      "collection": "Alias",
+      "name": "component/chips/press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:10441:224950",
+      "collection": "Alias",
+      "name": "component/segmented control/press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:11074:26278",
+      "collection": "Alias",
+      "name": "component/button/border/focus/focus",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/200",
+          "variableId": "VariableID:6:25"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/200",
+          "variableId": "VariableID:6:25"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8cc8a9",
+        "Accessible (Dark Mode)": "#8cc8a9"
+      }
+    },
+    {
+      "id": "VariableID:11484:256055",
+      "collection": "Alias",
+      "name": "component/chips/border",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/8",
+          "variableId": "VariableID:4609:5690"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/8",
+          "variableId": "VariableID:4609:5690"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#04884514",
+        "Accessible (Dark Mode)": "#04884514"
+      }
+    },
+    {
+      "id": "VariableID:11997:327928",
+      "collection": "Alias",
+      "name": "component/progress/warning",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/500",
+          "variableId": "VariableID:200:1151"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad14",
+        "Accessible (Dark Mode)": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:11997:357453",
+      "collection": "Alias",
+      "name": "component/progress/success",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:11997:381375",
+      "collection": "Alias",
+      "name": "component/progress/error",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/500",
+          "variableId": "VariableID:12:464"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e32",
+        "Accessible (Dark Mode)": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:11997:381458",
+      "collection": "Alias",
+      "name": "component/button/surface/gray/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/300",
+          "variableId": "VariableID:12:318"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:12134:170330",
+      "collection": "Alias",
+      "name": "text/warning-on-surface",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/600",
+          "variableId": "VariableID:200:1149"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/600",
+          "variableId": "VariableID:200:1149"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e49d12",
+        "Accessible (Dark Mode)": "#e49d12"
+      }
+    },
+    {
+      "id": "VariableID:12134:170346",
+      "collection": "Alias",
+      "name": "border/warning-muted",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/200",
+          "variableId": "VariableID:200:1150"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/200",
+          "variableId": "VariableID:200:1150"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fdd993",
+        "Accessible (Dark Mode)": "#fdd993"
+      }
+    },
+    {
+      "id": "VariableID:12235:525067",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-warning-opacity",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/yellow/8",
+          "variableId": "VariableID:6192:140707"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/yellow/8",
+          "variableId": "VariableID:6192:140707"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#faad1414",
+        "Accessible (Dark Mode)": "#faad1414"
+      }
+    },
+    {
+      "id": "VariableID:12235:525068",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-success-opacity",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/green/8",
+          "variableId": "VariableID:12235:525070"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/green/8",
+          "variableId": "VariableID:12235:525070"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a1614",
+        "Accessible (Dark Mode)": "#229a1614"
+      }
+    },
+    {
+      "id": "VariableID:12235:525078",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-error-opacity",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/red/8",
+          "variableId": "VariableID:4609:5692"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/red/8",
+          "variableId": "VariableID:4609:5692"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e33e3214",
+        "Accessible (Dark Mode)": "#e33e3214"
+      }
+    },
+    {
+      "id": "VariableID:12235:525079",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-info-opacity",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/blue/8",
+          "variableId": "VariableID:6192:140759"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/blue/8",
+          "variableId": "VariableID:6192:140759"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#3d63f014",
+        "Accessible (Dark Mode)": "#3d63f014"
+      }
+    },
+    {
+      "id": "VariableID:12925:578215",
+      "collection": "Alias",
+      "name": "component/toast alert/icon-rest-opacity",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/6",
+          "variableId": "VariableID:12931:599743"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/6",
+          "variableId": "VariableID:12931:599743"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0000000f",
+        "Accessible (Dark Mode)": "#0000000f"
+      }
+    },
+    {
+      "id": "VariableID:12925:579016",
+      "collection": "Alias",
+      "name": "text/danger-on-surface",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/600",
+          "variableId": "VariableID:12:465"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red light/600",
+          "variableId": "VariableID:12:465"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cf382e",
+        "Accessible (Dark Mode)": "#cf382e"
+      }
+    },
+    {
+      "id": "VariableID:12925:579017",
+      "collection": "Alias",
+      "name": "text/info-on-surface",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/600",
+          "variableId": "VariableID:12:846"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/600",
+          "variableId": "VariableID:12:846"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#385ada",
+        "Accessible (Dark Mode)": "#385ada"
+      }
+    },
+    {
+      "id": "VariableID:12925:579018",
+      "collection": "Alias",
+      "name": "text/success-on-surface",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/600",
+          "variableId": "VariableID:12:331"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/600",
+          "variableId": "VariableID:12:331"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#1f8c14",
+        "Accessible (Dark Mode)": "#1f8c14"
+      }
+    },
+    {
+      "id": "VariableID:12928:350876",
+      "collection": "Alias",
+      "name": "component/button/border/info/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/blue/100",
+          "variableId": "VariableID:12:839"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#c3cffa",
+        "Accessible (Dark Mode)": "#c3cffa"
+      }
+    },
+    {
+      "id": "VariableID:12931:459326",
+      "collection": "Alias",
+      "name": "component/icon/common/on-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/secondary dark/50",
+          "variableId": "VariableID:4:17"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/secondary dark/50",
+          "variableId": "VariableID:4:17"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f0f0f0",
+        "Accessible (Dark Mode)": "#f0f0f0"
+      }
+    },
+    {
+      "id": "VariableID:12931:598539",
+      "collection": "Alias",
+      "name": "component/button/border/warning/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/yellow/100",
+          "variableId": "VariableID:200:1147"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fde6b6",
+        "Accessible (Dark Mode)": "#fde6b6"
+      }
+    },
+    {
+      "id": "VariableID:12931:598540",
+      "collection": "Alias",
+      "name": "component/button/border/danger/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/red light/100",
+          "variableId": "VariableID:12:459"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/red dark/100",
+          "variableId": "VariableID:5714:597"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f6c3bf",
+        "Accessible (Dark Mode)": "#f3b8ba"
+      }
+    },
+    {
+      "id": "VariableID:12931:598541",
+      "collection": "Alias",
+      "name": "component/button/border/success/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/500",
+          "variableId": "VariableID:12:332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#229a16",
+        "Accessible (Dark Mode)": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:12931:598542",
+      "collection": "Alias",
+      "name": "component/button/border/success/subtle",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/green/100",
+          "variableId": "VariableID:12:326"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#bae0b7",
+        "Accessible (Dark Mode)": "#bae0b7"
+      }
+    },
+    {
+      "id": "VariableID:13010:14196",
+      "collection": "Alias",
+      "name": "border/primary-opacity-haf",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/primary/30",
+          "variableId": "VariableID:3728:31046"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/primary/30",
+          "variableId": "VariableID:3728:31046"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0488454d",
+        "Accessible (Dark Mode)": "#0488454d"
+      }
+    },
+    {
+      "id": "VariableID:13072:3870",
+      "collection": "Alias",
+      "name": "sematic/dina/border-mess",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/200",
+          "variableId": "VariableID:6:25"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/primary/100",
+          "variableId": "VariableID:6:24"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8cc8a9",
+        "Accessible (Dark Mode)": "#b1dac5"
+      }
+    },
+    {
+      "id": "VariableID:14236:122035",
+      "collection": "Alias",
+      "name": "sematic/dashboard/surface-demographics",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#fff0e0",
+        "Accessible (Dark Mode)": "#fff0e0"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#fff0e0",
+        "Accessible (Dark Mode)": "#fff0e0"
+      }
+    },
+    {
+      "id": "VariableID:14236:122036",
+      "collection": "Alias",
+      "name": "sematic/dashboard/icon-demographics",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": "#ebaa6a",
+        "Accessible (Dark Mode)": "#ebaa6a"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ebaa6a",
+        "Accessible (Dark Mode)": "#ebaa6a"
+      }
+    },
+    {
+      "id": "VariableID:14492:6688",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-1",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/50",
+          "variableId": "VariableID:4:14"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#e6f3ec",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14492:6689",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-2",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/100",
+          "variableId": "VariableID:6:24"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#b1dac5",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14492:6690",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-3",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/200",
+          "variableId": "VariableID:6:25"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#8cc8a9",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14492:6691",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/300",
+          "variableId": "VariableID:6:26"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#57af82",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14492:6692",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-5",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/primary/400",
+          "variableId": "VariableID:6:27"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#36a06a",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14492:6693",
+      "collection": "Alias",
+      "name": "chart/heatmap-level-0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": "#ffffff"
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:14927:579782",
+      "collection": "Alias",
+      "name": "component/table/surface/row-press",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/100",
+          "variableId": "VariableID:12:316"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:15044:691529",
+      "collection": "Alias",
+      "name": "component/table/cell/surface/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "surface/neutral-white",
+          "variableId": "VariableID:160:444"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "surface/neutral-white",
+          "variableId": "VariableID:160:444"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#ffffff",
+        "Accessible (Dark Mode)": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:15044:691530",
+      "collection": "Alias",
+      "name": "component/table/cell/surface/hover",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "component/table/surface/row-press",
+          "variableId": "VariableID:14927:579782"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "component/table/surface/row-press",
+          "variableId": "VariableID:14927:579782"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:15044:691531",
+      "collection": "Alias",
+      "name": "component/table/cell/surface/selected",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "component/table/surface/row-press",
+          "variableId": "VariableID:14927:579782"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "component/table/surface/row-press",
+          "variableId": "VariableID:14927:579782"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#f7f7f8",
+        "Accessible (Dark Mode)": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:15044:691532",
+      "collection": "Alias",
+      "name": "component/table/cell/border/default",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "border/gray-muted",
+          "variableId": "VariableID:197:894"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "border/gray-muted",
+          "variableId": "VariableID:197:894"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:15404:126816",
+      "collection": "Alias",
+      "name": "component/inline editable/border-inline",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/gray/600",
+          "variableId": "VariableID:12:321"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:15444:344323",
+      "collection": "Alias",
+      "name": "overlay/black/4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/4",
+          "variableId": "VariableID:11865:501"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/4",
+          "variableId": "VariableID:11865:501"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0000000a",
+        "Accessible (Dark Mode)": "#0000000a"
+      }
+    },
+    {
+      "id": "VariableID:15444:344324",
+      "collection": "Alias",
+      "name": "overlay/black/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/10",
+          "variableId": "VariableID:11865:502"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/10",
+          "variableId": "VariableID:11865:502"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#0000001a",
+        "Accessible (Dark Mode)": "#0000001a"
+      }
+    },
+    {
+      "id": "VariableID:15444:344328",
+      "collection": "Alias",
+      "name": "overlay/black/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/20",
+          "variableId": "VariableID:15444:344331"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/20",
+          "variableId": "VariableID:15444:344331"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#00000033",
+        "Accessible (Dark Mode)": "#00000033"
+      }
+    },
+    {
+      "id": "VariableID:15444:344329",
+      "collection": "Alias",
+      "name": "overlay/black/40",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/40",
+          "variableId": "VariableID:15444:344332"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/40",
+          "variableId": "VariableID:15444:344332"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#00000066",
+        "Accessible (Dark Mode)": "#00000066"
+      }
+    },
+    {
+      "id": "VariableID:15444:344330",
+      "collection": "Alias",
+      "name": "overlay/black/60",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Accessible (Light Mode)": {
+          "alias": "color/opacity/black/60",
+          "variableId": "VariableID:15444:344333"
+        },
+        "Accessible (Dark Mode)": {
+          "alias": "color/opacity/black/60",
+          "variableId": "VariableID:15444:344333"
+        }
+      },
+      "resolvedValues": {
+        "Accessible (Light Mode)": "#00000099",
+        "Accessible (Dark Mode)": "#00000099"
+      }
+    }
+  ]
+}

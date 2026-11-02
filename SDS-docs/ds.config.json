@@ -1,0 +1,20 @@
+{
+  "name": "SmartAds Design System",
+  "shortName": "SDS",
+  "prefix": "sa",
+  "figma": {
+    "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+    "url": "https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System"
+  },
+  "language": "vi",
+  "themes": ["light", "dark"],
+  "collections": {
+    "base": ["Primitives "],
+    "semantic": ["Alias"],
+    "component": [],
+    "dimension": ["Spacing"],
+    "font": ["Text"],
+    "viewport": ["Viewport Desktop", "Viewport Mobile Tablet"]
+  },
+  "note": "Prefix CSS sa đã duyệt ngày 02/11/2026 (D1). Collections ghi tên đang có trong Figma ngày 02/11/2026, không phải cấu trúc đích; D6 còn mở."
+}

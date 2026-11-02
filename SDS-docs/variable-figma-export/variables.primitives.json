@@ -1,0 +1,4112 @@
+{
+  "kind": "variables",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collection": "Primitives ",
+  "collectionId": "VariableCollectionId:4:13",
+  "modes": [
+    {
+      "id": "4:0",
+      "name": "Value"
+    }
+  ],
+  "count": 256,
+  "variables": [
+    {
+      "id": "VariableID:4:14",
+      "collection": "Primitives ",
+      "name": "color/primary/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e6f3ec"
+      },
+      "resolvedValues": {
+        "Value": "#e6f3ec"
+      }
+    },
+    {
+      "id": "VariableID:4:17",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f0f0f0"
+      },
+      "resolvedValues": {
+        "Value": "#f0f0f0"
+      }
+    },
+    {
+      "id": "VariableID:5:180",
+      "collection": "Primitives ",
+      "name": "color/base/black",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#000000"
+      },
+      "resolvedValues": {
+        "Value": "#000000"
+      }
+    },
+    {
+      "id": "VariableID:5:181",
+      "collection": "Primitives ",
+      "name": "color/base/white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff"
+      }
+    },
+    {
+      "id": "VariableID:6:24",
+      "collection": "Primitives ",
+      "name": "color/primary/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#b1dac5"
+      },
+      "resolvedValues": {
+        "Value": "#b1dac5"
+      }
+    },
+    {
+      "id": "VariableID:6:25",
+      "collection": "Primitives ",
+      "name": "color/primary/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#8cc8a9"
+      },
+      "resolvedValues": {
+        "Value": "#8cc8a9"
+      }
+    },
+    {
+      "id": "VariableID:6:26",
+      "collection": "Primitives ",
+      "name": "color/primary/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#57af82"
+      },
+      "resolvedValues": {
+        "Value": "#57af82"
+      }
+    },
+    {
+      "id": "VariableID:6:27",
+      "collection": "Primitives ",
+      "name": "color/primary/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#36a06a"
+      },
+      "resolvedValues": {
+        "Value": "#36a06a"
+      }
+    },
+    {
+      "id": "VariableID:6:28",
+      "collection": "Primitives ",
+      "name": "color/primary/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845"
+      },
+      "resolvedValues": {
+        "Value": "#048845"
+      }
+    },
+    {
+      "id": "VariableID:6:29",
+      "collection": "Primitives ",
+      "name": "color/primary/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#047c3f"
+      },
+      "resolvedValues": {
+        "Value": "#047c3f"
+      }
+    },
+    {
+      "id": "VariableID:6:30",
+      "collection": "Primitives ",
+      "name": "color/primary/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#036131"
+      },
+      "resolvedValues": {
+        "Value": "#036131"
+      }
+    },
+    {
+      "id": "VariableID:7:31",
+      "collection": "Primitives ",
+      "name": "color/primary/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#024b26"
+      },
+      "resolvedValues": {
+        "Value": "#024b26"
+      }
+    },
+    {
+      "id": "VariableID:7:32",
+      "collection": "Primitives ",
+      "name": "color/primary/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#02391d"
+      },
+      "resolvedValues": {
+        "Value": "#02391d"
+      }
+    },
+    {
+      "id": "VariableID:10:24",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e8e8e8"
+      },
+      "resolvedValues": {
+        "Value": "#e8e8e8"
+      }
+    },
+    {
+      "id": "VariableID:10:25",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e1e1e1"
+      },
+      "resolvedValues": {
+        "Value": "#e1e1e1"
+      }
+    },
+    {
+      "id": "VariableID:10:26",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cecece"
+      },
+      "resolvedValues": {
+        "Value": "#cecece"
+      }
+    },
+    {
+      "id": "VariableID:10:27",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#bbbbbb"
+      },
+      "resolvedValues": {
+        "Value": "#bbbbbb"
+      }
+    },
+    {
+      "id": "VariableID:10:28",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#8c8c8c"
+      },
+      "resolvedValues": {
+        "Value": "#8c8c8c"
+      }
+    },
+    {
+      "id": "VariableID:10:29",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#828282"
+      },
+      "resolvedValues": {
+        "Value": "#828282"
+      }
+    },
+    {
+      "id": "VariableID:10:30",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#636363"
+      },
+      "resolvedValues": {
+        "Value": "#636363"
+      }
+    },
+    {
+      "id": "VariableID:12:158",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3c3c3c"
+      },
+      "resolvedValues": {
+        "Value": "#3c3c3c"
+      }
+    },
+    {
+      "id": "VariableID:12:159",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#1f1f1f"
+      },
+      "resolvedValues": {
+        "Value": "#1f1f1f"
+      }
+    },
+    {
+      "id": "VariableID:12:162",
+      "collection": "Primitives ",
+      "name": "space/0",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 0
+      },
+      "resolvedValues": {
+        "Value": 0
+      }
+    },
+    {
+      "id": "VariableID:12:163",
+      "collection": "Primitives ",
+      "name": "space/2",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 2
+      },
+      "resolvedValues": {
+        "Value": 2
+      }
+    },
+    {
+      "id": "VariableID:12:164",
+      "collection": "Primitives ",
+      "name": "space/4",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 4
+      },
+      "resolvedValues": {
+        "Value": 4
+      }
+    },
+    {
+      "id": "VariableID:12:165",
+      "collection": "Primitives ",
+      "name": "space/8",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 8
+      },
+      "resolvedValues": {
+        "Value": 8
+      }
+    },
+    {
+      "id": "VariableID:12:166",
+      "collection": "Primitives ",
+      "name": "space/12",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 12
+      },
+      "resolvedValues": {
+        "Value": 12
+      }
+    },
+    {
+      "id": "VariableID:12:168",
+      "collection": "Primitives ",
+      "name": "space/16",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 16
+      },
+      "resolvedValues": {
+        "Value": 16
+      }
+    },
+    {
+      "id": "VariableID:12:169",
+      "collection": "Primitives ",
+      "name": "space/20",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 20
+      },
+      "resolvedValues": {
+        "Value": 20
+      }
+    },
+    {
+      "id": "VariableID:12:170",
+      "collection": "Primitives ",
+      "name": "space/48",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 48
+      },
+      "resolvedValues": {
+        "Value": 48
+      }
+    },
+    {
+      "id": "VariableID:12:171",
+      "collection": "Primitives ",
+      "name": "space/24",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 24
+      },
+      "resolvedValues": {
+        "Value": 24
+      }
+    },
+    {
+      "id": "VariableID:12:172",
+      "collection": "Primitives ",
+      "name": "space/40",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 40
+      },
+      "resolvedValues": {
+        "Value": 40
+      }
+    },
+    {
+      "id": "VariableID:12:173",
+      "collection": "Primitives ",
+      "name": "space/32",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 32
+      },
+      "resolvedValues": {
+        "Value": 32
+      }
+    },
+    {
+      "id": "VariableID:12:174",
+      "collection": "Primitives ",
+      "name": "space/56",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 56
+      },
+      "resolvedValues": {
+        "Value": 56
+      }
+    },
+    {
+      "id": "VariableID:12:175",
+      "collection": "Primitives ",
+      "name": "space/64",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 64
+      },
+      "resolvedValues": {
+        "Value": 64
+      }
+    },
+    {
+      "id": "VariableID:12:176",
+      "collection": "Primitives ",
+      "name": "space/80",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 80
+      },
+      "resolvedValues": {
+        "Value": 80
+      }
+    },
+    {
+      "id": "VariableID:12:177",
+      "collection": "Primitives ",
+      "name": "space/120",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 120
+      },
+      "resolvedValues": {
+        "Value": 120
+      }
+    },
+    {
+      "id": "VariableID:12:191",
+      "collection": "Primitives ",
+      "name": "color/gray/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fcfcfd"
+      },
+      "resolvedValues": {
+        "Value": "#fcfcfd"
+      }
+    },
+    {
+      "id": "VariableID:12:315",
+      "collection": "Primitives ",
+      "name": "color/gray/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#7b7d80"
+      },
+      "resolvedValues": {
+        "Value": "#7b7d80"
+      }
+    },
+    {
+      "id": "VariableID:12:316",
+      "collection": "Primitives ",
+      "name": "color/gray/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f7f7f8"
+      },
+      "resolvedValues": {
+        "Value": "#f7f7f8"
+      }
+    },
+    {
+      "id": "VariableID:12:317",
+      "collection": "Primitives ",
+      "name": "color/gray/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f0f2f4"
+      },
+      "resolvedValues": {
+        "Value": "#f0f2f4"
+      }
+    },
+    {
+      "id": "VariableID:12:318",
+      "collection": "Primitives ",
+      "name": "color/gray/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#eaecf0"
+      },
+      "resolvedValues": {
+        "Value": "#eaecf0"
+      }
+    },
+    {
+      "id": "VariableID:12:319",
+      "collection": "Primitives ",
+      "name": "color/gray/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e5e9ed"
+      },
+      "resolvedValues": {
+        "Value": "#e5e9ed"
+      }
+    },
+    {
+      "id": "VariableID:12:320",
+      "collection": "Primitives ",
+      "name": "color/gray/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#9ea1a5"
+      },
+      "resolvedValues": {
+        "Value": "#9ea1a5"
+      }
+    },
+    {
+      "id": "VariableID:12:321",
+      "collection": "Primitives ",
+      "name": "color/gray/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cbcfd3"
+      },
+      "resolvedValues": {
+        "Value": "#cbcfd3"
+      }
+    },
+    {
+      "id": "VariableID:12:322",
+      "collection": "Primitives ",
+      "name": "color/gray/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#dfe3e8"
+      },
+      "resolvedValues": {
+        "Value": "#dfe3e8"
+      }
+    },
+    {
+      "id": "VariableID:12:323",
+      "collection": "Primitives ",
+      "name": "color/gray/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f61"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f61"
+      }
+    },
+    {
+      "id": "VariableID:12:324",
+      "collection": "Primitives ",
+      "name": "color/green/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ecffea"
+      },
+      "resolvedValues": {
+        "Value": "#ecffea"
+      }
+    },
+    {
+      "id": "VariableID:12:325",
+      "collection": "Primitives ",
+      "name": "color/green/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#13550c"
+      },
+      "resolvedValues": {
+        "Value": "#13550c"
+      }
+    },
+    {
+      "id": "VariableID:12:326",
+      "collection": "Primitives ",
+      "name": "color/green/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#bae0b7"
+      },
+      "resolvedValues": {
+        "Value": "#bae0b7"
+      }
+    },
+    {
+      "id": "VariableID:12:327",
+      "collection": "Primitives ",
+      "name": "color/green/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#99d194"
+      },
+      "resolvedValues": {
+        "Value": "#99d194"
+      }
+    },
+    {
+      "id": "VariableID:12:328",
+      "collection": "Primitives ",
+      "name": "color/green/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#6bbb63"
+      },
+      "resolvedValues": {
+        "Value": "#6bbb63"
+      }
+    },
+    {
+      "id": "VariableID:12:329",
+      "collection": "Primitives ",
+      "name": "color/green/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#186d10"
+      },
+      "resolvedValues": {
+        "Value": "#186d10"
+      }
+    },
+    {
+      "id": "VariableID:12:330",
+      "collection": "Primitives ",
+      "name": "color/green/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#4eae45"
+      },
+      "resolvedValues": {
+        "Value": "#4eae45"
+      }
+    },
+    {
+      "id": "VariableID:12:331",
+      "collection": "Primitives ",
+      "name": "color/green/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#1f8c14"
+      },
+      "resolvedValues": {
+        "Value": "#1f8c14"
+      }
+    },
+    {
+      "id": "VariableID:12:332",
+      "collection": "Primitives ",
+      "name": "color/green/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a16"
+      },
+      "resolvedValues": {
+        "Value": "#229a16"
+      }
+    },
+    {
+      "id": "VariableID:12:456",
+      "collection": "Primitives ",
+      "name": "color/green/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0e4109"
+      },
+      "resolvedValues": {
+        "Value": "#0e4109"
+      }
+    },
+    {
+      "id": "VariableID:12:457",
+      "collection": "Primitives ",
+      "name": "color/red light/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fceceb"
+      },
+      "resolvedValues": {
+        "Value": "#fceceb"
+      }
+    },
+    {
+      "id": "VariableID:12:458",
+      "collection": "Primitives ",
+      "name": "color/red light/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#7d221c"
+      },
+      "resolvedValues": {
+        "Value": "#7d221c"
+      }
+    },
+    {
+      "id": "VariableID:12:459",
+      "collection": "Primitives ",
+      "name": "color/red light/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f6c3bf"
+      },
+      "resolvedValues": {
+        "Value": "#f6c3bf"
+      }
+    },
+    {
+      "id": "VariableID:12:460",
+      "collection": "Primitives ",
+      "name": "color/red light/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f2a6a1"
+      },
+      "resolvedValues": {
+        "Value": "#f2a6a1"
+      }
+    },
+    {
+      "id": "VariableID:12:461",
+      "collection": "Primitives ",
+      "name": "color/red light/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#a12c24"
+      },
+      "resolvedValues": {
+        "Value": "#a12c24"
+      }
+    },
+    {
+      "id": "VariableID:12:462",
+      "collection": "Primitives ",
+      "name": "color/red light/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ec7e76"
+      },
+      "resolvedValues": {
+        "Value": "#ec7e76"
+      }
+    },
+    {
+      "id": "VariableID:12:463",
+      "collection": "Primitives ",
+      "name": "color/red light/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e9655b"
+      },
+      "resolvedValues": {
+        "Value": "#e9655b"
+      }
+    },
+    {
+      "id": "VariableID:12:464",
+      "collection": "Primitives ",
+      "name": "color/red light/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32"
+      }
+    },
+    {
+      "id": "VariableID:12:465",
+      "collection": "Primitives ",
+      "name": "color/red light/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cf382e"
+      },
+      "resolvedValues": {
+        "Value": "#cf382e"
+      }
+    },
+    {
+      "id": "VariableID:12:466",
+      "collection": "Primitives ",
+      "name": "color/red light/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5f1a15"
+      },
+      "resolvedValues": {
+        "Value": "#5f1a15"
+      }
+    },
+    {
+      "id": "VariableID:12:591",
+      "collection": "Primitives ",
+      "name": "color/blue/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#eceffe"
+      },
+      "resolvedValues": {
+        "Value": "#eceffe"
+      }
+    },
+    {
+      "id": "VariableID:12:839",
+      "collection": "Primitives ",
+      "name": "color/blue/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#c3cffa"
+      },
+      "resolvedValues": {
+        "Value": "#c3cffa"
+      }
+    },
+    {
+      "id": "VariableID:12:840",
+      "collection": "Primitives ",
+      "name": "color/blue/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#1a2a65"
+      },
+      "resolvedValues": {
+        "Value": "#1a2a65"
+      }
+    },
+    {
+      "id": "VariableID:12:841",
+      "collection": "Primitives ",
+      "name": "color/blue/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#223684"
+      },
+      "resolvedValues": {
+        "Value": "#223684"
+      }
+    },
+    {
+      "id": "VariableID:12:842",
+      "collection": "Primitives ",
+      "name": "color/blue/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#a6b7f8"
+      },
+      "resolvedValues": {
+        "Value": "#a6b7f8"
+      }
+    },
+    {
+      "id": "VariableID:12:843",
+      "collection": "Primitives ",
+      "name": "color/blue/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#7d96f5"
+      },
+      "resolvedValues": {
+        "Value": "#7d96f5"
+      }
+    },
+    {
+      "id": "VariableID:12:844",
+      "collection": "Primitives ",
+      "name": "color/blue/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#6482f3"
+      },
+      "resolvedValues": {
+        "Value": "#6482f3"
+      }
+    },
+    {
+      "id": "VariableID:12:845",
+      "collection": "Primitives ",
+      "name": "color/blue/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#2b46aa"
+      },
+      "resolvedValues": {
+        "Value": "#2b46aa"
+      }
+    },
+    {
+      "id": "VariableID:12:846",
+      "collection": "Primitives ",
+      "name": "color/blue/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#385ada"
+      },
+      "resolvedValues": {
+        "Value": "#385ada"
+      }
+    },
+    {
+      "id": "VariableID:12:847",
+      "collection": "Primitives ",
+      "name": "color/blue/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f0"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f0"
+      }
+    },
+    {
+      "id": "VariableID:126:2428",
+      "collection": "Primitives ",
+      "name": "space/10",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 10
+      },
+      "resolvedValues": {
+        "Value": 10
+      }
+    },
+    {
+      "id": "VariableID:200:1145",
+      "collection": "Primitives ",
+      "name": "color/yellow/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fff7e8"
+      },
+      "resolvedValues": {
+        "Value": "#fff7e8"
+      }
+    },
+    {
+      "id": "VariableID:200:1147",
+      "collection": "Primitives ",
+      "name": "color/yellow/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fde6b6"
+      },
+      "resolvedValues": {
+        "Value": "#fde6b6"
+      }
+    },
+    {
+      "id": "VariableID:200:1148",
+      "collection": "Primitives ",
+      "name": "color/yellow/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#b27b0e"
+      },
+      "resolvedValues": {
+        "Value": "#b27b0e"
+      }
+    },
+    {
+      "id": "VariableID:200:1149",
+      "collection": "Primitives ",
+      "name": "color/yellow/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e49d12"
+      },
+      "resolvedValues": {
+        "Value": "#e49d12"
+      }
+    },
+    {
+      "id": "VariableID:200:1150",
+      "collection": "Primitives ",
+      "name": "color/yellow/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fdd993"
+      },
+      "resolvedValues": {
+        "Value": "#fdd993"
+      }
+    },
+    {
+      "id": "VariableID:200:1151",
+      "collection": "Primitives ",
+      "name": "color/yellow/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad14"
+      },
+      "resolvedValues": {
+        "Value": "#faad14"
+      }
+    },
+    {
+      "id": "VariableID:200:1152",
+      "collection": "Primitives ",
+      "name": "color/yellow/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fbbd43"
+      },
+      "resolvedValues": {
+        "Value": "#fbbd43"
+      }
+    },
+    {
+      "id": "VariableID:200:1153",
+      "collection": "Primitives ",
+      "name": "color/yellow/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fcc862"
+      },
+      "resolvedValues": {
+        "Value": "#fcc862"
+      }
+    },
+    {
+      "id": "VariableID:200:1154",
+      "collection": "Primitives ",
+      "name": "color/yellow/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#8a5f0b"
+      },
+      "resolvedValues": {
+        "Value": "#8a5f0b"
+      }
+    },
+    {
+      "id": "VariableID:200:1155",
+      "collection": "Primitives ",
+      "name": "color/yellow/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#694908"
+      },
+      "resolvedValues": {
+        "Value": "#694908"
+      }
+    },
+    {
+      "id": "VariableID:437:4487",
+      "collection": "Primitives ",
+      "name": "space/6",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 6
+      },
+      "resolvedValues": {
+        "Value": 6
+      }
+    },
+    {
+      "id": "VariableID:939:405",
+      "collection": "Primitives ",
+      "name": "typography/text/10 (size 10)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 10
+      },
+      "resolvedValues": {
+        "Value": 10
+      }
+    },
+    {
+      "id": "VariableID:939:406",
+      "collection": "Primitives ",
+      "name": "typography/text/11 (size 11)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 11
+      },
+      "resolvedValues": {
+        "Value": 11
+      }
+    },
+    {
+      "id": "VariableID:939:407",
+      "collection": "Primitives ",
+      "name": "typography/text/12 (size 12)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 12
+      },
+      "resolvedValues": {
+        "Value": 12
+      }
+    },
+    {
+      "id": "VariableID:939:408",
+      "collection": "Primitives ",
+      "name": "typography/text/14 (size 14)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 14
+      },
+      "resolvedValues": {
+        "Value": 14
+      }
+    },
+    {
+      "id": "VariableID:939:409",
+      "collection": "Primitives ",
+      "name": "typography/text/16 (size 16)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 16
+      },
+      "resolvedValues": {
+        "Value": 16
+      }
+    },
+    {
+      "id": "VariableID:939:410",
+      "collection": "Primitives ",
+      "name": "typography/text/18 (size 18)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 18
+      },
+      "resolvedValues": {
+        "Value": 18
+      }
+    },
+    {
+      "id": "VariableID:939:411",
+      "collection": "Primitives ",
+      "name": "typography/text/20 (size 20)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 20
+      },
+      "resolvedValues": {
+        "Value": 20
+      }
+    },
+    {
+      "id": "VariableID:939:412",
+      "collection": "Primitives ",
+      "name": "typography/text/32 (size 32)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 32
+      },
+      "resolvedValues": {
+        "Value": 32
+      }
+    },
+    {
+      "id": "VariableID:939:413",
+      "collection": "Primitives ",
+      "name": "typography/text/40 (size 40)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 40
+      },
+      "resolvedValues": {
+        "Value": 40
+      }
+    },
+    {
+      "id": "VariableID:939:414",
+      "collection": "Primitives ",
+      "name": "typography/text/80 (size 80)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 80
+      },
+      "resolvedValues": {
+        "Value": 80
+      }
+    },
+    {
+      "id": "VariableID:941:397",
+      "collection": "Primitives ",
+      "name": "typography/text/60 (size 60)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 60
+      },
+      "resolvedValues": {
+        "Value": 60
+      }
+    },
+    {
+      "id": "VariableID:1059:13",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/F",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#1169b0"
+      },
+      "resolvedValues": {
+        "Value": "#1169b0"
+      }
+    },
+    {
+      "id": "VariableID:1059:14",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/P",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f27227"
+      },
+      "resolvedValues": {
+        "Value": "#f27227"
+      }
+    },
+    {
+      "id": "VariableID:1059:15",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/T",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#16b14b"
+      },
+      "resolvedValues": {
+        "Value": "#16b14b"
+      }
+    },
+    {
+      "id": "VariableID:1101:5798",
+      "collection": "Primitives ",
+      "name": "color/green light/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#edfeec"
+      },
+      "resolvedValues": {
+        "Value": "#edfeec"
+      }
+    },
+    {
+      "id": "VariableID:1346:3299",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/Color-F-20%",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#1169b033"
+      },
+      "resolvedValues": {
+        "Value": "#1169b033"
+      }
+    },
+    {
+      "id": "VariableID:1346:3300",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/Color-P-20%",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f2722733"
+      },
+      "resolvedValues": {
+        "Value": "#f2722733"
+      }
+    },
+    {
+      "id": "VariableID:1346:3301",
+      "collection": "Primitives ",
+      "name": "color/brand/fpt/Color-T-20%",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#16b14b33"
+      },
+      "resolvedValues": {
+        "Value": "#16b14b33"
+      }
+    },
+    {
+      "id": "VariableID:1618:4895",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/30",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f4f6f5"
+      },
+      "resolvedValues": {
+        "Value": "#f4f6f5"
+      }
+    },
+    {
+      "id": "VariableID:1618:4896",
+      "collection": "Primitives ",
+      "name": "color/secondary dark/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fdfdfd"
+      },
+      "resolvedValues": {
+        "Value": "#fdfdfd"
+      }
+    },
+    {
+      "id": "VariableID:2143:28",
+      "collection": "Primitives ",
+      "name": "typography/text/28 (size 28)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 28
+      },
+      "resolvedValues": {
+        "Value": 28
+      }
+    },
+    {
+      "id": "VariableID:2186:1328",
+      "collection": "Primitives ",
+      "name": "color/green light/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f4fff4"
+      },
+      "resolvedValues": {
+        "Value": "#f4fff4"
+      }
+    },
+    {
+      "id": "VariableID:2247:10477",
+      "collection": "Primitives ",
+      "name": "space/128",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 128
+      },
+      "resolvedValues": {
+        "Value": 128
+      }
+    },
+    {
+      "id": "VariableID:2247:10478",
+      "collection": "Primitives ",
+      "name": "space/160",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 160
+      },
+      "resolvedValues": {
+        "Value": 160
+      }
+    },
+    {
+      "id": "VariableID:2247:10479",
+      "collection": "Primitives ",
+      "name": "space/192",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 192
+      },
+      "resolvedValues": {
+        "Value": 192
+      }
+    },
+    {
+      "id": "VariableID:2247:10480",
+      "collection": "Primitives ",
+      "name": "space/224",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 224
+      },
+      "resolvedValues": {
+        "Value": 224
+      }
+    },
+    {
+      "id": "VariableID:2247:10481",
+      "collection": "Primitives ",
+      "name": "space/256",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 256
+      },
+      "resolvedValues": {
+        "Value": 256
+      }
+    },
+    {
+      "id": "VariableID:2247:10482",
+      "collection": "Primitives ",
+      "name": "space/280",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 280
+      },
+      "resolvedValues": {
+        "Value": 280
+      }
+    },
+    {
+      "id": "VariableID:2247:10483",
+      "collection": "Primitives ",
+      "name": "space/320",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 320
+      },
+      "resolvedValues": {
+        "Value": 320
+      }
+    },
+    {
+      "id": "VariableID:2247:10484",
+      "collection": "Primitives ",
+      "name": "space/384",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 384
+      },
+      "resolvedValues": {
+        "Value": 384
+      }
+    },
+    {
+      "id": "VariableID:2247:10485",
+      "collection": "Primitives ",
+      "name": "space/96",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 96
+      },
+      "resolvedValues": {
+        "Value": 96
+      }
+    },
+    {
+      "id": "VariableID:2252:10488",
+      "collection": "Primitives ",
+      "name": "space/480",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 480
+      },
+      "resolvedValues": {
+        "Value": 480
+      }
+    },
+    {
+      "id": "VariableID:2252:10489",
+      "collection": "Primitives ",
+      "name": "space/560",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 560
+      },
+      "resolvedValues": {
+        "Value": 560
+      }
+    },
+    {
+      "id": "VariableID:2252:10490",
+      "collection": "Primitives ",
+      "name": "space/640",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 640
+      },
+      "resolvedValues": {
+        "Value": 640
+      }
+    },
+    {
+      "id": "VariableID:2252:10491",
+      "collection": "Primitives ",
+      "name": "space/720",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 720
+      },
+      "resolvedValues": {
+        "Value": 720
+      }
+    },
+    {
+      "id": "VariableID:2252:10492",
+      "collection": "Primitives ",
+      "name": "space/768",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 768
+      },
+      "resolvedValues": {
+        "Value": 768
+      }
+    },
+    {
+      "id": "VariableID:2252:10493",
+      "collection": "Primitives ",
+      "name": "space/1024",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1024
+      },
+      "resolvedValues": {
+        "Value": 1024
+      }
+    },
+    {
+      "id": "VariableID:2252:10494",
+      "collection": "Primitives ",
+      "name": "space/1280",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1280
+      },
+      "resolvedValues": {
+        "Value": 1280
+      }
+    },
+    {
+      "id": "VariableID:2252:10495",
+      "collection": "Primitives ",
+      "name": "space/1440",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1440
+      },
+      "resolvedValues": {
+        "Value": 1440
+      }
+    },
+    {
+      "id": "VariableID:2252:10496",
+      "collection": "Primitives ",
+      "name": "space/1600",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1600
+      },
+      "resolvedValues": {
+        "Value": 1600
+      }
+    },
+    {
+      "id": "VariableID:2252:10497",
+      "collection": "Primitives ",
+      "name": "space/1366",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1366
+      },
+      "resolvedValues": {
+        "Value": 1366
+      }
+    },
+    {
+      "id": "VariableID:2252:10498",
+      "collection": "Primitives ",
+      "name": "space/1920",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1920
+      },
+      "resolvedValues": {
+        "Value": 1920
+      }
+    },
+    {
+      "id": "VariableID:2490:1967",
+      "collection": "Primitives ",
+      "name": "color/green light/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#dffcdd"
+      },
+      "resolvedValues": {
+        "Value": "#dffcdd"
+      }
+    },
+    {
+      "id": "VariableID:2615:14848",
+      "collection": "Primitives ",
+      "name": "color/base/black-weak",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3c4043"
+      },
+      "resolvedValues": {
+        "Value": "#3c4043"
+      }
+    },
+    {
+      "id": "VariableID:3363:4356",
+      "collection": "Primitives ",
+      "name": "space/14",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 14
+      },
+      "resolvedValues": {
+        "Value": 14
+      }
+    },
+    {
+      "id": "VariableID:3562:19704",
+      "collection": "Primitives ",
+      "name": "typography/text/24 (size 24)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 24
+      },
+      "resolvedValues": {
+        "Value": 24
+      }
+    },
+    {
+      "id": "VariableID:3634:31654",
+      "collection": "Primitives ",
+      "name": "space/7",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 7
+      },
+      "resolvedValues": {
+        "Value": 7
+      }
+    },
+    {
+      "id": "VariableID:3728:31027",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e321a"
+      },
+      "resolvedValues": {
+        "Value": "#e33e321a"
+      }
+    },
+    {
+      "id": "VariableID:3728:31033",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3226"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3226"
+      }
+    },
+    {
+      "id": "VariableID:3728:31034",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3233"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3233"
+      }
+    },
+    {
+      "id": "VariableID:3728:31035",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3240"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3240"
+      }
+    },
+    {
+      "id": "VariableID:3728:31036",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/30",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e324d"
+      },
+      "resolvedValues": {
+        "Value": "#e33e324d"
+      }
+    },
+    {
+      "id": "VariableID:3728:31037",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/90",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32e5"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32e5"
+      }
+    },
+    {
+      "id": "VariableID:3728:31038",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/85",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32d9"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32d9"
+      }
+    },
+    {
+      "id": "VariableID:3728:31039",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/80",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32cc"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32cc"
+      }
+    },
+    {
+      "id": "VariableID:3728:31040",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/75",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32bf"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32bf"
+      }
+    },
+    {
+      "id": "VariableID:3728:31041",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/70",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e32b2"
+      },
+      "resolvedValues": {
+        "Value": "#e33e32b2"
+      }
+    },
+    {
+      "id": "VariableID:3728:31042",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0488451a"
+      },
+      "resolvedValues": {
+        "Value": "#0488451a"
+      }
+    },
+    {
+      "id": "VariableID:3728:31043",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884526"
+      },
+      "resolvedValues": {
+        "Value": "#04884526"
+      }
+    },
+    {
+      "id": "VariableID:3728:31044",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884533"
+      },
+      "resolvedValues": {
+        "Value": "#04884533"
+      }
+    },
+    {
+      "id": "VariableID:3728:31045",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884540"
+      },
+      "resolvedValues": {
+        "Value": "#04884540"
+      }
+    },
+    {
+      "id": "VariableID:3728:31046",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/30",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0488454d"
+      },
+      "resolvedValues": {
+        "Value": "#0488454d"
+      }
+    },
+    {
+      "id": "VariableID:3728:31047",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/70",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845b2"
+      },
+      "resolvedValues": {
+        "Value": "#048845b2"
+      }
+    },
+    {
+      "id": "VariableID:3728:31048",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/75",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845bf"
+      },
+      "resolvedValues": {
+        "Value": "#048845bf"
+      }
+    },
+    {
+      "id": "VariableID:3728:31049",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/80",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845cc"
+      },
+      "resolvedValues": {
+        "Value": "#048845cc"
+      }
+    },
+    {
+      "id": "VariableID:3728:31050",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/85",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845d9"
+      },
+      "resolvedValues": {
+        "Value": "#048845d9"
+      }
+    },
+    {
+      "id": "VariableID:3728:31051",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/90",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#048845e5"
+      },
+      "resolvedValues": {
+        "Value": "#048845e5"
+      }
+    },
+    {
+      "id": "VariableID:3741:9041",
+      "collection": "Primitives ",
+      "name": "space/1",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1
+      },
+      "resolvedValues": {
+        "Value": 1
+      }
+    },
+    {
+      "id": "VariableID:3821:29152",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884580"
+      },
+      "resolvedValues": {
+        "Value": "#04884580"
+      }
+    },
+    {
+      "id": "VariableID:3821:31571",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3280"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3280"
+      }
+    },
+    {
+      "id": "VariableID:3822:31580",
+      "collection": "Primitives ",
+      "name": "space/5",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 5
+      },
+      "resolvedValues": {
+        "Value": 5
+      }
+    },
+    {
+      "id": "VariableID:3826:23545",
+      "collection": "Primitives ",
+      "name": "space/28",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 28
+      },
+      "resolvedValues": {
+        "Value": 28
+      }
+    },
+    {
+      "id": "VariableID:3826:23560",
+      "collection": "Primitives ",
+      "name": "typography/text/48 (size 48)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 48
+      },
+      "resolvedValues": {
+        "Value": 48
+      }
+    },
+    {
+      "id": "VariableID:4313:99092",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f611a"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f611a"
+      }
+    },
+    {
+      "id": "VariableID:4313:99093",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f6126"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f6126"
+      }
+    },
+    {
+      "id": "VariableID:4313:99094",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f6133"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f6133"
+      }
+    },
+    {
+      "id": "VariableID:4313:99095",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/25",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f6140"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f6140"
+      }
+    },
+    {
+      "id": "VariableID:4313:99097",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/90",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f61e5"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f61e5"
+      }
+    },
+    {
+      "id": "VariableID:4313:99098",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/85",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f61d9"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f61d9"
+      }
+    },
+    {
+      "id": "VariableID:4313:99099",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/80",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f61cc"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f61cc"
+      }
+    },
+    {
+      "id": "VariableID:4609:5690",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884514"
+      },
+      "resolvedValues": {
+        "Value": "#04884514"
+      }
+    },
+    {
+      "id": "VariableID:4609:5691",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f6114"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f6114"
+      }
+    },
+    {
+      "id": "VariableID:4609:5692",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3214"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3214"
+      }
+    },
+    {
+      "id": "VariableID:4610:5699",
+      "collection": "Primitives ",
+      "name": "color/opacity/red/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e33e3200"
+      },
+      "resolvedValues": {
+        "Value": "#e33e3200"
+      }
+    },
+    {
+      "id": "VariableID:4612:5700",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#04884500"
+      },
+      "resolvedValues": {
+        "Value": "#04884500"
+      }
+    },
+    {
+      "id": "VariableID:4612:5701",
+      "collection": "Primitives ",
+      "name": "color/opacity/gray/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5e5f6100"
+      },
+      "resolvedValues": {
+        "Value": "#5e5f6100"
+      }
+    },
+    {
+      "id": "VariableID:4765:36698",
+      "collection": "Primitives ",
+      "name": "space/full",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 999
+      },
+      "resolvedValues": {
+        "Value": 999
+      }
+    },
+    {
+      "id": "VariableID:4900:5253",
+      "collection": "Primitives ",
+      "name": "typography/text/13 (size 13)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 13
+      },
+      "resolvedValues": {
+        "Value": 13
+      }
+    },
+    {
+      "id": "VariableID:4900:5254",
+      "collection": "Primitives ",
+      "name": "typography/text/15 (size 15)",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 15
+      },
+      "resolvedValues": {
+        "Value": 15
+      }
+    },
+    {
+      "id": "VariableID:4904:7409",
+      "collection": "Primitives ",
+      "name": "color/secondary light/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f2f8f7"
+      },
+      "resolvedValues": {
+        "Value": "#f2f8f7"
+      }
+    },
+    {
+      "id": "VariableID:4904:7410",
+      "collection": "Primitives ",
+      "name": "color/secondary light/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#d6e8e7"
+      },
+      "resolvedValues": {
+        "Value": "#d6e8e7"
+      }
+    },
+    {
+      "id": "VariableID:4904:7411",
+      "collection": "Primitives ",
+      "name": "color/secondary light/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#c3dddb"
+      },
+      "resolvedValues": {
+        "Value": "#c3dddb"
+      }
+    },
+    {
+      "id": "VariableID:4904:7412",
+      "collection": "Primitives ",
+      "name": "color/secondary light/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#a7cdcb"
+      },
+      "resolvedValues": {
+        "Value": "#a7cdcb"
+      }
+    },
+    {
+      "id": "VariableID:4904:7413",
+      "collection": "Primitives ",
+      "name": "color/secondary light/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#96c3c1"
+      },
+      "resolvedValues": {
+        "Value": "#96c3c1"
+      }
+    },
+    {
+      "id": "VariableID:4904:7414",
+      "collection": "Primitives ",
+      "name": "color/secondary light/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#7cb4b1"
+      },
+      "resolvedValues": {
+        "Value": "#7cb4b1"
+      }
+    },
+    {
+      "id": "VariableID:4904:7415",
+      "collection": "Primitives ",
+      "name": "color/secondary light/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#71a4a1"
+      },
+      "resolvedValues": {
+        "Value": "#71a4a1"
+      }
+    },
+    {
+      "id": "VariableID:4904:7416",
+      "collection": "Primitives ",
+      "name": "color/secondary light/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#58807e"
+      },
+      "resolvedValues": {
+        "Value": "#58807e"
+      }
+    },
+    {
+      "id": "VariableID:4904:7417",
+      "collection": "Primitives ",
+      "name": "color/secondary light/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#446361"
+      },
+      "resolvedValues": {
+        "Value": "#446361"
+      }
+    },
+    {
+      "id": "VariableID:4904:7418",
+      "collection": "Primitives ",
+      "name": "color/secondary light/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#344c4a"
+      },
+      "resolvedValues": {
+        "Value": "#344c4a"
+      }
+    },
+    {
+      "id": "VariableID:5714:596",
+      "collection": "Primitives ",
+      "name": "color/red dark/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fbe8e9"
+      },
+      "resolvedValues": {
+        "Value": "#fbe8e9"
+      }
+    },
+    {
+      "id": "VariableID:5714:597",
+      "collection": "Primitives ",
+      "name": "color/red dark/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f3b8ba"
+      },
+      "resolvedValues": {
+        "Value": "#f3b8ba"
+      }
+    },
+    {
+      "id": "VariableID:5714:598",
+      "collection": "Primitives ",
+      "name": "color/red dark/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ed9598"
+      },
+      "resolvedValues": {
+        "Value": "#ed9598"
+      }
+    },
+    {
+      "id": "VariableID:5714:599",
+      "collection": "Primitives ",
+      "name": "color/red dark/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e4656a"
+      },
+      "resolvedValues": {
+        "Value": "#e4656a"
+      }
+    },
+    {
+      "id": "VariableID:5714:600",
+      "collection": "Primitives ",
+      "name": "color/red dark/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#df474d"
+      },
+      "resolvedValues": {
+        "Value": "#df474d"
+      }
+    },
+    {
+      "id": "VariableID:5714:601",
+      "collection": "Primitives ",
+      "name": "color/red dark/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#d71920"
+      },
+      "resolvedValues": {
+        "Value": "#d71920"
+      }
+    },
+    {
+      "id": "VariableID:5714:602",
+      "collection": "Primitives ",
+      "name": "color/red dark/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#c4171d"
+      },
+      "resolvedValues": {
+        "Value": "#c4171d"
+      }
+    },
+    {
+      "id": "VariableID:5714:603",
+      "collection": "Primitives ",
+      "name": "color/red dark/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#991217"
+      },
+      "resolvedValues": {
+        "Value": "#991217"
+      }
+    },
+    {
+      "id": "VariableID:5714:604",
+      "collection": "Primitives ",
+      "name": "color/red dark/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#760e12"
+      },
+      "resolvedValues": {
+        "Value": "#760e12"
+      }
+    },
+    {
+      "id": "VariableID:5714:605",
+      "collection": "Primitives ",
+      "name": "color/red dark/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#5a0b0d"
+      },
+      "resolvedValues": {
+        "Value": "#5a0b0d"
+      }
+    },
+    {
+      "id": "VariableID:5718:167708",
+      "collection": "Primitives ",
+      "name": "color/orange/50",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#fff5e7"
+      },
+      "resolvedValues": {
+        "Value": "#fff5e7"
+      }
+    },
+    {
+      "id": "VariableID:5718:167709",
+      "collection": "Primitives ",
+      "name": "color/orange/100",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffdfb4"
+      },
+      "resolvedValues": {
+        "Value": "#ffdfb4"
+      }
+    },
+    {
+      "id": "VariableID:5718:167710",
+      "collection": "Primitives ",
+      "name": "color/orange/200",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffd090"
+      },
+      "resolvedValues": {
+        "Value": "#ffd090"
+      }
+    },
+    {
+      "id": "VariableID:5718:167711",
+      "collection": "Primitives ",
+      "name": "color/orange/300",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffba5d"
+      },
+      "resolvedValues": {
+        "Value": "#ffba5d"
+      }
+    },
+    {
+      "id": "VariableID:5718:167712",
+      "collection": "Primitives ",
+      "name": "color/orange/400",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffad3d"
+      },
+      "resolvedValues": {
+        "Value": "#ffad3d"
+      }
+    },
+    {
+      "id": "VariableID:5718:167713",
+      "collection": "Primitives ",
+      "name": "color/orange/500",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ff980d"
+      },
+      "resolvedValues": {
+        "Value": "#ff980d"
+      }
+    },
+    {
+      "id": "VariableID:5718:167714",
+      "collection": "Primitives ",
+      "name": "color/orange/600",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#e88a0c"
+      },
+      "resolvedValues": {
+        "Value": "#e88a0c"
+      }
+    },
+    {
+      "id": "VariableID:5718:167715",
+      "collection": "Primitives ",
+      "name": "color/orange/700",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#b56c09"
+      },
+      "resolvedValues": {
+        "Value": "#b56c09"
+      }
+    },
+    {
+      "id": "VariableID:5718:167716",
+      "collection": "Primitives ",
+      "name": "color/orange/800",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#8c5407"
+      },
+      "resolvedValues": {
+        "Value": "#8c5407"
+      }
+    },
+    {
+      "id": "VariableID:5718:167717",
+      "collection": "Primitives ",
+      "name": "color/orange/900",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#6b4005"
+      },
+      "resolvedValues": {
+        "Value": "#6b4005"
+      }
+    },
+    {
+      "id": "VariableID:5728:35",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-purple",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#8489f5"
+      },
+      "resolvedValues": {
+        "Value": "#8489f5"
+      }
+    },
+    {
+      "id": "VariableID:5728:36",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-light-blue",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cdf1ff"
+      },
+      "resolvedValues": {
+        "Value": "#cdf1ff"
+      }
+    },
+    {
+      "id": "VariableID:5728:37",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-violet",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#b591e9"
+      },
+      "resolvedValues": {
+        "Value": "#b591e9"
+      }
+    },
+    {
+      "id": "VariableID:5728:38",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-pink",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cda0ff"
+      },
+      "resolvedValues": {
+        "Value": "#cda0ff"
+      }
+    },
+    {
+      "id": "VariableID:5728:39",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-2light-blue",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#cce8fe"
+      },
+      "resolvedValues": {
+        "Value": "#cce8fe"
+      }
+    },
+    {
+      "id": "VariableID:6014:117546",
+      "collection": "Primitives ",
+      "name": "color/semantic tokens/color-ai-white",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#f6f8fa"
+      },
+      "resolvedValues": {
+        "Value": "#f6f8fa"
+      }
+    },
+    {
+      "id": "VariableID:6186:1377",
+      "collection": "Primitives ",
+      "name": "space/18",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 18
+      },
+      "resolvedValues": {
+        "Value": 18
+      }
+    },
+    {
+      "id": "VariableID:6192:140704",
+      "collection": "Primitives ",
+      "name": "color/opacity/yellow/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad141a"
+      },
+      "resolvedValues": {
+        "Value": "#faad141a"
+      }
+    },
+    {
+      "id": "VariableID:6192:140705",
+      "collection": "Primitives ",
+      "name": "color/opacity/yellow/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad1426"
+      },
+      "resolvedValues": {
+        "Value": "#faad1426"
+      }
+    },
+    {
+      "id": "VariableID:6192:140706",
+      "collection": "Primitives ",
+      "name": "color/opacity/yellow/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad1433"
+      },
+      "resolvedValues": {
+        "Value": "#faad1433"
+      }
+    },
+    {
+      "id": "VariableID:6192:140707",
+      "collection": "Primitives ",
+      "name": "color/opacity/yellow/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad1414"
+      },
+      "resolvedValues": {
+        "Value": "#faad1414"
+      }
+    },
+    {
+      "id": "VariableID:6192:140708",
+      "collection": "Primitives ",
+      "name": "color/opacity/yellow/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#faad1400"
+      },
+      "resolvedValues": {
+        "Value": "#faad1400"
+      }
+    },
+    {
+      "id": "VariableID:6192:140758",
+      "collection": "Primitives ",
+      "name": "color/opacity/blue/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f000"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f000"
+      }
+    },
+    {
+      "id": "VariableID:6192:140759",
+      "collection": "Primitives ",
+      "name": "color/opacity/blue/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f014"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f014"
+      }
+    },
+    {
+      "id": "VariableID:6192:140760",
+      "collection": "Primitives ",
+      "name": "color/opacity/blue/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f01a"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f01a"
+      }
+    },
+    {
+      "id": "VariableID:6192:140761",
+      "collection": "Primitives ",
+      "name": "color/opacity/blue/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f026"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f026"
+      }
+    },
+    {
+      "id": "VariableID:6192:140762",
+      "collection": "Primitives ",
+      "name": "color/opacity/blue/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#3d63f033"
+      },
+      "resolvedValues": {
+        "Value": "#3d63f033"
+      }
+    },
+    {
+      "id": "VariableID:6757:22340",
+      "collection": "Primitives ",
+      "name": "color/brand/smartads/text-logo",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#637381"
+      },
+      "resolvedValues": {
+        "Value": "#637381"
+      }
+    },
+    {
+      "id": "VariableID:7452:117622",
+      "collection": "Primitives ",
+      "name": "color/brand/smartads/text-powered",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#919eab"
+      },
+      "resolvedValues": {
+        "Value": "#919eab"
+      }
+    },
+    {
+      "id": "VariableID:7519:223098",
+      "collection": "Primitives ",
+      "name": "color/opacity/primary/4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0488450a"
+      },
+      "resolvedValues": {
+        "Value": "#0488450a"
+      }
+    },
+    {
+      "id": "VariableID:11865:499",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000000"
+      },
+      "resolvedValues": {
+        "Value": "#00000000"
+      }
+    },
+    {
+      "id": "VariableID:11865:500",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/2",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000005"
+      },
+      "resolvedValues": {
+        "Value": "#00000005"
+      }
+    },
+    {
+      "id": "VariableID:11865:501",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0000000a"
+      },
+      "resolvedValues": {
+        "Value": "#0000000a"
+      }
+    },
+    {
+      "id": "VariableID:11865:502",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0000001a"
+      },
+      "resolvedValues": {
+        "Value": "#0000001a"
+      }
+    },
+    {
+      "id": "VariableID:11865:503",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/16",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000029"
+      },
+      "resolvedValues": {
+        "Value": "#00000029"
+      }
+    },
+    {
+      "id": "VariableID:11865:504",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/18",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0000002e"
+      },
+      "resolvedValues": {
+        "Value": "#0000002e"
+      }
+    },
+    {
+      "id": "VariableID:11865:33140",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff00"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff00"
+      }
+    },
+    {
+      "id": "VariableID:11865:33141",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/2",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff05"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff05"
+      }
+    },
+    {
+      "id": "VariableID:11865:33142",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/4",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff0a"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff0a"
+      }
+    },
+    {
+      "id": "VariableID:11865:33143",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff1a"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff1a"
+      }
+    },
+    {
+      "id": "VariableID:11865:33144",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/16",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff29"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff29"
+      }
+    },
+    {
+      "id": "VariableID:11865:33145",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/18",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff2e"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff2e"
+      }
+    },
+    {
+      "id": "VariableID:12235:525069",
+      "collection": "Primitives ",
+      "name": "color/opacity/green/0",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a1600"
+      },
+      "resolvedValues": {
+        "Value": "#229a1600"
+      }
+    },
+    {
+      "id": "VariableID:12235:525070",
+      "collection": "Primitives ",
+      "name": "color/opacity/green/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a1614"
+      },
+      "resolvedValues": {
+        "Value": "#229a1614"
+      }
+    },
+    {
+      "id": "VariableID:12235:525071",
+      "collection": "Primitives ",
+      "name": "color/opacity/green/10",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a161a"
+      },
+      "resolvedValues": {
+        "Value": "#229a161a"
+      }
+    },
+    {
+      "id": "VariableID:12235:525072",
+      "collection": "Primitives ",
+      "name": "color/opacity/green/15",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a1626"
+      },
+      "resolvedValues": {
+        "Value": "#229a1626"
+      }
+    },
+    {
+      "id": "VariableID:12235:525073",
+      "collection": "Primitives ",
+      "name": "color/opacity/green/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#229a1633"
+      },
+      "resolvedValues": {
+        "Value": "#229a1633"
+      }
+    },
+    {
+      "id": "VariableID:12824:190116",
+      "collection": "Primitives ",
+      "name": "Action Add",
+      "type": "BOOLEAN",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": true
+      },
+      "resolvedValues": {
+        "Value": true
+      }
+    },
+    {
+      "id": "VariableID:12925:578216",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000014"
+      },
+      "resolvedValues": {
+        "Value": "#00000014"
+      }
+    },
+    {
+      "id": "VariableID:12925:578217",
+      "collection": "Primitives ",
+      "name": "color/opacity/white/8",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#ffffff14"
+      },
+      "resolvedValues": {
+        "Value": "#ffffff14"
+      }
+    },
+    {
+      "id": "VariableID:12931:599743",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/6",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#0000000f"
+      },
+      "resolvedValues": {
+        "Value": "#0000000f"
+      }
+    },
+    {
+      "id": "VariableID:15444:302391",
+      "collection": "Primitives ",
+      "name": "Subtitble",
+      "type": "BOOLEAN",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": true
+      },
+      "resolvedValues": {
+        "Value": true
+      }
+    },
+    {
+      "id": "VariableID:15444:344331",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/20",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000033"
+      },
+      "resolvedValues": {
+        "Value": "#00000033"
+      }
+    },
+    {
+      "id": "VariableID:15444:344332",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/40",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000066"
+      },
+      "resolvedValues": {
+        "Value": "#00000066"
+      }
+    },
+    {
+      "id": "VariableID:15444:344333",
+      "collection": "Primitives ",
+      "name": "color/opacity/black/60",
+      "type": "COLOR",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": "#00000099"
+      },
+      "resolvedValues": {
+        "Value": "#00000099"
+      }
+    },
+    {
+      "id": "VariableID:15669:16108",
+      "collection": "Primitives ",
+      "name": "space/1536",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 1563
+      },
+      "resolvedValues": {
+        "Value": 1563
+      }
+    },
+    {
+      "id": "VariableID:15669:16109",
+      "collection": "Primitives ",
+      "name": "space/248",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 248
+      },
+      "resolvedValues": {
+        "Value": 248
+      }
+    },
+    {
+      "id": "VariableID:15669:16110",
+      "collection": "Primitives ",
+      "name": "space/84",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "Value": 84
+      },
+      "resolvedValues": {
+        "Value": 84
+      }
+    }
+  ]
+}

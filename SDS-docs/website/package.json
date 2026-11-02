@@ -1,0 +1,26 @@
+{
+  "name": "smartads-sds-docs",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "prepare:content": "node scripts/prepare.mjs",
+    "predev": "npm run prepare:content",
+    "dev": "node scripts/dev.mjs",
+    "prebuild": "npm run prepare:content",
+    "build": "next build",
+    "preview": "node scripts/serve.mjs",
+    "test:e2e": "playwright test"
+  },
+  "dependencies": {
+    "@tabler/icons-react": "3.50.0",
+    "gray-matter": "4.0.3",
+    "marked": "18.1.2",
+    "next": "16.4.3",
+    "react": "19.3.1",
+    "react-dom": "19.3.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.64.1"
+  }
+}

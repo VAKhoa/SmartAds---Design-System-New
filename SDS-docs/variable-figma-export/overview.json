@@ -1,0 +1,91 @@
+{
+  "kind": "overview",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collections": [
+    {
+      "id": "VariableCollectionId:4:13",
+      "name": "Primitives ",
+      "modes": [
+        "Value"
+      ],
+      "count": 256,
+      "byType": {
+        "COLOR": 191,
+        "FLOAT": 63,
+        "BOOLEAN": 2
+      }
+    },
+    {
+      "id": "VariableCollectionId:4:15",
+      "name": "Spacing",
+      "modes": [
+        "sm"
+      ],
+      "count": 98,
+      "byType": {
+        "FLOAT": 98
+      }
+    },
+    {
+      "id": "VariableCollectionId:4:16",
+      "name": "Alias",
+      "modes": [
+        "Accessible (Light Mode)",
+        "Accessible (Dark Mode)"
+      ],
+      "count": 293,
+      "byType": {
+        "COLOR": 293
+      }
+    },
+    {
+      "id": "VariableCollectionId:938:385",
+      "name": "Text",
+      "modes": [
+        "Mode 1"
+      ],
+      "count": 21,
+      "byType": {
+        "STRING": 6,
+        "FLOAT": 15
+      }
+    },
+    {
+      "id": "VariableCollectionId:2252:10504",
+      "name": "Viewport Desktop",
+      "modes": [
+        "1280-sm",
+        "1366-md",
+        "1440-lg",
+        "1536-lg",
+        "1920-xl"
+      ],
+      "count": 19,
+      "byType": {
+        "FLOAT": 19
+      }
+    },
+    {
+      "id": "VariableCollectionId:2446:193",
+      "name": "Viewport Mobile Tablet",
+      "modes": [
+        "390-Mobile",
+        "428-Mobile",
+        "843-Tablet",
+        "1024-Tablet"
+      ],
+      "count": 3,
+      "byType": {
+        "FLOAT": 1,
+        "BOOLEAN": 2
+      }
+    }
+  ],
+  "styles": {
+    "text": 77,
+    "effect": 43,
+    "paint": 7,
+    "grid": 5
+  }
+}

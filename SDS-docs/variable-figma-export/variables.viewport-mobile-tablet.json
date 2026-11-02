@@ -1,0 +1,94 @@
+{
+  "kind": "variables",
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-02",
+  "collection": "Viewport Mobile Tablet",
+  "collectionId": "VariableCollectionId:2446:193",
+  "modes": [
+    {
+      "id": "14482:0",
+      "name": "390-Mobile"
+    },
+    {
+      "id": "2446:0",
+      "name": "428-Mobile"
+    },
+    {
+      "id": "2446:1",
+      "name": "843-Tablet"
+    },
+    {
+      "id": "2446:2",
+      "name": "1024-Tablet"
+    }
+  ],
+  "count": 3,
+  "variables": [
+    {
+      "id": "VariableID:2446:194",
+      "collection": "Viewport Mobile Tablet",
+      "name": "Screen/Container/size-screen-width",
+      "type": "FLOAT",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "390-Mobile": 390,
+        "428-Mobile": 428,
+        "843-Tablet": 843,
+        "1024-Tablet": 1024
+      },
+      "resolvedValues": {
+        "390-Mobile": 390,
+        "428-Mobile": 428,
+        "843-Tablet": 843,
+        "1024-Tablet": 1024
+      }
+    },
+    {
+      "id": "VariableID:2447:401",
+      "collection": "Viewport Mobile Tablet",
+      "name": "Screen/Navigation/btn-create-campagin",
+      "type": "BOOLEAN",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "390-Mobile": false,
+        "428-Mobile": false,
+        "843-Tablet": false,
+        "1024-Tablet": true
+      },
+      "resolvedValues": {
+        "390-Mobile": false,
+        "428-Mobile": false,
+        "843-Tablet": false,
+        "1024-Tablet": true
+      }
+    },
+    {
+      "id": "VariableID:2447:403",
+      "collection": "Viewport Mobile Tablet",
+      "name": "Screen/Navigation/btn-export-report",
+      "type": "BOOLEAN",
+      "description": "",
+      "scopes": [
+        "ALL_SCOPES"
+      ],
+      "values": {
+        "390-Mobile": false,
+        "428-Mobile": false,
+        "843-Tablet": false,
+        "1024-Tablet": false
+      },
+      "resolvedValues": {
+        "390-Mobile": false,
+        "428-Mobile": false,
+        "843-Tablet": false,
+        "1024-Tablet": false
+      }
+    }
+  ]
+}
