@@ -7,6 +7,8 @@ status: beta
 
 # Hướng dẫn thư mục và vận hành SDS Docs
 
+Website SDS đã triển khai: [smart-ads-design-system-new.vercel.app](https://smart-ads-design-system-new.vercel.app/). Dùng URL này khi cần cho AI agent tham khảo tài liệu trực tuyến; vẫn gửi node Figma cụ thể cho task UI.
+
 Tài liệu này giải thích **các file trong thư mục xây SDS và cách vận hành chúng**. Để hiểu SmartAds là sản phẩm gì, ai dùng và vì sao xây SDS, đọc [SmartAds và SDS là gì?](about-smartads.md) trước. Website hiện có 7 trang Introduction, trang Resource / Figma và các route Foundation/Components/Patterns còn trống; SDS chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm. Nguồn thiết kế: [SmartAds - Design System](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System).
 
 ## Bắt đầu một task như thế nào?

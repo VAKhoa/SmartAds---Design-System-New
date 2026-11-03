@@ -6,6 +6,8 @@ Mục tiêu: xây tài liệu và dữ liệu máy đọc cho SmartAds Design Sy
 
 ## Trạng thái
 
+Website SDS đã triển khai tại https://smart-ads-design-system-new.vercel.app/. URL này là địa chỉ để xem tài liệu; source và quy tắc vẫn nằm trong repository.
+
 Dự án có website Next.js + React (JavaScript và CSS thuần) trong `website/`, gồm 7 trang Introduction, trang Resource / Figma và các route Foundation/Components/Patterns còn trống. Nội dung Introduction vẫn đang chờ duyệt; chưa có thư viện component sản phẩm hoặc gói token phát hành. Theme website lấy một tập con từ `variable-figma-export/`, giữ nguyên tên nguồn và dùng prefix `sa`. `variable-figma-export/` có bản chụp 690 variables và 132 styles đọc ngày 02/11/2026; khi cần giá trị mới hoặc khẳng định hiện trạng, đối chiếu lại với Figma. Không coi dữ liệu trong `tests/fixtures/` là token thật.
 
 ## Quy tắc làm việc

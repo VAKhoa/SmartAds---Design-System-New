@@ -7,11 +7,15 @@ status: draft
 sources:
   - label: Figma SmartAds Design System
     url: https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System
+  - label: Website SDS đã triển khai
+    url: https://smart-ads-design-system-new.vercel.app/
 ---
 
 ## Bắt đầu ở đây
 
 Ngay dưới tiêu đề trang có liên kết đến ba file nguồn: `AGENTS.md`, `SDS-docs/SDS-RULES.md` và `SDS-docs/introduction/workspace-guide.md`. Chọn một file để mở URL `.md` chứa nội dung gốc; nội dung file không được nhúng vào giao diện AI Agents. Dùng nút Back của trình duyệt để quay lại trang. Các URL này được tạo lại từ file trong folder khi build website, nên sau khi sửa file nguồn cần build lại để bản website phản ánh thay đổi.
+
+Khối **Cách sử dụng** phía trên cung cấp [đường dẫn website SDS đã triển khai](https://smart-ads-design-system-new.vercel.app/) để gửi cho AI agent. Nút **Sao chép** chỉ sao chép URL đó. Nút **Sao chép trang** ở thanh công cụ sao chép nội dung Markdown của trang AI Agents. Khi giao việc cần nguồn thiết kế cụ thể, hãy gửi thêm link đúng node Figma và phạm vi cần sửa.
 
 Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/SDS-RULES.md`, `SDS-docs/introduction/workspace-guide.md`, các skill nội bộ và mã nguồn website. **Hiện chưa có một đội custom agent bắt buộc**; một Codex chính có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
 

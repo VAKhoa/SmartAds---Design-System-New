@@ -1,6 +1,7 @@
 import documents from '../data/docs.generated.json';
 import { aiSourceFiles } from '../data/ai-source-files';
 import DocsShell from './DocsShell';
+import AiSiteUsage from './AiSiteUsage';
 
 export default function DocsPage({ id }) {
   const document = documents.find(doc => doc.id === id);
@@ -10,6 +11,6 @@ export default function DocsPage({ id }) {
     sourceFiles={id === 'ai-agents' ? aiSourceFiles : null}
     previous={index > 0 ? { title: documents[index - 1].title, href: documents[index - 1].href } : null}
     next={index < documents.length - 1 ? { title: documents[index + 1].title, href: documents[index + 1].href } : null}>
-    <div className="sa-prose" dangerouslySetInnerHTML={{ __html: document.html }} />
+    <>{id === 'ai-agents' && <AiSiteUsage/>}<div className="sa-prose" dangerouslySetInnerHTML={{ __html: document.html }} /></>
   </DocsShell>;
 }

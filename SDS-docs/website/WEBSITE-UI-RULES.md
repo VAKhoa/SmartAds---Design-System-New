@@ -44,6 +44,7 @@ Các màu khác của panel, chữ phụ, border và thẻ Resource đã có bi�
 
 - Dùng spacing Figma đã xuất (`4`, `8`, `12`, `20px`) khi phù hợp. Với layout docs, ưu tiên các khoảng cách đang lặp lại (`16`, `24`, `32px`) trước khi tạo mức mới. Một thông số đặc thù của node Figma, logo hoặc một component có thể khác; ghi nguồn khi thêm.
 - Header cao `64px`; logo header rộng `110px`. Các điều khiển search, GitHub và theme ở header cao `36px`. Sidebar desktop rộng `240px` và có scroll riêng. Sidebar không có icon.
+- Nút `Sao chép trang` trong toolbar và nút sao chép URL ở trang AI Agents cao `36px` theo Figma `361:833`, `361:2139`, `361:4834`, `361:4710`.
 - Ở màn từ `1200px`, khung bài viết có cột mục lục bên phải `208px`. Dưới `1200px`, mục lục bên phải ẩn và mục lục trong bài xuất hiện. Dưới `768px`, sidebar chuyển thành menu mở từ header.
 - Padding ngang `.sa-main`: `320px` từ 1920px; `240px` ở 1600–1919px; `160px` ở 1440–1599px; `96px` ở 1200–1439px; `64px` ở 960–1199px; `28px` ở 768–959px; `24px` ở 401–767px; `18px` đến 400px. Kiểm tra tràn ngang khi sửa grid, bảng, code hoặc text dài.
 - Bảng trong bài có khung scroll ngang; code block tự scroll ngang. Thẻ Resource dùng grid tự giảm số cột, preview cao `140px`, gap `24px`, radius `10px` theo node Figma `9:4767`.

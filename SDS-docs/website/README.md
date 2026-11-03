@@ -4,6 +4,8 @@ Website dùng **Next.js + React, JavaScript/JSX và CSS thuần**, xuất HTML/C
 
 Khi sửa giao diện, đọc [quy tắc UI của website](WEBSITE-UI-RULES.md) cùng `../SDS-RULES.md`. File đó ghi nguồn giá trị, màu, typography, layout, state và cách kiểm tra; các quy tắc này chỉ áp dụng cho website docs.
 
+Bản đã triển khai: https://smart-ads-design-system-new.vercel.app/. Trang AI Agents có khối **Cách sử dụng** để sao chép URL này cho AI agent. Nút **Sao chép trang** trong toolbar sao chép Markdown của trang đang xem.
+
 ## Chạy website
 
 Khuyến nghị Node.js 24 và npm. Mở terminal trong `SDS-docs/website`:
@@ -46,6 +48,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/components/DocsPage.js` | Đọc dữ liệu bài và đưa vào khung. |
 | `src/components/DocsShell.js` | Header, sidebar, search, theme, mục lục, copy Markdown, điều hướng, footer. |
 | `src/components/AiSourceFiles.js` | Ba liên kết file nguồn trên trang AI Agents, mỗi liên kết mở URL `.md` tương ứng. |
+| `src/components/AiSiteUsage.js` | Khối URL website đã triển khai và nút sao chép trên trang AI Agents. |
 | `src/components/Logo.js` | Ghép 4 SVG nguyên gốc theo tỷ lệ node Figma 123:497. |
 | `src/components/Icon.js` | Icon chức năng UI. |
 | `src/components/FigmaResources.js` | Thẻ file Figma và các trạng thái hiển thị. |
@@ -67,6 +70,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/. |
 | `scripts/serve.mjs` | Server Node xem bản build tĩnh. |
 | `public/brand/smartads-symbol.svg` | Biểu tượng SmartAds xanh gốc. |
+| `public/brand/ai-file-*.svg` | Các lớp icon file Markdown ở hai mode, tải từ Figma `361:864` và `361:2170`. |
 | `public/brand/smartads-wordmark.svg` | Chữ SmartAds gốc. |
 | `public/brand/smartads-powered-by.svg` | Chữ Powered by gốc. |
 | `public/brand/smartads-fpt-online.svg` | Logo FPT Online gốc, dùng chung cho light và dark vì hai bản xuất giống hệt nhau. |

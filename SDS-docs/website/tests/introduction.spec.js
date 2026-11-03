@@ -25,20 +25,28 @@ test('AI Agents links to the three original Markdown files', async ({ page, requ
   await expect(page).toHaveURL(/\/introduction\/ai-agents\/$/);
 });
 
-test('AI Agents file cards use a horizontal layout and visible interaction states', async ({ page }) => {
+test('AI Agents source cards, website URL and copy buttons follow the new layout', async ({ page }) => {
   await page.goto('/introduction/ai-agents/');
   const cards = page.locator('.sa-ai-file-card');
   const first = cards.first();
-  await expect(first.locator('.sa-ai-file-icon svg')).toHaveClass(/tabler-icon-file-text/);
+  await expect(first.locator('.sa-ai-file-asset-light').first()).toBeVisible();
+  await expect(first.locator('.sa-ai-file-asset-dark').first()).toBeHidden();
   await expect(first.locator('.sa-ai-file-copy strong')).toHaveText('AGENTS.md');
   await expect(first.locator('.sa-ai-file-description')).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'Cách sử dụng' })).toBeVisible();
+  await expect(page.locator('.sa-ai-usage-url a')).toHaveAttribute('href', 'https://smart-ads-design-system-new.vercel.app/');
+  for (const button of [page.locator('.sa-copy-button'), page.locator('.sa-ai-usage-url button')]) {
+    expect(await button.evaluate(element => element.getBoundingClientRect().height)).toBe(36);
+  }
   const boxes = await cards.evaluateAll(elements => elements.map(element => {
     const rect = element.getBoundingClientRect();
     return { x: rect.x, y: rect.y, width: rect.width, height: rect.height };
   }));
   expect(boxes[0].width).toBeGreaterThan(boxes[0].height * 2);
-  expect(boxes[0].x).toBe(boxes[1].x);
-  expect(boxes[0].y).toBeLessThan(boxes[1].y);
+  expect(boxes[0].x).toBeLessThan(boxes[1].x);
+  expect(boxes[0].y).toBe(boxes[1].y);
+  expect(boxes[2].x).toBe(boxes[0].x);
+  expect(boxes[2].y).toBeGreaterThan(boxes[0].y);
   await page.screenshot({ path: 'test-results/sds-ai-cards-light.png', fullPage: true });
   const restBorder = await first.evaluate(element => getComputedStyle(element).borderColor);
   await first.hover();
@@ -48,11 +56,14 @@ test('AI Agents file cards use a horizontal layout and visible interaction state
   await expect(cards.nth(1)).toBeFocused();
   await expect.poll(() => cards.nth(1).evaluate(element => getComputedStyle(element).outlineStyle)).toBe('solid');
   await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
-  await expect(first.locator('.sa-ai-file-icon svg')).toBeVisible();
+  await expect(first.locator('.sa-ai-file-asset-dark').first()).toBeVisible();
+  await expect(first.locator('.sa-ai-file-asset-light').first()).toBeHidden();
   for (const width of [390, 320]) {
     await page.setViewportSize({ width, height: 844 });
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
     await expect(cards.last().locator('.sa-ai-file-copy strong')).toBeVisible();
+    const mobileBoxes = await cards.evaluateAll(elements => elements.map(element => element.getBoundingClientRect().x));
+    expect(mobileBoxes[0]).toBe(mobileBoxes[1]);
   }
   await page.screenshot({ path: 'test-results/sds-ai-cards-dark-mobile.png', fullPage: true });
 });
