@@ -5,7 +5,7 @@ description: Đồng bộ variables và styles từ SmartAds Figma, audit hiện
 
 # Figma token workflow
 
-Đọc `AGENTS.md`, `ds.config.json` và skill `ds-conventions` khi công việc liên quan đến đặt tên. Figma là nguồn của giá trị. Các file export và báo cáo phải ghi ngày lấy dữ liệu và file key.
+Đọc `SDS-docs/SDS-RULES.md`, `ds.config.json` và skill `ds-conventions` khi công việc liên quan đến đặt tên. Figma là nguồn của giá trị. Các file export và báo cáo phải ghi ngày lấy dữ liệu và file key.
 
 ## Đồng bộ
 
@@ -20,4 +20,4 @@ description: Đồng bộ variables và styles từ SmartAds Figma, audit hiện
 3. Chạy `node scripts/ds-tokens.mjs suggest variable-figma-export/` để lấy đề xuất. Gộp vào `tokens/rename-map.json` mà không ghi đè mục đã `approved` hoặc `rejected`. Mục mơ hồ để `needs-decision`, kèm lý do.
 4. Chỉ đổi tên trong Figma khi người dùng yêu cầu rõ và đã duyệt mục tương ứng. Sau thay đổi, đồng bộ lại và kiểm tra alias/binding.
 
-Fixture trong `tests/fixtures/` và mẫu trong `tokens/observed/` không dùng để kết luận gate trên toàn file Figma. Chạy `node tests/run-tests.mjs` khi sửa script.
+Fixture trong `tests/fixtures/` chỉ dùng để kiểm thử script, không dùng để kết luận về toàn file Figma. Khi cần dữ liệu thật, đọc snapshot trong `variable-figma-export/` và đối chiếu Figma hiện tại. Chạy `node tests/run-tests.mjs` khi sửa script.

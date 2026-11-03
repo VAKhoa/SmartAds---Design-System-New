@@ -8,8 +8,6 @@ export const navigation = [
   { id: 'glossary', title: 'Glossary', href: '/introduction/glossary/', file: 'introduction/glossary.md', icon: 'book' },
 ];
 
-export const figmaUrl = 'https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=1-2';
-
 // Menu scaffold from Figma sQYYGDipDACa8UIqgdWWZq, node 319:375. Each planned item has its own blank route.
 export const plannedNavigation = [
   { title: 'Foundation', slug: 'foundation', items: ['Overview', 'Colors', 'Typography', 'Spacing', 'Icons'] },

@@ -4,14 +4,16 @@ import siteInfo from '../data/site.generated.json';
 
 import { useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
-import { navigation, plannedNavigation, figmaUrl } from '../lib/navigation';
+import { navigation, plannedNavigation } from '../lib/navigation';
+import { figmaResourcePage } from '../lib/figma-resources';
 import Icon from './Icon';
 import Logo from './Logo';
+import AiSourceFiles from './AiSourceFiles';
 
 const normalize = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
 const statuses = { draft: 'Bản nháp', 'in-review': 'Chờ duyệt', beta: 'Beta', stable: 'Ổn định' };
 
-export default function DocsShell({ document: doc, searchIndex, previous, next, children, empty = false }) {
+export default function DocsShell({ document: doc, searchIndex, previous, next, children, sourceFiles = null, empty = false, resource = false }) {
   const searchDialog = useRef(null);
   const menuDialog = useRef(null);
   const searchInput = useRef(null);
@@ -57,7 +59,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
 
   const results = useMemo(() => {
     const words = normalize(query.trim()).split(/\s+/).filter(Boolean);
-    return searchIndex.filter(item => {
+    return [...searchIndex, figmaResourcePage].filter(item => {
       const text = normalize(`${item.title} ${item.description} ${item.searchText}`);
       return words.every(word => text.includes(word));
     });
@@ -87,7 +89,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
       </section>
       <section className="sa-nav-group">
         <h2 className="sa-sidebar-heading">Resource</h2>
-        <a className="sa-resource-link" href={figmaUrl} target="_blank" rel="noreferrer">Figma file<span className="sr-only"> (tab m?i)</span></a>
+        <Link className="sa-resource-link" href={figmaResourcePage.href} onClick={closeDialogs} aria-current={doc.id === figmaResourcePage.id ? 'page' : undefined}>Figma file</Link>
       </section>
       {plannedNavigation.map(group => <section className="sa-nav-group" key={group.title}>
         <h2 className="sa-sidebar-heading">{group.title}</h2>
@@ -114,9 +116,9 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
         <span className="sa-header-divider" aria-hidden="true"/>
         <Link className="sa-header-docs" href="/">Design System <span>SDS</span></Link>
         <div className="sa-header-tools">
-          <button className="sa-search-trigger" onClick={openSearch} aria-label="Tìm kiếm tài liệu" aria-keyshortcuts="Control+K Meta+K"><Icon name="search"/><span>Tìm trong tài liệu...</span><kbd>Ctrl K</kbd></button>
-          <a className="sa-header-github" href="" aria-disabled="true" title="Repository chua duoc lien ket" onClick={event => event.preventDefault()}><Icon name="github" size={20}/><span>View on GitHub</span></a>
-          <button className="sa-icon-button sa-theme-toggle" onClick={toggleTheme} aria-label="Chuyển giao diện tối" aria-pressed={dark}><span className="sa-light-icon"><Icon name="sun"/></span><span className="sa-dark-icon"><Icon name="moon"/></span></button>
+          <button className="sa-search-trigger" onClick={openSearch} aria-label="Tìm kiếm tài liệu" aria-keyshortcuts="Control+K Meta+K"><Icon name="search" size={dark ? 18 : 16} stroke={1.75}/><span>Tìm trong tài liệu...</span><kbd>Ctrl K</kbd></button>
+          <a className="sa-header-github" href="https://github.com/VAKhoa/SmartAds---Design-System-New" target="_blank" rel="noopener noreferrer"><img className="sa-github-icon" src={dark ? '/brand/github-dark.svg' : '/brand/github-light.svg'} width="20" height="20" alt=""/><span>View on GitHub</span><span className="sr-only"> (mở tab mới)</span></a>
+          <button className="sa-icon-button sa-theme-toggle" onClick={toggleTheme} aria-label={dark ? 'Chuyển giao diện sáng' : 'Chuyển giao diện tối'} aria-pressed={dark}><Icon name="theme" size={18}/></button>
           <button className="sa-icon-button sa-menu-toggle" onClick={() => menuDialog.current?.showModal()} aria-label="Mở menu Introduction" aria-haspopup="dialog"><Icon name="menu"/></button>
         </div>
       </div>
@@ -124,9 +126,14 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
 
     <div className="sa-workspace">
       <aside className="sa-sidebar" aria-label="Điều hướng tài liệu"><SidebarContent/></aside>
-      <div className={`sa-reading-layout${empty ? ' sa-reading-layout-empty' : ''}`}>
-        <main id="main-content" className="sa-main" tabIndex="-1" aria-label={empty ? doc.title : undefined}>
-          {!empty && <>
+      <div className={`sa-reading-layout${empty ? ' sa-reading-layout-empty' : ''}${resource ? ' sa-reading-layout-resource' : ''}`}>
+        <main id="main-content" className={`sa-main${resource ? ' sa-main-resource' : ''}`} tabIndex="-1" aria-label={empty ? doc.title : undefined}>
+          {resource && <>
+            <nav className="sa-breadcrumb sa-resource-breadcrumb" aria-label="Đường dẫn trang"><span>Resource</span><Icon name="chevron" size={13}/><span aria-current="page">Figma files</span></nav>
+            <div className="sa-title-block"><h1>{doc.title}</h1><p className="sa-lead">{doc.description}</p></div>
+            {children}
+          </>}
+          {!empty && !resource && <>
           <div className="sa-page-toolbar">
             <nav className="sa-breadcrumb" aria-label="Đường dẫn trang"><Link href="/">Introduction</Link><Icon name="chevron" size={13}/><span>{doc.title}</span></nav>
             <div className="sa-page-tools">
@@ -142,17 +149,18 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
             <div className="sa-title-row"><h1>{doc.id === 'overview' ? 'SmartAds Design System' : doc.title}</h1><span className="sa-status">{statuses[doc.status]}</span></div>
             <p className="sa-lead">{doc.description}</p>
           </div>
+          {sourceFiles && <AiSourceFiles files={sourceFiles}/>}
           <details className="sa-mobile-toc"><summary>Trên trang này <Icon name="down" size={16}/></summary><TocLinks mobile/></details>
           <article aria-label={doc.title}>{children}</article>
           <div className="sa-article-meta"><span>Cập nhật {doc.updated}</span><span>Nguồn: {doc.sources.map((source, i) => <span key={source.url}>{i > 0 && ' · '}<a href={source.url} target="_blank" rel="noreferrer">{source.label}<span className="sr-only"> (tab mới)</span></a></span>)}</span></div>
           <nav className="sa-pagination" aria-label="Trang trước và sau">
-            {previous ? <Link href={previous.href}><Icon name="back"/><span><small>Trang trước</small><strong>{previous.title}</strong></span></Link> : <span/>}
-            {next ? <Link href={next.href} className="sa-pagination-next"><span><small>Tiếp theo</small><strong>{next.title}</strong></span><Icon name="arrow"/></Link> : <span/>}
+            {previous ? <Link href={previous.href} aria-label={`Trang trước: ${previous.title}`}><Icon name="back" size={16}/><span>{previous.title}</span></Link> : <span/>}
+            {next ? <Link href={next.href} className="sa-pagination-next" aria-label={`Trang sau: ${next.title}`}><span>{next.title}</span><Icon name="arrow" size={16}/></Link> : <span/>}
           </nav>
-          <footer className="sa-footer"><div className="sa-footer-brand"><Logo dark={dark}/><span>SmartAds Design System <span className="sa-footer-version">v{siteInfo.version}</span></span></div><span className="sa-footer-update">Last update <time dateTime={siteInfo.updatedAt} title="UTC+07:00">{siteInfo.label}</time></span></footer>
           </>}
+          {!empty && <footer className="sa-footer"><div className="sa-footer-brand"><Logo dark={dark}/><span>SmartAds Design System <span className="sa-footer-version">v{siteInfo.version}</span></span></div><span className="sa-footer-update">Last update <time dateTime={siteInfo.updatedAt} title="UTC+07:00">{siteInfo.label}</time></span></footer>}
         </main>
-        {!empty && <aside className="sa-toc" aria-label="Trên trang này"><p>Trên trang này</p><TocLinks/><div className="sa-toc-help"><Icon name="book" size={18}/><strong>Mới làm quen với SDS?</strong><span>Tìm điểm bắt đầu theo vai trò của bạn.</span><Link href="/introduction/getting-started/">Getting Started <Icon name="arrow" size={14}/></Link></div></aside>}
+        {!empty && !resource && <aside className="sa-toc" aria-label="Trên trang này"><p>Trên trang này</p><TocLinks/><div className="sa-toc-help"><Icon name="book" size={18}/><strong>Mới làm quen với SDS?</strong><span>Tìm điểm bắt đầu theo vai trò của bạn.</span><Link href="/introduction/getting-started/">Getting Started <Icon name="arrow" size={14}/></Link></div></aside>}
       </div>
     </div>
 

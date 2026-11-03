@@ -1,6 +1,62 @@
 import { test, expect } from '@playwright/test';
 import { navigation, plannedNavigation } from '../src/lib/navigation.js';
 
+test('AI Agents links to the three original Markdown files', async ({ page, request }) => {
+  await page.goto('/introduction/ai-agents/');
+  const cards = page.locator('.sa-ai-file-card');
+  await expect(cards).toHaveCount(3);
+  const files = [
+    ['/source/AGENTS.md', '# SmartAds Design System (SDS)'],
+    ['/source/SDS-docs/SDS-RULES.md', '# SmartAds Design System Docs'],
+    ['/source/SDS-docs/introduction/workspace-guide.md', '# Hướng dẫn thư mục và vận hành SDS Docs'],
+  ];
+  await expect(page.locator('.sa-ai-file-viewer')).toHaveCount(0);
+  for (const [index, [href, firstLine]] of files.entries()) {
+    await expect(cards.nth(index)).toHaveAttribute('href', href);
+    const response = await request.get(href);
+    expect(response.status()).toBe(200);
+    expect(response.headers()['content-type']).toContain('text/markdown');
+    expect(await response.text()).toContain(firstLine);
+  }
+  await cards.first().click();
+  await expect(page).toHaveURL(/\/source\/AGENTS\.md$/);
+  await expect(page.locator('body')).toContainText('# SmartAds Design System (SDS)');
+  await page.goBack();
+  await expect(page).toHaveURL(/\/introduction\/ai-agents\/$/);
+});
+
+test('AI Agents file cards use a horizontal layout and visible interaction states', async ({ page }) => {
+  await page.goto('/introduction/ai-agents/');
+  const cards = page.locator('.sa-ai-file-card');
+  const first = cards.first();
+  await expect(first.locator('.sa-ai-file-icon svg')).toHaveClass(/tabler-icon-file-text/);
+  await expect(first.locator('.sa-ai-file-copy strong')).toHaveText('AGENTS.md');
+  await expect(first.locator('.sa-ai-file-description')).toBeVisible();
+  const boxes = await cards.evaluateAll(elements => elements.map(element => {
+    const rect = element.getBoundingClientRect();
+    return { x: rect.x, y: rect.y, width: rect.width, height: rect.height };
+  }));
+  expect(boxes[0].width).toBeGreaterThan(boxes[0].height * 2);
+  expect(boxes[0].x).toBe(boxes[1].x);
+  expect(boxes[0].y).toBeLessThan(boxes[1].y);
+  await page.screenshot({ path: 'test-results/sds-ai-cards-light.png', fullPage: true });
+  const restBorder = await first.evaluate(element => getComputedStyle(element).borderColor);
+  await first.hover();
+  await expect.poll(() => first.evaluate(element => getComputedStyle(element).borderColor)).not.toBe(restBorder);
+  await first.focus();
+  await page.keyboard.press('Tab');
+  await expect(cards.nth(1)).toBeFocused();
+  await expect.poll(() => cards.nth(1).evaluate(element => getComputedStyle(element).outlineStyle)).toBe('solid');
+  await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
+  await expect(first.locator('.sa-ai-file-icon svg')).toBeVisible();
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+    await expect(cards.last().locator('.sa-ai-file-copy strong')).toBeVisible();
+  }
+  await page.screenshot({ path: 'test-results/sds-ai-cards-dark-mobile.png', fullPage: true });
+});
+
 test('seven routes, original Figma logo, navigation and internal links', async ({ page, request }) => {
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
@@ -66,6 +122,135 @@ test('copy page and persistent dark theme', async ({ page, context }) => {
   await page.reload();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   await page.screenshot({ path: 'test-results/sds-next-dark.png', fullPage: true });
+});
+
+test('Figma header sizing, theme colors and desktop reading width', async ({ page }) => {
+  await page.setViewportSize({ width: 1440, height: 900 });
+  await page.goto('/');
+  const search = page.locator('.sa-search-trigger');
+  const github = page.locator('.sa-header-github');
+  const theme = page.locator('.sa-theme-toggle');
+  const metrics = async () => page.evaluate(() => {
+    const size = selector => document.querySelector(selector).getBoundingClientRect().height;
+    const padding = getComputedStyle(document.querySelector('.sa-main'));
+    return { search: size('.sa-search-trigger'), github: size('.sa-header-github'), theme: size('.sa-theme-toggle'),
+      left: padding.paddingLeft, right: padding.paddingRight, overflow: document.documentElement.scrollWidth > innerWidth };
+  });
+  await expect(search.locator('svg')).toHaveClass(/tabler-icon-search/);
+  await expect(theme.locator('svg')).toHaveClass(/tabler-icon-circle-half-2/);
+  await expect(github).toHaveAttribute('href', 'https://github.com/VAKhoa/SmartAds---Design-System-New');
+  await expect(github).toHaveAttribute('target', '_blank');
+  const githubIcon = github.locator('img');
+  await expect(githubIcon).toHaveAttribute('src', '/brand/github-light.svg');
+  expect(await githubIcon.evaluate(image => image.complete && image.naturalWidth === 20 && image.naturalHeight === 20)).toBe(true);
+  expect(await metrics()).toEqual({ search: 36, github: 36, theme: 36, left: '160px', right: '160px', overflow: false });
+  await expect(github).toHaveCSS('background-color', 'rgb(0, 0, 0)');
+  await expect(github).toHaveCSS('color', 'rgb(255, 255, 255)');
+  await github.hover();
+  await expect(github).toHaveCSS('background-color', 'rgb(37, 37, 37)');
+  await theme.click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(github).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(github).toHaveCSS('color', 'rgb(31, 31, 31)');
+  await expect(githubIcon).toHaveAttribute('src', '/brand/github-dark.svg');
+  expect(await githubIcon.evaluate(image => image.complete && image.naturalWidth === 20 && image.naturalHeight === 20)).toBe(true);
+  await expect(theme).toHaveAttribute('aria-label', 'Chuyển giao diện sáng');
+  await expect(page.locator('.sa-header .sa-logo')).toHaveAttribute('data-figma-node', '15828:129796');
+  await expect(page.locator('.sa-header .sa-logo img')).toHaveCount(4);
+  const logoLoaded = await page.locator('.sa-header .sa-logo img').evaluateAll(images => images.every(image => image.complete && image.naturalWidth > 0 && image.currentSrc.includes('/brand/')) && images.slice(0, 3).every(image => image.currentSrc.includes('/brand/smartads-dark-')) && images[3].currentSrc.endsWith('/brand/smartads-fpt-online.svg'));
+  expect(logoLoaded).toBe(true);
+  expect(await metrics()).toEqual({ search: 36, github: 36, theme: 36, left: '160px', right: '160px', overflow: false });
+  await theme.click();
+  await expect(github).toHaveCSS('background-color', 'rgb(0, 0, 0)');
+  await page.setViewportSize({ width: 390, height: 844 });
+  expect(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth)).toBe(false);
+});
+
+test('Figma sidebar and compact page navigation adapt to screen width and theme', async ({ page }) => {
+  await page.setViewportSize({ width: 1920, height: 900 });
+  await page.goto('/introduction/principles/');
+  const sidebar = page.locator('.sa-sidebar');
+  const heading = sidebar.locator('.sa-sidebar-heading').first();
+  const current = sidebar.locator('a[aria-current="page"]');
+  const links = page.locator('.sa-pagination a');
+  await expect(sidebar).toHaveCSS('width', '240px');
+  await expect(sidebar).toHaveCSS('scrollbar-width', 'auto');
+  expect(await sidebar.evaluate(element => getComputedStyle(element, '::-webkit-scrollbar').width)).toBe('8px');
+  expect(await sidebar.evaluate(element => element.offsetWidth - element.clientWidth - parseFloat(getComputedStyle(element).borderRightWidth))).toBeLessThanOrEqual(8);
+  await expect(heading).toHaveCSS('font-size', '12px');
+  await expect(heading).toHaveCSS('font-weight', '600');
+  await expect(heading).toHaveCSS('line-height', '14.4px');
+  await expect(heading).toHaveCSS('color', 'rgb(115, 115, 115)');
+  await expect(sidebar.locator('.sa-nav-list a').first()).toHaveCSS('color', 'rgb(31, 31, 31)');
+  await expect(page.locator('h1')).toHaveCSS('color', 'rgb(31, 31, 31)');
+  await expect(page.locator('.sa-main')).toHaveCSS('padding-left', '320px');
+  await expect(links).toHaveCount(2);
+  await expect(links.first()).toContainText('Design System?');
+  await expect(links.last()).toContainText('Getting Started');
+  await expect(links.first()).toHaveCSS('height', '36px');
+  await expect(links.first()).toHaveCSS('border-radius', '8px');
+  await expect(links.first()).toHaveCSS('background-color', 'rgb(245, 245, 245)');
+  await expect(links.first()).toHaveCSS('color', 'rgb(23, 23, 23)');
+  await expect(page.locator('.sa-header')).toHaveCSS('background-color', 'rgb(255, 255, 255)');
+  await expect(page.locator('.sa-small-button').last()).toHaveCSS('background-color', 'rgb(245, 245, 245)');
+  await expect(links.first().locator('svg')).toHaveClass(/tabler-icon-arrow-left/);
+  await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
+  await expect(page.locator('body')).toHaveCSS('background-color', 'rgb(9, 9, 10)');
+  await expect(page.locator('.sa-header')).toHaveCSS('background-color', 'rgb(9, 9, 10)');
+  await expect(page.locator('.sa-header')).toHaveCSS('border-bottom-color', 'rgb(34, 34, 34)');
+  await expect(sidebar).toHaveCSS('background-color', 'rgb(9, 9, 10)');
+  await expect(sidebar).toHaveCSS('border-right-color', 'rgb(34, 34, 34)');
+  await expect(heading).toHaveCSS('color', 'rgb(161, 161, 161)');
+  await expect(sidebar.locator('.sa-nav-list a').first()).toHaveCSS('color', 'rgb(250, 250, 250)');
+  await expect(current).toHaveCSS('background-color', 'rgb(31, 31, 34)');
+  await sidebar.getByRole('link', { name: 'FAQ' }).hover();
+  await expect(sidebar.getByRole('link', { name: 'FAQ' })).toHaveCSS('background-color', 'rgb(31, 31, 34)');
+  await expect(links.first()).toHaveCSS('height', '36px');
+  await expect(links.first()).toHaveCSS('background-color', 'rgb(38, 38, 38)');
+  await expect(links.first()).toHaveCSS('color', 'rgb(250, 250, 250)');
+  await expect(page.locator('.sa-small-button').last()).toHaveCSS('background-color', 'rgb(38, 38, 38)');
+  await page.setViewportSize({ width: 1280, height: 900 });
+  await expect(sidebar).toHaveCSS('width', '240px');
+  await expect(page.locator('.sa-main')).toHaveCSS('padding-left', '96px');
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+});
+
+test('displayed text uses Public Sans with 200% content and 120% navigation line height', async ({ page }) => {
+  await page.goto('/');
+  const inspect = async () => page.locator('body').evaluate(body => [...body.querySelectorAll('*')].filter(element =>
+    [...element.childNodes].some(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim()) &&
+    getComputedStyle(element).display !== 'none'
+  ).map(element => {
+    const style = getComputedStyle(element);
+    return { tag: element.tagName, className: typeof element.className === 'string' ? element.className : '', font: style.fontFamily,
+      weight: Number(style.fontWeight), ratio: parseFloat(style.lineHeight) / parseFloat(style.fontSize), content: !!element.closest('.sa-main') };
+  }));
+  for (const text of await inspect()) {
+    expect(text.font, `${text.tag}.${text.className}`).toContain('Public Sans');
+    expect([400, 500, 600, 700], `${text.tag}.${text.className}`).toContain(text.weight);
+    expect(text.ratio, `${text.tag}.${text.className}`).toBeCloseTo(text.content ? 2 : 1.2, 1);
+  }
+  await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
+  for (const text of await inspect()) {
+    expect(text.font, `${text.tag}.${text.className}`).toContain('Public Sans');
+    expect([400, 500, 600, 700], `${text.tag}.${text.className}`).toContain(text.weight);
+    expect(text.ratio, `${text.tag}.${text.className}`).toBeCloseTo(text.content ? 2 : 1.2, 1);
+  }
+});
+
+test('body content uses the selected SDS docs font-size scale on desktop and mobile', async ({ page }) => {
+  const allowed = [11, 12, 13, 14, 16, 18, 20, 24, 28, 32];
+  for (const width of [1440, 390]) {
+    await page.setViewportSize({ width, height: 900 });
+    for (const href of [...navigation.map(item => item.href), '/resource/figma/']) {
+      await page.goto(href);
+      const sizes = await page.locator('.sa-main').evaluate(main => [...main.querySelectorAll('*')]
+        .filter(element => [...element.childNodes].some(node => node.nodeType === Node.TEXT_NODE && node.textContent.trim())
+          && getComputedStyle(element).display !== 'none')
+        .map(element => ({ text: element.textContent.trim().slice(0, 32), size: parseFloat(getComputedStyle(element).fontSize) })));
+      for (const item of sizes) expect(allowed, `${href} at ${width}px: ${item.text} is ${item.size}px`).toContain(item.size);
+    }
+  }
 });
 
 test('mobile navigation and responsive reading layout', async ({ page }) => {

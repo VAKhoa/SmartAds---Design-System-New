@@ -19,7 +19,16 @@
       "smartads-dark-symbol.svg",
       "smartads-dark-wordmark.svg",
       "smartads-dark-powered-by.svg",
-      "smartads-dark-fpt-online.svg"
-    ]
+      "smartads-fpt-online.svg"
+    ],
+    "sharedAssetNote": "FPT Online SVG is byte-identical in light and dark source exports; both modes reuse one local file."
+  },
+  "githubIcons": {
+    "fileKey": "sQYYGDipDACa8UIqgdWWZq",
+    "lightNodeId": "325:1491",
+    "darkNodeId": "326:1909",
+    "lightFile": "github-light.svg",
+    "darkFile": "github-dark.svg",
+    "size": "20x20"
   }
 }

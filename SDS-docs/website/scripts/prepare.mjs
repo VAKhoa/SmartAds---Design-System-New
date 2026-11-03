@@ -6,6 +6,9 @@ import matter from 'gray-matter';
 import { Marked } from 'marked';
 import { generateTheme } from './generate-theme.mjs';
 import { navigation } from '../src/lib/navigation.js';
+import { aiSourceFiles } from '../src/data/ai-source-files.js';
+import { dirname } from 'node:path';
+import { fileURLToPath } from 'node:url';
 
 generateTheme();
 const output = new URL('../src/data/', import.meta.url);
@@ -44,6 +47,13 @@ const documents = navigation.map(item => {
 
   return { ...item, ...data, html, headings, markdown: `# ${data.title}\n\n${content}`, searchText: clean(content) };
 });
+
+for (const file of aiSourceFiles) {
+  const source = readFileSync(new URL(`../../../${file.path}`, import.meta.url), 'utf8');
+  const target = new URL(`../public${file.href}`, import.meta.url);
+  mkdirSync(dirname(fileURLToPath(target)), { recursive: true });
+  writeFileSync(target, source);
+}
 
 function tableHtml(renderer, token) {
   const row = (cells, tag) => '<tr>' + cells.map(cell => `<${tag}>${renderer.parser.parseInline(cell.tokens)}</${tag}>`).join('') + '</tr>';

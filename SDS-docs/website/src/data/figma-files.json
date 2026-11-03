@@ -1,0 +1,16 @@
+[
+  {
+    "id": "smartads-design-system",
+    "title": "SmartAds - Design System",
+    "description": "Variables, styles và nền tảng thiết kế SDS.",
+    "url": "https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System",
+    "thumbnail": ""
+  },
+  {
+    "id": "smartads-component-library",
+    "title": "SmartAds - Component Library Overview",
+    "description": "Thư viện component và thiết kế giao diện tài liệu.",
+    "url": "https://www.figma.com/design/sQYYGDipDACa8UIqgdWWZq/SmartAds---Component-Library-Overview",
+    "thumbnail": ""
+  }
+]

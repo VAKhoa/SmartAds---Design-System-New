@@ -1,7 +1,7 @@
 ---
 title: SmartAds và SmartAds Design System
 section: Introduction
-updated: 02/11/2026
+updated: 03/11/2026
 status: in-review
 ---
 
@@ -36,7 +36,7 @@ SDS dự kiến có bốn lớp:
 3. **Components:** mô tả mục đích, biến thể, trạng thái, hành vi, accessibility và cách triển khai của những component được chọn để phát hành.
 4. **Tài liệu cho người và máy:** website hướng dẫn, dữ liệu JSON/CSS, Markdown cho AI agent và bản phát hành có phiên bản khi hệ thống đủ điều kiện.
 
-Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và khung website với 7 trang Introduction trong `../website/`. Nội dung website đang là bản nháp; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
+Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và website với 7 trang Introduction cùng trang Resource / Figma trong `../website/`. Nội dung Introduction đang chờ duyệt; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
 
 ## Ai sẽ dùng SDS?
 
@@ -60,7 +60,7 @@ Người dùng sản phẩm SmartAds và người dùng SDS là **hai nhóm khá
 | Quy ước đã duyệt hoặc còn mở | `../.agents/skills/ds-conventions/references/open-decisions.md` và `../tokens/rename-map.json`. |
 | Cách vận hành thư mục này | [Hướng dẫn thư mục và vận hành](workspace-guide.md). |
 
-Tài liệu [VDS mẫu](<../../../Prompt Docs VNE/llms-full.txt>) giúp tham khảo **cách tổ chức tài liệu**, không xác định màu sắc, component hay tiếng nói thương hiệu của SmartAds.
+Tài liệu [VDS mẫu](<../../../Prompt Docs VNE (DON'T TOUCH)/llms-full.txt>) giúp tham khảo **cách tổ chức tài liệu**, không xác định màu sắc, component hay tiếng nói thương hiệu của SmartAds.
 
 ## SDS đang ở đâu?
 

@@ -1,0 +1,54 @@
+/* Website component tokens. Light card: Figma 9:4767. Dark and interaction
+   values reuse the approved SDS website palette; these are not product tokens. */
+.sa-reading-layout-resource {
+  --sa-resource-surface: var(--sa-docs-bg);
+  --sa-resource-border: #dfe3e8;
+  --sa-resource-preview: rgba(236, 236, 240, .2);
+  --sa-resource-divider: rgba(0, 0, 0, .03);
+  --sa-resource-text: var(--sa-docs-heading);
+  --sa-resource-muted: #7b7d80;
+  --sa-resource-hover: var(--sa-docs-panel);
+  --sa-resource-pressed: var(--sa-docs-page-nav-bg);
+  --sa-resource-action-bg: var(--sa-docs-bg);
+  --sa-resource-shadow: 0 20px 25px rgba(0, 0, 0, .1), 0 8px 10px rgba(0, 0, 0, .1);
+  grid-template-columns: minmax(0, 1fr);
+  min-height: calc(100dvh - var(--sa-docs-header-height));
+}
+[data-theme='dark'] .sa-reading-layout-resource {
+  --sa-resource-surface: var(--sa-docs-bg);
+  --sa-resource-border: #222222;
+  --sa-resource-preview: #141416;
+  --sa-resource-divider: #222222;
+  --sa-resource-text: #fafafa;
+  --sa-resource-muted: #a1a1a1;
+  --sa-resource-hover: #1f1f22;
+  --sa-resource-action-bg: #262626;
+}
+.sa-main-resource { display: flex; flex-direction: column; }
+.sa-resource-breadcrumb { min-height: 36px; margin-bottom: 24px; }
+.sa-main-resource .sa-footer { margin-top: auto; }
+.sa-figma-directory { padding-bottom: 48px; }
+.sa-figma-count { margin: 0 0 16px; font-size: 12px; color: var(--sa-resource-muted); }
+.sa-figma-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 240px), 1fr)); gap: 24px; }
+.sa-figma-card { position: relative; display: flex; flex-direction: column; min-width: 0; overflow: hidden; border: 1px solid var(--sa-resource-border); border-radius: 10px; background: var(--sa-resource-surface); color: var(--sa-resource-text); transition: background-color .15s, border-color .15s; }
+.sa-figma-card-preview { display: grid; place-items: center; position: relative; flex-shrink: 0; height: 140px; background: var(--sa-resource-preview); border-bottom: 1px solid var(--sa-resource-divider); }
+.sa-figma-mark { display: grid; grid-template-columns: repeat(2, 11.5px); grid-template-rows: repeat(3, 11.5px); width: 23px; height: 34.5px; }
+.sa-figma-mark img { display: block; }
+.sa-figma-thumbnail { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0; transition: opacity .15s; }
+.sa-figma-thumbnail.is-loaded { opacity: 1; }
+.sa-figma-card-info { padding: 8px 12px 12px; }
+.sa-figma-card-info h2 { margin: 0; font-size: 14px; font-weight: 600; overflow-wrap: anywhere; }
+.sa-figma-card-info p { margin: 4px 0 0; font-size: 12px; color: var(--sa-resource-muted); }
+.sa-figma-card-action { display: flex; align-items: center; justify-content: center; gap: 6px; position: absolute; top: 88px; left: 50%; transform: translateX(-50%); height: 32px; padding: 0 14px; border-radius: 10px; background: var(--sa-resource-action-bg); color: var(--sa-resource-text); box-shadow: var(--sa-resource-shadow); font-size: 12px; font-weight: 600; white-space: nowrap; opacity: 0; transition: opacity .15s; pointer-events: none; }
+.sa-figma-card[href]:hover { background: var(--sa-resource-hover); border-color: var(--sa-docs-primary); }
+.sa-figma-card[href]:is(:hover, :focus-visible) .sa-figma-card-action { opacity: 1; }
+.sa-figma-card[href]:active { background: var(--sa-resource-pressed); }
+.sa-figma-card:focus-visible { outline: 2px solid var(--sa-docs-primary); outline-offset: 4px; }
+.sa-figma-card[aria-disabled='true'] { cursor: not-allowed; }
+.sa-figma-card[aria-disabled='true'] .sa-figma-card-preview { opacity: .5; }
+.sa-figma-unavailable { display: inline-block; margin-top: 8px; font-size: 12px; color: var(--sa-resource-muted); }
+.sa-figma-empty { display: flex; flex-direction: column; align-items: center; gap: 12px; padding: 64px 24px; margin-bottom: 48px; border: 1px dashed var(--sa-resource-border); border-radius: 10px; color: var(--sa-resource-muted); text-align: center; }
+.sa-figma-empty h2 { margin: 0; color: var(--sa-resource-text); font-size: 18px; }
+.sa-figma-empty p { margin: 0; font-size: 14px; }
+@media (hover: none) { .sa-figma-card-action { opacity: 1; } }
+@media (prefers-reduced-motion: reduce) { .sa-figma-card, .sa-figma-card-action, .sa-figma-thumbnail { transition: none; } }

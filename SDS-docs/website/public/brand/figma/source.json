@@ -1,0 +1,13 @@
+{
+  "fileKey": "sQYYGDipDACa8UIqgdWWZq",
+  "nodeId": "9:5161",
+  "reference": "https://www.figma.com/design/sQYYGDipDACa8UIqgdWWZq?node-id=9-4767",
+  "description": "Original five SVG layers of the Figma brand mark, assembled at native dimensions (23 × 34.5px). Functional external-link icon uses Tabler per project convention.",
+  "layers": [
+    { "file": "top-left.svg", "nodeId": "9:5170" },
+    { "file": "top-right.svg", "nodeId": "9:5173" },
+    { "file": "middle-left.svg", "nodeId": "9:5167" },
+    { "file": "middle-right.svg", "nodeId": "9:5176" },
+    { "file": "bottom-left.svg", "nodeId": "9:5164" }
+  ]
+}

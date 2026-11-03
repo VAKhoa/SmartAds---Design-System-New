@@ -2,7 +2,7 @@
 title: Overview
 description: Nền tảng thiết kế chung cho giao diện SmartAds. Kết nối thiết kế, phát triển và trải nghiệm sản phẩm qua cùng một hệ thống.
 section: Introduction
-updated: 02/11/2026
+updated: 03/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -36,12 +36,12 @@ Từ một màu thể hiện trạng thái đến cách trình bày một màn h
   <a class="sa-entry" href="/introduction/design-system/"><strong>Hiểu về SDS</strong><span>Design system là gì, dành cho ai và gồm những phần nào?</span></a>
   <a class="sa-entry" href="/introduction/getting-started/"><strong>Dùng SDS trong công việc</strong><span>Điểm bắt đầu cho designer, developer và người review.</span></a>
   <a class="sa-entry" href="/introduction/principles/"><strong>Nguyên tắc thiết kế</strong><span>Những định hướng đang được đề xuất cho giao diện SmartAds.</span></a>
-  <a class="sa-entry" href="/introduction/ai-agents/"><strong>Làm việc cùng Codex</strong><span>Cung cấp đúng ngữ cảnh để agent triển khai theo SDS.</span></a>
+  <a class="sa-entry" href="/introduction/ai-agents/"><strong>Làm việc cùng Codex</strong><span>Chọn quy tắc, skill và kiểm tra tài liệu sau khi dự án thay đổi.</span></a>
 </div>
 
 ## Phạm vi hiện tại
 
-Phiên bản đầu tiên của website gồm **7 trang Introduction**. Đây là nơi tìm hiểu SDS trước khi đi vào hướng dẫn chi tiết về foundations, tokens và components.
+Website hiện có **7 trang Introduction** để tìm hiểu SDS và trang [Resource / Figma file](/resource/figma/) để mở các file thiết kế. Các mục Foundation, Components và Patterns đã có khung điều hướng nhưng nội dung còn trống.
 
 Bản chụp Figma ngày 02/11/2026 ghi nhận 690 local variables thuộc 6 collections cùng 132 local styles. Dữ liệu này là cơ sở để tiếp tục kiểm kê và xây tài liệu; chưa phải một thư viện code đã phát hành.
 

@@ -2,7 +2,7 @@
 title: Getting Started
 description: Chọn điểm bắt đầu phù hợp với công việc của bạn trong đội ngũ SmartAds.
 section: Introduction
-updated: 02/11/2026
+updated: 03/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -29,7 +29,7 @@ Kiểm tra nội dung, trạng thái và cách dùng thành phần có đúng v�
 
 ## Nếu bạn làm việc với AI
 
-Cung cấp mục tiêu cụ thể, phạm vi cần thay đổi và nguồn thiết kế. Đọc [AI Agents](/introduction/ai-agents/) để dùng Codex cùng tài liệu và dữ liệu SDS.
+Cung cấp mục tiêu cụ thể, phạm vi cần thay đổi và nguồn thiết kế. Mở `SmartAds - SDS/` để Codex đọc quy tắc gốc; khi sửa UI website, yêu cầu đọc thêm `SDS-docs/website/WEBSITE-UI-RULES.md`. Sau mỗi thay đổi trong folder, Codex cần rà các trang website có thể đã cũ, cập nhật trang liên quan rồi build lại. Đọc [AI Agents](/introduction/ai-agents/) để xem bảng chọn skill, prompt mẫu và quy trình đồng bộ.
 
 ## Đọc tiếp
 

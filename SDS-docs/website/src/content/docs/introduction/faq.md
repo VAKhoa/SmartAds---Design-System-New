@@ -2,7 +2,7 @@
 title: FAQ
 description: Những câu hỏi thường gặp khi bắt đầu sử dụng tài liệu SmartAds Design System.
 section: Introduction
-updated: 02/11/2026
+updated: 03/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -17,11 +17,11 @@ SmartAds là nền tảng quảng cáo. SDS là hệ thống thiết kế đư�
 
 ## Website này đã có thư viện component chưa?
 
-Chưa. Phiên bản hiện tại là khung tài liệu với 7 trang Introduction. Hướng dẫn chi tiết và thư viện component code sẽ được xây theo phạm vi được duyệt ở các bước tiếp theo.
+Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma và các mục Foundation, Components, Patterns đang để trống để bổ sung tài liệu sau.
 
 ## Tra giá trị thiết kế ở đâu?
 
-Mở file Figma SmartAds Design System. Trong bộ mã nguồn SDS, `variable-figma-export/` lưu bản chụp variables và styles để đối chiếu; bản chụp không tự cập nhật mỗi khi Figma thay đổi.
+Mở mục [Resource / Figma file](/resource/figma/) để vào các file thiết kế SmartAds. Trong bộ mã nguồn SDS, `variable-figma-export/` lưu bản chụp variables và styles để đối chiếu; bản chụp không tự cập nhật mỗi khi Figma thay đổi.
 
 ## Tên viết tắt và tiền tố CSS là gì?
 
@@ -37,4 +37,8 @@ Ghi lại liên kết Figma, tên variable hoặc thành phần, mode và điể
 
 ## Có cần gọi nhiều agent để sử dụng SDS không?
 
-Bạn có thể giao việc cho một Codex chính với phạm vi cụ thể. Hai skill hiện có hỗ trợ công việc về quy ước và dữ liệu Figma; xem [AI Agents](/introduction/ai-agents/) để biết cách dùng.
+Bạn có thể giao việc cho một Codex chính với phạm vi cụ thể. Skill được chọn theo loại task; xem [AI Agents](/introduction/ai-agents/) và `SDS-docs/introduction/workspace-guide.md` để biết cách dùng.
+
+## Khi quy tắc hoặc file trong dự án thay đổi, website docs có tự cập nhật không?
+
+Không. Build chỉ sinh lại trang từ Markdown đang có. Codex phải kiểm tra những trang bị ảnh hưởng, sửa nội dung, ví dụ và prompt đã cũ, rồi build và xem route liên quan. Khi sửa UI website, đọc `SDS-docs/website/WEBSITE-UI-RULES.md`; đây là file quy tắc website, không phải skill. Xem quy trình và bảng tác động trên trang [AI Agents](/introduction/ai-agents/).

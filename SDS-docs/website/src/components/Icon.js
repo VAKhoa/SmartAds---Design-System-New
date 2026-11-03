@@ -2,8 +2,8 @@
 import {
   IconSearch, IconArrowRight, IconArrowLeft, IconArrowUp, IconArrowDown,
   IconChevronRight, IconChevronDown, IconExternalLink, IconCopy, IconCheck,
-  IconMenu2, IconX, IconSun, IconMoon, IconLayoutGrid, IconLayersIntersect,
-  IconCompass, IconHelpCircle, IconBook, IconSparkles, IconBrandFigma, IconBrandGithub, IconLink,
+  IconMenu2, IconX, IconCircleHalf2, IconLayoutGrid, IconLayersIntersect,
+  IconCompass, IconHelpCircle, IconBook, IconFileText, IconSparkles, IconBrandFigma, IconLink,
 } from '@tabler/icons-react';
 
 // Single source for UI icons. Add named Tabler imports only; never draw custom paths.
@@ -11,10 +11,10 @@ const icons = {
   search: IconSearch, arrow: IconArrowRight, back: IconArrowLeft,
   up: IconArrowUp, 'arrow-down': IconArrowDown, chevron: IconChevronRight,
   down: IconChevronDown, external: IconExternalLink, copy: IconCopy,
-  check: IconCheck, menu: IconMenu2, close: IconX, sun: IconSun, moon: IconMoon,
+  check: IconCheck, menu: IconMenu2, close: IconX, theme: IconCircleHalf2,
   overview: IconLayoutGrid, layers: IconLayersIntersect, compass: IconCompass,
-  help: IconHelpCircle, book: IconBook, sparkles: IconSparkles,
-  figma: IconBrandFigma, github: IconBrandGithub, link: IconLink,
+  help: IconHelpCircle, book: IconBook, file: IconFileText, sparkles: IconSparkles,
+  figma: IconBrandFigma, link: IconLink,
 };
 
 export default function Icon({ name, size = 18, ...props }) {
