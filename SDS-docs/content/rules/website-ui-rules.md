@@ -1,12 +1,12 @@
 # Quy tắc giao diện website SDS Docs
 
-File này áp dụng cho **website tài liệu** trong `SDS-docs/website/`. Đây là quy tắc triển khai của website đang có, không phải bộ token hay component SDS đã phát hành cho sản phẩm SmartAds. Đọc cùng `../SDS-RULES.md` trước khi thêm hoặc sửa UI. Các giá trị ở đây mô tả quyết định hiện tại của website; khi người dùng gửi node Figma mới và yêu cầu đổi thiết kế, đối chiếu node đó rồi cập nhật code và quy tắc liên quan.
+File này áp dụng cho **website tài liệu** trong `SDS-docs/website/`. Đây là quy tắc triển khai của website đang có, không phải bộ token hay component SDS đã phát hành cho sản phẩm SmartAds. Đọc cùng `SDS-docs/content/rules/SDS-rules.md` trước khi thêm hoặc sửa UI. Các giá trị ở đây mô tả quyết định hiện tại của website; khi người dùng gửi node Figma mới và yêu cầu đổi thiết kế, đối chiếu node đó rồi cập nhật code và quy tắc liên quan.
 
 ## Thứ tự nguồn khi làm UI
 
 1. Yêu cầu mới nhất của người dùng và node Figma cụ thể được giao cho màn/component đó.
-2. Figma SmartAds Design System trong `../ds.config.json` cho variable, style và asset thương hiệu. `../variable-figma-export/` chỉ là snapshot ngày 02/11/2026; kiểm tra Figma hiện tại khi cần khẳng định giá trị mới.
-3. Quy tắc dự án `../SDS-RULES.md` và các quyết định đã duyệt. D1 là tiền tố `sa`; D2–D8 vẫn mở, không biến thành quy tắc sản phẩm.
+2. Figma SmartAds Design System trong `SDS-docs/ds.config.json` cho variable, style và asset thương hiệu. `SDS-docs/variable-figma-export/` chỉ là snapshot ngày 02/11/2026; kiểm tra Figma hiện tại khi cần khẳng định giá trị mới.
+3. Quy tắc dự án `SDS-docs/content/rules/SDS-rules.md` và các quyết định đã duyệt. D1 là tiền tố `sa`; D2–D8 vẫn mở, không biến thành quy tắc sản phẩm.
 4. Các pattern website đang dùng trong `src/components/`, `src/styles/globals.css` và `src/styles/figma-resources.css`. Nếu Figma không quy định một chi tiết, dùng pattern hiện có và nói rõ phần suy luận.
 
 Không lấy giá trị màu, font hoặc nội dung thương hiệu từ website mẫu. Không chỉnh tay `src/styles/figma.generated.css`, `src/data/*.generated.json`, `.next/` hoặc `out/`. Với một giá trị mới từ Figma, ghi node/variable/style ID ở tài liệu hoặc comment gần code để lần sau tra được nguồn. Các biến `--sa-docs-*` và `--sa-resource-*` chỉ dành cho website docs; không gọi chúng là token sản phẩm SDS.
@@ -60,11 +60,11 @@ Các màu khác của panel, chữ phụ, border và thẻ Resource đã có bi�
 
 ## Quy trình áp dụng cho mỗi task UI
 
-1. Đọc `../SDS-RULES.md`, file này và node Figma được giao. Xác định route, component, mode, state và viewport liên quan.
+1. Đọc `SDS-docs/content/rules/SDS-rules.md`, file này và node Figma được giao. Xác định route, component, mode, state và viewport liên quan.
 2. Tra giá trị đã có trong generated Figma CSS và các biến docs. Nếu phải thêm giá trị, ghi nguồn và đặt ở lớp website phù hợp; không sửa token sản phẩm hay file generated.
 3. Sửa component/CSS, kiểm tra tương tác và đọc lại các selector ghi đè ở cuối `globals.css`. File hiện có nhiều lớp CSS lịch sử; đừng chỉ kiểm tra một khai báo đầu tiên.
 4. Chạy `npm run build` trong `website/`. Với layout, theme, điều hướng hoặc state, chạy `npm run test:e2e` sau build. Xem màn được sửa ở light/dark và kích thước liên quan, gồm `1920`, `1440`, `1280`, `960`, `768`, `390`, `320px` khi thay đổi bố cục.
-5. Kiểm tra các bài ở `src/content/docs/` theo bảng tác động trong `../introduction/workspace-guide.md`. Nếu quy tắc, cấu trúc hoặc cách vận hành website đổi, cập nhật trang AI Agents và các trang Introduction liên quan, không chỉ sửa file này. Cập nhật `updated` cho bài đã sửa, build và xem route; nếu không bài nào cần sửa, báo rõ đã kiểm tra những trang nào.
+5. Kiểm tra các bài ở `SDS-docs/content/pages/` theo bảng tác động trong `SDS-docs/content/guides/workspace-guide.md`. Nếu quy tắc, cấu trúc hoặc cách vận hành website đổi, cập nhật trang AI Agents và các trang Introduction liên quan, không chỉ sửa file này. Cập nhật `updated` cho bài đã sửa, build và xem route; nếu không bài nào cần sửa, báo rõ đã kiểm tra những trang nào.
 6. Báo file đã sửa, node/variable làm nguồn, phần đã kiểm và ngoại lệ hoặc quyết định còn chờ. Nếu một yêu cầu mới làm đổi quy tắc chung, cập nhật file này cùng code.
 
 Các bài Playwright hiện kiểm tra font Public Sans, line-height, dãy cỡ chữ body, một số màu và kích thước header/sidebar, dark mode, route, tương tác và không tràn ngang. Đây là hàng rào tự động cho phần đã có; kiểm tra bằng mắt vẫn cần cho UI mới hoặc Figma node mới.

@@ -2,6 +2,8 @@ import { notFound } from 'next/navigation';
 import DocsShell from '../../../components/DocsShell';
 import { plannedNavigation } from '../../../lib/navigation';
 import documents from '../../../data/docs.generated.json';
+import ColorShowcase from '../../../components/ColorShowcase';
+import TypographyShowcase from '../../../components/TypographyShowcase';
 
 const pages = plannedNavigation.flatMap(group => group.items.map(item => ({ ...item, section: group.slug })));
 
@@ -16,10 +18,17 @@ export async function generateMetadata({ params }) {
   return { title: pages.find(page => page.section === section && page.slug === slug)?.title || 'SDS' };
 }
 
-export default async function EmptySectionPage({ params }) {
+export default async function SectionPage({ params }) {
   const { section, slug } = await params;
   const page = pages.find(page => page.section === section && page.slug === slug);
   if (!page) notFound();
   const searchIndex = documents.map(({ id, title, href, description, searchText, icon }) => ({ id, title, href, description, searchText, icon }));
-  return <DocsShell empty document={{ ...page, headings: [] }} searchIndex={searchIndex} />;
+  const document = documents.find(doc => doc.id === page.id);
+  if (!document) return <DocsShell empty document={{ ...page, headings: [] }} searchIndex={searchIndex} />;
+  return <DocsShell document={document} searchIndex={searchIndex}
+    sourceFiles={[{ path: document.file, description: 'Mở file Markdown gốc của trang này.', href: document.sourceHref }]}>
+    {page.id === 'foundation/colors' && <ColorShowcase />}
+    {page.id === 'foundation/typography' && <TypographyShowcase />}
+    <div className="sa-prose" dangerouslySetInnerHTML={{ __html: document.html }} />
+  </DocsShell>;
 }

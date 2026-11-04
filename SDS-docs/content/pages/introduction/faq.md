@@ -2,7 +2,7 @@
 title: FAQ
 description: Những câu hỏi thường gặp khi bắt đầu sử dụng tài liệu SmartAds Design System.
 section: Introduction
-updated: 03/11/2026
+updated: 04/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -17,7 +17,11 @@ SmartAds là nền tảng quảng cáo. SDS là hệ thống thiết kế đư�
 
 ## Website này đã có thư viện component chưa?
 
-Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma và các mục Foundation, Components, Patterns đang để trống để bổ sung tài liệu sau.
+Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/) và [Typography](/foundation/typography/) trong Foundation; các mục Foundation, Components, Patterns còn lại đang chờ bài.
+
+## Thêm bài cho một mục sidebar như thế nào?
+
+Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md` và **Typography** dùng `content/pages/foundation/typography.md`; cả hai route đều có card mở file `.md` gốc. Mục chưa có bài tiếp tục để trống.
 
 ## Tra giá trị thiết kế ở đâu?
 
@@ -37,8 +41,8 @@ Ghi lại liên kết Figma, tên variable hoặc thành phần, mode và điể
 
 ## Có cần gọi nhiều agent để sử dụng SDS không?
 
-Bạn có thể giao việc cho một Codex chính với phạm vi cụ thể. Skill được chọn theo loại task; xem [AI Agents](/introduction/ai-agents/) và `SDS-docs/introduction/workspace-guide.md` để biết cách dùng.
+Bạn có thể giao việc cho một Codex chính với phạm vi cụ thể. Skill được chọn theo loại task; xem [AI Agents](/introduction/ai-agents/) và `SDS-docs/content/guides/workspace-guide.md` để biết cách dùng.
 
 ## Khi quy tắc hoặc file trong dự án thay đổi, website docs có tự cập nhật không?
 
-Không. Build chỉ sinh lại trang từ Markdown đang có. Codex phải kiểm tra những trang bị ảnh hưởng, sửa nội dung, ví dụ và prompt đã cũ, rồi build và xem route liên quan. Khi sửa UI website, đọc `SDS-docs/website/WEBSITE-UI-RULES.md`; đây là file quy tắc website, không phải skill. Xem quy trình và bảng tác động trên trang [AI Agents](/introduction/ai-agents/).
+Không. Build chỉ sinh lại trang từ Markdown đang có. Codex phải kiểm tra những trang bị ảnh hưởng, sửa nội dung, ví dụ và prompt đã cũ, rồi build và xem route liên quan. Khi sửa UI website, đọc `SDS-docs/content/rules/website-ui-rules.md`; đây là file quy tắc website, không phải skill. Xem quy trình và bảng tác động trên trang [AI Agents](/introduction/ai-agents/).

@@ -7,8 +7,8 @@ test('AI Agents links to the three original Markdown files', async ({ page, requ
   await expect(cards).toHaveCount(3);
   const files = [
     ['/source/AGENTS.md', '# SmartAds Design System (SDS)'],
-    ['/source/SDS-docs/SDS-RULES.md', '# SmartAds Design System Docs'],
-    ['/source/SDS-docs/introduction/workspace-guide.md', '# Hướng dẫn thư mục và vận hành SDS Docs'],
+    ['/source/SDS-docs/content/rules/SDS-rules.md', '# SmartAds Design System Docs'],
+    ['/source/SDS-docs/content/guides/workspace-guide.md', '# Hướng dẫn thư mục và vận hành SDS Docs'],
   ];
   await expect(page.locator('.sa-ai-file-viewer')).toHaveCount(0);
   for (const [index, [href, firstLine]] of files.entries()) {
@@ -86,7 +86,7 @@ test('seven routes, original Figma logo, navigation and internal links', async (
     const box = await logo.boundingBox();
     expect(box.width).toBeCloseTo(110, 0);
     await expect(page.locator('.sa-sidebar svg')).toHaveCount(0);
-    await expect(page.locator('.sa-sidebar .sa-nav-list a')).toHaveCount(26);
+    await expect(page.locator('.sa-sidebar .sa-nav-list a')).toHaveCount(navigation.length + plannedNavigation.reduce((count, group) => count + group.items.length, 0));
     const foreignFonts = await page.locator('body *').evaluateAll(elements => elements.filter(el => el.textContent.trim() && !['SCRIPT','STYLE'].includes(el.tagName) && !getComputedStyle(el).fontFamily.includes('Public Sans')).map(el => el.tagName));
     expect(foreignFonts).toEqual([]);
     expect(box.width / box.height).toBeCloseTo(294.75 / 90, 1);
@@ -289,17 +289,56 @@ test('mobile navigation and responsive reading layout', async ({ page }) => {
 });
 
 
-test('planned sidebar destinations have separate blank pages', async ({ page }) => {
+test('Foundation articles have their own sources and remaining planned destinations stay blank', async ({ page, request }) => {
   await page.goto('/');
   for (const group of plannedNavigation) for (const item of group.items) {
     await page.locator('.sa-sidebar a[href="' + item.href + '"]').click();
     await expect(page).toHaveURL(new RegExp(item.href + '$'));
-    await expect(page.locator('#main-content')).toBeEmpty();
+    if (item.id === 'foundation/colors') {
+      await expect(page.locator('#main-content h1')).toHaveText('Colors');
+      await expect(page.locator('.sa-color-swatch')).toHaveCount(102);
+      await expect(page.locator('.sa-color-mode')).toHaveCount(2);
+      const source = await request.get('/source/docs/foundation/sds-color.md');
+      expect(source.ok()).toBeTruthy();
+      expect(await source.text()).toContain('## Contrast và khả năng đọc');
+    } else if (item.id === 'foundation/typography') {
+      await expect(page.locator('#main-content h1')).toHaveText('Typography');
+      await expect(page.locator('.sa-type-row')).toHaveCount(15);
+      const source = await request.get('/source/docs/foundation/typography.md');
+      expect(source.ok()).toBeTruthy();
+      expect(await source.text()).toContain('## Thang chữ Brand');
+    } else await expect(page.locator('#main-content')).toBeEmpty();
     await expect(page.locator('.sa-sidebar [aria-current="page"]')).toHaveText(item.title);
     await page.reload();
-    await expect(page.locator('#main-content')).toBeEmpty();
-    await expect(page.locator('.sa-toc')).toHaveCount(0);
+    if (item.id === 'foundation/colors' || item.id === 'foundation/typography') await expect(page.locator('#main-content h1')).toHaveText(item.title);
+    else {
+      await expect(page.locator('#main-content')).toBeEmpty();
+      await expect(page.locator('.sa-toc')).toHaveCount(0);
+    }
   }
+});
+
+test('Colors remains readable on mobile in dark mode', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/foundation/colors/');
+  await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  await expect(page.locator('.sa-color-mode')).toHaveCount(2);
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true);
+  await page.screenshot({ path: 'test-results/sds-color-mobile-dark.png', fullPage: false });
+});
+
+test('Typography specimens fit mobile widths in dark mode', async ({ page }) => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.goto('/foundation/typography/');
+  await expect(page.locator('.sa-type-row')).toHaveCount(15);
+  await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
+  await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
+  for (const width of [390, 320]) {
+    await page.setViewportSize({ width, height: 844 });
+    expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth), `Typography at ${width}px`).toBe(true);
+  }
+  await page.screenshot({ path: 'test-results/sds-typography-mobile.png' });
 });
 
 test('all UI icons use Tabler including CSS, article decorations and search states', async ({ page, request }) => {

@@ -1,9 +1,9 @@
-export default function AiSourceFiles({ files }) {
+export default function SourceFileLinks({ files }) {
   return <section className="sa-ai-files" aria-labelledby="sa-ai-files-title">
     <div className="sa-ai-files-heading">
       <p className="sa-ai-files-eyebrow">Tài liệu nguồn</p>
       <h2 id="sa-ai-files-title">Mở file Markdown</h2>
-      <p>Quy tắc và hướng dẫn gốc để làm việc với SDS.</p>
+      <p>Chọn file để mở nội dung Markdown gốc.</p>
     </div>
     <div className="sa-ai-files-grid">
       {files.map(file => <a key={file.path} href={file.href} className="sa-ai-file-card">

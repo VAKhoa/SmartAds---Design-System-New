@@ -1,6 +1,7 @@
 import { fileURLToPath } from 'node:url';
 
 export default {
+  agentRules: false,
   output: 'export',
   trailingSlash: true,
   images: { unoptimized: true },

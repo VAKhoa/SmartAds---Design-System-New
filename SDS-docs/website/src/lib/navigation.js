@@ -8,12 +8,13 @@ export const navigation = [
   { id: 'glossary', title: 'Glossary', href: '/introduction/glossary/', file: 'introduction/glossary.md', icon: 'book' },
 ];
 
-// Menu scaffold from Figma sQYYGDipDACa8UIqgdWWZq, node 319:375. Each planned item has its own blank route.
+// Menu scaffold from Figma sQYYGDipDACa8UIqgdWWZq, node 319:375.
+// Logo and Layout are added for the requested SDS documentation taxonomy.
 export const plannedNavigation = [
-  { title: 'Foundation', slug: 'foundation', items: ['Overview', 'Colors', 'Typography', 'Spacing', 'Icons'] },
+  { title: 'Foundation', slug: 'foundation', items: ['Overview', 'Colors', 'Typography', 'Spacing', 'Layout', 'Icons', 'Logo'] },
   { title: 'Components', slug: 'components', items: ['Button', 'Badge', 'Card', 'Input', 'Dialog', 'Select', 'Checkbox', 'Switch', 'Alert', 'Avatar', 'Tooltips'] },
   { title: 'Patterns', slug: 'patterns', items: ['Forms', 'Data Tables', 'Navigation'] },
 ].map(group => ({ ...group, items: group.items.map(title => {
   const slug = title.toLowerCase().replaceAll(' ', '-');
-  return { title, slug, id: group.slug + '/' + slug, href: '/' + group.slug + '/' + slug + '/' };
+  return { title, section: group.title, slug, id: group.slug + '/' + slug, href: '/' + group.slug + '/' + slug + '/', file: group.slug === 'foundation' && slug === 'colors' ? 'foundation/sds-color.md' : group.slug + '/' + slug + '.md', icon: 'book' };
 }) }));

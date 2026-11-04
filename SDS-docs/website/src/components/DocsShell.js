@@ -8,7 +8,7 @@ import { navigation, plannedNavigation } from '../lib/navigation';
 import { figmaResourcePage } from '../lib/figma-resources';
 import Icon from './Icon';
 import Logo from './Logo';
-import AiSourceFiles from './AiSourceFiles';
+import SourceFileLinks from './SourceFileLinks';
 
 const normalize = value => value.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '').replace(/đ/g, 'd');
 const statuses = { draft: 'Bản nháp', 'in-review': 'Chờ duyệt', beta: 'Beta', stable: 'Ổn định' };
@@ -135,7 +135,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
           </>}
           {!empty && !resource && <>
           <div className="sa-page-toolbar">
-            <nav className="sa-breadcrumb" aria-label="Đường dẫn trang"><Link href="/">Introduction</Link><Icon name="chevron" size={13}/><span>{doc.title}</span></nav>
+            <nav className="sa-breadcrumb" aria-label="Đường dẫn trang"><Link href="/">{doc.section || 'Introduction'}</Link><Icon name="chevron" size={13}/><span>{doc.title}</span></nav>
             <div className="sa-page-tools">
               <button className="sa-copy-button" onClick={copyPage} aria-label="Sao chép nội dung trang"><Icon name={copyState === 'Đã sao chép' ? 'check' : 'copy'} size={15}/><span>{copyState === 'Đã sao chép' ? 'Đã sao chép' : 'Sao chép trang'}</span></button>
               <div className="sa-compact-pagination">
@@ -149,7 +149,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
             <div className="sa-title-row"><h1>{doc.id === 'overview' ? 'SmartAds Design System' : doc.title}</h1><span className="sa-status">{statuses[doc.status]}</span></div>
             <p className="sa-lead">{doc.description}</p>
           </div>
-          {sourceFiles && <AiSourceFiles files={sourceFiles}/>}
+          {sourceFiles?.length > 0 && <SourceFileLinks files={sourceFiles}/>}
           <details className="sa-mobile-toc"><summary>Trên trang này <Icon name="down" size={16}/></summary><TocLinks mobile/></details>
           <article aria-label={doc.title}>{children}</article>
           <div className="sa-article-meta"><span>Cập nhật {doc.updated}</span><span>Nguồn: {doc.sources.map((source, i) => <span key={source.url}>{i > 0 && ' · '}<a href={source.url} target="_blank" rel="noreferrer">{source.label}<span className="sr-only"> (tab mới)</span></a></span>)}</span></div>

@@ -36,7 +36,7 @@ SDS dự kiến có bốn lớp:
 3. **Components:** mô tả mục đích, biến thể, trạng thái, hành vi, accessibility và cách triển khai của những component được chọn để phát hành.
 4. **Tài liệu cho người và máy:** website hướng dẫn, dữ liệu JSON/CSS, Markdown cho AI agent và bản phát hành có phiên bản khi hệ thống đủ điều kiện.
 
-Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và website với 7 trang Introduction cùng trang Resource / Figma trong `../website/`. Nội dung Introduction đang chờ duyệt; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
+Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và website với 7 trang Introduction, trang Resource / Figma cùng bài Colors trong `SDS-docs/website/`. Nội dung Introduction và Colors đang chờ duyệt; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
 
 ## Ai sẽ dùng SDS?
 
@@ -56,11 +56,11 @@ Người dùng sản phẩm SmartAds và người dùng SDS là **hai nhóm khá
 | --- | --- |
 | SmartAds đang giới thiệu sản phẩm ra thị trường như thế nào | [Website SmartAds](https://smartads.tech/) và các trang giải pháp liên quan. |
 | Tên, ID, giá trị và liên kết variable/style hiện có | [File Figma SmartAds Design System](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System). |
-| Bản dữ liệu đã đọc để audit và sinh tài liệu/code | `../variable-figma-export/`; xem ngày đọc trong từng file JSON. |
-| Quy ước đã duyệt hoặc còn mở | `../.agents/skills/ds-conventions/references/open-decisions.md` và `../tokens/rename-map.json`. |
+| Bản dữ liệu đã đọc để audit và sinh tài liệu/code | `SDS-docs/variable-figma-export/`; xem ngày đọc trong từng file JSON. |
+| Quy ước đã duyệt hoặc còn mở | `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md` và `SDS-docs/tokens/rename-map.json`. |
 | Cách vận hành thư mục này | [Hướng dẫn thư mục và vận hành](workspace-guide.md). |
 
-Tài liệu [VDS mẫu](<../../../Prompt Docs VNE (DON'T TOUCH)/llms-full.txt>) giúp tham khảo **cách tổ chức tài liệu**, không xác định màu sắc, component hay tiếng nói thương hiệu của SmartAds.
+Tài liệu [VDS mẫu](<../../../../Prompt Docs VNE (DON'T TOUCH)/llms-full.txt>) giúp tham khảo **cách tổ chức tài liệu**, không xác định màu sắc, component hay tiếng nói thương hiệu của SmartAds.
 
 ## SDS đang ở đâu?
 

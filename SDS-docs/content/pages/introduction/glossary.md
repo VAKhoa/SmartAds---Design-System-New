@@ -41,8 +41,8 @@ sources:
 | Responsive | Cách giao diện điều chỉnh theo không gian hiển thị. |
 | Accessibility | Khả năng sử dụng sản phẩm của những người có nhu cầu và cách tương tác khác nhau. |
 | AI agent | Trợ lý thực hiện công việc dựa trên yêu cầu, ngữ cảnh và công cụ được cung cấp. |
-| Quy tắc dự án | File `SDS-RULES.md` nêu điều kiện Codex phải theo khi làm việc trong SDS. |
-| Quy tắc UI website | File `WEBSITE-UI-RULES.md` quy định cách build giao diện của website docs; không phải token sản phẩm hoặc một skill. |
+| Quy tắc dự án | File `SDS-rules.md` nêu điều kiện Codex phải theo khi làm việc trong SDS. |
+| Quy tắc UI website | File `website-ui-rules.md` quy định cách build giao diện của website docs; không phải token sản phẩm hoặc một skill. |
 | Skill | Hướng dẫn tái sử dụng cho một loại công việc của agent. |
 | Review | Đối chiếu và đánh giá kết quả trước khi duyệt áp dụng. |
 

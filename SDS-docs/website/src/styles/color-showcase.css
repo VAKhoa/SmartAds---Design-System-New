@@ -1,0 +1,38 @@
+.sa-color-studio { margin: 8px 0 56px; color: var(--sa-docs-heading); }
+.sa-color-studio-heading { display: flex; align-items: end; justify-content: space-between; gap: 28px; padding: 30px 32px; border: 1px solid var(--sa-docs-border); border-radius: 16px; background: var(--sa-docs-panel); }
+.sa-color-studio-heading h2 { margin: 0 0 4px; font-size: 28px; font-weight: 600; line-height: 2; }
+.sa-color-studio-heading p:last-child { margin: 0; max-width: 680px; color: var(--sa-docs-muted); font-size: 14px; line-height: 2; }
+.sa-color-eyebrow { margin: 0 0 12px; color: var(--sa-docs-primary); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; line-height: 2; }
+.sa-color-count { display: flex; flex-direction: column; flex-shrink: 0; align-items: flex-end; line-height: 2; }
+.sa-color-count strong { font-size: 28px; font-weight: 700; color: var(--sa-docs-primary); }
+.sa-color-count span { font-size: 12px; color: var(--sa-docs-muted); line-height: 2; }
+.sa-color-mode-grid { display: grid; grid-template-columns: repeat(2, minmax(0,1fr)); gap: 16px; margin-top: 18px; }
+.sa-color-mode { min-width: 0; border: 1px solid var(--sa-docs-border); border-radius: 14px; background: var(--sa-docs-bg); overflow: hidden; }
+.sa-color-mode-title { display: flex; align-items: center; gap: 10px; padding: 17px 20px; border-bottom: 1px solid var(--sa-docs-border); }
+.sa-color-mode-title h3 { margin: 0; font-size: 16px; font-weight: 600; line-height: 2; }
+.sa-color-mode-title > span:last-child { margin-left: auto; color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
+.sa-color-mode-dot { width: 9px; height: 9px; border: 2px solid var(--sa-docs-primary); border-radius: 50%; }
+.sa-color-role-list { padding: 8px 20px 12px; }
+.sa-color-role { display: flex; align-items: center; gap: 12px; min-height: 54px; border-bottom: 1px solid var(--sa-docs-border); }
+.sa-color-role:last-child { border-bottom: 0; }
+.sa-color-role-chip { width: 28px; height: 28px; flex: none; border: 1px solid var(--sa-docs-border); border-radius: 7px; }
+.sa-color-role-name { min-width: 0; display: flex; flex-direction: column; }
+.sa-color-role-name b { font-size: 12px; font-weight: 600; line-height: 2; }
+.sa-color-role-name code { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; color: var(--sa-docs-muted); font-size: 11px; line-height: 2; }
+.sa-color-role-value { margin-left: auto; flex: none; font-size: 11px; color: var(--sa-docs-heading); line-height: 2; }
+.sa-color-palette-heading { margin: 42px 0 18px; }
+.sa-color-palette-heading h3 { margin: 0 0 4px; font-size: 24px; font-weight: 600; line-height: 2; }
+.sa-color-palette-heading p { margin: 0; font-size: 14px; color: var(--sa-docs-muted); line-height: 2; }
+.sa-color-palette-list { display: grid; gap: 16px; }
+.sa-color-palette { padding: 20px; border: 1px solid var(--sa-docs-border); border-radius: 14px; background: var(--sa-docs-bg); }
+.sa-color-palette-label { display: flex; align-items: baseline; gap: 10px; margin-bottom: 16px; }
+.sa-color-palette-label h4 { margin: 0; font-size: 16px; font-weight: 600; line-height: 2; }
+.sa-color-palette-label span { color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
+.sa-color-swatch-grid { display: grid; grid-template-columns: repeat(10,minmax(0,1fr)); gap: 8px; }
+.sa-color-swatch { min-width: 0; }
+.sa-color-swatch-paint { width: 100%; height: 54px; border: 1px solid var(--sa-docs-border); border-radius: 7px; }
+.sa-color-swatch-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 0 4px; margin-top: 4px; color: var(--sa-docs-muted); font-size: 11px; line-height: 2; }
+.sa-color-swatch-meta code { font-size: 11px; color: var(--sa-docs-heading); }
+@media (max-width: 1180px) { .sa-color-swatch-grid { grid-template-columns: repeat(5,minmax(0,1fr)); } }
+@media (max-width: 760px) { .sa-color-mode-grid { grid-template-columns: 1fr; } .sa-color-studio-heading { align-items: flex-start; padding: 22px; } .sa-color-count { display: none; } }
+@media (max-width: 440px) { .sa-color-swatch-grid { grid-template-columns: repeat(3,minmax(0,1fr)); } .sa-color-role-list { padding-inline: 12px; } .sa-color-role-value { font-size: 11px; } }

@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho Codex trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 03/11/2026
+updated: 04/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -13,23 +13,23 @@ sources:
 
 ## Bắt đầu ở đây
 
-Ngay dưới tiêu đề trang có liên kết đến ba file nguồn: `AGENTS.md`, `SDS-docs/SDS-RULES.md` và `SDS-docs/introduction/workspace-guide.md`. Chọn một file để mở URL `.md` chứa nội dung gốc; nội dung file không được nhúng vào giao diện AI Agents. Dùng nút Back của trình duyệt để quay lại trang. Các URL này được tạo lại từ file trong folder khi build website, nên sau khi sửa file nguồn cần build lại để bản website phản ánh thay đổi.
+Ngay dưới tiêu đề trang có liên kết đến ba file nguồn: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/guides/workspace-guide.md`. Chọn một file để mở URL `.md` chứa nội dung gốc; nội dung file không được nhúng vào giao diện AI Agents. Dùng nút Back của trình duyệt để quay lại trang. Các URL này được tạo lại từ file trong folder khi build website, nên sau khi sửa file nguồn cần build lại để bản website phản ánh thay đổi.
 
 Khối **Cách sử dụng** phía trên cung cấp [đường dẫn website SDS đã triển khai](https://smart-ads-design-system-new.vercel.app/) để gửi cho AI agent. Nút **Sao chép** chỉ sao chép URL đó. Nút **Sao chép trang** ở thanh công cụ sao chép nội dung Markdown của trang AI Agents. Khi giao việc cần nguồn thiết kế cụ thể, hãy gửi thêm link đúng node Figma và phạm vi cần sửa.
 
-Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/SDS-RULES.md`, `SDS-docs/introduction/workspace-guide.md`, các skill nội bộ và mã nguồn website. **Hiện chưa có một đội custom agent bắt buộc**; một Codex chính có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
+Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. **Hiện chưa có một đội custom agent bắt buộc**; một Codex chính có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
 
 Để bắt đầu một việc mới:
 
-1. Mở **`SmartAds - SDS/`** trong Codex. Codex đọc `AGENTS.md` ở gốc; file này dẫn tới `SDS-docs/SDS-RULES.md`. Nếu task sửa UI website, đọc thêm `SDS-docs/website/WEBSITE-UI-RULES.md`.
+1. Mở **`SmartAds - SDS/`** trong Codex. Codex đọc `AGENTS.md` ở gốc; file này dẫn tới `SDS-docs/content/rules/SDS-rules.md`. Nếu task sửa UI website, đọc thêm `SDS-docs/content/rules/website-ui-rules.md`.
 2. Nói rõ **cần làm gì**, **nguồn nào phải đối chiếu**, **phạm vi được sửa** và **thế nào là xong**. Với UI, gửi đúng URL node Figma và nêu light/dark, trạng thái, kích thước màn hình cần kiểm tra.
 3. Yêu cầu Codex chọn skill phù hợp theo bảng dưới, kiểm tra kết quả, rà các trang website có thể đã cũ và báo những điểm chưa có dữ liệu hoặc còn chờ quyết định.
 
 Ví dụ ngắn:
 
 ```text
-Đọc SDS-docs/SDS-RULES.md và, nếu sửa UI website,
-SDS-docs/website/WEBSITE-UI-RULES.md. Cập nhật [trang/component]
+Đọc SDS-docs/content/rules/SDS-rules.md và, nếu sửa UI website,
+SDS-docs/content/rules/website-ui-rules.md. Cập nhật [trang/component]
 theo node Figma [URL]. Chỉ sửa [phạm vi]. Kiểm tra light/dark,
 desktop/mobile và các trạng thái liên quan. Chạy build, xem trang
 Rà các trang docs bị ảnh hưởng, rồi báo file đã sửa và phần thiếu nguồn.
@@ -37,17 +37,21 @@ Rà các trang docs bị ảnh hưởng, rồi báo file đã sửa và phần t
 
 ## File nào làm việc gì?
 
-`AGENTS.md` là **tên file theo quy ước để Codex tự đọc**, không phải tên một agent để bạn gọi. Khi viết prompt, bạn có thể nhắc trực tiếp `SDS-docs/SDS-RULES.md`. `WEBSITE-UI-RULES.md` là **file quy tắc UI của website, không phải một skill**; skill là hướng dẫn chuyên môn theo từng loại task. Figma và bản export là **nguồn dữ liệu thiết kế**; website là **đầu ra hiển thị**.
+`AGENTS.md` là **tên file theo quy ước để Codex tự đọc**, không phải tên một agent để bạn gọi. Khi viết prompt, bạn có thể nhắc trực tiếp `SDS-docs/content/rules/SDS-rules.md`. `website-ui-rules.md` là **file quy tắc UI của website, không phải một skill**; skill là hướng dẫn chuyên môn theo từng loại task. Figma và bản export là **nguồn dữ liệu thiết kế**; website là **đầu ra hiển thị**.
+
+Các file Markdown do nhóm biên soạn tập trung trong `SDS-docs/content/`: `rules/` là quy tắc, `guides/` là hướng dẫn, `pages/` là bài đăng lên website. Bắt đầu từ `SDS-docs/content/README.md` nếu chưa biết file cần tìm nằm ở đâu. `AGENTS.md`, các `README.md` điểm vào và `SKILL.md` của skill giữ ở vị trí theo quy ước để Codex và người đọc tìm được chúng.
 
 | File hoặc thư mục | Vai trò thực tế | Khi cần mở |
 | --- | --- | --- |
 | `AGENTS.md` ở gốc | Điểm vào tự động; chỉ đường đến quy tắc SDS. | Codex đọc khi mở dự án. |
-| `SDS-docs/SDS-RULES.md` | Quy tắc về nguồn, nội dung, token, Figma và website. | Mọi task trong SDS; đây là file nên nhắc trong prompt. |
+| `SDS-docs/content/README.md` | Bản đồ quy tắc, hướng dẫn và bài website. | Khi chưa biết một file Markdown thuộc nhóm nào. |
+| `SDS-docs/content/rules/SDS-rules.md` | Quy tắc về nguồn, nội dung, token, Figma và website. | Mọi task trong SDS; đây là file nên nhắc trong prompt. |
 | `SDS-docs/ds.config.json` | File key Figma, tên viết tắt `SDS`, prefix CSS `sa`, collection và mode đã ghi nhận. | Task liên quan Figma, token hoặc tên CSS. |
-| `SDS-docs/introduction/workspace-guide.md` | Hướng dẫn cấu trúc repo, quy trình và lệnh chi tiết. | Khi chưa biết sửa file nào hoặc chạy lệnh nào. |
+| `SDS-docs/content/guides/workspace-guide.md` | Hướng dẫn cấu trúc repo, quy trình và lệnh chi tiết. | Khi chưa biết sửa file nào hoặc chạy lệnh nào. |
 | `SDS-docs/variable-figma-export/` | Bản chụp variables và styles ngày 02/11/2026. | Tra ID, tên, mode, alias, giá trị đã xuất; đối chiếu Figma khi cần dữ liệu hiện tại. |
-| `SDS-docs/website/WEBSITE-UI-RULES.md` | Quy tắc font, màu, layout, responsive và state dành riêng cho website docs. | Mọi task build hoặc sửa UI website. |
-| `SDS-docs/website/src/content/docs/` | Bài viết hiển thị trong 7 trang Introduction. | Viết hoặc sửa nội dung trang. |
+| `SDS-docs/content/rules/website-ui-rules.md` | Quy tắc font, màu, layout, responsive và state dành riêng cho website docs. | Mọi task build hoặc sửa UI website. |
+| `SDS-docs/content/pages/` | Bài Markdown cho Introduction và nơi thêm Foundation/Components/Patterns. | Viết hoặc sửa file chính của mục sidebar. |
+| `SDS-docs/content/guides/content-guide.md` | Bảng liên kết mục sidebar với tên file, mẫu frontmatter và quy trình thêm bài. | Trước khi tạo một bài Foundation, Component hoặc Pattern. |
 | `SDS-docs/website/src/data/figma-files.json` | Danh sách file trên trang Resource / Figma. | Thêm hoặc sửa thẻ file Figma. |
 | `SDS-docs/tokens/rename-map.json` | Các đề xuất đổi tên token và trạng thái review. | Audit tên; không coi đề xuất là tên đã duyệt. |
 
@@ -59,9 +63,9 @@ Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thậ
 
 | Việc cần làm | Skill hoặc hướng dẫn cần đọc | Nguồn chính | Kết quả cần kiểm tra |
 | --- | --- | --- | --- |
-| Sửa UI website theo node Figma | Đọc `SDS-RULES.md` và `website/WEBSITE-UI-RULES.md`; dùng skill Figma design-to-code của môi trường. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
-| Viết bài Introduction | `SDS-RULES.md`; thêm `ds-conventions` nếu bài nói về quy tắc token. | Nguồn SmartAds/Figma và bài hiện có. | Frontmatter, trạng thái, nguồn, liên kết; build và xem trang. |
-| Thêm file vào Resource / Figma | `SDS-RULES.md`; không cần skill token. | URL Figma thật và `figma-files.json`. | Tên, link, thẻ và trạng thái hiển thị; build. |
+| Sửa UI website theo node Figma | Đọc `SDS-rules.md` và `content/rules/website-ui-rules.md`; dùng skill Figma design-to-code của môi trường. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
+| Viết bài cho một mục sidebar | `SDS-rules.md`, `content/guides/content-guide.md`; thêm `ds-conventions` nếu bài nói về quy tắc token. | Tên file của mục, nguồn SmartAds/Figma và bài liên quan. | Frontmatter, trạng thái, nguồn, route và link `.md` gốc; build và xem trang. |
+| Thêm file vào Resource / Figma | `SDS-rules.md`; không cần skill token. | URL Figma thật và `figma-files.json`. | Tên, link, thẻ và trạng thái hiển thị; build. |
 | Đọc lại variables hoặc styles từ Figma | `figma-token-workflow`. | File Figma trong `ds.config.json` và bản export cũ. | Đếm collection, ID, mode, alias, style; ghi ngày đọc và chênh lệch. |
 | Audit hoặc đề xuất tên token | `ds-conventions` và `figma-token-workflow`. | Figma, snapshot, references và rename map. | Ghi ID, tên hiện tại, lý do, trạng thái đề xuất; không tự đổi tên. |
 | Viết Foundation về token | `ds-conventions`; đọc reference đúng loại và dữ liệu Figma. | Variable/style ID, mode và quyết định đã duyệt. | Tách dữ liệu quan sát với đề xuất; bài còn chờ duyệt phải ghi trạng thái. |
@@ -79,11 +83,11 @@ Nêu rõ trang, component, nhóm token hoặc script cần làm. Chỉ rõ phầ
 
 - **UI:** đọc node Figma cụ thể, các state và asset liên quan; so với component/CSS hiện có. File Figma SmartAds Design System trong `ds.config.json` là nguồn token; node từ file Component Library được bạn gửi là nguồn cho UI cụ thể đó.
 - **Token:** đọc variable/style ID, collection, mode, alias và giá trị trong Figma. Snapshot trong `variable-figma-export/` giúp kiểm tra dữ liệu đã lưu, nhưng có thể đã cũ.
-- **Nội dung:** đối chiếu thông tin sản phẩm ở `SDS-docs/introduction/about-smartads.md`, nguồn SmartAds/Figma và trạng thái tài liệu. Mẫu VDS chỉ dùng để tham khảo cách trình bày, không dùng làm dữ liệu SmartAds.
+- **Nội dung:** đối chiếu thông tin sản phẩm ở `SDS-docs/content/guides/about-smartads.md`, nguồn SmartAds/Figma và trạng thái tài liệu. Mẫu VDS chỉ dùng để tham khảo cách trình bày, không dùng làm dữ liệu SmartAds.
 
 ### 3. Sửa đúng file nguồn
 
-Bài Introduction nằm trong `website/src/content/docs/`. Danh sách file Figma ở `website/src/data/figma-files.json`. Layout và tương tác website ở `website/src/components/` và `website/src/styles/`. Đề xuất đổi tên token nằm trong `tokens/rename-map.json`; các quy ước và quyết định nằm trong skill `ds-conventions`. Không sửa trực tiếp file được sinh tự động hoặc coi theme CSS của website là gói token SDS đã phát hành.
+Bài Introduction và các bài Foundation/Components/Patterns dùng một file chính dưới `content/pages/`; tên file cho từng mục nằm trong `content/guides/content-guide.md`. Danh sách file Figma ở `website/src/data/figma-files.json`. Layout và tương tác website ở `website/src/components/` và `website/src/styles/`. Đề xuất đổi tên token nằm trong `tokens/rename-map.json`; các quy ước và quyết định nằm trong skill `ds-conventions`. Không sửa trực tiếp file được sinh tự động hoặc coi theme CSS của website là gói token SDS đã phát hành.
 
 ### 4. Tự kiểm rồi build
 
@@ -97,8 +101,8 @@ Codex cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy ki
 
 ### Xây hoặc sửa UI website từ Figma
 
-1. Gửi URL **đúng node** và nói phần cần triển khai: header, sidebar, trang hoặc component. Codex đọc `website/WEBSITE-UI-RULES.md` trước khi sửa UI.
-2. Nêu mode và state phải có. Codex đọc thiết kế, asset, mã hiện có, `SDS-RULES.md` và `WEBSITE-UI-RULES.md`. File quy tắc UI ghi rõ font/weight/size, màu, spacing, breakpoint, state và bước kiểm tra của website docs; nó không phải token sản phẩm SDS.
+1. Gửi URL **đúng node** và nói phần cần triển khai: header, sidebar, trang hoặc component. Codex đọc `content/rules/website-ui-rules.md` trước khi sửa UI.
+2. Nêu mode và state phải có. Codex đọc thiết kế, asset, mã hiện có, `SDS-rules.md` và `website-ui-rules.md`. File quy tắc UI ghi rõ font/weight/size, màu, spacing, breakpoint, state và bước kiểm tra của website docs; nó không phải token sản phẩm SDS.
 3. Codex sửa component/CSS/asset nguồn, rồi chạy `npm run build` trong `SDS-docs/website/`. Khi đổi điều hướng, tương tác hoặc layout responsive, chạy thêm `npm run test:e2e`.
 4. Mở route được sửa để kiểm tra bằng mắt, rồi rà các bài Introduction mô tả quy tắc hoặc UI vừa đổi. Nếu Figma không có một state hoặc kích thước cần thiết, Codex phải nói rõ phần suy luận hoặc phần chưa xác định.
 
@@ -109,11 +113,11 @@ Codex cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy ki
 3. Từ `SDS-docs/`, chạy `node scripts/ds-tokens.mjs lint variable-figma-export/` để xem vấn đề và `node scripts/ds-tokens.mjs suggest variable-figma-export/` để xem gợi ý. Các lệnh này không sửa Figma; lint có thể báo lỗi tên hiện có và trả mã khác 0.
 4. Ghi đề xuất vào `tokens/rename-map.json` với lý do và trạng thái phù hợp. Đối chiếu lại Figma trước khi áp dụng vì rename map được lập từ audit ban đầu.
 
-### Viết bài Introduction hoặc Foundation
+### Viết bài cho một mục sidebar
 
-1. Xác định độc giả và câu hỏi bài cần giải đáp. Đọc bài hiện có và nguồn liên quan; với Foundation, đọc thêm reference của `ds-conventions` đúng loại token.
+1. Chọn mục sidebar và file chính đúng trong `content/guides/content-guide.md`. Xác định độc giả, câu hỏi bài cần giải đáp và nguồn; với Foundation, đọc thêm reference của `ds-conventions` đúng loại token.
 2. Viết tiếng Việt, giữ thuật ngữ tiếng Anh khi cần. Ghi frontmatter, nguồn và trạng thái `draft`, `in-review`, `beta` hoặc `stable` theo mức đã được review; không trình bày đề xuất như quy tắc đã duyệt.
-3. Chạy `npm run build` trong `website/`, xem route, mục lục, bảng, ví dụ và liên kết. Các mục Foundation/Components/Patterns trên sidebar hiện có route trống; việc viết nội dung cho chúng là một task riêng.
+3. Chạy `npm run build` trong `website/`, xem route, mục lục, bảng, ví dụ và link mở file `.md` gốc. Mục Foundation/Components/Patterns chưa có file chính vẫn giữ route trống; thêm file đúng tên sẽ kích hoạt bài mà không cần viết route mới.
 
 ### Thêm một file vào Resource / Figma
 
@@ -127,31 +131,31 @@ Codex cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy ki
 
 | Nguồn vừa đổi | Trang cần rà trước tiên |
 | --- | --- |
-| `AGENTS.md`, `SDS-RULES.md`, `WEBSITE-UI-RULES.md`, skill hoặc hướng dẫn vận hành | AI Agents: file cần đọc, bảng chọn việc, flow và prompt; Getting Started, FAQ và Glossary nếu cách dùng hoặc thuật ngữ đổi. |
+| `AGENTS.md`, `SDS-rules.md`, `website-ui-rules.md`, skill hoặc hướng dẫn vận hành | AI Agents: file cần đọc, bảng chọn việc, flow và prompt; Getting Started, FAQ và Glossary nếu cách dùng hoặc thuật ngữ đổi. |
 | Figma snapshot, `ds.config.json`, rename map hoặc quyết định token | Overview: số liệu/trạng thái; Design System?, Getting Started, AI Agents, FAQ và Glossary: tên, nguồn, mode, phần đã duyệt. |
 | Lệnh build, package, cấu trúc code hoặc route/sidebar | AI Agents, Getting Started, FAQ, Overview, Resource / Figma và README website theo nội dung bị ảnh hưởng. |
 | Font, màu, layout, icon hoặc component website | Quy tắc UI website; AI Agents nếu quy trình build/kiểm tra đổi; trang nào có ví dụ hoặc mô tả UI đó. |
 
 Thực hiện theo thứ tự:
 
-1. **Tìm tham chiếu:** tìm tên file, giá trị, lệnh và trạng thái vừa đổi trong `website/src/content/docs/` và `website/README.md`; mở các trang trong bảng trên, không chỉ trang có chứa đúng một từ khóa.
+1. **Tìm tham chiếu:** tìm tên file, giá trị, lệnh và trạng thái vừa đổi trong `content/pages/` và `website/README.md`; mở các trang trong bảng trên, không chỉ trang có chứa đúng một từ khóa.
 2. **Sửa chỗ đã cũ:** cập nhật cả lời giải thích, bảng, ví dụ và prompt mẫu. Đổi `updated` trong frontmatter của từng trang đã sửa. Nếu không có trang nào cần sửa, ghi lại trang đã xem và lý do chúng còn đúng.
 3. **Sinh lại và xem trang:** chạy `npm run build`, mở các route bị ảnh hưởng, kiểm tra link, mục lục và nội dung hiển thị. Với thay đổi layout, theme, điều hướng hoặc hành vi, chạy thêm `npm run test:e2e`.
 4. **Bàn giao:** báo các file nguồn và trang website đã cập nhật, các trang đã kiểm tra nhưng giữ nguyên, kết quả build/test và phần còn chờ duyệt.
 
-Ví dụ hiện tại: khi thêm `SDS-docs/website/WEBSITE-UI-RULES.md`, Codex phải kiểm tra trang **AI Agents**. Chỉ thêm tên file vào bảng là chưa đủ; các bước sửa UI và prompt mẫu cũng cần yêu cầu đọc file này. **Getting Started** và **FAQ** đã được cập nhật để người mới biết mở hướng dẫn nào; **Overview** được sửa lời dẫn tới AI Agents, **Glossary** được bổ sung thuật ngữ. **Design System?** và **Principles** đã được rà, nội dung vẫn đúng vì hai trang đó nói về SDS của sản phẩm chứ không mô tả quy trình build website.
+Ví dụ hiện tại: khi thêm `SDS-docs/content/rules/website-ui-rules.md`, Codex phải kiểm tra trang **AI Agents**. Chỉ thêm tên file vào bảng là chưa đủ; các bước sửa UI và prompt mẫu cũng cần yêu cầu đọc file này. **Getting Started** và **FAQ** đã được cập nhật để người mới biết mở hướng dẫn nào; **Overview** được sửa lời dẫn tới AI Agents, **Glossary** được bổ sung thuật ngữ. **Design System?** và **Principles** đã được rà, nội dung vẫn đúng vì hai trang đó nói về SDS của sản phẩm chứ không mô tả quy trình build website.
 
 ## Prompt có thể dùng ngay
 
 **UI từ Figma**
 
 ```text
-Trong SmartAds - SDS, đọc SDS-docs/SDS-RULES.md và
-SDS-docs/website/WEBSITE-UI-RULES.md. Sửa [trang/component]
+Trong SmartAds - SDS, đọc SDS-docs/content/rules/SDS-rules.md và
+SDS-docs/content/rules/website-ui-rules.md. Sửa [trang/component]
 trong website theo node Figma [URL]. Phạm vi: [light/dark,
 state, desktop/mobile]. Giữ Public Sans, line-height 200% cho
 body content và 120% cho header/sidebar; chọn cỡ chữ body
-theo WEBSITE-UI-RULES.md. Giữ Tabler Icons, primary #048845 và prefix sa.
+theo website-ui-rules.md. Giữ Tabler Icons, primary #048845 và prefix sa.
 Rà các trang docs bị ảnh hưởng; chạy build, kiểm tra route và báo
 nguồn cùng phần Figma chưa rõ.
 ```
@@ -159,7 +163,7 @@ nguồn cùng phần Figma chưa rõ.
 **Audit token**
 
 ```text
-Đọc SDS-docs/SDS-RULES.md, skill figma-token-workflow và
+Đọc SDS-docs/content/rules/SDS-rules.md, skill figma-token-workflow và
 ds-conventions. Audit collection [tên] trong file Figma SDS;
 đối chiếu variable-figma-export/, ghi ID, mode, alias và ngày đọc.
 Chạy lint/suggest; ghi đề xuất vào rename-map với trạng thái phù hợp.
@@ -170,10 +174,11 @@ Rà các trang docs phụ thuộc vào tên, số liệu hoặc trạng thái v�
 **Viết tài liệu**
 
 ```text
-Đọc SDS-docs/SDS-RULES.md và bài hiện có. Viết/cập nhật trang
-[tên] cho [đối tượng đọc] dựa trên [nguồn cụ thể]. Ghi rõ dữ liệu
+Đọc SDS-docs/content/rules/SDS-rules.md, content/guides/content-guide.md và bài liên quan.
+Chọn đúng mục sidebar và file chính cho trang [tên]. Viết cho
+[đối tượng đọc] dựa trên [nguồn cụ thể]. Ghi rõ dữ liệu
 đã xác nhận, đề xuất và quyết định còn mở. Cập nhật frontmatter,
-build website, mở route và kiểm tra liên kết.
+build website, mở route và URL .md gốc để kiểm tra liên kết.
 Rà các trang khác có nội dung phụ thuộc vào bài vừa đổi.
 ```
 
@@ -200,10 +205,10 @@ Dev và preview dùng cùng cổng 4321, nên dừng tiến trình cũ trước 
 | Câu hỏi | Cách kiểm tra |
 | --- | --- |
 | Đúng nguồn SmartAds chưa? | Có link node Figma hoặc file/ID đã đối chiếu; không lấy giá trị từ website mẫu. |
-| Đúng quy tắc dự án chưa? | Dùng `SDS`, prefix `sa`, font/icon/màu theo `SDS-RULES.md`; phân biệt quyết định đã duyệt với D2–D8 còn mở. |
+| Đúng quy tắc dự án chưa? | Dùng `SDS`, prefix `sa`, font/icon/màu theo `SDS-rules.md`; phân biệt quyết định đã duyệt với D2–D8 còn mở. |
 | Đúng file nguồn chưa? | Nội dung trong Markdown, UI trong component/CSS, danh sách Figma trong JSON; không sửa output sinh tự động. |
 | Website docs đã đồng bộ chưa? | Tìm tham chiếu cũ, rà các trang liên quan; nêu trang đã cập nhật hoặc đã kiểm tra còn đúng. Prompt và ví dụ cũng phản ánh quy tắc mới. |
 | Đã kiểm tra đủ chưa? | Build đạt; xem đúng route, mode, state, kích thước và liên kết theo phạm vi task. |
 | Có thể tiếp tục từ kết quả này không? | Báo file đã sửa, nguồn, lệnh đã chạy, điểm còn thiếu dữ liệu hoặc chờ bạn quyết định. |
 
-**Trạng thái hiện tại:** website có 7 trang Introduction và trang Resource / Figma; các route Foundation, Components, Patterns còn trống. `variable-figma-export/` là snapshot, còn theme của website là đầu ra riêng cho tài liệu. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.
+**Trạng thái hiện tại:** website có 7 trang Introduction, trang Resource / Figma và hai bài Colors tại `/foundation/colors/` và Typography tại `/foundation/typography/`; 19 route Foundation, Components, Patterns còn lại đang chờ file Markdown chính. `variable-figma-export/` là snapshot, còn theme của website là đầu ra riêng cho tài liệu. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.

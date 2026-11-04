@@ -6,6 +6,8 @@ playwright-report/
 .cache/
 src/styles/figma.generated.css
 src/data/docs.generated.json
+src/data/color.generated.json
+src/data/typography.generated.json
 public/source/
 
 src/data/site.generated.json

@@ -1,6 +1,8 @@
 import '../styles/public-sans.css';
 import '../styles/figma.generated.css';
 import '../styles/globals.css';
+import '../styles/color-showcase.css';
+import '../styles/typography-showcase.css';
 
 export const metadata = {
   title: { default: 'SDS — SmartAds Design System', template: '%s · SDS' },

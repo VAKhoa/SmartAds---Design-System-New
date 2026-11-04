@@ -5,7 +5,7 @@ description: Đồng bộ variables và styles từ SmartAds Figma, audit hiện
 
 # Figma token workflow
 
-Đọc `SDS-docs/SDS-RULES.md`, `ds.config.json` và skill `ds-conventions` khi công việc liên quan đến đặt tên. Figma là nguồn của giá trị. Các file export và báo cáo phải ghi ngày lấy dữ liệu và file key.
+Đọc `SDS-docs/content/rules/SDS-rules.md`, `ds.config.json` và skill `ds-conventions` khi công việc liên quan đến đặt tên. Figma là nguồn của giá trị. Các file export và báo cáo phải ghi ngày lấy dữ liệu và file key.
 
 ## Đồng bộ
 
