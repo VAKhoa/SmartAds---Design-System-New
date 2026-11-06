@@ -13,6 +13,7 @@ Dự án có website Next.js + React (JavaScript và CSS thuần) trong `website
 ## Quy tắc làm việc
 
 - Đọc `ds.config.json` để lấy Figma file key và prefix CSS `sa` đã duyệt. Các quyết định còn mở nằm ở `.agents/skills/ds-conventions/references/open-decisions.md`.
+- Với mỗi task Figma, chỉ mở file key được người dùng chỉ định; không tự mở file khác, Recents hay thư viện liên kết. Nếu thiếu file nguồn, xác nhận lại trước khi truy cập. Dùng app Figma desktop với `info@smartads.tech` và mặc định chuyển sang Dev Mode theo `SmartAds - SDS/AGENTS.md`. Mọi thao tác Figma là chỉ đọc, trừ khi người dùng cho phép rõ hành động chỉnh sửa trên đúng file.
 - Khi đặt tên hoặc sửa token, đọc skill `ds-conventions`. Mọi đề xuất đổi tên đi qua `tokens/rename-map.json`; chỉ áp dụng các mục đã được người dùng duyệt (`approved`).
 - Không bịa giá trị hay tự thay giá trị trong Figma. Thiếu dữ liệu ghi `needs-value`. File trong `tokens/generated/` là output, không sửa tay.
 - Ưu tiên Semantic token cho UI; component dùng token riêng khi có. Các ngoại lệ hiện có trong Figma cần được audit trước khi coi là quy tắc.

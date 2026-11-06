@@ -303,7 +303,7 @@ test('Foundation articles have their own sources and remaining planned destinati
       expect(await source.text()).toContain('## Contrast và khả năng đọc');
     } else if (item.id === 'foundation/typography') {
       await expect(page.locator('#main-content h1')).toHaveText('Typography');
-      await expect(page.locator('.sa-type-row')).toHaveCount(15);
+      await expect(page.locator('.sa-wf-style')).toHaveCount(77);
       const source = await request.get('/source/docs/foundation/typography.md');
       expect(source.ok()).toBeTruthy();
       expect(await source.text()).toContain('## Thang chữ Brand');
@@ -331,7 +331,7 @@ test('Colors remains readable on mobile in dark mode', async ({ page }) => {
 test('Typography specimens fit mobile widths in dark mode', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/foundation/typography/');
-  await expect(page.locator('.sa-type-row')).toHaveCount(15);
+  await expect(page.locator('.sa-wf-style')).toHaveCount(77);
   await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
   await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
   for (const width of [390, 320]) {

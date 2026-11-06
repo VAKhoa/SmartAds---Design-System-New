@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho Codex trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 04/11/2026
+updated: 05/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -17,7 +17,11 @@ Ngay dưới tiêu đề trang có liên kết đến ba file nguồn: `AGENTS.m
 
 Khối **Cách sử dụng** phía trên cung cấp [đường dẫn website SDS đã triển khai](https://smart-ads-design-system-new.vercel.app/) để gửi cho AI agent. Nút **Sao chép** chỉ sao chép URL đó. Nút **Sao chép trang** ở thanh công cụ sao chép nội dung Markdown của trang AI Agents. Khi giao việc cần nguồn thiết kế cụ thể, hãy gửi thêm link đúng node Figma và phạm vi cần sửa.
 
-Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. **Hiện chưa có một đội custom agent bắt buộc**; một Codex chính có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
+Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. Chat chuyên trách **SDS — FE Website Builder** có thể nhận phần triển khai FE dưới sự điều phối của Codex chính; một Codex chính vẫn có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
+
+Khi đọc Figma SmartAds, Codex cần xác minh tài khoản Figma đang chọn là **`info@smartads.tech`** và tạm thời mặc định mở file bằng app desktop. Sau khi mở file, chọn **Dev Mode** trên thanh công cụ và kiểm tra panel Inspect; URL `?m=dev` không tự xác nhận tài khoản hay quyền. Chrome chỉ dùng khi menu Figma xác nhận cùng email; phiên Figma Local phải được kiểm tra danh tính riêng hoặc đối chiếu với app đã xác minh. Nếu thấy “Request access”, ghi rõ Dev Mode chưa dùng được và không tự gửi yêu cầu cấp quyền.
+
+Codex chỉ truy cập **file Figma được giao cho yêu cầu hiện tại**, đối chiếu file key trong link trước khi mở; không tự mở file khác, Recents hoặc thư viện liên kết. Nếu chưa rõ file, cần xác nhận nguồn. Mặc định chuyển sang **Dev Mode** và chỉ đọc. Việc được giao sửa website hoặc tài liệu không cấp quyền chỉnh sửa Figma; chỉ thay đổi Figma khi bạn cho phép rõ thao tác và file tương ứng.
 
 Để bắt đầu một việc mới:
 
@@ -63,7 +67,7 @@ Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thậ
 
 | Việc cần làm | Skill hoặc hướng dẫn cần đọc | Nguồn chính | Kết quả cần kiểm tra |
 | --- | --- | --- | --- |
-| Sửa UI website theo node Figma | Đọc `SDS-rules.md` và `content/rules/website-ui-rules.md`; dùng skill Figma design-to-code của môi trường. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
+| Sửa UI website theo node Figma | Đọc `SDS-rules.md`, `content/rules/website-ui-rules.md` và `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo; dùng skill Figma design-to-code của môi trường khi cần đọc node. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
 | Viết bài cho một mục sidebar | `SDS-rules.md`, `content/guides/content-guide.md`; thêm `ds-conventions` nếu bài nói về quy tắc token. | Tên file của mục, nguồn SmartAds/Figma và bài liên quan. | Frontmatter, trạng thái, nguồn, route và link `.md` gốc; build và xem trang. |
 | Thêm file vào Resource / Figma | `SDS-rules.md`; không cần skill token. | URL Figma thật và `figma-files.json`. | Tên, link, thẻ và trạng thái hiển thị; build. |
 | Đọc lại variables hoặc styles từ Figma | `figma-token-workflow`. | File Figma trong `ds.config.json` và bản export cũ. | Đếm collection, ID, mode, alias, style; ghi ngày đọc và chênh lệch. |
@@ -71,7 +75,7 @@ Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thậ
 | Viết Foundation về token | `ds-conventions`; đọc reference đúng loại và dữ liệu Figma. | Variable/style ID, mode và quyết định đã duyệt. | Tách dữ liệu quan sát với đề xuất; bài còn chờ duyệt phải ghi trạng thái. |
 | Sửa script kiểm tra token | `figma-token-workflow` nếu cần dữ liệu Figma. | `SDS-docs/scripts/` và `SDS-docs/tests/`. | `node tests/run-tests.mjs` đạt. |
 
-Hai skill của dự án nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md` và `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md`. Nếu Codex không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
+Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` tại gốc `SmartAds - SDS/`; hai skill token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md` và `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md`. Nếu Codex không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
 
 ## Một task đi qua những bước nào?
 

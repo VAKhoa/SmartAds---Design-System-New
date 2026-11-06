@@ -43,7 +43,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/app/layout.js` | HTML gốc, font cục bộ, metadata, theme. |
 | `src/app/page.js` | Route Overview. |
 | `src/app/introduction/[slug]/page.js` | Sinh 6 route còn lại. |
-| `src/app/[section]/[slug]/page.js` | Hiển thị Colors và Typography; giữ trống 19 route Foundation, Components, Patterns chưa có bài; hiển thị bài và link `.md` gốc khi file chính xuất hiện. |
+| `src/app/[section]/[slug]/page.js` | Hiển thị Colors và Typography; giữ trống 19 route Foundation, Components, Patterns chưa có bài. Typography dùng giao diện tham chiếu riêng; Markdown gốc vẫn mở qua liên kết trong bài. |
 | `src/app/resource/figma/page.js` | Trang tổng hợp file Figma, dùng chung header/sidebar. |
 | `src/app/not-found.js` | Trang 404. |
 | `src/lib/navigation.js` | Danh sách 7 mục Introduction, 21 mục sidebar và ánh xạ Colors tới `foundation/sds-color.md`; Typography dùng đường dẫn chuẩn `foundation/typography.md`. |
@@ -56,7 +56,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/components/Icon.js` | Icon chức năng UI. |
 | `src/components/FigmaResources.js` | Thẻ file Figma và các trạng thái hiển thị. |
 | `src/components/ColorShowcase.js` | Swatch Primitives và giá trị Alias Light/Dark của trang Colors, đọc dữ liệu được sinh từ snapshot. |
-| `src/components/TypographyShowcase.js` | Specimen Brand và bảng kiểm kê 77 text styles, đọc dữ liệu được sinh từ snapshot. |
+| `src/components/TypographyReference.js` | Trang Typography với 77 specimen, 21 Text variables, thông số và binding ID đọc từ snapshot Figma lúc build. |
 | `src/data/figma-files.json` | Danh sách các file Figma; sửa file này khi thêm tài nguyên. |
 | `../content/pages/index.md` | Nội dung Overview. |
 | `../content/pages/introduction/design-system.md` | Nội dung Design System?. |
@@ -71,14 +71,14 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/styles/globals.css` | CSS thuần, responsive, trạng thái, theme sáng/tối. |
 | `src/styles/figma-resources.css` | Giao diện thẻ Resource / Figma ở light và dark mode. |
 | `src/styles/color-showcase.css` | Giao diện bảng swatch Colors, responsive và light/dark. |
-| `src/styles/typography-showcase.css` | Giao diện specimen và bảng kiểm kê Typography, responsive và light/dark. |
+| `src/styles/typography-reference.css` | Giao diện trang Typography, responsive và light/dark. |
 | `src/styles/figma.generated.css` | CSS sinh từ snapshot Figma; không sửa tay. |
 | `src/data/docs.generated.json` | HTML, Markdown, mục lục và search index tự sinh; không sửa tay. |
 | `src/data/color.generated.json` | Danh mục color rút từ `variable-figma-export/` khi prepare; không sửa tay. |
-| `src/data/typography.generated.json` | Danh mục text styles và Text variables rút từ `variable-figma-export/` khi prepare; không sửa tay. |
 | `src/data/ai-source-files.js` | Danh sách ba file nguồn, mô tả và URL của từng thẻ trên trang AI Agents. |
 | `public/source/` | Bản sao `.md` nguyên văn được sinh khi prepare/build để URL file hoạt động; không sửa tay. |
 | `scripts/prepare.mjs` | Kiểm tra frontmatter, chuyển bài Markdown hiện có, sinh danh mục color, sao chép file gốc và ba file quy tắc để mở bằng URL, gọi sinh theme. |
+| `tests/typography-reference.spec.js` | Kiểm tra đủ 77 styles và 21 variables trên route Typography, responsive và dark mode. |
 | `public/source/docs/` | Bản sao tự sinh của các bài Markdown; không sửa tay. |
 | `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/. |
 | `scripts/serve.mjs` | Server Node xem bản build tĩnh. |
@@ -146,7 +146,7 @@ Mẫu thẻ lấy từ Figma `sQYYGDipDACa8UIqgdWWZq`, node `9:4767`: preview 14
 
 Sửa FAQ: mở `../content/pages/introduction/faq.md`, thay câu trả lời và updated, chạy `npm run prepare:content`, xem lại trang FAQ ở dev. Frontmatter bắt buộc gồm title, section, updated, status. Giữ draft cho nội dung chưa duyệt.
 
-Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. Không cần tạo agent mới; yêu cầu Codex sửa phần tương ứng và kiểm tra lại.
+Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. Codex chính hoặc chat SDS — FE Website Builder đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, sửa phần tương ứng và kiểm tra lại.
 
 `../content/guides/` là hướng dẫn vận hành dự án; `../content/pages/` là nội dung trên website. Không tạo bản sao bài viết thủ công.
 

@@ -7,6 +7,10 @@ description: Đồng bộ variables và styles từ SmartAds Figma, audit hiện
 
 Đọc `SDS-docs/content/rules/SDS-rules.md`, `ds.config.json` và skill `ds-conventions` khi công việc liên quan đến đặt tên. Figma là nguồn của giá trị. Các file export và báo cáo phải ghi ngày lấy dữ liệu và file key.
 
+Trước khi dùng Figma Local, Figma desktop hoặc Chrome, xác minh phiên Figma đang chọn là `info@smartads.tech` theo `SmartAds - SDS/AGENTS.md`. Nếu connector không cho xem danh tính, đối chiếu nguồn trong app desktop đã xác minh và ghi giới hạn; không lấy dữ liệu từ tài khoản khác làm hiện trạng SmartAds.
+
+Chỉ mở file Figma được người dùng chỉ định cho task, kiểm tra file key trước khi truy cập; không tự mở file khác hoặc thư viện liên kết. Mặc định chuyển app Figma desktop sang Dev Mode và chỉ đọc dữ liệu. Nếu chưa rõ file cần kiểm tra, xác nhận lại trước khi mở. Không thay đổi bất kỳ nội dung hay cài đặt nào trong Figma khi chưa có cho phép rõ ràng cho đúng file và thao tác đó.
+
 ## Đồng bộ
 
 - Dùng Figma MCP hoặc Figma Plugin API ở chế độ chỉ đọc. `scripts/dump-variables.figma.js` và `scripts/dump-styles.figma.js` là mã tham khảo để xuất dữ liệu. Script variables chạy một lần để lấy overview, rồi từng collection bằng cách đặt `COLLECTION`. Script styles hiện chỉ xuất text/effect; đọc paint/grid styles riêng trước khi gọi snapshot là đầy đủ.

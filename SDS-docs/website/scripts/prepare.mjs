@@ -20,19 +20,6 @@ const colorCatalog = {
   aliases: colorAliases.variables.filter(item => item.type === 'COLOR').map(({ id, name, resolvedValues }) => ({ id, name, resolvedValues })),
 };
 writeFileSync(new URL('color.generated.json', output), JSON.stringify(colorCatalog) + '\n');
-const typographyStyles = JSON.parse(readFileSync(new URL('../../variable-figma-export/styles.json', import.meta.url), 'utf8'));
-const typographyVariables = JSON.parse(readFileSync(new URL('../../variable-figma-export/variables.text.json', import.meta.url), 'utf8'));
-writeFileSync(new URL('typography.generated.json', output), JSON.stringify({
-  fileKey: typographyStyles.fileKey,
-  readDate: typographyStyles.readDate,
-  styles: typographyStyles.text.map(({ id, name, fontName, fontSize, lineHeight, letterSpacing, boundVariables }) => ({
-    id, name, fontFamily: fontName.family, fontStyle: fontName.style,
-    fontWeight: fontName.variationSettings?.wght ?? null,
-    fontSize, lineHeight, letterSpacing,
-    bindings: Object.keys(boundVariables || {}),
-  })),
-  variables: typographyVariables.variables.map(({ id, name, type, values, resolvedValues }) => ({ id, name, type, values, resolvedValues })),
-}) + '\n');
 const publicDirectory = resolve(fileURLToPath(new URL('../public/', import.meta.url)));
 const sourceDirectory = resolve(publicDirectory, 'source');
 if (!sourceDirectory.startsWith(publicDirectory + sep)) throw new Error('Unsafe generated source directory');

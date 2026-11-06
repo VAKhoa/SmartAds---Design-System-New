@@ -1,6 +1,6 @@
 # Sắp xếp bài Markdown cho SDS Docs
 
-Mỗi mục nội dung trong sidebar có **một file Markdown chính** dưới `SDS-docs/content/pages/`. File này là nguồn để website dựng trang; bản tại `public/source/docs/` và `out/source/docs/` được sinh từ nó để người đọc mở file `.md` gốc. Không viết hai bản nội dung cho cùng một mục và không sửa file trong hai thư mục output.
+Mỗi mục nội dung trong sidebar có **một file Markdown chính** dưới `SDS-docs/content/pages/`. File này là nguồn bài và metadata của website; trang Typography dùng thêm snapshot Figma để dựng catalog specimen. Bản tại `public/source/docs/` và `out/source/docs/` được sinh từ Markdown để người đọc mở file `.md` gốc. Không viết hai bản nội dung cho cùng một mục và không sửa file trong hai thư mục output.
 
 ## Cây thư mục
 
@@ -50,7 +50,7 @@ SDS-docs/content/pages/
 | Patterns | Data Tables | `patterns/data-tables.md` |
 | Patterns | Navigation | `patterns/navigation.md` |
 
-`Layout` và `Logo` đã được thêm vào nhóm Foundation theo nhu cầu bạn nêu. **Colors** đã có `foundation/sds-color.md`; **Typography** đã có `foundation/typography.md`. Các mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và card mở file `.md` gốc. Colors dùng route `/foundation/colors/`; Typography dùng `/foundation/typography/` và link `/source/docs/foundation/typography.md`.
+`Layout` và `Logo` đã được thêm vào nhóm Foundation theo nhu cầu bạn nêu. **Colors** đã có `foundation/sds-color.md`; **Typography** đã có `foundation/typography.md`. Các mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và card mở file `.md` gốc. Colors dùng route `/foundation/colors/`; Typography dùng `/foundation/typography/`, trình bày catalog từ snapshot Figma và liên kết `/source/docs/foundation/typography.md` trong bài.
 
 ## Tạo một bài mới
 

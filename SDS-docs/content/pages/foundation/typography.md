@@ -2,7 +2,7 @@
 title: Typography
 description: Font, thang chữ, text styles và hướng dẫn bàn giao typography của SmartAds Design System.
 section: Foundation
-updated: 04/11/2026
+updated: 05/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System — Typography
@@ -13,9 +13,9 @@ sources:
 
 ## Phạm vi và nguồn dữ liệu
 
-Đây là bản **draft** cho typography của giao diện sản phẩm SmartAds. Trang [Typography trong Figma](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=68-1746&m=dev) có các frame `Introduction Typography`, `Typography Term`, `Typography` và `New Update Text Warp Style`; trang được kiểm tra ở chế độ chỉ xem ngày 04/11/2026. Các con số và ID bên dưới lấy từ `variable-figma-export/styles.json` và `variables.text.json` ngày **02/11/2026**. Bản export không tự đồng bộ; cần đọc lại Figma trước khi coi đây là thông số mới nhất.
+Đây là bản **draft** cho typography của giao diện sản phẩm SmartAds. Trang [Typography trong Figma](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=68-1746&m=dev) có các frame `Introduction Typography`, `Typography Term`, `Typography` và `New Update Text Warp Style`; cấu trúc bốn frame và bảng Brand trong [frame Typography](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=11898-84498&m=dev) được kiểm tra ở chế độ chỉ xem ngày 05/11/2026. Các con số và ID bên dưới lấy từ `variable-figma-export/styles.json` và `variables.text.json` ngày **02/11/2026**; chưa đối chiếu lại từng giá trị của 77 styles trên Figma hiện tại. Bản export không tự đồng bộ; cần đọc lại Figma trước khi coi đây là thông số mới nhất.
 
-Bản chụp có **77 text styles**: 62 `Brand/*`, 1 `Code/*` và 14 `Ads/*`; collection `Text` có **21 variables**, một mode tên `Mode 1`. Bảng specimen phía trên được dựng từ cùng bản chụp để nhìn tỷ lệ chữ; đó là bản xem trước trên website tài liệu, không phải gói typography SDS đã phát hành.
+Bản chụp có **77 text styles**: 62 `Brand/*`, 1 `Code/*` và 14 `Ads/*`; collection `Text` có **21 variables**, một mode tên `Mode 1`. Trang Typography trên website trình bày toàn bộ specimen, thông số, Style ID và variable binding từ cùng bản chụp; đây vẫn là dữ liệu draft, không phải gói typography SDS đã phát hành.
 
 ## Font family và phạm vi sử dụng
 

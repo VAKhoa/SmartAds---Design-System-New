@@ -1,7 +1,7 @@
 ---
 title: Hướng dẫn thư mục và vận hành SDS Docs
 section: Introduction
-updated: 04/11/2026
+updated: 05/11/2026
 status: beta
 ---
 
@@ -14,6 +14,10 @@ Tài liệu này giải thích **các file trong thư mục xây SDS và cách v
 ## Bắt đầu một task như thế nào?
 
 Mở thư mục **`SmartAds - SDS/`** trong Codex. File `AGENTS.md` ở gốc là điểm vào tự động và dẫn tới `SDS-docs/content/rules/SDS-rules.md`, nơi chứa quy tắc chi tiết. Khi giao task, bạn chỉ cần nhắc **`SDS-docs/content/rules/SDS-rules.md`**; không cần gọi `AGENTS.md` như tên một agent. Giao việc cho **Codex chính**, mô tả kết quả mong muốn và gửi link Figma đúng node nếu task liên quan UI. Skill là hướng dẫn theo chuyên môn mà Codex đọc khi task phù hợp; nó không phải một agent chạy độc lập và không tự sinh ra nội dung được duyệt.
+
+Với nguồn Figma SmartAds, Codex kiểm tra tài khoản **`info@smartads.tech`** và tạm thời mặc định mở file bằng Figma desktop. Chọn **Dev Mode** trên thanh công cụ rồi xác nhận panel Inspect hoạt động trước khi lấy thông số handoff. Chrome và Figma Local có phiên riêng, nên phải xác minh đúng tài khoản; nếu Dev Mode yêu cầu cấp quyền, ghi rõ giới hạn đó thay vì coi bản xem file là handoff Dev Mode đầy đủ.
+
+Chỉ truy cập **đúng file Figma được giao trong task**, kiểm tra file key trước khi mở và không tự duyệt file khác hoặc thư viện liên kết. Nếu thiếu link/file key, xác nhận lại. Mặc định chuyển sang Dev Mode, chỉ đọc thiết kế; không thay đổi nội dung hay cài đặt Figma khi chưa được cho phép rõ ràng cho đúng file và thao tác. Quyền sửa mã website hoặc tài liệu không bao gồm quyền sửa Figma.
 
 Mỗi yêu cầu nên có bốn thông tin: **đầu ra** (trang/tài liệu/token nào), **nguồn** (node Figma/file/link nào), **phạm vi** (light/dark, desktop/mobile, state nào), và **điều kiện hoàn tất** (build, kiểm tra tương tác, báo phần chưa có nguồn). Nếu thiếu một phần, Codex cần đọc những gì đã có trong repo trước, nêu giả định, rồi mới sửa.
 
@@ -32,7 +36,7 @@ Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn websit
 
 | Bạn muốn làm | Gọi Codex và skill nào | Nguồn và file thường sửa | Điều kiện hoàn tất |
 | --- | --- | --- | --- |
-| Sửa layout, màu, nút, icon website | Codex chính; đọc `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
+| Sửa layout, màu, nút, icon website | Codex chính hoặc chat SDS — FE Website Builder; đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
 | Viết hoặc sửa bài cho sidebar | Codex chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
 | Thêm file vào Resource / Figma | Codex chính; không cần skill token. | `website/src/data/figma-files.json` và link Figma thật. | Thẻ mới có link/tiêu đề đúng, mở tab mới, layout không tràn; build. |
 | Làm mới bản chụp variables/styles | Codex chính + `figma-token-workflow`. | File key trong `ds.config.json`, Figma hiện tại; đầu ra `variable-figma-export/`. | Đếm ID, collection, mode, style; lưu ngày và nguồn; đối chiếu chênh lệch với bản cũ. |
@@ -40,11 +44,11 @@ Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn websit
 | Chỉnh script xuất/kiểm tra token | Codex chính + `figma-token-workflow` nếu liên quan Figma. | `scripts/`, `tests/`. | `node tests/run-tests.mjs` đạt; báo giới hạn của dữ liệu mẫu. |
 | Phát hành token hoặc component sản phẩm | Codex chính + `ds-conventions` và `figma-token-workflow`; chỉ bắt đầu sau khi phạm vi và quyết định liên quan được chốt. | Figma, rename map, token/source được kiểm chứng. | Mỗi giá trị truy được nguồn; alias/mode và state đúng; có kiểm tra đầu ra riêng. |
 
-`external-design-system` ở `../../.agents/skills/external-design-system/skill-design-system.md` trỏ tới `E:\Test-Codex\design-system\SKILL.md`. Nó hữu ích cho cấu trúc token và state, nhưng đường dẫn này phụ thuộc máy đang dùng; nếu chuyển máy, cần cài lại hoặc cập nhật đường dẫn. Ví dụ màu trong skill là ví dụ chung, **không phải** giá trị SmartAds. Các skill `ds-conventions` và `figma-token-workflow` nằm ngay trong repo nên có thể chỉ đích danh bằng đường dẫn nếu lệnh `$...` không được môi trường nhận diện.
+`sds-fe-website-builder` ở `../../.agents/skills/sds-fe-website-builder/SKILL.md` bám theo Next.js, JavaScript và CSS thuần của website hiện tại. `external-design-system` ở `../../.agents/skills/external-design-system/skill-design-system.md` trỏ tới `E:\Test-Codex\design-system\SKILL.md`. Nó hữu ích cho cấu trúc token và state, nhưng đường dẫn này phụ thuộc máy đang dùng; nếu chuyển máy, cần cài lại hoặc cập nhật đường dẫn. Ví dụ màu trong skill là ví dụ chung, **không phải** giá trị SmartAds. Các skill `ds-conventions` và `figma-token-workflow` nằm ngay trong repo nên có thể chỉ đích danh bằng đường dẫn nếu lệnh `$...` không được môi trường nhận diện.
 
 ### Prompt mẫu để Codex làm đúng ngay từ đầu
 
-**UI từ Figma:** “Trong `SmartAds - SDS/SDS-docs/website`, đọc `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component]. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, icon Tabler, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
+**UI từ Figma:** “Trong `SmartAds - SDS/SDS-docs/website`, đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component] trong cấu trúc Next.js, JavaScript và CSS hiện tại. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, icon Tabler, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
 
 **Tài liệu Foundation:** “Đọc `SDS-docs/content/rules/SDS-rules.md`, `content/guides/content-guide.md`, `$ds-conventions` (hoặc file `SKILL.md` tương ứng) và snapshot/Figma mới nhất. Chọn đúng file cho mục sidebar [tên], viết bài dựa trên [node/variable ID]; ghi nguồn, ngày, trạng thái `draft`/`in-review`. Không biến đề xuất D2–D8 thành quy tắc đã duyệt. Chạy build, kiểm tra route và URL `.md` gốc.”
 
@@ -85,7 +89,7 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 
 ```text
 SmartAds - SDS/
-├─ AGENTS.md, .agents/skills/external-design-system/skill-design-system.md
+├─ AGENTS.md, .agents/skills/{sds-fe-website-builder/SKILL.md,external-design-system/skill-design-system.md}
 └─ SDS-docs/
    ├─ README.md, ds.config.json, .gitignore
    ├─ content/
@@ -108,7 +112,7 @@ SmartAds - SDS/
 | Nhóm | Ý nghĩa và cách dùng |
 | --- | --- |
 | `README.md` | Trang dẫn nhập ngắn, dẫn tới tài liệu sản phẩm, hướng dẫn vận hành và bản đồ Markdown trong `content/`. |
-| `../AGENTS.md`, `../.agents/skills/external-design-system/` | Quy tắc vào dự án từ thư mục gốc và skill dùng chung phụ thuộc đường dẫn ngoài repo. |
+| `../AGENTS.md`, `../.agents/skills/` | Quy tắc vào dự án, skill FE theo cấu trúc website và skill dùng chung phụ thuộc đường dẫn ngoài repo. |
 | `content/guides/about-smartads.md` | Giải thích sản phẩm SmartAds, mục tiêu SDS, đối tượng sử dụng và nguồn thông tin. |
 | `content/guides/workspace-guide.md` | Tài liệu bạn đang đọc: cấu trúc thư mục và cách vận hành. |
 | `content/README.md` | Bản đồ duy nhất để tìm quy tắc, hướng dẫn và bài website. |
