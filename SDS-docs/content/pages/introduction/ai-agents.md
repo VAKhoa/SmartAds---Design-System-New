@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho Codex trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 05/11/2026
+updated: 09/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -73,9 +73,10 @@ Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thậ
 | Đọc lại variables hoặc styles từ Figma | `figma-token-workflow`. | File Figma trong `ds.config.json` và bản export cũ. | Đếm collection, ID, mode, alias, style; ghi ngày đọc và chênh lệch. |
 | Audit hoặc đề xuất tên token | `ds-conventions` và `figma-token-workflow`. | Figma, snapshot, references và rename map. | Ghi ID, tên hiện tại, lý do, trạng thái đề xuất; không tự đổi tên. |
 | Viết Foundation về token | `ds-conventions`; đọc reference đúng loại và dữ liệu Figma. | Variable/style ID, mode và quyết định đã duyệt. | Tách dữ liệu quan sát với đề xuất; bài còn chờ duyệt phải ghi trạng thái. |
+| Viết hoặc build Foundation / Spacing | `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`, `ds-conventions`; nếu build UI, đọc thêm skill FE và `website-ui-rules.md`. | `foundation/spacing.md`, snapshot collection `Spacing` và mã website. | Đủ đối chiếu ID, px/rem, ngoại lệ, light/dark, responsive và copy; không gọi API docs là token package sản phẩm. |
 | Sửa script kiểm tra token | `figma-token-workflow` nếu cần dữ liệu Figma. | `SDS-docs/scripts/` và `SDS-docs/tests/`. | `node tests/run-tests.mjs` đạt. |
 
-Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` tại gốc `SmartAds - SDS/`; hai skill token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md` và `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md`. Nếu Codex không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
+Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` tại gốc `SmartAds - SDS/`; các skill nội dung/token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md`, `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md` và `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`. Nếu Codex không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
 
 ## Một task đi qua những bước nào?
 
@@ -95,7 +96,7 @@ Bài Introduction và các bài Foundation/Components/Patterns dùng một file 
 
 ### 4. Tự kiểm rồi build
 
-Với UI, xem đúng route ở light/dark, màn lớn/nhỏ, kiểm tra hover, active, focus, link, font, icon và asset. Website dùng **Public Sans**, line-height **200% trong body content** và **120% ở header/sidebar**; cỡ chữ body content dùng dãy **11, 12, 13, 14, 16, 18, 20, 24, 28, 32px**. Primary là **`#048845`**, prefix CSS **`sa`**, icon chức năng từ **Tabler**; sidebar không có icon. Với bài viết, kiểm tra nguồn, frontmatter `title`, `section`, `updated`, `status`, liên kết và điểm còn chờ duyệt. Với token, kiểm tra ID, alias và mode, không chỉ nhìn tên.
+Với UI, xem đúng route ở light/dark, màn lớn/nhỏ, kiểm tra hover, active, focus, link, font, icon và asset. Website dùng **Public Sans**, line-height **200% trong body content** và **120% ở header/sidebar**; cỡ chữ body content dùng dãy **11, 12, 13, 14, 16, 18, 20, 24, 28, 32px**. Primary light là **`#048845`**; dark dùng **`#8CC8A9`** cho chữ/link/focus và **`#57AF82`** cho nút đầy với chữ **`#09090A`** theo `website-ui-rules.md`. Prefix CSS **`sa`**, icon chức năng từ **Tabler**; sidebar không có icon. Với bài viết, kiểm tra nguồn, frontmatter `title`, `section`, `updated`, `status`, liên kết và điểm còn chờ duyệt. Với token, kiểm tra ID, alias và mode, không chỉ nhìn tên.
 
 ### 5. Bàn giao để người khác review được
 
@@ -159,7 +160,7 @@ SDS-docs/content/rules/website-ui-rules.md. Sửa [trang/component]
 trong website theo node Figma [URL]. Phạm vi: [light/dark,
 state, desktop/mobile]. Giữ Public Sans, line-height 200% cho
 body content và 120% cho header/sidebar; chọn cỡ chữ body
-theo website-ui-rules.md. Giữ Tabler Icons, primary #048845 và prefix sa.
+theo website-ui-rules.md. Giữ Tabler Icons, primary theo vai trò light/dark và prefix sa.
 Rà các trang docs bị ảnh hưởng; chạy build, kiểm tra route và báo
 nguồn cùng phần Figma chưa rõ.
 ```
@@ -215,4 +216,4 @@ Dev và preview dùng cùng cổng 4321, nên dừng tiến trình cũ trước 
 | Đã kiểm tra đủ chưa? | Build đạt; xem đúng route, mode, state, kích thước và liên kết theo phạm vi task. |
 | Có thể tiếp tục từ kết quả này không? | Báo file đã sửa, nguồn, lệnh đã chạy, điểm còn thiếu dữ liệu hoặc chờ bạn quyết định. |
 
-**Trạng thái hiện tại:** website có 7 trang Introduction, trang Resource / Figma và hai bài Colors tại `/foundation/colors/` và Typography tại `/foundation/typography/`; 19 route Foundation, Components, Patterns còn lại đang chờ file Markdown chính. `variable-figma-export/` là snapshot, còn theme của website là đầu ra riêng cho tài liệu. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.
+**Trạng thái hiện tại:** website có 7 trang Introduction, trang Resource / Figma và ba bài Colors tại `/foundation/colors/`, Typography tại `/foundation/typography/`, Spacing tại `/foundation/spacing/`; 17 route Foundation, Components, Patterns còn lại đang chờ file Markdown chính. `Foundation / Overview` đã bỏ; `Introduction / Overview` ở trang chủ vẫn là trang mở đầu. `variable-figma-export/` là snapshot; bộ tên numeric `--sa-space-*` của Spacing đã được duyệt cho website docs, không phải gói token sản phẩm. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.

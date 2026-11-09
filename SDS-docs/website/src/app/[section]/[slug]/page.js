@@ -4,6 +4,7 @@ import { plannedNavigation } from '../../../lib/navigation';
 import documents from '../../../data/docs.generated.json';
 import ColorShowcase from '../../../components/ColorShowcase';
 import TypographyReference from '../../../components/TypographyReference';
+import SpacingReference from '../../../components/SpacingReference';
 
 const pages = plannedNavigation.flatMap(group => group.items.map(item => ({ ...item, section: group.slug })));
 
@@ -26,6 +27,7 @@ export default async function SectionPage({ params }) {
   const document = documents.find(doc => doc.id === page.id);
   if (!document) return <DocsShell empty document={{ ...page, headings: [] }} searchIndex={searchIndex} />;
   if (page.id === 'foundation/typography') return <TypographyReference />;
+  if (page.id === 'foundation/spacing') return <SpacingReference />;
   return <DocsShell document={document} searchIndex={searchIndex}
     sourceFiles={[{ path: document.file, description: 'Mở file Markdown gốc của trang này.', href: document.sourceHref }]}>
     {page.id === 'foundation/colors' && <ColorShowcase />}

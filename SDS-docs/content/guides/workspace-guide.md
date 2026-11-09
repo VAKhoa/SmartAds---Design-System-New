@@ -1,7 +1,7 @@
 ---
 title: Hướng dẫn thư mục và vận hành SDS Docs
 section: Introduction
-updated: 05/11/2026
+updated: 09/11/2026
 status: beta
 ---
 
@@ -9,7 +9,7 @@ status: beta
 
 Website SDS đã triển khai: [smart-ads-design-system-new.vercel.app](https://smart-ads-design-system-new.vercel.app/). Dùng URL này khi cần cho AI agent tham khảo tài liệu trực tuyến; vẫn gửi node Figma cụ thể cho task UI.
 
-Tài liệu này giải thích **các file trong thư mục xây SDS và cách vận hành chúng**. Để hiểu SmartAds là sản phẩm gì, ai dùng và vì sao xây SDS, đọc [SmartAds và SDS là gì?](about-smartads.md) trước. Website hiện có 7 trang Introduction, trang Resource / Figma và hai bài [Colors](/foundation/colors/) và [Typography](/foundation/typography/) trong Foundation; 19 route Foundation/Components/Patterns còn lại đang chờ bài Markdown. SDS chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm. [Bảng tên file cho từng mục sidebar](content-guide.md) chỉ rõ nơi tạo bài. Nguồn thiết kế: [SmartAds - Design System](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System).
+Tài liệu này giải thích **các file trong thư mục xây SDS và cách vận hành chúng**. Để hiểu SmartAds là sản phẩm gì, ai dùng và vì sao xây SDS, đọc [SmartAds và SDS là gì?](about-smartads.md) trước. Website hiện có 7 trang Introduction, trang Resource / Figma và ba bài [Colors](/foundation/colors/), [Typography](/foundation/typography/), [Spacing](/foundation/spacing/) trong Foundation; 17 route Foundation/Components/Patterns còn lại đang chờ bài Markdown. `Foundation / Overview` đã bỏ vì trang chủ `Introduction / Overview` đảm nhiệm phần giới thiệu chung. SDS chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm. [Bảng tên file cho từng mục sidebar](content-guide.md) chỉ rõ nơi tạo bài. Nguồn thiết kế: [SmartAds - Design System](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System).
 
 ## Bắt đầu một task như thế nào?
 
@@ -37,7 +37,7 @@ Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn websit
 | Bạn muốn làm | Gọi Codex và skill nào | Nguồn và file thường sửa | Điều kiện hoàn tất |
 | --- | --- | --- | --- |
 | Sửa layout, màu, nút, icon website | Codex chính hoặc chat SDS — FE Website Builder; đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
-| Viết hoặc sửa bài cho sidebar | Codex chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
+| Viết hoặc sửa bài cho sidebar | Codex chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token; với Spacing đọc `sds-spacing-foundation`. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
 | Thêm file vào Resource / Figma | Codex chính; không cần skill token. | `website/src/data/figma-files.json` và link Figma thật. | Thẻ mới có link/tiêu đề đúng, mở tab mới, layout không tràn; build. |
 | Làm mới bản chụp variables/styles | Codex chính + `figma-token-workflow`. | File key trong `ds.config.json`, Figma hiện tại; đầu ra `variable-figma-export/`. | Đếm ID, collection, mode, style; lưu ngày và nguồn; đối chiếu chênh lệch với bản cũ. |
 | Kiểm kê, đề xuất tên token hoặc viết Foundation | Codex chính + `ds-conventions`; dùng thêm `figma-token-workflow` khi cần đối chiếu dữ liệu mới. | Figma/snapshot, references theo loại, `tokens/rename-map.json`, `docs/_audit/`. | Có ID và giá trị nguồn; tách quy tắc đã duyệt với đề xuất; không tự áp dụng rename. |
@@ -100,7 +100,8 @@ SmartAds - SDS/
    ├─ .agents/skills/
    │  ├─ ds-conventions/SKILL.md
    │  ├─ ds-conventions/references/{naming,color,typography,spacing-radius,effects,open-decisions}.md
-   │  └─ figma-token-workflow/SKILL.md
+   │  ├─ figma-token-workflow/SKILL.md
+   │  └─ sds-spacing-foundation/SKILL.md
    ├─ scripts/{ds-tokens.mjs,dump-variables.figma.js,dump-styles.figma.js}
    ├─ tests/{run-tests.mjs,fixtures/observed-sample.json}
    ├─ tokens/rename-map.json

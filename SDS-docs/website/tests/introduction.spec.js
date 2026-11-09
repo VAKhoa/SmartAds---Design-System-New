@@ -1,6 +1,13 @@
 import { test, expect } from '@playwright/test';
 import { navigation, plannedNavigation } from '../src/lib/navigation.js';
 
+test('Foundation Overview is removed while the homepage Overview remains', async ({ page, request }) => {
+  await page.goto('/');
+  await expect(page.locator('.sa-sidebar a[href="/"]')).toHaveText('Overview');
+  await expect(page.locator('.sa-sidebar a[href="/foundation/overview/"]')).toHaveCount(0);
+  expect((await request.get('/foundation/overview/')).status()).toBe(404);
+});
+
 test('AI Agents links to the three original Markdown files', async ({ page, request }) => {
   await page.goto('/introduction/ai-agents/');
   const cards = page.locator('.sa-ai-file-card');
@@ -307,10 +314,16 @@ test('Foundation articles have their own sources and remaining planned destinati
       const source = await request.get('/source/docs/foundation/typography.md');
       expect(source.ok()).toBeTruthy();
       expect(await source.text()).toContain('## Thang chữ Brand');
+    } else if (item.id === 'foundation/spacing') {
+      await expect(page.locator('#main-content h1')).toHaveText('Spacing');
+      await expect(page.locator('.sa-spacing-table tbody tr')).toHaveCount(13);
+      const source = await request.get('/source/docs/foundation/spacing.md');
+      expect(source.ok()).toBeTruthy();
+      expect(await source.text()).toContain('## Spacing scale và bảng token');
     } else await expect(page.locator('#main-content')).toBeEmpty();
     await expect(page.locator('.sa-sidebar [aria-current="page"]')).toHaveText(item.title);
     await page.reload();
-    if (item.id === 'foundation/colors' || item.id === 'foundation/typography') await expect(page.locator('#main-content h1')).toHaveText(item.title);
+    if (item.id === 'foundation/colors' || item.id === 'foundation/typography' || item.id === 'foundation/spacing') await expect(page.locator('#main-content h1')).toHaveText(item.title);
     else {
       await expect(page.locator('#main-content')).toBeEmpty();
       await expect(page.locator('.sa-toc')).toHaveCount(0);

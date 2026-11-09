@@ -8,7 +8,7 @@ Mỗi mục nội dung trong sidebar có **một file Markdown chính** dưới 
 SDS-docs/content/pages/
 ├─ index.md                         # Introduction / Overview
 ├─ introduction/                    # 6 bài Introduction còn lại
-├─ foundation/                      # Nền tảng thiết kế; đã có Colors và Typography
+├─ foundation/                      # Nền tảng thiết kế; đã có Colors, Typography và Spacing
 ├─ components/                      # Một component = một file chính
 └─ patterns/                        # Một pattern = một file chính
 ```
@@ -28,7 +28,6 @@ SDS-docs/content/pages/
 | Introduction | AI Agents | `introduction/ai-agents.md` |
 | Introduction | FAQ | `introduction/faq.md` |
 | Introduction | Glossary | `introduction/glossary.md` |
-| Foundation | Overview | `foundation/overview.md` |
 | Foundation | Colors | `foundation/sds-color.md` |
 | Foundation | Typography | `foundation/typography.md` |
 | Foundation | Spacing | `foundation/spacing.md` |
@@ -50,7 +49,7 @@ SDS-docs/content/pages/
 | Patterns | Data Tables | `patterns/data-tables.md` |
 | Patterns | Navigation | `patterns/navigation.md` |
 
-`Layout` và `Logo` đã được thêm vào nhóm Foundation theo nhu cầu bạn nêu. **Colors** đã có `foundation/sds-color.md`; **Typography** đã có `foundation/typography.md`. Các mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và card mở file `.md` gốc. Colors dùng route `/foundation/colors/`; Typography dùng `/foundation/typography/`, trình bày catalog từ snapshot Figma và liên kết `/source/docs/foundation/typography.md` trong bài.
+Mục `Foundation / Overview` đã được bỏ vì không có bài riêng và trùng mục đích với `Introduction / Overview` ở trang chủ. `Layout` và `Logo` đã được thêm vào nhóm Foundation theo nhu cầu bạn nêu. **Colors** có `foundation/sds-color.md`; **Typography** có `foundation/typography.md`; **Spacing** có `foundation/spacing.md` và quy ước numeric `--sa-space-*` đã được duyệt cho website docs. 17 mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và liên kết mở file `.md` gốc. Colors dùng `/foundation/colors/`; Typography dùng `/foundation/typography/`, trình bày catalog từ snapshot Figma; Spacing dùng `/foundation/spacing/` với bảng đối chiếu snapshot và link Markdown gốc.
 
 ## Tạo một bài mới
 

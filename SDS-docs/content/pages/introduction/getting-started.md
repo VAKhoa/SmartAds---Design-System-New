@@ -2,7 +2,7 @@
 title: Getting Started
 description: Chọn điểm bắt đầu phù hợp với công việc của bạn trong đội ngũ SmartAds.
 section: Introduction
-updated: 05/11/2026
+updated: 09/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -22,6 +22,8 @@ sources:
 3. Làm rõ phần chưa có quy tắc trước khi biến nó thành một thành phần dùng chung.
 
 Tiền tố CSS của SDS là `sa`. Website hiện có theme riêng phục vụ tài liệu; chưa có gói token hoặc component SDS để cài vào sản phẩm.
+
+Khi cần khoảng cách trong website docs, mở [Spacing](/foundation/spacing/) để tra cặp px/rem và tên numeric `--sa-space-*` đã được duyệt cho tài liệu. Đối chiếu ID Figma và các giá trị ngoài bảng chính trước khi áp dụng vào giao diện sản phẩm; bộ tên này chưa phải token package phát hành.
 
 ## Nếu bạn review sản phẩm
 

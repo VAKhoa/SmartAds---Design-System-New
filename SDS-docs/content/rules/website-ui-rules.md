@@ -30,7 +30,8 @@ Thang cỡ chữ trên là quy ước **website docs**, không thay các text st
 | Vai trò hiện có | Light | Dark | Nơi kiểm tra |
 | --- | --- | --- | --- |
 | Nền body/header | `#FFFFFF` | `#09090A` | `--sa-docs-bg` và header. |
-| Primary/link | `#048845` | `#048845` | `--sa-docs-primary`; kiểm tra tương phản trên nền sử dụng. |
+| Primary cho chữ/link/viền/focus | `#048845` | `#8CC8A9` | `--sa-docs-primary`; dark lấy Figma primitive `color/primary/200`, `VariableID:6:25`. |
+| Nền nút primary / chữ trên nền | `#048845` / `#FFFFFF` | `#57AF82` / `#09090A` | `--sa-docs-primary-fill` / `--sa-docs-on-primary-fill`; dark fill lấy `color/primary/300`, `VariableID:6:26`. |
 | Tiêu đề nhóm sidebar | `#737373` | `#A1A1A1` | `.sa-sidebar-heading`. |
 | Chữ mục sidebar | `#1F1F1F` | `#FAFAFA` | `.sa-nav-list a`, `.sa-resource-link`. |
 | Mục sidebar hover/selected | `#F4F4F4` | `#1F1F22` | State của menu. |
@@ -38,11 +39,13 @@ Thang cỡ chữ trên là quy ước **website docs**, không thay các text st
 | Nút chuyển trang: nền/chữ | `#F5F5F5` / `#171717` | `#262626` / `#FAFAFA` | Nút ở toolbar và cuối bài. |
 | Nút GitHub: nền/chữ | `#000000` / `#FFFFFF` | `#FFFFFF` / `#1F1F1F` | Header; icon SVG theo mode từ Figma. |
 
-Các màu khác của panel, chữ phụ, border và thẻ Resource đã có biến `--sa-docs-*` hoặc `--sa-resource-*`; xem selector hiện hành trước khi thêm màu mới. Màu dark của trang docs có thể khác giá trị Base trong snapshot Figma vì đây là quyết định UI của website. Không sửa snapshot để làm cho nó khớp website.
+Dark mode dùng vai trò riêng cho chữ/link/focus và nền nút đầy để giữ tương phản; không dùng cùng một màu cho cả hai vai trò. Các màu khác của panel, chữ phụ, border và thẻ Resource đã có biến `--sa-docs-*` hoặc `--sa-resource-*`; xem selector hiện hành trước khi thêm màu mới. Màu dark của trang docs có thể khác giá trị Base trong snapshot Figma vì đây là quyết định UI của website. Không sửa snapshot để làm cho nó khớp website.
 
 ## Khoảng cách, kích thước và bố cục
 
 - Dùng spacing Figma đã xuất (`4`, `8`, `12`, `20px`) khi phù hợp. Với layout docs, ưu tiên các khoảng cách đang lặp lại (`16`, `24`, `32px`) trước khi tạo mức mới. Một thông số đặc thù của node Figma, logo hoặc một component có thể khác; ghi nguồn khi thêm.
+- Trang Foundation / Spacing dùng bộ tên numeric `--sa-space-*` đã được duyệt cho website docs, đối chiếu 13 giá trị chính với collection `Spacing` trong snapshot ngày 02/11/2026. Đây chưa phải token package sản phẩm; giữ riêng các giá trị Figma ngoài bảng chính và không gộp `spacing/lg (Base)` 16px với `spacing/lg` 18px. Mọi kích thước cụ thể hiển thị trên trang này ghép `px` và `rem` theo cơ sở 16px (1rem).
+- Ví dụ ứng dụng Spacing chỉ dùng component có binding Figma xác định. Hiện trang chỉ mô tả Table Cell với padding ngang 12px (0.75rem), padding dọc 8px (0.5rem) và content gap 8px (0.5rem) từ ba `VariableID:15044:691533–691535`. Sơ đồ không được trình bày như ảnh chụp UI sản phẩm.
 - Header cao `64px`; logo header rộng `110px`. Các điều khiển search, GitHub và theme ở header cao `36px`. Sidebar desktop rộng `240px` và có scroll riêng. Sidebar không có icon.
 - Nút `Sao chép trang` trong toolbar và nút sao chép URL ở trang AI Agents cao `36px` theo Figma `361:833`, `361:2139`, `361:4834`, `361:4710`.
 - Ở màn từ `1200px`, khung bài viết có cột mục lục bên phải `208px`. Dưới `1200px`, mục lục bên phải ẩn và mục lục trong bài xuất hiện. Dưới `768px`, sidebar chuyển thành menu mở từ header.

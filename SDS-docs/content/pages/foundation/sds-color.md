@@ -2,7 +2,7 @@
 title: Colors
 description: Bảng màu, vai trò token và cách kiểm tra Light/Dark của SmartAds Design System.
 section: Foundation
-updated: 04/11/2026
+updated: 09/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System — Color
@@ -19,7 +19,7 @@ sources:
 
 Ngày 04/11/2026, tôi đọc trực tiếp Figma và thấy **191 color variables** trong collection `Primitives ` (mode `Value`), **293 color variables** trong `Alias` (hai mode `Accessible (Light Mode)` và `Accessible (Dark Mode)`), cùng **7 paint styles dạng linear gradient**. Các bảng đầy đủ cuối trang được dựng từ bản export ngày 02/11/2026 trong `SDS-docs/variable-figma-export/`. Toàn bộ **484 ID, tên và giá trị màu đã giải alias theo mode** trong export được đối chiếu với Figma ngày 04/11/2026 và khớp. Export vẫn là snapshot, không tự cập nhật khi Figma đổi.
 
-`#048845` là `color/primary/500` (`VariableID:6:28`) và là màu primary đã được chốt cho website SDS. Nhiều tên khác vẫn phản ánh lịch sử thiết kế và chưa được chuẩn hóa; bảng này mô tả **tên đang tồn tại**, không phê duyệt một hệ đặt tên mới.
+`#048845` là `color/primary/500` (`VariableID:6:28`) và là màu primary của website SDS ở light mode. Trong dark mode, lớp website docs dùng `#8CC8A9` từ `color/primary/200` (`VariableID:6:25`) cho chữ/link/focus và `#57AF82` từ `color/primary/300` (`VariableID:6:26`) cho nền nút primary với chữ `#09090A`. Đây là ánh xạ vai trò của website để tăng độ rõ trên nền tối, không thay giá trị alias Figma hay phê duyệt token sản phẩm mới. Nhiều tên khác vẫn phản ánh lịch sử thiết kế và chưa được chuẩn hóa; bảng này mô tả **tên đang tồn tại**, không phê duyệt một hệ đặt tên mới.
 
 ## Cách chọn màu khi thiết kế và lập trình
 

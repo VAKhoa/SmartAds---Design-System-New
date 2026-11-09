@@ -1,6 +1,6 @@
 ﻿# Website SmartAds Design System
 
-Website dùng **Next.js + React, JavaScript/JSX và CSS thuần**, xuất HTML/CSS/JS tĩnh. Gồm 7 trang Introduction, trang Resource / Figma tổng hợp file thiết kế và hai bài Colors, Typography ở trạng thái draft. MUI và shadcn chỉ là tham khảo bố cục.
+Website dùng **Next.js + React, JavaScript/JSX và CSS thuần**, xuất HTML/CSS/JS tĩnh. Gồm 7 trang Introduction, trang Resource / Figma tổng hợp file thiết kế và ba bài Foundation: Colors, Typography ở trạng thái draft; Spacing ở trạng thái beta. MUI và shadcn chỉ là tham khảo bố cục.
 
 Khi sửa giao diện, đọc [quy tắc UI của website](../content/rules/website-ui-rules.md) cùng `SDS-docs/content/rules/SDS-rules.md`. File đó ghi nguồn giá trị, màu, typography, layout, state và cách kiểm tra; các quy tắc này chỉ áp dụng cho website docs.
 
@@ -43,10 +43,10 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/app/layout.js` | HTML gốc, font cục bộ, metadata, theme. |
 | `src/app/page.js` | Route Overview. |
 | `src/app/introduction/[slug]/page.js` | Sinh 6 route còn lại. |
-| `src/app/[section]/[slug]/page.js` | Hiển thị Colors và Typography; giữ trống 19 route Foundation, Components, Patterns chưa có bài. Typography dùng giao diện tham chiếu riêng; Markdown gốc vẫn mở qua liên kết trong bài. |
+| `src/app/[section]/[slug]/page.js` | Hiển thị Colors, Typography và Spacing; giữ trống 17 route Foundation, Components, Patterns chưa có bài. Typography và Spacing dùng giao diện tham chiếu riêng; Markdown gốc vẫn mở qua liên kết trong bài. |
 | `src/app/resource/figma/page.js` | Trang tổng hợp file Figma, dùng chung header/sidebar. |
 | `src/app/not-found.js` | Trang 404. |
-| `src/lib/navigation.js` | Danh sách 7 mục Introduction, 21 mục sidebar và ánh xạ Colors tới `foundation/sds-color.md`; Typography dùng đường dẫn chuẩn `foundation/typography.md`. |
+| `src/lib/navigation.js` | Danh sách 7 mục Introduction, 20 mục Foundation/Components/Patterns và ánh xạ Colors tới `foundation/sds-color.md`; Typography và Spacing dùng đường dẫn chuẩn `foundation/typography.md`, `foundation/spacing.md`. `Foundation / Overview` đã bỏ. |
 | `src/lib/figma-resources.js` | Metadata Resource và kiểm tra URL Figma. |
 | `src/components/DocsPage.js` | Đọc dữ liệu bài và đưa vào khung. |
 | `src/components/DocsShell.js` | Header, sidebar, search, theme, mục lục, copy Markdown, điều hướng, footer. |
@@ -57,6 +57,8 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/components/FigmaResources.js` | Thẻ file Figma và các trạng thái hiển thị. |
 | `src/components/ColorShowcase.js` | Swatch Primitives và giá trị Alias Light/Dark của trang Colors, đọc dữ liệu được sinh từ snapshot. |
 | `src/components/TypographyReference.js` | Trang Typography với 77 specimen, 21 Text variables, thông số và binding ID đọc từ snapshot Figma lúc build. |
+| `src/components/SpacingReference.js` | Trang Spacing đọc collection `Spacing` từ snapshot, đối chiếu 13 mức numeric với ID Figma và liệt kê ngoại lệ. |
+| `src/components/SpacingExplorer.js`, `src/components/SpacingValue.js` | Bảng copy giá trị/token, cặp px/rem, sơ đồ Table Cell dựa trên ba binding Figma và code tabs của trang Spacing. |
 | `src/data/figma-files.json` | Danh sách các file Figma; sửa file này khi thêm tài nguyên. |
 | `../content/pages/index.md` | Nội dung Overview. |
 | `../content/pages/introduction/design-system.md` | Nội dung Design System?. |
@@ -65,13 +67,14 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `../content/pages/introduction/ai-agents.md` | Hướng dẫn Codex và skill hiện có. |
 | `../content/pages/introduction/faq.md` | Câu hỏi thường gặp. |
 | `../content/pages/introduction/glossary.md` | Thuật ngữ. |
-| `../content/pages/foundation/` | Bài Colors nằm tại `sds-color.md`, Typography tại `typography.md`; các bài khác xem bảng trong `content-guide.md`. |
+| `../content/pages/foundation/` | Bài Colors nằm tại `sds-color.md`, Typography tại `typography.md`, Spacing tại `spacing.md`; các bài khác xem bảng trong `content-guide.md`. |
 | `../content/pages/components/` | Mỗi component có một file Markdown chính; hiện chờ nội dung. |
 | `../content/pages/patterns/` | Mỗi pattern có một file Markdown chính; hiện chờ nội dung. |
 | `src/styles/globals.css` | CSS thuần, responsive, trạng thái, theme sáng/tối. |
 | `src/styles/figma-resources.css` | Giao diện thẻ Resource / Figma ở light và dark mode. |
 | `src/styles/color-showcase.css` | Giao diện bảng swatch Colors, responsive và light/dark. |
 | `src/styles/typography-reference.css` | Giao diện trang Typography, responsive và light/dark. |
+| `src/styles/spacing-reference.css` | Giao diện trang Spacing, responsive và light/dark; lớp numeric `--sa-space-*` chỉ phục vụ website docs. |
 | `src/styles/figma.generated.css` | CSS sinh từ snapshot Figma; không sửa tay. |
 | `src/data/docs.generated.json` | HTML, Markdown, mục lục và search index tự sinh; không sửa tay. |
 | `src/data/color.generated.json` | Danh mục color rút từ `variable-figma-export/` khi prepare; không sửa tay. |
@@ -154,7 +157,7 @@ Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa
 
 Nguồn Figma cRZ5kIi4kD6j9lh1dbh5mh, snapshot 02/11/2026. Header dùng logo đầy đủ của node 123:497, ghép SVG nguyên gốc đúng tỷ lệ, giữ màu và lưu cục bộ.
 
-Theme dùng màu SmartAds #048845 và Public Sans. Script giữ tên nguồn, đổi / thành -, thêm prefix --sa- và ghi ID Figma trong CSS. Biến --sa-docs-* và kích thước bố cục là quyết định riêng cho website, không phải token sản phẩm đã phát hành. Không tự sửa Figma hoặc áp dụng rename map.
+Theme dùng Public Sans và các vai trò primary riêng theo mode: light `#048845`; dark `#8CC8A9` cho chữ/link/focus, `#57AF82` cho nền nút đầy với chữ `#09090A`. Script giữ tên nguồn, đổi / thành -, thêm prefix --sa- và ghi ID Figma trong CSS. Biến --sa-docs-* và kích thước bố cục là quyết định riêng cho website, không phải token sản phẩm đã phát hành. Không tự sửa Figma hoặc áp dụng rename map.
 
 ## Kiểm tra
 
@@ -167,7 +170,7 @@ Test cần Chrome cài trên máy; tự chạy server preview riêng. Website đ
 
 ## Sidebar theo Figma
 
-Sidebar tham chiếu file sQYYGDipDACa8UIqgdWWZq, node 319:375: nhóm Getting Started giữ 7 trang Introduction; Resource / Figma file mở trang tổng hợp `/resource/figma/`. Foundation, Components và Patterns lấy danh sách từ `plannedNavigation` trong `src/lib/navigation.js`; 21 mục có đường dẫn riêng, trong đó Layout và Logo được bổ sung theo yêu cầu mới. Mục chưa có file Markdown chính giữ trang trống; xem `content-guide.md` trước khi tạo bài. Menu không có icon. Logo rộng 110px; mọi chữ giao diện, kể cả code và phím tắt, dùng Public Sans.
+Sidebar tham chiếu file sQYYGDipDACa8UIqgdWWZq, node 319:375: nhóm Getting Started giữ 7 trang Introduction; Resource / Figma file mở trang tổng hợp `/resource/figma/`. Foundation, Components và Patterns lấy danh sách từ `plannedNavigation` trong `src/lib/navigation.js`; 20 mục có đường dẫn riêng, trong đó Layout và Logo được bổ sung theo yêu cầu mới. `Foundation / Overview` đã bỏ vì trang chủ `Introduction / Overview` đảm nhiệm phần giới thiệu; mục chưa có file Markdown chính giữ trang trống. Xem `content-guide.md` trước khi tạo bài. Menu không có icon. Logo rộng 110px; mọi chữ giao diện, kể cả code và phím tắt, dùng Public Sans.
 
 Kh?ng c?n Astro, Starlight, Pagefind ho?c c?u h?nh TypeScript trong m? ngu?n website. C?c th? m?c node_modules, .next, out v? test-results l? th? vi?n ho?c k?t qu? sinh t? ??ng c?a b? c?ng c? hi?n t?i; kh?ng ph?i c?ng ngh? c?. Ch? s?a src, public, scripts v? c?c file c?u h?nh khi ph?t tri?n.
 
@@ -177,7 +180,7 @@ Icon ch?c n?ng ch? d?ng [Tabler Icons](https://tabler.io/icons) qua g?i ch?nh th
 
 ## Public Sans / primary
 
-Font source: Google Fonts Public Sans. Local font files and license: public/fonts/public-sans/. CSS: src/styles/public-sans.css (400, 500, 600, 700; normal and italic). No Fontsource dependency. Primary: --sa-docs-primary = #048845 in src/styles/globals.css; secondary colors unchanged.
+Font source: Google Fonts Public Sans. Local font files and license: public/fonts/public-sans/. CSS: src/styles/public-sans.css (400, 500, 600, 700; normal and italic). No Fontsource dependency. Primary roles in `src/styles/globals.css`: light `--sa-docs-primary` and `--sa-docs-primary-fill` = `#048845`; dark primary text/link/focus = `#8CC8A9` (`color/primary/200`, `VariableID:6:25`), dark filled action = `#57AF82` (`color/primary/300`, `VariableID:6:26`) with `#09090A` text. Đây là quyết định cho website docs, không đổi generated CSS hay semantic token sản phẩm.
 
 ## Header
 

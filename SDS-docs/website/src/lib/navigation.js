@@ -11,7 +11,7 @@ export const navigation = [
 // Menu scaffold from Figma sQYYGDipDACa8UIqgdWWZq, node 319:375.
 // Logo and Layout are added for the requested SDS documentation taxonomy.
 export const plannedNavigation = [
-  { title: 'Foundation', slug: 'foundation', items: ['Overview', 'Colors', 'Typography', 'Spacing', 'Layout', 'Icons', 'Logo'] },
+  { title: 'Foundation', slug: 'foundation', items: ['Colors', 'Typography', 'Spacing', 'Layout', 'Icons', 'Logo'] },
   { title: 'Components', slug: 'components', items: ['Button', 'Badge', 'Card', 'Input', 'Dialog', 'Select', 'Checkbox', 'Switch', 'Alert', 'Avatar', 'Tooltips'] },
   { title: 'Patterns', slug: 'patterns', items: ['Forms', 'Data Tables', 'Navigation'] },
 ].map(group => ({ ...group, items: group.items.map(title => {

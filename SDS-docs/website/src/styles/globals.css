@@ -8,6 +8,8 @@
   --sa-docs-muted: var(--sa-border-secondary-hover);
   --sa-docs-border: var(--sa-border-gray-muted);
   --sa-docs-primary: #048845;
+  --sa-docs-primary-fill: #048845;
+  --sa-docs-on-primary-fill: #ffffff;
   --sa-docs-link: var(--sa-docs-primary);
   --sa-docs-selected: var(--sa-background-primary-selected);
   --sa-docs-header-height: 64px;
@@ -24,6 +26,9 @@
   --sa-docs-panel: var(--sa-background-secondary);
   --sa-docs-text: var(--sa-text-secondary);
   --sa-docs-muted: var(--sa-border-secondary-hover);
+  --sa-docs-primary: #8cc8a9;
+  --sa-docs-primary-fill: #57af82;
+  --sa-docs-on-primary-fill: #09090a;
   --sa-docs-link: var(--sa-docs-primary);
   --sa-docs-page-nav-bg: #262626;
   --sa-docs-page-nav-hover: #363636;
@@ -126,8 +131,8 @@ h2:hover .sa-heading-anchor, h3:hover .sa-heading-anchor, .sa-heading-anchor:foc
 .sa-actions { display: flex; flex-wrap: wrap; gap: 10px; margin: 0 0 28px; }
 .sa-action { display: inline-flex; align-items: center; justify-content: center; gap: 10px; min-height: 42px; padding: 8px 16px; border: 1px solid var(--sa-docs-border); border-radius: 6px; font-size: 13px; font-weight: 600; color: var(--sa-docs-heading); }
 .sa-action:hover { background: var(--sa-docs-panel); }
-.sa-action-primary { background: var(--sa-docs-primary); border-color: var(--sa-docs-primary); color: var(--sa-text-primary-white); }
-.sa-action-primary:hover { background: var(--sa-docs-primary); border-color: var(--sa-docs-primary); box-shadow: 0 0 0 3px var(--sa-docs-selected); }
+.sa-action-primary { background: var(--sa-docs-primary-fill); border-color: var(--sa-docs-primary-fill); color: var(--sa-docs-on-primary-fill); }
+.sa-action-primary:hover { background: var(--sa-docs-primary-fill); border-color: var(--sa-docs-primary-fill); box-shadow: 0 0 0 3px var(--sa-docs-selected); }
 .sa-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 12px; padding: 20px; margin-top: 24px; border: 1px solid var(--sa-docs-border); border-radius: 8px; background: var(--sa-docs-panel); }
 .sa-flow strong { display: block; font-size: 13px; }
 .sa-flow small { display: block; margin-top: 5px; font-size: 11px; line-height: 2; color: var(--sa-docs-muted); }

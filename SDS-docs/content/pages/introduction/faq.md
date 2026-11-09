@@ -2,7 +2,7 @@
 title: FAQ
 description: Những câu hỏi thường gặp khi bắt đầu sử dụng tài liệu SmartAds Design System.
 section: Introduction
-updated: 05/11/2026
+updated: 09/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -17,11 +17,11 @@ SmartAds là nền tảng quảng cáo. SDS là hệ thống thiết kế đư�
 
 ## Website này đã có thư viện component chưa?
 
-Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/) và [Typography](/foundation/typography/) trong Foundation; các mục Foundation, Components, Patterns còn lại đang chờ bài.
+Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/), [Typography](/foundation/typography/) và [Spacing](/foundation/spacing/) trong Foundation; 17 mục Foundation, Components, Patterns còn lại đang chờ bài. `Foundation / Overview` đã được bỏ; trang chủ [Overview](/) tiếp tục giới thiệu SDS.
 
 ## Thêm bài cho một mục sidebar như thế nào?
 
-Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md` và có card mở file `.md` gốc. **Typography** dùng `content/pages/foundation/typography.md`; trang có liên kết “Mở Markdown gốc” cạnh liên kết Figma. Mục chưa có bài tiếp tục để trống.
+Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md`; **Typography** dùng `content/pages/foundation/typography.md`; **Spacing** dùng `content/pages/foundation/spacing.md`. Mỗi bài có link mở Markdown gốc. Mục chưa có bài tiếp tục để trống.
 
 ## Tra giá trị thiết kế ở đâu?
 
