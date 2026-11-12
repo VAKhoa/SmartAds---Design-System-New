@@ -8,11 +8,12 @@ test('Foundation Overview is removed while the homepage Overview remains', async
   expect((await request.get('/foundation/overview/')).status()).toBe(404);
 });
 
-test('AI Agents links to the three original Markdown files', async ({ page, request }) => {
+test('AI Agents links its article and three reference files', async ({ page, request }) => {
   await page.goto('/introduction/ai-agents/');
   const cards = page.locator('.sa-ai-file-card');
-  await expect(cards).toHaveCount(3);
+  await expect(cards).toHaveCount(4);
   const files = [
+    ['/source/docs/introduction/ai-agents.md', 'title: AI Agents'],
     ['/source/AGENTS.md', '# SmartAds Design System (SDS)'],
     ['/source/SDS-docs/content/rules/SDS-rules.md', '# SmartAds Design System Docs'],
     ['/source/SDS-docs/content/guides/workspace-guide.md', '# Hướng dẫn thư mục và vận hành SDS Docs'],
@@ -26,8 +27,8 @@ test('AI Agents links to the three original Markdown files', async ({ page, requ
     expect(await response.text()).toContain(firstLine);
   }
   await cards.first().click();
-  await expect(page).toHaveURL(/\/source\/AGENTS\.md$/);
-  await expect(page.locator('body')).toContainText('# SmartAds Design System (SDS)');
+  await expect(page).toHaveURL(/\/source\/docs\/introduction\/ai-agents\.md$/);
+  await expect(page.locator('body')).toContainText('title: AI Agents');
   await page.goBack();
   await expect(page).toHaveURL(/\/introduction\/ai-agents\/$/);
 });
@@ -38,7 +39,7 @@ test('AI Agents source cards, website URL and copy buttons follow the new layout
   const first = cards.first();
   await expect(first.locator('.sa-ai-file-asset-light').first()).toBeVisible();
   await expect(first.locator('.sa-ai-file-asset-dark').first()).toBeHidden();
-  await expect(first.locator('.sa-ai-file-copy strong')).toHaveText('AGENTS.md');
+  await expect(first.locator('.sa-ai-file-copy strong')).toHaveText('introduction/ai-agents.md');
   await expect(first.locator('.sa-ai-file-description')).toBeVisible();
   await expect(page.getByRole('heading', { name: 'Cách sử dụng' })).toBeVisible();
   await expect(page.locator('.sa-ai-usage-url a')).toHaveAttribute('href', 'https://smart-ads-design-system-new.vercel.app/');

@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.489990234375" height="12.732681274414062" viewBox="3697.0400390625 243.55982971191406 11.489990234375 12.732681274414062" preserveAspectRatio="xMidYMid meet" fill="none"><defs><filter id="filter59_ii_123_153" x="3697.54" y="244.06" width="10.4922" height="11.733" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-0.153489"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_123_153"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="0.153489"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_123_153" result="effect2_innerShadow_123_153"/>
+</filter><linearGradient id="paint89_linear_123_153" x1="3702.91" y1="244.775" x2="3695.26" y2="252.4" gradientUnits="userSpaceOnUse">
+<stop stop-color="#00A0FF"/>
+<stop offset="0.0066" stop-color="#00A1FF"/>
+<stop offset="0.2601" stop-color="#00BEFF"/>
+<stop offset="0.5122" stop-color="#00D2FF"/>
+<stop offset="0.7604" stop-color="#00DFFF"/>
+<stop offset="1" stop-color="#00E3FF"/>
+</linearGradient><linearGradient id="paint90_linear_123_153" x1="3708.38" y1="249.926" x2="3697.38" y2="249.926" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFE000"/>
+<stop offset="0.4087" stop-color="#FFBD00"/>
+<stop offset="0.7754" stop-color="#FFA500"/>
+<stop offset="1" stop-color="#FF9C00"/>
+</linearGradient><filter id="filter60_i_123_153" x="3697.75" y="249.926" width="7.58206" height="5.86667" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-0.153489"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.08 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_123_153"/>
+</filter><linearGradient id="paint91_linear_123_153" x1="3704.29" y1="250.972" x2="3693.91" y2="261.314" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FF3A44"/>
+<stop offset="1" stop-color="#C31162"/>
+</linearGradient><linearGradient id="paint92_linear_123_153" x1="3696.32" y1="240.883" x2="3700.96" y2="245.5" gradientUnits="userSpaceOnUse">
+<stop stop-color="#32A071"/>
+<stop offset="0.0685" stop-color="#2DA771"/>
+<stop offset="0.4762" stop-color="#15CF74"/>
+<stop offset="0.8009" stop-color="#06E775"/>
+<stop offset="1" stop-color="#00F076"/>
+</linearGradient></defs><g id="Company=CH Play Color">
+<g id="Google Play logo" filter="url(#filter59_ii_123_153)">
+<path id="Vector_1240" d="M3697.75 244.241C3697.61 244.381 3697.54 244.599 3697.54 244.882V254.97C3697.54 255.253 3697.61 255.471 3697.75 255.611L3697.78 255.644L3703.41 249.993V249.926V249.859L3697.78 244.207L3697.75 244.241Z" fill="url(#paint89_linear_123_153)"/>
+<path id="Vector_1241" d="M3705.29 251.877L3703.41 249.992V249.926V249.859L3705.29 247.975L3705.33 247.999L3707.55 249.268C3708.19 249.63 3708.19 250.222 3707.55 250.585L3705.33 251.853L3705.29 251.877Z" fill="url(#paint90_linear_123_153)"/>
+<g id="Vector_1242" filter="url(#filter60_i_123_153)">
+<path d="M3705.33 251.853L3703.41 249.926L3697.75 255.611C3697.96 255.834 3698.3 255.861 3698.69 255.639L3705.33 251.853Z" fill="url(#paint91_linear_123_153)"/>
+</g>
+<path id="Vector_1243" d="M3705.33 247.999L3698.69 244.213C3698.3 243.991 3697.96 244.019 3697.75 244.241L3703.41 249.926L3705.33 247.999Z" fill="url(#paint92_linear_123_153)"/>
+</g>
+</g></svg>

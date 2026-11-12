@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11.0400390625" height="12.287200927734375" viewBox="3739.97998046875 243.78245544433594 11.0400390625 12.287200927734375" preserveAspectRatio="xMidYMid meet" fill="none"><defs><filter id="filter61_ii_123_153" x="3740.25" y="244.06" width="10.4941" height="11.7334" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="-0.795"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0"/>
+<feBlend mode="normal" in2="shape" result="effect1_innerShadow_123_153"/>
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+<feOffset dy="0.795"/>
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+<feBlend mode="normal" in2="effect1_innerShadow_123_153" result="effect2_innerShadow_123_153"/>
+</filter></defs><g id="Company=CH Play">
+<g id="Google Play logo_2" filter="url(#filter61_ii_123_153)">
+<path id="Vector_1244" d="M3745.88 249.926L3740.53 255.297C3740.5 255.212 3740.48 255.105 3740.48 254.971V244.882C3740.48 244.747 3740.5 244.639 3740.53 244.555L3745.88 249.926Z" fill="#4E4E4E" stroke="white"/>
+<path id="Vector_1245" d="M3750.16 249.461C3750.44 249.619 3750.52 249.796 3750.52 249.926C3750.52 250.04 3750.46 250.19 3750.25 250.332L3750.16 250.392L3748.04 251.599L3746.38 249.926L3748.04 248.253L3750.16 249.461Z" fill="#4E4E4E" stroke="white"/>
+<path id="Vector_1246" d="M3747.68 251.804L3741.3 255.446C3741.1 255.558 3740.94 255.584 3740.83 255.563L3746.13 250.242L3747.68 251.804Z" fill="#4E4E4E" stroke="white"/>
+<path id="Vector_1247" d="M3740.82 244.289C3740.94 244.268 3741.1 244.295 3741.3 244.407L3747.68 248.048L3746.13 249.61L3740.82 244.289Z" fill="#4E4E4E" stroke="white"/>
+</g>
+</g></svg>

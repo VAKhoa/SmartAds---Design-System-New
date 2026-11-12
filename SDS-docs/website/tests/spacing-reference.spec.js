@@ -5,7 +5,7 @@ test('Spacing page keeps verified values, copy actions, and inspect labels in sy
   await page.goto('/foundation/spacing/');
   await expect(page.locator('h1')).toHaveText('Spacing');
   await expect(page.locator('.sa-sidebar a[aria-current="page"]')).toHaveText('Spacing');
-  await expect(page.getByRole('link', { name: 'Mở Markdown gốc: foundation/spacing.md' })).toHaveAttribute('href', '/source/docs/foundation/spacing.md');
+  await expect(page.locator('.sa-ai-file-card')).toHaveAttribute('href', '/source/docs/foundation/spacing.md');
   await page.screenshot({ path: 'test-results/spacing-desktop-light.png', fullPage: false });
   await expect(page.locator('.sa-spacing-table tbody tr')).toHaveCount(13);
   await expect(page.locator('.sa-spacing-exception')).toHaveCount(7);

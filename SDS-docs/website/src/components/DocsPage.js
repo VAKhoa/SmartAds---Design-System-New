@@ -10,7 +10,7 @@ export default function DocsPage({ id }) {
   const index = introduction.indexOf(document);
   const searchIndex = documents.map(({ id, title, href, description, searchText, icon }) => ({ id, title, href, description, searchText, icon }));
   return <DocsShell document={document} searchIndex={searchIndex}
-    sourceFiles={id === 'ai-agents' ? aiSourceFiles : [{ path: document.file, description: 'Mở file Markdown gốc của trang này.', href: document.sourceHref }]}
+    sourceFiles={id === 'ai-agents' ? aiSourceFiles : null}
     previous={index > 0 ? { title: introduction[index - 1].title, href: introduction[index - 1].href } : null}
     next={index < introduction.length - 1 ? { title: introduction[index + 1].title, href: introduction[index + 1].href } : null}>
     <>{id === 'ai-agents' && <AiSiteUsage/>}<div className="sa-prose" dangerouslySetInnerHTML={{ __html: document.html }} /></>

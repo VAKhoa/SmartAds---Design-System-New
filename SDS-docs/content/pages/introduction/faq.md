@@ -2,7 +2,7 @@
 title: FAQ
 description: Những câu hỏi thường gặp khi bắt đầu sử dụng tài liệu SmartAds Design System.
 section: Introduction
-updated: 09/11/2026
+updated: 12/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -17,11 +17,15 @@ SmartAds là nền tảng quảng cáo. SDS là hệ thống thiết kế đư�
 
 ## Website này đã có thư viện component chưa?
 
-Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/), [Typography](/foundation/typography/) và [Spacing](/foundation/spacing/) trong Foundation; 17 mục Foundation, Components, Patterns còn lại đang chờ bài. `Foundation / Overview` đã được bỏ; trang chủ [Overview](/) tiếp tục giới thiệu SDS.
+Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/), [Typography](/foundation/typography/), [Spacing](/foundation/spacing/) và [Logo](/foundation/logo/) trong Foundation; 16 mục Foundation, Components, Patterns còn lại đang chờ bài. `Foundation / Overview` đã được bỏ; trang chủ [Overview](/) tiếp tục giới thiệu SDS.
+
+## Component từ Figma dùng công nghệ nào?
+
+Code component thực tế, snippet để Dev copy và code handoff dùng **HTML/CSS/JavaScript thuần**, chạy độc lập với framework theo `SDS-docs/content/rules/component-code-rules.md`. Website tài liệu giữ Next.js/React và cách trình bày hiện tại. JSX của shell/viewer không phải code bàn giao sản phẩm; preview cần chạy cùng source component thuần. Quy tắc này chưa đồng nghĩa SDS đã phát hành thư viện component.
 
 ## Thêm bài cho một mục sidebar như thế nào?
 
-Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md`; **Typography** dùng `content/pages/foundation/typography.md`; **Spacing** dùng `content/pages/foundation/spacing.md`. Mỗi bài có link mở Markdown gốc. Mục chưa có bài tiếp tục để trống.
+Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md`; **Typography** dùng `content/pages/foundation/typography.md`; **Spacing** dùng `content/pages/foundation/spacing.md`; **Logo** dùng `content/pages/foundation/logo.md` (draft, có 177 SVG xuất từ node Figma và PNG render tương ứng; email nguồn chưa xác minh qua `whoami`). Mọi trang đã có nội dung, gồm Resource / Figma, hiển thị khối “Tài liệu nguồn” ngay dưới title/subtitle để mở Markdown chính. Danh sách thẻ Figma của Resource vẫn lấy từ `website/src/data/figma-files.json`. Mục chưa có bài tiếp tục để trống.
 
 ## Tra giá trị thiết kế ở đâu?
 

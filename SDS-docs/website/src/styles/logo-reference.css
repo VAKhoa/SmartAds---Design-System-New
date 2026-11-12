@@ -1,0 +1,50 @@
+.sa-logo-explorer { min-width: 0; margin: 24px 0 48px; color: var(--sa-docs-text); }
+.sa-logo-feature { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); overflow: hidden; border: 1px solid var(--sa-docs-border); border-radius: 14px; background: var(--sa-docs-panel); }
+.sa-logo-feature-preview { display: flex; align-items: center; justify-content: center; min-height: 228px; padding: 24px; background: #f1e9fd; } /* Figma direct export 123:497 canvas edge */
+.sa-logo-feature-preview img { display: block; max-width: 100%; height: auto; }
+.sa-logo-feature-detail { min-width: 0; display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: 28px; }
+.sa-logo-kicker { margin: 0 0 12px; color: var(--sa-docs-primary); font-size: 11px; font-weight: 700; letter-spacing: .08em; line-height: 2; }
+.sa-logo-feature-detail h3 { margin: 0; color: var(--sa-docs-heading); font-size: 20px; font-weight: 600; line-height: 2; }
+.sa-logo-feature-detail > p:not(.sa-logo-kicker) { margin: 10px 0 20px; color: var(--sa-docs-muted); font-size: 13px; line-height: 2; }
+.sa-logo-download-row { display: flex; flex-wrap: wrap; gap: 8px; }
+.sa-logo-download { display: inline-flex; align-items: center; justify-content: center; min-height: 36px; padding: 0 13px; border: 1px solid var(--sa-docs-border); border-radius: 7px; color: var(--sa-docs-primary); background: var(--sa-docs-bg); font-size: 12px; font-weight: 600; text-decoration: none; line-height: 1.2; }
+.sa-logo-download:hover { border-color: var(--sa-docs-primary); background: var(--sa-docs-panel); }
+.sa-logo-download:focus-visible, .sa-logo-category-list button:focus-visible, .sa-logo-more:focus-visible, .sa-logo-control-row :is(input,select):focus-visible { outline: 2px solid var(--sa-docs-primary); outline-offset: 3px; }
+.sa-logo-catalog-controls { margin: 32px 0 16px; }
+.sa-logo-search-label { display: block; margin-bottom: 10px; color: var(--sa-docs-heading); font-size: 14px; font-weight: 600; line-height: 2; }
+.sa-logo-control-row { display: flex; flex-wrap: wrap; align-items: end; gap: 12px; }
+.sa-logo-control-row input, .sa-logo-control-row select { min-height: 42px; border: 1px solid var(--sa-docs-border); border-radius: 8px; padding: 0 12px; color: var(--sa-docs-text); background: var(--sa-docs-bg); font: inherit; font-size: 13px; }
+.sa-logo-control-row input { flex: 1 1 240px; min-width: 0; }
+.sa-logo-preview-select { display: flex; flex-direction: column; gap: 4px; color: var(--sa-docs-muted); font-size: 11px; line-height: 1.2; }
+.sa-logo-preview-select select { min-width: 130px; }
+.sa-logo-category-list { display: flex; flex-wrap: wrap; gap: 8px; }
+.sa-logo-category-list button { display: inline-flex; align-items: center; gap: 8px; min-height: 34px; border: 1px solid var(--sa-docs-border); border-radius: 7px; padding: 4px 10px; color: var(--sa-docs-text); background: var(--sa-docs-bg); font: inherit; font-size: 12px; line-height: 1.2; cursor: pointer; }
+.sa-logo-category-list button:hover { border-color: var(--sa-docs-primary); }
+.sa-logo-category-list button[aria-pressed="true"] { border-color: var(--sa-docs-primary); color: var(--sa-docs-primary); background: var(--sa-docs-panel); font-weight: 600; }
+.sa-logo-category-list span { color: var(--sa-docs-muted); font-size: 11px; }
+.sa-logo-contrast-guidance { margin: 14px 0 0; color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
+.sa-logo-result-count { margin: 20px 0 12px; color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
+.sa-logo-asset-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
+.sa-logo-asset-card { min-width: 0; overflow: hidden; border: 1px solid var(--sa-docs-border); border-radius: 12px; background: var(--sa-docs-bg); }
+.sa-logo-asset-preview { display: flex; align-items: center; justify-content: center; height: 150px; padding: 20px; border-bottom: 1px solid var(--sa-docs-border); }
+.sa-logo-asset-preview-light { background: #fff; }
+.sa-logo-asset-preview-dark { background: #1f1f22; }
+.sa-logo-asset-preview-contrast { background: linear-gradient(90deg, #fff 50%, #1f1f22 50%); }
+.sa-logo-asset-preview img { display: block; width: min(100%, 140px); height: 48px; object-fit: contain; }
+.sa-logo-asset-body { padding: 14px; }
+.sa-logo-asset-body h3 { margin: 0; overflow-wrap: anywhere; color: var(--sa-docs-heading); font-size: 14px; font-weight: 600; line-height: 2; }
+.sa-logo-asset-measure { margin: 4px 0 12px; color: var(--sa-docs-muted); font-size: 11px; line-height: 2; }
+.sa-logo-background-tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 0 12px; }
+.sa-logo-background-tag { display: inline-flex; align-items: center; min-height: 23px; padding: 1px 7px; border: 1px solid var(--sa-docs-border); border-radius: 5px; color: var(--sa-docs-text); background: var(--sa-docs-panel); font-size: 11px; font-weight: 600; line-height: 1.5; }
+.sa-logo-background-tag-review { color: var(--sa-docs-muted); border-style: dashed; }
+.sa-logo-asset-body dl { margin: 0 0 16px; }
+.sa-logo-asset-body dl > div { display: grid; grid-template-columns: 90px minmax(0,1fr); gap: 4px; padding: 5px 0; border-top: 1px solid var(--sa-docs-border); font-size: 11px; line-height: 2; }
+.sa-logo-asset-body dt { color: var(--sa-docs-muted); }
+.sa-logo-asset-body dd { min-width: 0; margin: 0; overflow-wrap: anywhere; color: var(--sa-docs-text); font-family: ui-monospace, SFMono-Regular, Consolas, monospace; }
+.sa-logo-asset-body .sa-logo-download { flex: 1; }
+.sa-logo-more { display: block; margin: 24px auto 0; min-height: 40px; border: 1px solid var(--sa-docs-border); border-radius: 8px; padding: 0 20px; color: var(--sa-docs-primary); background: var(--sa-docs-bg); font: inherit; font-size: 12px; font-weight: 600; cursor: pointer; }
+.sa-logo-more:hover { border-color: var(--sa-docs-primary); background: var(--sa-docs-panel); }
+.sa-logo-render-note, .sa-logo-no-results { margin: 20px 0; color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
+.sa-logo-no-results { padding: 30px; border: 1px dashed var(--sa-docs-border); border-radius: 10px; text-align: center; }
+@media (max-width: 1120px) { .sa-logo-asset-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 760px) { .sa-logo-feature { grid-template-columns: 1fr; } .sa-logo-asset-grid { grid-template-columns: 1fr; } .sa-logo-feature-detail { padding: 20px; } }

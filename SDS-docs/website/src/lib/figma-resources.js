@@ -1,11 +1,9 @@
 export const figmaResourcePage = {
   id: 'resource/figma',
-  title: 'Figma files',
   href: '/resource/figma/',
-  description: 'Các file thiết kế SmartAds được tập hợp để designer và developer cùng sử dụng.',
-  searchText: 'Resource Figma file thư viện thiết kế variables styles component library',
+  file: 'resource/figma.md',
+  section: 'Resource',
   icon: 'figma',
-  headings: [],
 };
 
 export function getFigmaUrl(value) {

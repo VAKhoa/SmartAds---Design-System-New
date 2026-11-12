@@ -6,6 +6,7 @@ test('Resource opens an internal directory, cards expose real Figma links and ke
   await page.locator('.sa-sidebar .sa-resource-link').click();
   await expect(page).toHaveURL(/\/resource\/figma\/$/);
   await expect(page.locator('h1')).toHaveText('Figma files');
+  await expect(page.locator('.sa-ai-file-card')).toHaveAttribute('href', '/source/docs/resource/figma.md');
   await expect(page.locator('.sa-sidebar .sa-resource-link')).toHaveAttribute('aria-current', 'page');
   const cards = page.locator('.sa-figma-card');
   await expect(cards).toHaveCount(files.length);

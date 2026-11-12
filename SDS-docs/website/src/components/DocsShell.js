@@ -22,6 +22,10 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
   const [copyState, setCopyState] = useState('');
   const [activeHeading, setActiveHeading] = useState('');
   const [dark, setDark] = useState(false);
+  const primarySource = doc.sourceHref && doc.file
+    ? { path: doc.file, description: 'Mở file Markdown gốc của trang này.', href: doc.sourceHref }
+    : null;
+  const displayedSourceFiles = [primarySource, ...(sourceFiles || [])].filter(Boolean);
 
   function openSearch() {
     menuDialog.current?.close();
@@ -59,7 +63,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
 
   const results = useMemo(() => {
     const words = normalize(query.trim()).split(/\s+/).filter(Boolean);
-    return [...searchIndex, figmaResourcePage].filter(item => {
+    return searchIndex.filter(item => {
       const text = normalize(`${item.title} ${item.description} ${item.searchText}`);
       return words.every(word => text.includes(word));
     });
@@ -128,20 +132,15 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
       <aside className="sa-sidebar" aria-label="Điều hướng tài liệu"><SidebarContent/></aside>
       <div className={`sa-reading-layout${empty ? ' sa-reading-layout-empty' : ''}${resource ? ' sa-reading-layout-resource' : ''}`}>
         <main id="main-content" className={`sa-main${resource ? ' sa-main-resource' : ''}`} tabIndex="-1" aria-label={empty ? doc.title : undefined}>
-          {resource && <>
-            <nav className="sa-breadcrumb sa-resource-breadcrumb" aria-label="Đường dẫn trang"><span>Resource</span><Icon name="chevron" size={13}/><span aria-current="page">Figma files</span></nav>
-            <div className="sa-title-block"><h1>{doc.title}</h1><p className="sa-lead">{doc.description}</p></div>
-            {children}
-          </>}
-          {!empty && !resource && <>
+          {!empty && <>
           <div className="sa-page-toolbar">
-            <nav className="sa-breadcrumb" aria-label="Đường dẫn trang"><Link href="/">{doc.section || 'Introduction'}</Link><Icon name="chevron" size={13}/><span>{doc.title}</span></nav>
+            <nav className="sa-breadcrumb" aria-label="Đường dẫn trang">{resource ? <span>Resource</span> : <Link href="/">{doc.section || 'Introduction'}</Link>}<Icon name="chevron" size={13}/><span>{doc.title}</span></nav>
             <div className="sa-page-tools">
               <button className="sa-copy-button" onClick={copyPage} aria-label="Sao chép nội dung trang"><Icon name={copyState === 'Đã sao chép' ? 'check' : 'copy'} size={15}/><span>{copyState === 'Đã sao chép' ? 'Đã sao chép' : 'Sao chép trang'}</span></button>
-              <div className="sa-compact-pagination">
+              {!resource && <div className="sa-compact-pagination">
                 {previous ? <Link href={previous.href} className="sa-small-button" aria-label={`Trang trước: ${previous.title}`}><Icon name="back" size={15}/></Link> : <button className="sa-small-button" disabled aria-label="Không có trang trước"><Icon name="back" size={15}/></button>}
                 {next ? <Link href={next.href} className="sa-small-button" aria-label={`Trang sau: ${next.title}`}><Icon name="arrow" size={15}/></Link> : <button className="sa-small-button" disabled aria-label="Không có trang sau"><Icon name="arrow" size={15}/></button>}
-              </div>
+              </div>}
             </div>
           </div>
           <span className="sr-only" role="status">{copyState}</span>
@@ -149,7 +148,8 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
             <div className="sa-title-row"><h1>{doc.id === 'overview' ? 'SmartAds Design System' : doc.title}</h1><span className="sa-status">{statuses[doc.status]}</span></div>
             <p className="sa-lead">{doc.description}</p>
           </div>
-          {sourceFiles?.length > 0 && <SourceFileLinks files={sourceFiles}/>}
+          {displayedSourceFiles.length > 0 && <SourceFileLinks files={displayedSourceFiles}/>}
+          {resource ? children : <>
           <details className="sa-mobile-toc"><summary>Trên trang này <Icon name="down" size={16}/></summary><TocLinks mobile/></details>
           <article aria-label={doc.title}>{children}</article>
           <div className="sa-article-meta"><span>Cập nhật {doc.updated}</span><span>Nguồn: {doc.sources.map((source, i) => <span key={source.url}>{i > 0 && ' · '}<a href={source.url} target="_blank" rel="noreferrer">{source.label}<span className="sr-only"> (tab mới)</span></a></span>)}</span></div>
@@ -157,6 +157,7 @@ export default function DocsShell({ document: doc, searchIndex, previous, next, 
             {previous ? <Link href={previous.href} aria-label={`Trang trước: ${previous.title}`}><Icon name="back" size={16}/><span>{previous.title}</span></Link> : <span/>}
             {next ? <Link href={next.href} className="sa-pagination-next" aria-label={`Trang sau: ${next.title}`}><span>{next.title}</span><Icon name="arrow" size={16}/></Link> : <span/>}
           </nav>
+          </>}
           </>}
           {!empty && <footer className="sa-footer"><div className="sa-footer-brand"><Logo dark={dark}/><span>SmartAds Design System <span className="sa-footer-version">v{siteInfo.version}</span></span></div><span className="sa-footer-update">Last update <time dateTime={siteInfo.updatedAt} title="UTC+07:00">{siteInfo.label}</time></span></footer>}
         </main>

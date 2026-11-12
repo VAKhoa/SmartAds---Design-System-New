@@ -7,6 +7,7 @@ import { Marked } from 'marked';
 import { generateTheme } from './generate-theme.mjs';
 import { navigation, plannedNavigation } from '../src/lib/navigation.js';
 import { aiSourceFiles } from '../src/data/ai-source-files.js';
+import { figmaResourcePage } from '../src/lib/figma-resources.js';
 import { dirname, resolve, sep } from 'node:path';
 import { fileURLToPath } from 'node:url';
 
@@ -31,7 +32,7 @@ const slugify = (text) => clean(text).toLowerCase().normalize('NFD').replace(/[\
 const plannedItems = plannedNavigation.flatMap(group => group.items).filter(item =>
   existsSync(new URL(`../../content/pages/${item.file}`, import.meta.url))
 );
-const documents = [...navigation, ...plannedItems].map(item => {
+const documents = [...navigation, ...plannedItems, figmaResourcePage].map(item => {
   const source = readFileSync(new URL(`../../content/pages/${item.file}`, import.meta.url), 'utf8');
   const { data, content } = matter(source);
   for (const key of ['title', 'description', 'section', 'updated', 'status', 'sources']) {

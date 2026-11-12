@@ -51,6 +51,6 @@ export default async function SpacingReference() {
   const searchIndex = documents.map(({ id, title, href, description, searchText, icon }) => ({ id, title, href, description, searchText, icon }));
 
   return <DocsShell document={document} searchIndex={searchIndex}>
-    <SpacingExplorer rows={rows} exceptions={exceptions} readDate={snapshot.readDate} sourceHref={document.sourceHref} />
+    <SpacingExplorer rows={rows} exceptions={exceptions} readDate={snapshot.readDate} />
   </DocsShell>;
 }

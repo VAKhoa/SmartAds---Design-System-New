@@ -2,7 +2,7 @@
 title: Overview
 description: Nền tảng thiết kế chung cho giao diện SmartAds. Kết nối thiết kế, phát triển và trải nghiệm sản phẩm qua cùng một hệ thống.
 section: Introduction
-updated: 09/11/2026
+updated: 12/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -41,7 +41,7 @@ Từ một màu thể hiện trạng thái đến cách trình bày một màn h
 
 ## Phạm vi hiện tại
 
-Website hiện có **7 trang Introduction** để tìm hiểu SDS, trang [Resource / Figma file](/resource/figma/) để mở file thiết kế và ba bài [Colors](/foundation/colors/), [Typography](/foundation/typography/) và [Spacing](/foundation/spacing/) trong Foundation. Foundation, Components và Patterns có 20 mục trong sidebar, gồm Layout và Logo; 17 mục còn lại đang chờ bài Markdown. `Introduction / Overview` ở trang chủ giữ vai trò giới thiệu chung; không còn `Foundation / Overview`. Mỗi mục có đường dẫn file chính cố định để bổ sung dần, còn route chưa có bài vẫn để trống.
+Website hiện có **7 trang Introduction** để tìm hiểu SDS, trang [Resource / Figma file](/resource/figma/) để mở file thiết kế và bốn bài [Colors](/foundation/colors/), [Typography](/foundation/typography/), [Spacing](/foundation/spacing/) và [Logo](/foundation/logo/) trong Foundation. Logo là bản nháp với 177 biến thể SVG xuất từ Figma và bản PNG render tương ứng; nguồn tài khoản chưa xác minh được qua `whoami`. Foundation, Components và Patterns có 20 mục trong sidebar, gồm Layout và Logo; 16 mục còn lại đang chờ bài Markdown. `Introduction / Overview` ở trang chủ giữ vai trò giới thiệu chung; không còn `Foundation / Overview`. Mỗi mục có đường dẫn file chính cố định để bổ sung dần, còn route chưa có bài vẫn để trống.
 
 Bản chụp Figma ngày 02/11/2026 ghi nhận 690 local variables thuộc 6 collections cùng 132 local styles. Dữ liệu này là cơ sở để tiếp tục kiểm kê và xây tài liệu; chưa phải một thư viện code đã phát hành.
 

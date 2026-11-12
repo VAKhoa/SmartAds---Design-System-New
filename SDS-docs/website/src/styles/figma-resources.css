@@ -25,7 +25,6 @@
   --sa-resource-action-bg: #262626;
 }
 .sa-main-resource { display: flex; flex-direction: column; }
-.sa-resource-breadcrumb { min-height: 36px; margin-bottom: 24px; }
 .sa-main-resource .sa-footer { margin-top: auto; }
 .sa-figma-directory { padding-bottom: 48px; }
 .sa-figma-count { margin: 0 0 16px; font-size: 12px; color: var(--sa-resource-muted); }

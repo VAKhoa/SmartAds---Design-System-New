@@ -1,0 +1,5689 @@
+{
+  "source": {
+    "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+    "nodeId": "123:153",
+    "method": "Figma Local SVG export, group-isolated with referenced defs only"
+  },
+  "note": "PNG downloads are transparent 4x renders of each Figma SVG; they are not separate original PNG files. Background suitability is a preview-legibility heuristic, not a Figma usage rule.",
+  "assets": [
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-fpt_2",
+      "sourceGroupId": "Category=Online Blue",
+      "variantLabel": "Category=Online Blue",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/001-category-online-blue.svg",
+      "png": "/brand/logo-library/001-category-online-blue.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 98.23312377929688,
+        "height": 35.77201843261719
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.3034,
+        "dark": 0.7002
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 37.447,
+        "y": 222.454,
+        "width": 97.233,
+        "height": 34.772
+      },
+      "definitionCount": 0,
+      "svgBytes": 6297,
+      "pngBytes": 9934
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-fpt_2",
+      "sourceGroupId": "Category=Online White",
+      "variantLabel": "Category=Online White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/002-category-online-white.svg",
+      "png": "/brand/logo-library/002-category-online-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 98.23287963867188,
+        "height": 35.772003173828125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2149,
+        "dark": 0.7887
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 35.664,
+        "y": 274.612,
+        "width": 97.233,
+        "height": 34.772
+      },
+      "definitionCount": 0,
+      "svgBytes": 6288,
+      "pngBytes": 9498
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds",
+      "variantLabel": "Category=SmartAds",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/003-category-smartads.svg",
+      "png": "/brand/logo-library/003-category-smartads.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 156.0391845703125,
+        "height": 40.94346618652344
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.992,
+        "dark": 0.8458
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 222.661,
+        "width": 155.039,
+        "height": 39.943
+      },
+      "definitionCount": 2,
+      "svgBytes": 10352,
+      "pngBytes": 12946
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds - Text White",
+      "variantLabel": "Category=SmartAds - Text White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/004-category-smartads-text-white.svg",
+      "png": "/brand/logo-library/004-category-smartads-text-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 156.0391845703125,
+        "height": 40.943634033203125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.4887,
+        "dark": 0.8791
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 278.832,
+        "width": 155.039,
+        "height": 39.944
+      },
+      "definitionCount": 2,
+      "svgBytes": 10343,
+      "pngBytes": 11405
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds + FPT",
+      "variantLabel": "Category=SmartAds + FPT",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/005-category-smartads-fpt.svg",
+      "png": "/brand/logo-library/005-category-smartads-fpt.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 132.399169921875,
+        "height": 41.1221923828125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8387,
+        "dark": 0.8214
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 335.002,
+        "width": 131.399,
+        "height": 40.122
+      },
+      "definitionCount": 1,
+      "svgBytes": 26221,
+      "pngBytes": 17979
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds + FPT + Gray",
+      "variantLabel": "Category=SmartAds + FPT + Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/006-category-smartads-fpt-gray.svg",
+      "png": "/brand/logo-library/006-category-smartads-fpt-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 132.399169921875,
+        "height": 41.1219482421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.5548,
+        "dark": 0.972
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 391.173,
+        "width": 131.399,
+        "height": 40.122
+      },
+      "definitionCount": 1,
+      "svgBytes": 26181,
+      "pngBytes": 17033
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds White + FPT",
+      "variantLabel": "Category=SmartAds White + FPT",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/007-category-smartads-white-fpt.svg",
+      "png": "/brand/logo-library/007-category-smartads-white-fpt.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 132.399169921875,
+        "height": 41.12164306640625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.354,
+        "dark": 0.9411
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 447.344,
+        "width": 131.399,
+        "height": 40.122
+      },
+      "definitionCount": 1,
+      "svgBytes": 26225,
+      "pngBytes": 18020
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds Light",
+      "variantLabel": "Category=SmartAds Light",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/008-category-smartads-light.svg",
+      "png": "/brand/logo-library/008-category-smartads-light.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 156.0391845703125,
+        "height": 40.943359375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.5031,
+        "dark": 0.9669
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 503.515,
+        "width": 155.039,
+        "height": 39.943
+      },
+      "definitionCount": 2,
+      "svgBytes": 10351,
+      "pngBytes": 12841
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=SmartAds Dark",
+      "variantLabel": "Category=SmartAds Dark",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/009-category-smartads-dark.svg",
+      "png": "/brand/logo-library/009-category-smartads-dark.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 156.0391845703125,
+        "height": 40.94390869140625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9931,
+        "dark": 0.477
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 559.685,
+        "width": 155.039,
+        "height": 39.944
+      },
+      "definitionCount": 2,
+      "svgBytes": 10329,
+      "pngBytes": 12963
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=Single Light",
+      "variantLabel": "Category=Single Light",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/010-category-single-light.svg",
+      "png": "/brand/logo-library/010-category-single-light.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 28.594268798828125,
+        "height": 39.05499267578125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 180.453,
+        "y": 616.314,
+        "width": 27.594,
+        "height": 38.055
+      },
+      "definitionCount": 1,
+      "svgBytes": 1661,
+      "pngBytes": 3124
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=Single Dark",
+      "variantLabel": "Category=Single Dark",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/011-category-single-dark.svg",
+      "png": "/brand/logo-library/011-category-single-dark.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 28.594268798828125,
+        "height": 39.055419921875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 180.453,
+        "y": 670.921,
+        "width": 27.594,
+        "height": 38.055
+      },
+      "definitionCount": 1,
+      "svgBytes": 1656,
+      "pngBytes": 3308
+    },
+    {
+      "category": "SmartAds & FPT",
+      "parentGroupId": "logo-smartads_3",
+      "sourceGroupId": "Category=Single Green",
+      "variantLabel": "Category=Single Green",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/012-category-single-green.svg",
+      "png": "/brand/logo-library/012-category-single-green.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 30.087966918945312,
+        "height": 41.1219482421875
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9979,
+        "dark": 0.7542
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 176.091,
+        "y": 725.069,
+        "width": 29.088,
+        "height": 40.122
+      },
+      "definitionCount": 1,
+      "svgBytes": 1605,
+      "pngBytes": 3572
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-tuoitre, Color=Brand",
+      "variantLabel": "Publisher=logo-tuoitre, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/013-publisher-logo-tuoitre-color-brand.svg",
+      "png": "/brand/logo-library/013-publisher-logo-tuoitre-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 59.0689697265625,
+        "height": 18.324447631835938
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9998,
+        "dark": 0.9658
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 742.203,
+        "y": 224.72,
+        "width": 58.069,
+        "height": 17.324
+      },
+      "definitionCount": 0,
+      "svgBytes": 33836,
+      "pngBytes": 4961
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnE, Color=Brand",
+      "variantLabel": "Publisher=logo-vnE, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/014-publisher-logo-vne-color-brand.svg",
+      "png": "/brand/logo-library/014-publisher-logo-vne-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4119873046875,
+        "height": 17.470001220703125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8856,
+        "dark": 0.493
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 740.026,
+        "y": 273.259,
+        "width": 62.412,
+        "height": 16.47
+      },
+      "definitionCount": 1,
+      "svgBytes": 27563,
+      "pngBytes": 5090
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-ngoisao, Color=Brand",
+      "variantLabel": "Publisher=logo-ngoisao, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/015-publisher-logo-ngoisao-color-brand.svg",
+      "png": "/brand/logo-library/015-publisher-logo-ngoisao-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 52.7120361328125,
+        "height": 22.451995849609375
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "dark",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.4621,
+        "dark": 0.6209
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 745.376,
+        "y": 318.954,
+        "width": 51.712,
+        "height": 21.452
+      },
+      "definitionCount": 9,
+      "svgBytes": 30629,
+      "pngBytes": 8485
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vn-net, Color=Brand",
+      "variantLabel": "Publisher=logo-vn-net, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/016-publisher-logo-vn-net-color-brand.svg",
+      "png": "/brand/logo-library/016-publisher-logo-vn-net-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.133544921875,
+        "height": 17.9169921875
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "dark",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.4577,
+        "dark": 0.6087
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 747.647,
+        "y": 368.358,
+        "width": 44.134,
+        "height": 16.917
+      },
+      "definitionCount": 0,
+      "svgBytes": 9371,
+      "pngBytes": 6293
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-dantri, Color=Brand",
+      "variantLabel": "Publisher=logo-dantri, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/017-publisher-logo-dantri-color-brand.svg",
+      "png": "/brand/logo-library/017-publisher-logo-dantri-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 62.365966796875,
+        "height": 15.441009521484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 740.476,
+        "y": 419.072,
+        "width": 61.366,
+        "height": 14.441
+      },
+      "definitionCount": 2,
+      "svgBytes": 2676,
+      "pngBytes": 4069
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-thanhnien, Color=Brand",
+      "variantLabel": "Publisher=logo-thanhnien, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/018-publisher-logo-thanhnien-color-brand.svg",
+      "png": "/brand/logo-library/018-publisher-logo-thanhnien-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.20001220703125,
+        "height": 18.8282470703125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9629,
+        "dark": 0.9366
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 740.238,
+        "y": 465.18,
+        "width": 62.2,
+        "height": 17.828
+      },
+      "definitionCount": 1,
+      "svgBytes": 13195,
+      "pngBytes": 4794
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-tuoitre, Color=Gray",
+      "variantLabel": "Publisher=logo-tuoitre, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/019-publisher-logo-tuoitre-color-gray.svg",
+      "png": "/brand/logo-library/019-publisher-logo-tuoitre-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 59.06805419921875,
+        "height": 18.458450317382812
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9853,
+        "dark": 0.9569
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 831.363,
+        "y": 224.653,
+        "width": 58.068,
+        "height": 17.458
+      },
+      "definitionCount": 0,
+      "svgBytes": 33955,
+      "pngBytes": 4307
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnE, Color=Gray",
+      "variantLabel": "Publisher=logo-vnE, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/020-publisher-logo-vne-color-gray.svg",
+      "png": "/brand/logo-library/020-publisher-logo-vne-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.23101806640625,
+        "height": 17.4949951171875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8719,
+        "dark": 0.6281
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 829.186,
+        "y": 273.259,
+        "width": 62.231,
+        "height": 16.495
+      },
+      "definitionCount": 1,
+      "svgBytes": 27635,
+      "pngBytes": 4844
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-dantri, Color=Gray",
+      "variantLabel": "Publisher=logo-dantri, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/021-publisher-logo-dantri-color-gray.svg",
+      "png": "/brand/logo-library/021-publisher-logo-dantri-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 62.36602783203125,
+        "height": 15.31402587890625
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9963,
+        "dark": 0.9729
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 829.636,
+        "y": 419.132,
+        "width": 61.366,
+        "height": 14.314
+      },
+      "definitionCount": 0,
+      "svgBytes": 2214,
+      "pngBytes": 2562
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnExpress_internatinal, Color=Brand",
+      "variantLabel": "Publisher=logo-vnExpress_internatinal, Color=Brand",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/022-publisher-logo-vnexpress-internatinal-color-brand.svg",
+      "png": "/brand/logo-library/022-publisher-logo-vnexpress-internatinal-color-brand.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4119873046875,
+        "height": 18.177001953125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8257,
+        "dark": 0.484
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 740.026,
+        "y": 513.834,
+        "width": 62.412,
+        "height": 17.177
+      },
+      "definitionCount": 1,
+      "svgBytes": 26047,
+      "pngBytes": 6093
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-thanhnien, Color=White",
+      "variantLabel": "Publisher=logo-thanhnien, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/023-publisher-logo-thanhnien-color-white.svg",
+      "png": "/brand/logo-library/023-publisher-logo-thanhnien-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.20098876953125,
+        "height": 18.8282470703125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 918.557,
+        "y": 465.18,
+        "width": 62.201,
+        "height": 17.828
+      },
+      "definitionCount": 1,
+      "svgBytes": 13157,
+      "pngBytes": 4091
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-ngoisao, Color=White",
+      "variantLabel": "Publisher=logo-ngoisao, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/024-publisher-logo-ngoisao-color-white.svg",
+      "png": "/brand/logo-library/024-publisher-logo-ngoisao-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 52.7130126953125,
+        "height": 22.451995849609375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 923.695,
+        "y": 318.954,
+        "width": 51.713,
+        "height": 21.452
+      },
+      "definitionCount": 3,
+      "svgBytes": 28756,
+      "pngBytes": 4566
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-tuoitre, Color=White",
+      "variantLabel": "Publisher=logo-tuoitre, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/025-publisher-logo-tuoitre-color-white.svg",
+      "png": "/brand/logo-library/025-publisher-logo-tuoitre-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 59.0679931640625,
+        "height": 18.458450317382812
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 920.523,
+        "y": 224.653,
+        "width": 58.068,
+        "height": 17.458
+      },
+      "definitionCount": 0,
+      "svgBytes": 33760,
+      "pngBytes": 3769
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vn-net, Color=White",
+      "variantLabel": "Publisher=logo-vn-net, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/026-publisher-logo-vn-net-color-white.svg",
+      "png": "/brand/logo-library/026-publisher-logo-vn-net-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 44.7525634765625,
+        "height": 17.9169921875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 926.17,
+        "y": 368.358,
+        "width": 43.753,
+        "height": 16.917
+      },
+      "definitionCount": 0,
+      "svgBytes": 9316,
+      "pngBytes": 4890
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-dantri, Color=White",
+      "variantLabel": "Publisher=logo-dantri, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/027-publisher-logo-dantri-color-white.svg",
+      "png": "/brand/logo-library/027-publisher-logo-dantri-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 62.365966796875,
+        "height": 15.272979736328125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 918.796,
+        "y": 419.126,
+        "width": 61.366,
+        "height": 14.273
+      },
+      "definitionCount": 0,
+      "svgBytes": 2253,
+      "pngBytes": 2201
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnE, Color=White",
+      "variantLabel": "Publisher=logo-vnE, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/028-publisher-logo-vne-color-white.svg",
+      "png": "/brand/logo-library/028-publisher-logo-vne-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4119873046875,
+        "height": 17.542999267578125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 918.346,
+        "y": 273.259,
+        "width": 62.412,
+        "height": 16.543
+      },
+      "definitionCount": 1,
+      "svgBytes": 27706,
+      "pngBytes": 4293
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnExpress_internatinal, Color=White",
+      "variantLabel": "Publisher=logo-vnExpress_internatinal, Color=White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/029-publisher-logo-vnexpress-internatinal-color-white.svg",
+      "png": "/brand/logo-library/029-publisher-logo-vnexpress-internatinal-color-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.41204833984375,
+        "height": 18.177001953125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 918.342,
+        "y": 513.834,
+        "width": 62.412,
+        "height": 17.177
+      },
+      "definitionCount": 1,
+      "svgBytes": 26000,
+      "pngBytes": 4762
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-ngoisao, Color=Gray",
+      "variantLabel": "Publisher=logo-ngoisao, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/030-publisher-logo-ngoisao-color-gray.svg",
+      "png": "/brand/logo-library/030-publisher-logo-ngoisao-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 52.7130126953125,
+        "height": 22.451995849609375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9125,
+        "dark": 0.5157
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 834.535,
+        "y": 318.954,
+        "width": 51.713,
+        "height": 21.452
+      },
+      "definitionCount": 3,
+      "svgBytes": 28869,
+      "pngBytes": 7225
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-thanhnien, Color=Gray",
+      "variantLabel": "Publisher=logo-thanhnien, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/031-publisher-logo-thanhnien-color-gray.svg",
+      "png": "/brand/logo-library/031-publisher-logo-thanhnien-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.2010498046875,
+        "height": 18.8282470703125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9867,
+        "dark": 0.9279
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 829.397,
+        "y": 465.18,
+        "width": 62.201,
+        "height": 17.828
+      },
+      "definitionCount": 1,
+      "svgBytes": 13222,
+      "pngBytes": 4598
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnExpress_internatinal, Color=Gray",
+      "variantLabel": "Publisher=logo-vnExpress_internatinal, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/032-publisher-logo-vnexpress-internatinal-color-gray.svg",
+      "png": "/brand/logo-library/032-publisher-logo-vnexpress-internatinal-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4119873046875,
+        "height": 18.177001953125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8624,
+        "dark": 0.4177
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 829.182,
+        "y": 513.834,
+        "width": 62.412,
+        "height": 17.177
+      },
+      "definitionCount": 1,
+      "svgBytes": 26032,
+      "pngBytes": 5916
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vn-net, Color=Gray",
+      "variantLabel": "Publisher=logo-vn-net, Color=Gray",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/033-publisher-logo-vn-net-color-gray.svg",
+      "png": "/brand/logo-library/033-publisher-logo-vn-net-color-gray.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 44.7525634765625,
+        "height": 17.9169921875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.941,
+        "dark": 0.4731
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 837.01,
+        "y": 368.358,
+        "width": 43.753,
+        "height": 16.917
+      },
+      "definitionCount": 0,
+      "svgBytes": 9362,
+      "pngBytes": 5232
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnEgo, Color=Brand",
+      "variantLabel": "vnEgo · Brand",
+      "downloadName": "publisher-vnego-brand",
+      "sourceFrameSize": {
+        "width": 140,
+        "height": 48
+      },
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "11112:362370",
+      "svg": "/brand/logo-library/034-publisher-logo-vnego-color-brand.svg",
+      "png": "/brand/logo-library/034-publisher-logo-vnego-color-brand.png",
+      "pngKind": "rendered-from-direct-figma-vector",
+      "intrinsicSize": {
+        "width": 140,
+        "height": 36
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8201,
+        "dark": 0.3878
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 741.006,
+        "y": 563.541,
+        "width": 61.103,
+        "height": 13.668
+      },
+      "definitionCount": 6,
+      "svgBytes": 11787,
+      "pngBytes": 17380
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnEgo, Color=Gray",
+      "variantLabel": "vnEgo · Gray",
+      "downloadName": "publisher-vnego-gray",
+      "sourceFrameSize": {
+        "width": 140,
+        "height": 48
+      },
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "11112:362369",
+      "svg": "/brand/logo-library/035-publisher-logo-vnego-color-gray.svg",
+      "png": "/brand/logo-library/035-publisher-logo-vnego-color-gray.png",
+      "pngKind": "rendered-from-direct-figma-vector",
+      "intrinsicSize": {
+        "width": 136.182,
+        "height": 30.5455
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.4431,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 830.321,
+        "y": 563.576,
+        "width": 60.709,
+        "height": 13.617
+      },
+      "definitionCount": 6,
+      "svgBytes": 11838,
+      "pngBytes": 16628
+    },
+    {
+      "category": "Publisher",
+      "parentGroupId": "logo-publisher_2",
+      "sourceGroupId": "Publisher=logo-vnEgo, Color=White",
+      "variantLabel": "vnEgo · White",
+      "downloadName": "publisher-vnego-white",
+      "sourceFrameSize": {
+        "width": 140,
+        "height": 48
+      },
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "11112:362368",
+      "svg": "/brand/logo-library/036-publisher-logo-vnego-color-white.svg",
+      "png": "/brand/logo-library/036-publisher-logo-vnego-color-white.png",
+      "pngKind": "rendered-from-direct-figma-vector",
+      "intrinsicSize": {
+        "width": 136.369,
+        "height": 30.5036
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 919.48,
+        "y": 563.576,
+        "width": 60.794,
+        "height": 13.598
+      },
+      "definitionCount": 0,
+      "svgBytes": 10236,
+      "pngBytes": 9201
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-scotch-ags, Color root=false",
+      "variantLabel": "Logo=logo-scotch-ags, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/037-logo-logo-scotch-ags-color-root-false.svg",
+      "png": "/brand/logo-library/037-logo-logo-scotch-ags-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 48.25469970703125,
+        "height": 13.545499801635742
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7017,
+        "dark": 0.395
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1106.47,
+        "y": 225.988,
+        "width": 47.255,
+        "height": 12.545
+      },
+      "definitionCount": 2,
+      "svgBytes": 16359,
+      "pngBytes": 9749
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-rmit, Color root=false",
+      "variantLabel": "Logo=logo-rmit, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/038-logo-logo-rmit-color-root-false.svg",
+      "png": "/brand/logo-library/038-logo-logo-rmit-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 48.25469970703125,
+        "height": 24.576499938964844
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0.3546
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1190.28,
+        "y": 220.473,
+        "width": 47.255,
+        "height": 23.576
+      },
+      "definitionCount": 2,
+      "svgBytes": 39344,
+      "pngBytes": 5136
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-dongnam, Color root=false",
+      "variantLabel": "Logo=logo-dongnam, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/039-logo-logo-dongnam-color-root-false.svg",
+      "png": "/brand/logo-library/039-logo-logo-dongnam-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.79669952392578,
+        "height": 20.61520004272461
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8534,
+        "dark": 0.9697
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1276.32,
+        "y": 222.454,
+        "width": 42.797,
+        "height": 19.615
+      },
+      "definitionCount": 2,
+      "svgBytes": 498351,
+      "pngBytes": 7606
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-novaon-digital, Color root=false",
+      "variantLabel": "Logo=logo-novaon-digital, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/040-logo-logo-novaon-digital-color-root-false.svg",
+      "png": "/brand/logo-library/040-logo-logo-novaon-digital-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4154052734375,
+        "height": 20.071548461914062
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1747,
+        "dark": 0.8289
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1350.32,
+        "y": 222.727,
+        "width": 62.415,
+        "height": 19.072
+      },
+      "definitionCount": 1,
+      "svgBytes": 8377,
+      "pngBytes": 5567
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-dongtayland, Color root=false",
+      "variantLabel": "Logo=logo-dongtayland, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/041-logo-logo-dongtayland-color-root-false.svg",
+      "png": "/brand/logo-library/041-logo-logo-dongtayland-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.79669952392578,
+        "height": 20.61520004272461
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7034,
+        "dark": 0.4675
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1443.94,
+        "y": 222.454,
+        "width": 42.797,
+        "height": 19.615
+      },
+      "definitionCount": 2,
+      "svgBytes": 10133,
+      "pngBytes": 5662
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fpt-university, Color root=false",
+      "variantLabel": "Logo=logo-fpt-university, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/042-logo-logo-fpt-university-color-root-false.svg",
+      "png": "/brand/logo-library/042-logo-logo-fpt-university-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.739990234375,
+        "height": 17.937271118164062
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1902,
+        "dark": 0.8098
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1527.78,
+        "y": 223.797,
+        "width": 42.74,
+        "height": 16.937
+      },
+      "definitionCount": 1,
+      "svgBytes": 17087,
+      "pngBytes": 5125
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-american-study, Color root=false",
+      "variantLabel": "Logo=logo-american-study, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/043-logo-logo-american-study-color-root-false.svg",
+      "png": "/brand/logo-library/043-logo-logo-american-study-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 56.280029296875,
+        "height": 13.100234985351562
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.5917,
+        "dark": 0.4513
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1605.32,
+        "y": 226.211,
+        "width": 55.28,
+        "height": 12.1
+      },
+      "definitionCount": 1,
+      "svgBytes": 28060,
+      "pngBytes": 5878
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-vcb, Color root=false",
+      "variantLabel": "Logo=logo-vcb, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/044-logo-logo-vcb-color-root-false.svg",
+      "png": "/brand/logo-library/044-logo-logo-vcb-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 51.820068359375,
+        "height": 18.11749267578125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2395,
+        "dark": 0.8633
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1691.36,
+        "y": 223.615,
+        "width": 50.82,
+        "height": 17.117
+      },
+      "definitionCount": 5,
+      "svgBytes": 20532,
+      "pngBytes": 6290
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-vpbank, Color root=false",
+      "variantLabel": "Logo=logo-vpbank, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/045-logo-logo-vpbank-color-root-false.svg",
+      "png": "/brand/logo-library/045-logo-logo-vpbank-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 57.173583984375,
+        "height": 13.474533081054688
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9631,
+        "dark": 0.9353
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1772.496,
+        "y": 226.02,
+        "width": 56.174,
+        "height": 12.475
+      },
+      "definitionCount": 1,
+      "svgBytes": 5785,
+      "pngBytes": 3591
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fwd, Color root=false",
+      "variantLabel": "Logo=logo-fwd, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/046-logo-logo-fwd-color-root-false.svg",
+      "png": "/brand/logo-library/046-logo-logo-fwd-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 33.989990234375,
+        "height": 12.48699951171875
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9146,
+        "dark": 0.9628
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1867.9,
+        "y": 226.466,
+        "width": 32.99,
+        "height": 11.487
+      },
+      "definitionCount": 1,
+      "svgBytes": 3469,
+      "pngBytes": 2134
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-phuchung, Color root=false",
+      "variantLabel": "Logo=logo-phuchung, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/047-logo-logo-phuchung-color-root-false.svg",
+      "png": "/brand/logo-library/047-logo-logo-phuchung-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 29.08530044555664,
+        "height": 18.386199951171875
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.6737,
+        "dark": 0.423
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1954.16,
+        "y": 223.568,
+        "width": 28.085,
+        "height": 17.386
+      },
+      "definitionCount": 2,
+      "svgBytes": 4355448,
+      "pngBytes": 7135
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-bidv, Color root=false",
+      "variantLabel": "Logo=logo-bidv, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/048-logo-logo-bidv-color-root-false.svg",
+      "png": "/brand/logo-library/048-logo-logo-bidv-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.60693359375,
+        "height": 15.28302001953125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7033,
+        "dark": 0.9533
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2029.708,
+        "y": 225.12,
+        "width": 44.607,
+        "height": 14.283
+      },
+      "definitionCount": 1,
+      "svgBytes": 7356,
+      "pngBytes": 4063
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fpt-retail, Color root=false",
+      "variantLabel": "Logo=logo-fpt-retail, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/049-logo-logo-fpt-retail-color-root-false.svg",
+      "png": "/brand/logo-library/049-logo-logo-fpt-retail-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 49.592098236083984,
+        "height": 12.666399955749512
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7833,
+        "dark": 0.2167
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2111.53,
+        "y": 226.428,
+        "width": 48.592,
+        "height": 11.666
+      },
+      "definitionCount": 2,
+      "svgBytes": 69380,
+      "pngBytes": 8711
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-thaiminh, Color root=false",
+      "variantLabel": "Logo=logo-thaiminh, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/050-logo-logo-thaiminh-color-root-false.svg",
+      "png": "/brand/logo-library/050-logo-logo-thaiminh-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.9900016784668,
+        "height": 17.658000946044922
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8466,
+        "dark": 0.2348
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2188.14,
+        "y": 223.932,
+        "width": 62.99,
+        "height": 16.658
+      },
+      "definitionCount": 2,
+      "svgBytes": 64029,
+      "pngBytes": 12110
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-botania, Color root=false",
+      "variantLabel": "Logo=logo-botania, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/051-logo-logo-botania-color-root-false.svg",
+      "png": "/brand/logo-library/051-logo-logo-botania-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 53.60430145263672,
+        "height": 19.277799606323242
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.6758,
+        "dark": 0.475
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2277.14,
+        "y": 223.122,
+        "width": 52.604,
+        "height": 18.278
+      },
+      "definitionCount": 2,
+      "svgBytes": 2024083,
+      "pngBytes": 10176
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo_batdongsan360, Color root=false",
+      "variantLabel": "Logo=logo_batdongsan360, Color root=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/052-logo-logo-batdongsan360-color-root-false.svg",
+      "png": "/brand/logo-library/052-logo-logo-batdongsan360-color-root-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.8359375,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.5331,
+        "dark": 0.7156
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2378.334,
+        "y": 223.345,
+        "width": 17.836,
+        "height": 17.832
+      },
+      "definitionCount": 6,
+      "svgBytes": 28990,
+      "pngBytes": 5638
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-scotch-ags, Color root=true",
+      "variantLabel": "Logo=logo-scotch-ags, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/053-logo-logo-scotch-ags-color-root-true.svg",
+      "png": "/brand/logo-library/053-logo-logo-scotch-ags-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 48.25469970703125,
+        "height": 13.545499801635742
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7019,
+        "dark": 0.3953
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1106.47,
+        "y": 283.051,
+        "width": 47.255,
+        "height": 12.545
+      },
+      "definitionCount": 2,
+      "svgBytes": 16323,
+      "pngBytes": 9740
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-rmit, Color root=true",
+      "variantLabel": "Logo=logo-rmit, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/054-logo-logo-rmit-color-root-true.svg",
+      "png": "/brand/logo-library/054-logo-logo-rmit-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 48.25469970703125,
+        "height": 24.576499938964844
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0.3546
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1190.28,
+        "y": 277.535,
+        "width": 47.255,
+        "height": 23.576
+      },
+      "definitionCount": 2,
+      "svgBytes": 39308,
+      "pngBytes": 5189
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-dongnam-promotion, Color root=true",
+      "variantLabel": "Logo=logo-dongnam-promotion, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/055-logo-logo-dongnam-promotion-color-root-true.svg",
+      "png": "/brand/logo-library/055-logo-logo-dongnam-promotion-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.79669952392578,
+        "height": 20.61520004272461
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8534,
+        "dark": 0.9697
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1276.32,
+        "y": 279.516,
+        "width": 42.797,
+        "height": 19.615
+      },
+      "definitionCount": 2,
+      "svgBytes": 498325,
+      "pngBytes": 7596
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-novaon-digital, Color root=true",
+      "variantLabel": "Logo=logo-novaon-digital, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/056-logo-logo-novaon-digital-color-root-true.svg",
+      "png": "/brand/logo-library/056-logo-logo-novaon-digital-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.4154052734375,
+        "height": 20.070709228515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.271,
+        "dark": 0.733
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1350.32,
+        "y": 279.79,
+        "width": 62.415,
+        "height": 19.071
+      },
+      "definitionCount": 1,
+      "svgBytes": 8367,
+      "pngBytes": 5462
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-dongtayland, Color root=true",
+      "variantLabel": "Logo=logo-dongtayland, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/057-logo-logo-dongtayland-color-root-true.svg",
+      "png": "/brand/logo-library/057-logo-logo-dongtayland-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.79669952392578,
+        "height": 20.61520004272461
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7037,
+        "dark": 0.4674
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1443.94,
+        "y": 279.516,
+        "width": 42.797,
+        "height": 19.615
+      },
+      "definitionCount": 2,
+      "svgBytes": 10097,
+      "pngBytes": 5642
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fpt-university, Color root=true",
+      "variantLabel": "Logo=logo-fpt-university, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/058-logo-logo-fpt-university-color-root-true.svg",
+      "png": "/brand/logo-library/058-logo-logo-fpt-university-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 43.739990234375,
+        "height": 17.936553955078125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1903,
+        "dark": 0.8097
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1527.78,
+        "y": 280.86,
+        "width": 42.74,
+        "height": 16.937
+      },
+      "definitionCount": 1,
+      "svgBytes": 17123,
+      "pngBytes": 5120
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-american-study, Color root=true",
+      "variantLabel": "Logo=logo-american-study, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/059-logo-logo-american-study-color-root-true.svg",
+      "png": "/brand/logo-library/059-logo-logo-american-study-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 56.280029296875,
+        "height": 13.0992431640625
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.5928,
+        "dark": 0.4531
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1605.32,
+        "y": 283.274,
+        "width": 55.28,
+        "height": 12.099
+      },
+      "definitionCount": 1,
+      "svgBytes": 28053,
+      "pngBytes": 5908
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-vcb, Color root=true",
+      "variantLabel": "Logo=logo-vcb, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/060-logo-logo-vcb-color-root-true.svg",
+      "png": "/brand/logo-library/060-logo-logo-vcb-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 51.820068359375,
+        "height": 18.11651611328125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2388,
+        "dark": 0.8639
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1691.36,
+        "y": 280.677,
+        "width": 50.82,
+        "height": 17.117
+      },
+      "definitionCount": 5,
+      "svgBytes": 20549,
+      "pngBytes": 6309
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-vpbank, Color root=true",
+      "variantLabel": "Logo=logo-vpbank, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/061-logo-logo-vpbank-color-root-true.svg",
+      "png": "/brand/logo-library/061-logo-logo-vpbank-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 57.173583984375,
+        "height": 13.47540283203125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9637,
+        "dark": 0.9356
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1772.496,
+        "y": 283.083,
+        "width": 56.174,
+        "height": 12.475
+      },
+      "definitionCount": 1,
+      "svgBytes": 5750,
+      "pngBytes": 3588
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fwd, Color root=true",
+      "variantLabel": "Logo=logo-fwd, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/062-logo-logo-fwd-color-root-true.svg",
+      "png": "/brand/logo-library/062-logo-logo-fwd-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 33.989990234375,
+        "height": 12.045989990234375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9559,
+        "dark": 0.0441
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 1867.9,
+        "y": 283.751,
+        "width": 32.99,
+        "height": 11.046
+      },
+      "definitionCount": 1,
+      "svgBytes": 3436,
+      "pngBytes": 2372
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-phuchung, Color root=true",
+      "variantLabel": "Logo=logo-phuchung, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/063-logo-logo-phuchung-color-root-true.svg",
+      "png": "/brand/logo-library/063-logo-logo-phuchung-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 29.08530044555664,
+        "height": 18.386199951171875
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.6734,
+        "dark": 0.4224
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 1954.16,
+        "y": 280.63,
+        "width": 28.085,
+        "height": 17.386
+      },
+      "definitionCount": 2,
+      "svgBytes": 4355418,
+      "pngBytes": 7101
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-bidv, Color root=true",
+      "variantLabel": "Logo=logo-bidv, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/064-logo-logo-bidv-color-root-true.svg",
+      "png": "/brand/logo-library/064-logo-logo-bidv-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.60693359375,
+        "height": 15.282440185546875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7509,
+        "dark": 0.2491
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2029.708,
+        "y": 282.182,
+        "width": 44.607,
+        "height": 14.282
+      },
+      "definitionCount": 1,
+      "svgBytes": 7328,
+      "pngBytes": 4160
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-fpt-retail, Color root=true",
+      "variantLabel": "Logo=logo-fpt-retail, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/065-logo-logo-fpt-retail-color-root-true.svg",
+      "png": "/brand/logo-library/065-logo-logo-fpt-retail-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 49.592098236083984,
+        "height": 12.666399955749512
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7836,
+        "dark": 0.2164
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2111.53,
+        "y": 283.49,
+        "width": 48.592,
+        "height": 11.666
+      },
+      "definitionCount": 2,
+      "svgBytes": 69342,
+      "pngBytes": 8647
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-thaiminh, Color root=true",
+      "variantLabel": "Logo=logo-thaiminh, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/066-logo-logo-thaiminh-color-root-true.svg",
+      "png": "/brand/logo-library/066-logo-logo-thaiminh-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.9900016784668,
+        "height": 17.658000946044922
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8469,
+        "dark": 0.2348
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2188.14,
+        "y": 280.994,
+        "width": 62.99,
+        "height": 16.658
+      },
+      "definitionCount": 2,
+      "svgBytes": 63994,
+      "pngBytes": 12097
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo-botania, Color root=true",
+      "variantLabel": "Logo=logo-botania, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/067-logo-logo-botania-color-root-true.svg",
+      "png": "/brand/logo-library/067-logo-logo-botania-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 53.60430145263672,
+        "height": 19.277799606323242
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.6758,
+        "dark": 0.475
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2277.14,
+        "y": 280.185,
+        "width": 52.604,
+        "height": 18.278
+      },
+      "definitionCount": 2,
+      "svgBytes": 2024049,
+      "pngBytes": 10166
+    },
+    {
+      "category": "Partnership",
+      "parentGroupId": "logo-partnership_2",
+      "sourceGroupId": "Logo=logo_batdongsan360, Color root=true",
+      "variantLabel": "Logo=logo_batdongsan360, Color root=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/068-logo-logo-batdongsan360-color-root-true.svg",
+      "png": "/brand/logo-library/068-logo-logo-batdongsan360-color-root-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.8359375,
+        "height": 18.832977294921875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2956,
+        "dark": 0.8439
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2378.334,
+        "y": 280.407,
+        "width": 17.836,
+        "height": 17.833
+      },
+      "definitionCount": 6,
+      "svgBytes": 29144,
+      "pngBytes": 5240
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=Apple",
+      "variantLabel": "Company=Apple",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/069-company-apple.svg",
+      "png": "/brand/logo-library/069-company-apple.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 11.7900390625,
+        "height": 13.839508056640625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3525.91,
+        "y": 243.435,
+        "width": 10.79,
+        "height": 12.84
+      },
+      "definitionCount": 0,
+      "svgBytes": 1080,
+      "pngBytes": 748
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=Apple (inverted)",
+      "variantLabel": "Company=Apple (inverted)",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/070-company-apple-inverted.svg",
+      "png": "/brand/logo-library/070-company-apple-inverted.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 11.7900390625,
+        "height": 13.839508056640625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3568.71,
+        "y": 243.435,
+        "width": 10.79,
+        "height": 12.84
+      },
+      "definitionCount": 0,
+      "svgBytes": 1092,
+      "pngBytes": 728
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=Google",
+      "variantLabel": "Company=Google",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/071-company-google.svg",
+      "png": "/brand/logo-library/071-company-google.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.22998046875,
+        "height": 13.482009887695312
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8209,
+        "dark": 0.9893
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3611.27,
+        "y": 243.911,
+        "width": 12.23,
+        "height": 12.482
+      },
+      "definitionCount": 0,
+      "svgBytes": 1385,
+      "pngBytes": 1466
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=Facebook",
+      "variantLabel": "Company=Facebook",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/072-company-facebook.svg",
+      "png": "/brand/logo-library/072-company-facebook.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 14.080078125,
+        "height": 14.077987670898438
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7643,
+        "dark": 0.9872
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3653.47,
+        "y": 243.317,
+        "width": 13.08,
+        "height": 13.078
+      },
+      "definitionCount": 0,
+      "svgBytes": 945,
+      "pngBytes": 1125
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=CH Play Color",
+      "variantLabel": "Company=CH Play Color",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/073-company-ch-play-color.svg",
+      "png": "/brand/logo-library/073-company-ch-play-color.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 11.489990234375,
+        "height": 12.732681274414062
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1826,
+        "dark": 0.9928
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3697.54,
+        "y": 244.06,
+        "width": 10.49,
+        "height": 11.733
+      },
+      "definitionCount": 6,
+      "svgBytes": 4285,
+      "pngBytes": 1471
+    },
+    {
+      "category": "Third Party",
+      "parentGroupId": "logo-thirdParty_2",
+      "sourceGroupId": "Company=CH Play",
+      "variantLabel": "Company=CH Play",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/074-company-ch-play.svg",
+      "png": "/brand/logo-library/074-company-ch-play.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 11.0400390625,
+        "height": 12.287200927734375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.3185,
+        "dark": 0.7211
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3740.48,
+        "y": 244.282,
+        "width": 10.04,
+        "height": 11.287
+      },
+      "definitionCount": 1,
+      "svgBytes": 2238,
+      "pngBytes": 995
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=FB Blue",
+      "variantLabel": "Icon social=FB Blue",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/075-icon-social-fb-blue.svg",
+      "png": "/brand/logo-library/075-icon-social-fb-blue.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.269775390625,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.5852,
+        "dark": 0.9952
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3504.87,
+        "y": 360.205,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 2,
+      "svgBytes": 1787,
+      "pngBytes": 1749
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=FB Black",
+      "variantLabel": "Icon social=FB Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/076-icon-social-fb-black.svg",
+      "png": "/brand/logo-library/076-icon-social-fb-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.269775390625,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7785,
+        "dark": 0.231
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3504.87,
+        "y": 390.52,
+        "width": 14.27,
+        "height": 14.265
+      },
+      "definitionCount": 2,
+      "svgBytes": 1726,
+      "pngBytes": 916
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=FB White",
+      "variantLabel": "Icon social=FB White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/077-icon-social-fb-white.svg",
+      "png": "/brand/logo-library/077-icon-social-fb-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.269775390625,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3504.87,
+        "y": 420.834,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 2,
+      "svgBytes": 1758,
+      "pngBytes": 884
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=LinkedIn Blue",
+      "variantLabel": "Icon social=LinkedIn Blue",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/078-icon-social-linkedin-blue.svg",
+      "png": "/brand/logo-library/078-icon-social-linkedin-blue.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.779,
+        "dark": 0.9962
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3536.08,
+        "y": 360.205,
+        "width": 14.26,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 1898,
+      "pngBytes": 931
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=LinkedIn Black",
+      "variantLabel": "Icon social=LinkedIn Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/079-icon-social-linkedin-black.svg",
+      "png": "/brand/logo-library/079-icon-social-linkedin-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7934,
+        "dark": 0.211
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3536.08,
+        "y": 390.52,
+        "width": 14.26,
+        "height": 14.265
+      },
+      "definitionCount": 1,
+      "svgBytes": 1889,
+      "pngBytes": 882
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=LinkedIn White",
+      "variantLabel": "Icon social=LinkedIn White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/080-icon-social-linkedin-white.svg",
+      "png": "/brand/logo-library/080-icon-social-linkedin-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3536.08,
+        "y": 420.834,
+        "width": 14.26,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 1888,
+      "pngBytes": 743
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=OpenAI Green",
+      "variantLabel": "Icon social=OpenAI Green",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/081-icon-social-openai-green.svg",
+      "png": "/brand/logo-library/081-icon-social-openai-green.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.265625,
+        "height": 15.265594482421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3567.28,
+        "y": 360.205,
+        "width": 14.266,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 4376,
+      "pngBytes": 2437
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=OpenAI Black",
+      "variantLabel": "Icon social=OpenAI Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/082-icon-social-openai-black.svg",
+      "png": "/brand/logo-library/082-icon-social-openai-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.265625,
+        "height": 15.265594482421875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7829,
+        "dark": 0.2377
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3567.28,
+        "y": 390.52,
+        "width": 14.266,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 4357,
+      "pngBytes": 2382
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=OpenAI White",
+      "variantLabel": "Icon social=OpenAI White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/083-icon-social-openai-white.svg",
+      "png": "/brand/logo-library/083-icon-social-openai-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.265625,
+        "height": 15.265594482421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3567.28,
+        "y": 420.834,
+        "width": 14.266,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 4373,
+      "pngBytes": 1797
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=GitHub Black",
+      "variantLabel": "Icon social=GitHub Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/084-icon-social-github-black.svg",
+      "png": "/brand/logo-library/084-icon-social-github-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.26507568359375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3598.49,
+        "y": 390.52,
+        "width": 14.26,
+        "height": 14.265
+      },
+      "definitionCount": 1,
+      "svgBytes": 3180,
+      "pngBytes": 1231
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=GitHub White",
+      "variantLabel": "Icon social=GitHub White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/085-icon-social-github-white.svg",
+      "png": "/brand/logo-library/085-icon-social-github-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.26507568359375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3598.49,
+        "y": 419.943,
+        "width": 14.26,
+        "height": 14.265
+      },
+      "definitionCount": 1,
+      "svgBytes": 3183,
+      "pngBytes": 1280
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Telegram Blue",
+      "variantLabel": "Icon social=Telegram Blue",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/086-icon-social-telegram-blue.svg",
+      "png": "/brand/logo-library/086-icon-social-telegram-blue.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7268,
+        "dark": 0.998
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3629.69,
+        "y": 360.205,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 2,
+      "svgBytes": 1926,
+      "pngBytes": 1815
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Telegram Black",
+      "variantLabel": "Icon social=Telegram Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/087-icon-social-telegram-black.svg",
+      "png": "/brand/logo-library/087-icon-social-telegram-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.859,
+        "dark": 0.1481
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3629.69,
+        "y": 390.52,
+        "width": 14.27,
+        "height": 14.265
+      },
+      "definitionCount": 2,
+      "svgBytes": 1874,
+      "pngBytes": 1285
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Telegram White",
+      "variantLabel": "Icon social=Telegram White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/088-icon-social-telegram-white.svg",
+      "png": "/brand/logo-library/088-icon-social-telegram-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3629.69,
+        "y": 420.834,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 2,
+      "svgBytes": 1910,
+      "pngBytes": 1120
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Google Color",
+      "variantLabel": "Icon social=Google Color",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/089-icon-social-google-color.svg",
+      "png": "/brand/logo-library/089-icon-social-google-color.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.257568359375,
+        "height": 15.2655029296875
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8313,
+        "dark": 0.9944
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3660.912,
+        "y": 360.206,
+        "width": 14.258,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 1519,
+      "pngBytes": 1687
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Google Black",
+      "variantLabel": "Icon social=Google Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/090-icon-social-google-black.svg",
+      "png": "/brand/logo-library/090-icon-social-google-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.257568359375,
+        "height": 15.26544189453125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3660.912,
+        "y": 390.52,
+        "width": 14.258,
+        "height": 14.265
+      },
+      "definitionCount": 1,
+      "svgBytes": 1510,
+      "pngBytes": 988
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Google White",
+      "variantLabel": "Icon social=Google White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/091-icon-social-google-white.svg",
+      "png": "/brand/logo-library/091-icon-social-google-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.257568359375,
+        "height": 15.2655029296875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3660.912,
+        "y": 420.835,
+        "width": 14.258,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 1502,
+      "pngBytes": 1023
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=YouTube Red",
+      "variantLabel": "Icon social=YouTube Red",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/092-icon-social-youtube-red.svg",
+      "png": "/brand/logo-library/092-icon-social-youtube-red.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.261474609375,
+        "height": 10.70098876953125
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9406,
+        "dark": 0.9825
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3692.109,
+        "y": 362.488,
+        "width": 14.261,
+        "height": 9.701
+      },
+      "definitionCount": 0,
+      "svgBytes": 1274,
+      "pngBytes": 762
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=YouTube Black\\",
+      "variantLabel": "Icon social=YouTube Black\\",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/093-icon-social-youtube-black.svg",
+      "png": "/brand/logo-library/093-icon-social-youtube-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.261474609375,
+        "height": 10.70098876953125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9426,
+        "dark": 0.0574
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3692.109,
+        "y": 392.802,
+        "width": 14.261,
+        "height": 9.701
+      },
+      "definitionCount": 0,
+      "svgBytes": 1279,
+      "pngBytes": 695
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=YouTube White",
+      "variantLabel": "Icon social=YouTube White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/094-icon-social-youtube-white.svg",
+      "png": "/brand/logo-library/094-icon-social-youtube-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.261474609375,
+        "height": 10.699981689453125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3692.109,
+        "y": 423.117,
+        "width": 14.261,
+        "height": 9.7
+      },
+      "definitionCount": 0,
+      "svgBytes": 1284,
+      "pngBytes": 633
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Messenger Blue",
+      "variantLabel": "Icon social=Messenger Blue",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/095-icon-social-messenger-blue.svg",
+      "png": "/brand/logo-library/095-icon-social-messenger-blue.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9935,
+        "dark": 0.9866
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3723.31,
+        "y": 360.205,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 1000,
+      "pngBytes": 1248
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Messenger Black",
+      "variantLabel": "Icon social=Messenger Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/096-icon-social-messenger-black.svg",
+      "png": "/brand/logo-library/096-icon-social-messenger-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3723.31,
+        "y": 390.52,
+        "width": 14.27,
+        "height": 14.265
+      },
+      "definitionCount": 1,
+      "svgBytes": 994,
+      "pngBytes": 1072
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Threads Black",
+      "variantLabel": "Icon social=Threads Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/097-icon-social-threads-black.svg",
+      "png": "/brand/logo-library/097-icon-social-threads-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.47998046875,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3755.86,
+        "y": 390.52,
+        "width": 12.48,
+        "height": 14.265
+      },
+      "definitionCount": 0,
+      "svgBytes": 2001,
+      "pngBytes": 1480
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Messenger White",
+      "variantLabel": "Icon social=Messenger White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/098-icon-social-messenger-white.svg",
+      "png": "/brand/logo-library/098-icon-social-messenger-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3723.31,
+        "y": 420.834,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 1,
+      "svgBytes": 994,
+      "pngBytes": 1054
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Threads White",
+      "variantLabel": "Icon social=Threads White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/099-icon-social-threads-white.svg",
+      "png": "/brand/logo-library/099-icon-social-threads-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.47998046875,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3755.86,
+        "y": 420.834,
+        "width": 12.48,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 1991,
+      "pngBytes": 1495
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Android Main",
+      "variantLabel": "Icon social=Android Main",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/100-icon-social-android-main.svg",
+      "png": "/brand/logo-library/100-icon-social-android-main.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3783.94,
+        "y": 360.205,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 2665,
+      "pngBytes": 1237
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Apple Main",
+      "variantLabel": "Icon social=Apple Main",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/101-icon-social-apple-main.svg",
+      "png": "/brand/logo-library/101-icon-social-apple-main.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.266021728515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2455,
+        "dark": 0.7668
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3815.15,
+        "y": 360.205,
+        "width": 14.26,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 1365,
+      "pngBytes": 1263
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Android Black",
+      "variantLabel": "Icon social=Android Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/102-icon-social-android-black.svg",
+      "png": "/brand/logo-library/102-icon-social-android-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3783.94,
+        "y": 390.52,
+        "width": 14.27,
+        "height": 14.265
+      },
+      "definitionCount": 0,
+      "svgBytes": 2652,
+      "pngBytes": 1025
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Apple Black",
+      "variantLabel": "Icon social=Apple Black",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/103-icon-social-apple-black.svg",
+      "png": "/brand/logo-library/103-icon-social-apple-black.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.2650146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3815.15,
+        "y": 390.52,
+        "width": 14.26,
+        "height": 14.265
+      },
+      "definitionCount": 0,
+      "svgBytes": 1326,
+      "pngBytes": 1023
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Android White",
+      "variantLabel": "Icon social=Android White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/104-icon-social-android-white.svg",
+      "png": "/brand/logo-library/104-icon-social-android-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.27001953125,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3783.94,
+        "y": 420.834,
+        "width": 14.27,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 2654,
+      "pngBytes": 1052
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Apple White",
+      "variantLabel": "Icon social=Apple White",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/105-icon-social-apple-white.svg",
+      "png": "/brand/logo-library/105-icon-social-apple-white.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.260009765625,
+        "height": 15.2659912109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3815.15,
+        "y": 420.834,
+        "width": 14.26,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 1313,
+      "pngBytes": 1036
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Zalo",
+      "variantLabel": "Icon social=Zalo",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/106-icon-social-zalo.svg",
+      "png": "/brand/logo-library/106-icon-social-zalo.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.265600204467773,
+        "height": 15.265600204467773
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.3267,
+        "dark": 0.8848
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3846.35,
+        "y": 420.834,
+        "width": 14.266,
+        "height": 14.266
+      },
+      "definitionCount": 2,
+      "svgBytes": 46528,
+      "pngBytes": 2015
+    },
+    {
+      "category": "Third Party / Social",
+      "parentGroupId": "logo-social_2",
+      "sourceGroupId": "Icon social=Phone",
+      "variantLabel": "Icon social=Phone",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/107-icon-social-phone.svg",
+      "png": "/brand/logo-library/107-icon-social-phone.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.265625,
+        "height": 15.265594482421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3874.88,
+        "y": 420.834,
+        "width": 14.266,
+        "height": 14.266
+      },
+      "definitionCount": 0,
+      "svgBytes": 1434,
+      "pngBytes": 1362
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Antigravity, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/108-logo-antigravity-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/108-logo-antigravity-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 24.72900390625,
+        "height": 27.804779052734375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1342,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2886.035,
+        "y": 220.247,
+        "width": 23.729,
+        "height": 26.805
+      },
+      "definitionCount": 11,
+      "svgBytes": 9520,
+      "pngBytes": 3910
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Gemini, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Gemini, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/109-logo-gemini-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/109-logo-gemini-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 34.3447265625,
+        "height": 33.56758117675781
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1023,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2905.3,
+        "y": 214.315,
+        "width": 33.345,
+        "height": 32.568
+      },
+      "definitionCount": 2,
+      "svgBytes": 27639,
+      "pngBytes": 3948
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Codex, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Codex, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/110-logo-codex-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/110-logo-codex-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.840087890625,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2088,
+        "dark": 0.9287
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2943.16,
+        "y": 224.444,
+        "width": 17.84,
+        "height": 17.832
+      },
+      "definitionCount": 3,
+      "svgBytes": 474975,
+      "pngBytes": 6826
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Cursor, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Cursor, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/111-logo-cursor-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/111-logo-cursor-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.85009765625,
+        "height": 18.85699462890625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8941,
+        "dark": 0.1425
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2969.89,
+        "y": 224.419,
+        "width": 17.85,
+        "height": 17.857
+      },
+      "definitionCount": 3,
+      "svgBytes": 311767,
+      "pngBytes": 4790
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=ChatGPT, Color=Default, Full logo=false",
+      "variantLabel": "Logo=ChatGPT, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/112-logo-chatgpt-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/112-logo-chatgpt-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1758,
+        "dark": 0.8445
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2996.66,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 0,
+      "svgBytes": 5040,
+      "pngBytes": 2614
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=DeepSeek, Color=Default, Full logo=false",
+      "variantLabel": "Logo=DeepSeek, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/113-logo-deepseek-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/113-logo-deepseek-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1952,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3023.41,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 0,
+      "svgBytes": 4599,
+      "pngBytes": 1814
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Claude, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Claude, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/114-logo-claude-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/114-logo-claude-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1315,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3050.16,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 0,
+      "svgBytes": 3474,
+      "pngBytes": 2458
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Grok, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Grok, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/115-logo-grok-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/115-logo-grok-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.840087890625,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.861,
+        "dark": 0.1479
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3076.9,
+        "y": 224.444,
+        "width": 17.84,
+        "height": 17.832
+      },
+      "definitionCount": 1,
+      "svgBytes": 2039,
+      "pngBytes": 2095
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Perplexity, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Perplexity, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/116-logo-perplexity-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/116-logo-perplexity-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7834,
+        "dark": 0.2434
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3103.65,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 0,
+      "svgBytes": 1891,
+      "pngBytes": 1792
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Qwen, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Qwen, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/117-logo-qwen-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/117-logo-qwen-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1524,
+        "dark": 0.9386
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3130.4,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 2,
+      "svgBytes": 196594,
+      "pngBytes": 4168
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Microsoft Copilot, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Microsoft Copilot, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/118-logo-microsoft-copilot-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/118-logo-microsoft-copilot-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1367,
+        "dark": 0.9827
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3157.15,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 6,
+      "svgBytes": 5131,
+      "pngBytes": 4717
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Notion, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Notion, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/119-logo-notion-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/119-logo-notion-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1897,
+        "dark": 0.8268
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3183.9,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 0,
+      "svgBytes": 3010,
+      "pngBytes": 1904
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Apple Intelligent, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Apple Intelligent, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/120-logo-apple-intelligent-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/120-logo-apple-intelligent-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.840087890625,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.1332,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3210.64,
+        "y": 224.444,
+        "width": 17.84,
+        "height": 17.832
+      },
+      "definitionCount": 10,
+      "svgBytes": 16572,
+      "pngBytes": 13800
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Fireworks AI, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Fireworks AI, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/121-logo-fireworks-ai-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/121-logo-fireworks-ai-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.0921,
+        "dark": 0.9155
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3237.39,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 1,
+      "svgBytes": 1845,
+      "pngBytes": 1586
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Mistral AI, Color=Default, Full logo=false",
+      "variantLabel": "Logo=Mistral AI, Color=Default, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/122-logo-mistral-ai-color-default-full-logo-false.svg",
+      "png": "/brand/logo-library/122-logo-mistral-ai-color-default-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.830078125,
+        "height": 18.832000732421875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.0927,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3264.14,
+        "y": 224.444,
+        "width": 17.83,
+        "height": 17.832
+      },
+      "definitionCount": 2,
+      "svgBytes": 2305,
+      "pngBytes": 1013
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Antigravity, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/123-logo-antigravity-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/123-logo-antigravity-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 30.695068359375,
+        "height": 34.53218078613281
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8446,
+        "dark": 0.9992
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2883.122,
+        "y": 243.626,
+        "width": 29.695,
+        "height": 33.532
+      },
+      "definitionCount": 11,
+      "svgBytes": 8888,
+      "pngBytes": 5259
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=Root, Full logo=false_2",
+      "variantLabel": "Logo=Antigravity, Color=Root, Full logo=false_2",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/124-logo-antigravity-color-root-full-logo-false-2.svg",
+      "png": "/brand/logo-library/124-logo-antigravity-color-root-full-logo-false-2.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 30.55712890625,
+        "height": 34.57353210449219
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8412,
+        "dark": 0.9967
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2883.161,
+        "y": 243.615,
+        "width": 29.557,
+        "height": 33.574
+      },
+      "definitionCount": 11,
+      "svgBytes": 8882,
+      "pngBytes": 5174
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=ChatGPT, Color=Root, Full logo=false",
+      "variantLabel": "Logo=ChatGPT, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/125-logo-chatgpt-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/125-logo-chatgpt-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.489990234375,
+        "height": 15.488998413085938
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2998.33,
+        "y": 252.864,
+        "width": 14.49,
+        "height": 14.489
+      },
+      "definitionCount": 0,
+      "svgBytes": 4380,
+      "pngBytes": 1888
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Gemini, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Gemini, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/126-logo-gemini-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/126-logo-gemini-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 42.84429931640625,
+        "height": 41.86909866333008
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.579,
+        "dark": 0.9985
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2900.23,
+        "y": 243.104,
+        "width": 41.844,
+        "height": 40.869
+      },
+      "definitionCount": 2,
+      "svgBytes": 26933,
+      "pngBytes": 5172
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Claude, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Claude, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/127-logo-claude-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/127-logo-claude-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.489990234375,
+        "height": 15.488998413085938
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.8715,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3051.83,
+        "y": 252.864,
+        "width": 14.49,
+        "height": 14.489
+      },
+      "definitionCount": 0,
+      "svgBytes": 2821,
+      "pngBytes": 2248
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Codex, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Codex, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/128-logo-codex-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/128-logo-codex-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 20.54680061340332,
+        "height": 20.558000564575195
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.4929,
+        "dark": 0.8281
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 2942.3,
+        "y": 250.324,
+        "width": 19.547,
+        "height": 19.558
+      },
+      "definitionCount": 2,
+      "svgBytes": 474770,
+      "pngBytes": 5189
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=DeepSeek, Color=Root, Full logo=false",
+      "variantLabel": "Logo=DeepSeek, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/129-logo-deepseek-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/129-logo-deepseek-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 17.4404296875,
+        "height": 13.259613037109375
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9832,
+        "dark": 0.9684
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3024.382,
+        "y": 253.979,
+        "width": 16.44,
+        "height": 12.26
+      },
+      "definitionCount": 0,
+      "svgBytes": 3918,
+      "pngBytes": 1761
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Perplexity, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Perplexity, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/130-logo-perplexity-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/130-logo-perplexity-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 12.97998046875,
+        "height": 15.488998413085938
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3106.58,
+        "y": 252.864,
+        "width": 11.98,
+        "height": 14.489
+      },
+      "definitionCount": 0,
+      "svgBytes": 1220,
+      "pngBytes": 1442
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Grok, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Grok, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/131-logo-grok-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/131-logo-grok-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.6298828125,
+        "height": 17.887008666992188
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3077.04,
+        "y": 251.61,
+        "width": 17.63,
+        "height": 16.887
+      },
+      "definitionCount": 0,
+      "svgBytes": 1194,
+      "pngBytes": 1542
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Cursor, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Cursor, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/132-logo-cursor-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/132-logo-cursor-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 14.380126953125,
+        "height": 16.324752807617188
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.6916,
+        "dark": 0.5661
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2972.14,
+        "y": 252.446,
+        "width": 13.38,
+        "height": 15.325
+      },
+      "definitionCount": 1,
+      "svgBytes": 1875,
+      "pngBytes": 1791
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Qwen, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Qwen, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/133-logo-qwen-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/133-logo-qwen-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.76710033416748,
+        "height": 15.76710033416748
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.5153,
+        "dark": 0.7415
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3131.93,
+        "y": 252.725,
+        "width": 14.767,
+        "height": 14.767
+      },
+      "definitionCount": 2,
+      "svgBytes": 195949,
+      "pngBytes": 5179
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Microsoft Copilot, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Microsoft Copilot, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/134-logo-microsoft-copilot-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/134-logo-microsoft-copilot-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.7685546875,
+        "height": 14.374008178710938
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.4801,
+        "dark": 0.929
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3158.681,
+        "y": 253.421,
+        "width": 14.769,
+        "height": 13.374
+      },
+      "definitionCount": 6,
+      "svgBytes": 4420,
+      "pngBytes": 5721
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Apple Intelligent, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Apple Intelligent, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/135-logo-apple-intelligent-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/135-logo-apple-intelligent-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.76123046875,
+        "height": 15.766891479492188
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2391,
+        "dark": 0.9894
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3212.178,
+        "y": 252.725,
+        "width": 14.761,
+        "height": 14.767
+      },
+      "definitionCount": 2,
+      "svgBytes": 5946,
+      "pngBytes": 5305
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Fireworks AI, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Fireworks AI, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/136-logo-fireworks-ai-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/136-logo-fireworks-ai-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.550048828125,
+        "height": 9.63800048828125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3237.53,
+        "y": 255.65,
+        "width": 17.55,
+        "height": 8.638
+      },
+      "definitionCount": 0,
+      "svgBytes": 1019,
+      "pngBytes": 1289
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Mistral AI, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Mistral AI, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/137-logo-mistral-ai-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/137-logo-mistral-ai-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.27001953125,
+        "height": 13.259002685546875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.4403,
+        "dark": 0.969
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3264.42,
+        "y": 253.979,
+        "width": 17.27,
+        "height": 12.259
+      },
+      "definitionCount": 1,
+      "svgBytes": 1469,
+      "pngBytes": 510
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=White, Full logo=false",
+      "variantLabel": "Logo=Antigravity, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/138-logo-antigravity-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/138-logo-antigravity-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 16.254150390625,
+        "height": 15.053375244140625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2891.166,
+        "y": 279.76,
+        "width": 15.254,
+        "height": 14.053
+      },
+      "definitionCount": 0,
+      "svgBytes": 676,
+      "pngBytes": 941
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Gemini, Color=White, Full logo=false",
+      "variantLabel": "Logo=Gemini, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/139-logo-gemini-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/139-logo-gemini-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 16.599853515625,
+        "height": 16.602996826171875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2917.53,
+        "y": 279.055,
+        "width": 15.6,
+        "height": 15.603
+      },
+      "definitionCount": 0,
+      "svgBytes": 1615,
+      "pngBytes": 743
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Cursor, Color=White, Full logo=false",
+      "variantLabel": "Logo=Cursor, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/140-logo-cursor-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/140-logo-cursor-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 14.380126953125,
+        "height": 16.246490478515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2972.14,
+        "y": 279.194,
+        "width": 13.38,
+        "height": 15.246
+      },
+      "definitionCount": 0,
+      "svgBytes": 1036,
+      "pngBytes": 847
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=ChatGPT, Color=White, Full logo=false",
+      "variantLabel": "Logo=ChatGPT, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/141-logo-chatgpt-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/141-logo-chatgpt-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.489990234375,
+        "height": 15.483001708984375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2998.33,
+        "y": 279.612,
+        "width": 14.49,
+        "height": 14.483
+      },
+      "definitionCount": 0,
+      "svgBytes": 4376,
+      "pngBytes": 1936
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=DeepSeek, Color=White, Full logo=false",
+      "variantLabel": "Logo=DeepSeek, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/142-logo-deepseek-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/142-logo-deepseek-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 17.450439453125,
+        "height": 13.337738037109375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3024.382,
+        "y": 280.726,
+        "width": 16.45,
+        "height": 12.338
+      },
+      "definitionCount": 0,
+      "svgBytes": 3933,
+      "pngBytes": 1390
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Claude, Color=White, Full logo=false",
+      "variantLabel": "Logo=Claude, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/143-logo-claude-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/143-logo-claude-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.47998046875,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3051.83,
+        "y": 279.612,
+        "width": 14.48,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 2818,
+      "pngBytes": 1761
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Codex, Color=White, Full logo=false",
+      "variantLabel": "Logo=Codex, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/144-logo-codex-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/144-logo-codex-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.47998046875,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2944.84,
+        "y": 279.612,
+        "width": 14.48,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 1319,
+      "pngBytes": 1331
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Grok, Color=White, Full logo=false",
+      "variantLabel": "Logo=Grok, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/145-logo-grok-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/145-logo-grok-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.6298828125,
+        "height": 17.886993408203125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3077.04,
+        "y": 278.358,
+        "width": 17.63,
+        "height": 16.887
+      },
+      "definitionCount": 0,
+      "svgBytes": 1188,
+      "pngBytes": 1539
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Perplexity, Color=White, Full logo=false",
+      "variantLabel": "Logo=Perplexity, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/146-logo-perplexity-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/146-logo-perplexity-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 12.989990234375,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3106.58,
+        "y": 279.612,
+        "width": 11.99,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 1209,
+      "pngBytes": 1093
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Qwen, Color=White, Full logo=false",
+      "variantLabel": "Logo=Qwen, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/147-logo-qwen-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/147-logo-qwen-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.765380859375,
+        "height": 15.76678466796875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3131.93,
+        "y": 279.473,
+        "width": 14.765,
+        "height": 14.767
+      },
+      "definitionCount": 0,
+      "svgBytes": 4280,
+      "pngBytes": 1309
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Microsoft Copilot, Color=White, Full logo=false",
+      "variantLabel": "Logo=Microsoft Copilot, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/148-logo-microsoft-copilot-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/148-logo-microsoft-copilot-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.773193359375,
+        "height": 13.657989501953125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3158.677,
+        "y": 280.169,
+        "width": 14.773,
+        "height": 12.658
+      },
+      "definitionCount": 0,
+      "svgBytes": 1637,
+      "pngBytes": 998
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Notion, Color=Root, Full logo=false",
+      "variantLabel": "Logo=Notion, Color=Root, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/149-logo-notion-color-root-full-logo-false.svg",
+      "png": "/brand/logo-library/149-logo-notion-color-root-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.820068359375,
+        "height": 14.374053955078125
+      },
+      "backgroundSuitability": "Review",
+      "recommendedBackground": "light",
+      "contrastReview": true,
+      "contrastPassRate": {
+        "light": 0.5697,
+        "dark": 0.4557
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3186.4,
+        "y": 253.422,
+        "width": 12.82,
+        "height": 13.374
+      },
+      "definitionCount": 0,
+      "svgBytes": 2359,
+      "pngBytes": 1828
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Notion, Color=White, Full logo=false",
+      "variantLabel": "Logo=Notion, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/150-logo-notion-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/150-logo-notion-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.820068359375,
+        "height": 14.3603515625
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3186.4,
+        "y": 280.17,
+        "width": 12.82,
+        "height": 13.36
+      },
+      "definitionCount": 0,
+      "svgBytes": 1909,
+      "pngBytes": 1215
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Apple Intelligent, Color=White, Full logo=false",
+      "variantLabel": "Logo=Apple Intelligent, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/151-logo-apple-intelligent-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/151-logo-apple-intelligent-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.76123046875,
+        "height": 15.766876220703125
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3212.178,
+        "y": 279.473,
+        "width": 14.761,
+        "height": 14.767
+      },
+      "definitionCount": 0,
+      "svgBytes": 2780,
+      "pngBytes": 1828
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Fireworks AI, Color=White, Full logo=false",
+      "variantLabel": "Logo=Fireworks AI, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/152-logo-fireworks-ai-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/152-logo-fireworks-ai-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.550048828125,
+        "height": 9.670989990234375
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3237.53,
+        "y": 282.398,
+        "width": 17.55,
+        "height": 8.671
+      },
+      "definitionCount": 0,
+      "svgBytes": 1023,
+      "pngBytes": 1017
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Mistral AI, Color=White, Full logo=false",
+      "variantLabel": "Logo=Mistral AI, Color=White, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/153-logo-mistral-ai-color-white-full-logo-false.svg",
+      "png": "/brand/logo-library/153-logo-mistral-ai-color-white-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.27001953125,
+        "height": 13.259979248046875
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0,
+        "dark": 1
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3264.42,
+        "y": 280.726,
+        "width": 17.27,
+        "height": 12.26
+      },
+      "definitionCount": 1,
+      "svgBytes": 1459,
+      "pngBytes": 371
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Antigravity, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/154-logo-antigravity-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/154-logo-antigravity-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 16.254150390625,
+        "height": 15.052978515625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2891.166,
+        "y": 306.508,
+        "width": 15.254,
+        "height": 14.053
+      },
+      "definitionCount": 0,
+      "svgBytes": 673,
+      "pngBytes": 903
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Gemini, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Gemini, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/155-logo-gemini-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/155-logo-gemini-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 16.599853515625,
+        "height": 16.602996826171875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2917.53,
+        "y": 305.803,
+        "width": 15.6,
+        "height": 15.603
+      },
+      "definitionCount": 0,
+      "svgBytes": 1619,
+      "pngBytes": 780
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Cursor, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Cursor, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/156-logo-cursor-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/156-logo-cursor-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 14.380126953125,
+        "height": 16.246490478515625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2972.14,
+        "y": 305.942,
+        "width": 13.38,
+        "height": 15.246
+      },
+      "definitionCount": 0,
+      "svgBytes": 1039,
+      "pngBytes": 851
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=ChatGPT, Color=Black, Full logo=false",
+      "variantLabel": "Logo=ChatGPT, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/157-logo-chatgpt-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/157-logo-chatgpt-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.489990234375,
+        "height": 15.483001708984375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2998.33,
+        "y": 306.36,
+        "width": 14.49,
+        "height": 14.483
+      },
+      "definitionCount": 0,
+      "svgBytes": 4368,
+      "pngBytes": 1880
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=DeepSeek, Color=Black, Full logo=false",
+      "variantLabel": "Logo=DeepSeek, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/158-logo-deepseek-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/158-logo-deepseek-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 17.450439453125,
+        "height": 13.33697509765625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3024.382,
+        "y": 307.474,
+        "width": 16.45,
+        "height": 12.337
+      },
+      "definitionCount": 0,
+      "svgBytes": 3929,
+      "pngBytes": 1359
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Codex, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Codex, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/159-logo-codex-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/159-logo-codex-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.47998046875,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2944.84,
+        "y": 306.36,
+        "width": 14.48,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 1322,
+      "pngBytes": 1293
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Grok, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Grok, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/160-logo-grok-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/160-logo-grok-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.6298828125,
+        "height": 17.886016845703125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3077.04,
+        "y": 305.106,
+        "width": 17.63,
+        "height": 16.886
+      },
+      "definitionCount": 0,
+      "svgBytes": 1191,
+      "pngBytes": 1459
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Perplexity, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Perplexity, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/161-logo-perplexity-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/161-logo-perplexity-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 12.989990234375,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3106.58,
+        "y": 306.36,
+        "width": 11.99,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 1209,
+      "pngBytes": 1067
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Qwen, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Qwen, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/162-logo-qwen-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/162-logo-qwen-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.765380859375,
+        "height": 15.76678466796875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3131.93,
+        "y": 306.221,
+        "width": 14.765,
+        "height": 14.767
+      },
+      "definitionCount": 0,
+      "svgBytes": 4276,
+      "pngBytes": 1277
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Microsoft Copilot, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Microsoft Copilot, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/163-logo-microsoft-copilot-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/163-logo-microsoft-copilot-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.773193359375,
+        "height": 13.65802001953125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3158.677,
+        "y": 306.917,
+        "width": 14.773,
+        "height": 12.658
+      },
+      "definitionCount": 0,
+      "svgBytes": 1636,
+      "pngBytes": 989
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Notion, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Notion, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/164-logo-notion-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/164-logo-notion-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 13.820068359375,
+        "height": 14.360321044921875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3186.4,
+        "y": 306.918,
+        "width": 12.82,
+        "height": 13.36
+      },
+      "definitionCount": 0,
+      "svgBytes": 1910,
+      "pngBytes": 1188
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Apple Intelligent, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Apple Intelligent, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/165-logo-apple-intelligent-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/165-logo-apple-intelligent-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.76123046875,
+        "height": 15.766876220703125
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3212.178,
+        "y": 306.221,
+        "width": 14.761,
+        "height": 14.767
+      },
+      "definitionCount": 0,
+      "svgBytes": 2777,
+      "pngBytes": 1767
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Fireworks AI, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Fireworks AI, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/166-logo-fireworks-ai-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/166-logo-fireworks-ai-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.550048828125,
+        "height": 9.670989990234375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3237.53,
+        "y": 309.146,
+        "width": 17.55,
+        "height": 8.671
+      },
+      "definitionCount": 0,
+      "svgBytes": 1016,
+      "pngBytes": 978
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Mistral AI, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Mistral AI, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/167-logo-mistral-ai-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/167-logo-mistral-ai-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 18.27001953125,
+        "height": 13.260009765625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3264.42,
+        "y": 307.474,
+        "width": 17.27,
+        "height": 12.26
+      },
+      "definitionCount": 1,
+      "svgBytes": 1452,
+      "pngBytes": 378
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Claude, Color=Black, Full logo=false",
+      "variantLabel": "Logo=Claude, Color=Black, Full logo=false",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/168-logo-claude-color-black-full-logo-false.svg",
+      "png": "/brand/logo-library/168-logo-claude-color-black-full-logo-false.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 15.47998046875,
+        "height": 15.488006591796875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3051.83,
+        "y": 306.36,
+        "width": 14.48,
+        "height": 14.488
+      },
+      "definitionCount": 0,
+      "svgBytes": 2811,
+      "pngBytes": 1711
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=ChatGPT, Color=Default, Full logo=true",
+      "variantLabel": "Logo=ChatGPT, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/169-logo-chatgpt-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/169-logo-chatgpt-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 63.412353515625,
+        "height": 16.12261962890625
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2889.668,
+        "y": 347.502,
+        "width": 62.412,
+        "height": 15.123
+      },
+      "definitionCount": 0,
+      "svgBytes": 5195,
+      "pngBytes": 3885
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Antigravity, Color=Default, Full logo=true",
+      "variantLabel": "Logo=Antigravity, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/170-logo-antigravity-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/170-logo-antigravity-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 141.384765625,
+        "height": 29.730926513671875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9804,
+        "dark": 0.126
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 2961.205,
+        "y": 338.181,
+        "width": 140.385,
+        "height": 28.731
+      },
+      "definitionCount": 11,
+      "svgBytes": 18557,
+      "pngBytes": 12815
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=DeepSeek, Color=Default, Full logo=true",
+      "variantLabel": "Logo=DeepSeek, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/171-logo-deepseek-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/171-logo-deepseek-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 72.850830078125,
+        "height": 16.180328369140625
+      },
+      "backgroundSuitability": "Both",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9753,
+        "dark": 0.9527
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3118.359,
+        "y": 346.136,
+        "width": 71.851,
+        "height": 15.18
+      },
+      "definitionCount": 0,
+      "svgBytes": 9882,
+      "pngBytes": 5329
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Grok, Color=Default, Full logo=true",
+      "variantLabel": "Logo=Grok, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/172-logo-grok-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/172-logo-grok-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 42.610107421875,
+        "height": 16.2239990234375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 1,
+        "dark": 0
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3214.21,
+        "y": 346.114,
+        "width": 41.61,
+        "height": 15.224
+      },
+      "definitionCount": 0,
+      "svgBytes": 2334,
+      "pngBytes": 2610
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Gemini, Color=Default, Full logo=true",
+      "variantLabel": "Logo=Gemini, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/173-logo-gemini-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/173-logo-gemini-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 55.5283203125,
+        "height": 19.01971435546875
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.7546,
+        "dark": 0.2904
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3277.772,
+        "y": 345.885,
+        "width": 54.528,
+        "height": 18.02
+      },
+      "definitionCount": 12,
+      "svgBytes": 15670,
+      "pngBytes": 6049
+    },
+    {
+      "category": "Third Party / AI",
+      "parentGroupId": "app-ai-icon-variations_2",
+      "sourceGroupId": "Logo=Claude, Color=Default, Full logo=true",
+      "variantLabel": "Logo=Claude, Color=Default, Full logo=true",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/174-logo-claude-color-default-full-logo-true.svg",
+      "png": "/brand/logo-library/174-logo-claude-color-default-full-logo-true.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 71.050048828125,
+        "height": 16.03900146484375
+      },
+      "backgroundSuitability": "Light",
+      "recommendedBackground": "light",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.9623,
+        "dark": 0.301
+      },
+      "containsOriginalPng": false,
+      "exportBounds": {
+        "x": 3358.2,
+        "y": 347.544,
+        "width": 70.05,
+        "height": 15.039
+      },
+      "definitionCount": 0,
+      "svgBytes": 6419,
+      "pngBytes": 5640
+    },
+    {
+      "category": "Third Party / Contact",
+      "parentGroupId": "logo-cta-contact-gradient_2",
+      "sourceGroupId": "Type=Zalo",
+      "variantLabel": "Type=Zalo",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/175-type-zalo.svg",
+      "png": "/brand/logo-library/175-type-zalo.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.579898834228516,
+        "height": 45.579898834228516
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2764,
+        "dark": 0.8957
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3514.23,
+        "y": 517.572,
+        "width": 44.58,
+        "height": 44.58
+      },
+      "definitionCount": 2,
+      "svgBytes": 7227783,
+      "pngBytes": 62870
+    },
+    {
+      "category": "Third Party / Contact",
+      "parentGroupId": "logo-cta-contact-gradient_2",
+      "sourceGroupId": "Type=Messager",
+      "variantLabel": "Type=Messager",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/176-type-messager.svg",
+      "png": "/brand/logo-library/176-type-messager.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.579898834228516,
+        "height": 45.579898834228516
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2107,
+        "dark": 0.9565
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3572.63,
+        "y": 517.572,
+        "width": 44.58,
+        "height": 44.58
+      },
+      "definitionCount": 2,
+      "svgBytes": 6296290,
+      "pngBytes": 64553
+    },
+    {
+      "category": "Third Party / Contact",
+      "parentGroupId": "logo-cta-contact-gradient_2",
+      "sourceGroupId": "Type=Phone Call",
+      "variantLabel": "Type=Phone Call",
+      "sourceFileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+      "sourceNodeId": "123:153",
+      "svg": "/brand/logo-library/177-type-phone-call.svg",
+      "png": "/brand/logo-library/177-type-phone-call.png",
+      "pngKind": "rendered-from-figma-svg",
+      "intrinsicSize": {
+        "width": 45.579898834228516,
+        "height": 45.579898834228516
+      },
+      "backgroundSuitability": "Dark",
+      "recommendedBackground": "dark",
+      "contrastReview": false,
+      "contrastPassRate": {
+        "light": 0.2304,
+        "dark": 0.9404
+      },
+      "containsOriginalPng": true,
+      "exportBounds": {
+        "x": 3640.39,
+        "y": 517.572,
+        "width": 44.58,
+        "height": 44.58
+      },
+      "definitionCount": 2,
+      "svgBytes": 7023515,
+      "pngBytes": 61289
+    }
+  ]
+}

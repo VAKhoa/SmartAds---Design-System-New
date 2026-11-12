@@ -2,7 +2,7 @@
 title: Spacing
 description: Thang khoảng cách, đối chiếu Figma và hướng dẫn triển khai Foundation / Spacing của SmartAds.
 section: Foundation
-updated: 09/11/2026
+updated: 12/11/2026
 status: beta
 sources:
   - label: SmartAds Design System — bản export variables ngày 02/11/2026
@@ -71,7 +71,7 @@ Nút “Show Spacing Specs” có `aria-pressed`, nhãn đổi thành “Hide Sp
 
 ## Developer implementation — đặc tả cho giai đoạn build
 
-Các code tab sau dùng **numeric API đã được duyệt cho website docs**. Đây chưa phải token package sản phẩm; không copy sang package sản phẩm hay `figma.generated.css` khi chưa có yêu cầu phát hành và đối chiếu lại Figma. Website hiện là Next.js + React JavaScript + CSS thuần; nếu cần `spacing.ts` cho sản phẩm thì đặt trong package thích hợp sau khi xác định phạm vi, không thêm TypeScript/SCSS vào website chỉ vì ví dụ.
+Các code tab sau dùng **numeric API đã được duyệt cho website docs**. Đây chưa phải token package sản phẩm; không copy sang package sản phẩm hay `figma.generated.css` khi chưa có yêu cầu phát hành và đối chiếu lại Figma. Website giữ Next.js + React JavaScript + CSS thuần. Helper để Dev copy dùng JavaScript thuần theo `SDS-docs/content/rules/component-code-rules.md`; `SpacingValue` là helper React nội bộ của website, không phải component bàn giao cho sản phẩm.
 
 ### Tab 1 — CSS Variables (`tokens.css`, API website docs)
 
@@ -93,10 +93,10 @@ Các code tab sau dùng **numeric API đã được duyệt cho website docs**. 
 }
 ```
 
-### Tab 2 — Helper (`spacing.ts`, ví dụ cho code sản phẩm)
+### Tab 2 — Helper (`spacing.js`, JavaScript thuần)
 
-```ts
-export function pxToRem(px: number, base = 16): string {
+```js
+export function pxToRem(px, base = 16) {
   return `${px / base}rem`;
 }
 ```

@@ -1,5 +1,7 @@
 # SmartAds Design System (SDS)
 
+Component thực tế từ Figma và code bàn giao dùng **HTML/CSS/JavaScript thuần** theo [quy tắc code component](content/rules/component-code-rules.md). Website tài liệu giữ Next.js/React và cách trình bày hiện tại.
+
 Hai tài liệu bắt đầu nằm trong [`content/guides/`](content/guides/):
 
 1. [SmartAds và SDS là gì?](content/guides/about-smartads.md) — sản phẩm SmartAds, mục tiêu của SDS và người sử dụng.

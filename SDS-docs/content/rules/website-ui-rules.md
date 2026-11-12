@@ -4,12 +4,20 @@ File này áp dụng cho **website tài liệu** trong `SDS-docs/website/`. Đâ
 
 ## Thứ tự nguồn khi làm UI
 
+Website vẫn giữ Next.js/React và cách trình bày hiện tại. Code component sản phẩm từ Figma, snippet copy và handoff phải là HTML/CSS/JavaScript thuần theo [component-code-rules.md](component-code-rules.md). Quy tắc màu/font/icon của docs không tự áp dụng cho component sản phẩm; preview phải chạy source component được bàn giao.
+
 1. Yêu cầu mới nhất của người dùng và node Figma cụ thể được giao cho màn/component đó.
 2. Figma SmartAds Design System trong `SDS-docs/ds.config.json` cho variable, style và asset thương hiệu. `SDS-docs/variable-figma-export/` chỉ là snapshot ngày 02/11/2026; kiểm tra Figma hiện tại khi cần khẳng định giá trị mới.
 3. Quy tắc dự án `SDS-docs/content/rules/SDS-rules.md` và các quyết định đã duyệt. D1 là tiền tố `sa`; D2–D8 vẫn mở, không biến thành quy tắc sản phẩm.
 4. Các pattern website đang dùng trong `src/components/`, `src/styles/globals.css` và `src/styles/figma-resources.css`. Nếu Figma không quy định một chi tiết, dùng pattern hiện có và nói rõ phần suy luận.
 
 Không lấy giá trị màu, font hoặc nội dung thương hiệu từ website mẫu. Không chỉnh tay `src/styles/figma.generated.css`, `src/data/*.generated.json`, `.next/` hoặc `out/`. Với một giá trị mới từ Figma, ghi node/variable/style ID ở tài liệu hoặc comment gần code để lần sau tra được nguồn. Các biến `--sa-docs-*` và `--sa-resource-*` chỉ dành cho website docs; không gọi chúng là token sản phẩm SDS.
+
+## Bố cục đầu trang và tài liệu nguồn
+
+- Mọi route **đã có nội dung** trong Introduction, Foundation và Resource dùng cùng `.sa-page-toolbar`, `.sa-title-block` (title, trạng thái và subtitle), rồi đặt một khối `SourceFileLinks` ngay sau title block, trước mục lục mobile hoặc nội dung chính. Giữ cùng heading “Tài liệu nguồn”, card, khoảng cách, light/dark và thứ tự trên desktop/mobile. Route chưa có bài chính tiếp tục để trống, không tạo card nguồn giả.
+- `DocsShell` tự lấy file Markdown chính từ `document.file` và `document.sourceHref`. Trang AI Agents đặt file bài chính trước ba file tham chiếu bổ sung. Typography và Spacing dùng cùng khối nguồn của shell, không thêm link Markdown thứ hai trong nội dung.
+- Resource / Figma có file chính `content/pages/resource/figma.md` cho title, subtitle và hướng dẫn; danh sách thẻ Figma vẫn lấy từ `website/src/data/figma-files.json`. Khi tạo trang mới, thêm đúng một Markdown nguồn chính và để script prepare sinh URL `/source/docs/...`; không sửa bản sao trong `public/source/`.
 
 ## Typography
 
@@ -54,6 +62,12 @@ Dark mode dùng vai trò riêng cho chữ/link/focus và nền nút đầy để
 - Khi thêm component, dùng radius và chiều cao của pattern gần nhất hoặc node Figma được giao. Không áp một radius mới cho toàn site chỉ vì một ví dụ. Những số lẻ trong tỷ lệ asset/logo được giữ nguyên để không bóp méo nguồn.
 
 ## Thành phần và trạng thái
+
+### Danh mục Logo
+
+- Dùng SVG xuất từ đúng node Figma làm file tải vector; PNG catalog là bản render 4× từ SVG và phải ghi rõ không phải PNG gốc riêng của Figma. Ba variant vnEgo lấy vector trực tiếp từ node `11112:362370`, `11112:362369`, `11112:362368` thuộc set `2391:619`; tên hiển thị là `vnEgo · Brand`, `vnEgo · Gray`, `vnEgo · White`. Giữ `sourceGroupId` từ bản xuất để truy nguồn.
+- Khi tách SVG từ bảng tổng, `width/height` phải cùng tỷ lệ với `viewBox`; không làm tròn hai chiều độc lập. Vùng preview có thể chuẩn hóa bằng khung 140 × 48px và `object-fit: contain`, còn file tải phải giữ nguyên tỷ lệ nét vẽ. Kích thước ghi trên thẻ là kích thước nội tại của SVG, không được gọi là kích thước frame Figma nếu chưa kiểm chứng node riêng.
+- Tag Light/Dark trên trang Logo mô tả **nền xem trước**, dựa trên phép đo tương phản 3:1 cho ít nhất 70% pixel có alpha từ 0,7 trên `#ffffff` và `#1f1f22`. Bản không đạt cả hai nền phải gắn “Cần rà soát” và chỉ nêu nền ưu tiên. Đây là heuristic của docs, không phải quy định sử dụng thương hiệu Figma hay chứng nhận WCAG. Tạo lại số đo từ `website/scripts/analyze-logo-contrast.mjs` khi SVG/PNG đổi.
 
 - Bắt đầu từ component và class hiện có, dùng prefix `sa`. Một thay đổi dùng chung phải được sửa ở component/style dùng chung; không chép CSS của cùng một nút vào nhiều trang.
 - Với link, nút, menu và card tương tác, kiểm tra `rest`, `hover`, `active/pressed`, `focus-visible`, `disabled` nếu có, và `selected` nếu thành phần có trạng thái chọn. Không tự thêm state mà Figma hoặc hành vi sản phẩm chưa cần; ghi rõ state còn thiếu nguồn.

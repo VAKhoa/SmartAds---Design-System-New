@@ -29,7 +29,7 @@ function ExamplePanel({ title, range, children, className = '' }) {
 
 const tabNames = ['CSS Variables', 'Helper', 'Best Practices'];
 
-export default function SpacingExplorer({ rows, exceptions, readDate, sourceHref }) {
+export default function SpacingExplorer({ rows, exceptions, readDate }) {
   const [copyNotice, setCopyNotice] = useState('');
   const [tab, setTab] = useState(0);
   const noticeTimer = useRef(null);
@@ -62,7 +62,7 @@ export default function SpacingExplorer({ rows, exceptions, readDate, sourceHref
   const cssCode = [':root {', ...rows.map(row =>
     `  ${row.token}: ${pxToRem(row.px)}; /* ${row.px}px = ${pxToRem(row.px)} · ${row.figmaName} */`
   ), '}'].join('\n');
-  const helperCode = 'export function pxToRem(px: number, base = 16): string {\n  return `${px / base}rem`;\n}';
+  const helperCode = 'export function pxToRem(px, base = 16) {\n  return `${px / base}rem`;\n}';
   const practicesText = 'Do: dùng gap và token đã duyệt; giữ giá trị ngoại lệ có nguồn Figma.\nDon’t: dùng margin lồng nhau để giả gap; ép mọi spacing thành bội số 4px (0.25rem).';
   const tabCopy = [cssCode, helperCode, practicesText];
 
@@ -138,6 +138,6 @@ export default function SpacingExplorer({ rows, exceptions, readDate, sourceHref
       </div>
     </section>
 
-    <section id="source" className="sa-spacing-section sa-spacing-source" aria-labelledby="sa-spacing-source-title"><div className="sa-spacing-section-head"><span className="sa-spacing-section-index">06 / TRACEABILITY</span><h2 id="sa-spacing-source-title">Nguồn và giới hạn</h2></div><p>Giá trị và ID lấy từ collection <code>Spacing</code>, mode <code>sm</code> và các binding <code>component/table/cell/*</code> trong bản export Figma ngày 02/11/2026. Chưa đối chiếu lại thuộc tính node trong Figma hiện tại. Bộ numeric <code>--sa-space-*</code> được duyệt cho trang docs; việc phát hành token package sản phẩm là bước riêng. Sơ đồ Table Cell là cách giải thích ba binding, không phải ảnh chụp UI.</p><a className="sa-spacing-source-link" href={sourceHref}>Mở Markdown gốc: foundation/spacing.md</a></section>
+    <section id="source" className="sa-spacing-section sa-spacing-source" aria-labelledby="sa-spacing-source-title"><div className="sa-spacing-section-head"><span className="sa-spacing-section-index">06 / TRACEABILITY</span><h2 id="sa-spacing-source-title">Nguồn và giới hạn</h2></div><p>Giá trị và ID lấy từ collection <code>Spacing</code>, mode <code>sm</code> và các binding <code>component/table/cell/*</code> trong bản export Figma ngày 02/11/2026. Chưa đối chiếu lại thuộc tính node trong Figma hiện tại. Bộ numeric <code>--sa-space-*</code> được duyệt cho trang docs; việc phát hành token package sản phẩm là bước riêng. Sơ đồ Table Cell là cách giải thích ba binding, không phải ảnh chụp UI.</p></section>
   </div>;
 }

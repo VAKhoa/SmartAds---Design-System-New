@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15.7685546875" height="14.374008178710938" viewBox="3158.1806640625 252.92100524902344 15.7685546875 14.374008178710938" preserveAspectRatio="xMidYMid meet" fill="none"><defs><radialGradient id="paint80_radial_123_153" cx="0" cy="0" r="1" gradientTransform="matrix(3.31618 4.204 -4.09369 3.20446 3161.74 263.056)" gradientUnits="userSpaceOnUse">
+<stop stop-color="#FFB657"/>
+<stop offset="0.634" stop-color="#FF5F3D"/>
+<stop offset="0.923" stop-color="#C02B3C"/>
+</radialGradient><radialGradient id="paint81_radial_123_153" cx="0" cy="0" r="1" gradientTransform="matrix(-3.67873 -4.47667 4.22569 -3.44593 3170.76 258.943)" gradientUnits="userSpaceOnUse">
+<stop offset="0.096" stop-color="#00AEFF"/>
+<stop offset="0.773" stop-color="#2253CE"/>
+<stop offset="1" stop-color="#0736C4"/>
+</radialGradient><linearGradient id="paint82_linear_123_153" x1="3162.2" y1="254.592" x2="3162.97" y2="263.444" gradientUnits="userSpaceOnUse">
+<stop offset="0.156" stop-color="#0D91E1"/>
+<stop offset="0.487" stop-color="#52B471"/>
+<stop offset="0.652" stop-color="#98BD42"/>
+<stop offset="0.937" stop-color="#FFC800"/>
+</linearGradient><linearGradient id="paint83_linear_123_153" x1="3162.88" y1="253.421" x2="3163.29" y2="263.079" gradientUnits="userSpaceOnUse">
+<stop stop-color="#3DCBFF"/>
+<stop offset="0.247" stop-color="#0588F7" stop-opacity="0"/>
+</linearGradient><radialGradient id="paint84_radial_123_153" cx="0" cy="0" r="1" gradientTransform="matrix(-4.25287 12.1154 -14.5697 -5.07528 3171.88 256.19)" gradientUnits="userSpaceOnUse">
+<stop offset="0.066" stop-color="#8C48FF"/>
+<stop offset="0.5" stop-color="#F2598A"/>
+<stop offset="0.896" stop-color="#FFB152"/>
+</radialGradient><linearGradient id="paint85_linear_123_153" x1="3172.3" y1="256.546" x2="3172.3" y2="259.177" gradientUnits="userSpaceOnUse">
+<stop offset="0.058" stop-color="#F8ADFA"/>
+<stop offset="0.708" stop-color="#A86EDD" stop-opacity="0"/>
+</linearGradient></defs><g id="Logo=Microsoft Copilot, Color=Root, Full logo=false">
+<g id="Logo_22">
+<path id="Vector_1146" d="M3162.82 265.677C3163.01 266.322 3163.64 266.795 3164.31 266.795H3165.27C3166.11 266.795 3166.81 266.115 3166.83 265.287L3166.93 261.221L3166.71 261.967C3166.53 262.61 3165.89 263.08 3165.22 263.08H3160.59H3160.9C3161.57 263.08 3162.2 263.554 3162.39 264.198L3162.82 265.677Z" fill="url(#paint80_radial_123_153)"/>
+<path id="Vector_1147" d="M3169.47 254.533C3169.28 253.891 3168.65 253.421 3167.98 253.421H3167.52C3166.78 253.421 3166.13 253.964 3166 254.69L3165.22 258.907L3165.41 258.25C3165.6 257.607 3166.23 257.137 3166.9 257.137L3171.71 257.136H3171.4C3170.73 257.136 3170.1 256.666 3169.91 256.025L3169.47 254.533Z" fill="url(#paint81_radial_123_153)"/>
+<path id="Vector_1148" d="M3167.91 253.421H3162.53C3160.99 253.421 3160.07 255.446 3159.45 257.471C3158.72 259.871 3157.77 263.079 3160.53 263.079H3162.85C3163.19 263.079 3163.52 262.97 3163.79 262.767C3164.06 262.565 3164.25 262.28 3164.35 261.956C3164.89 260.042 3165.45 258.13 3166.02 256.22C3166.3 255.27 3166.53 254.453 3166.9 253.945C3167.1 253.66 3167.44 253.421 3167.91 253.421Z" fill="url(#paint82_linear_123_153)"/>
+<path id="Vector_1149" d="M3167.91 253.421H3162.53C3160.99 253.421 3160.07 255.446 3159.45 257.471C3158.72 259.871 3157.77 263.079 3160.53 263.079H3162.85C3163.53 263.08 3164.16 262.604 3164.35 261.956C3164.89 260.042 3165.45 258.13 3166.02 256.22C3166.3 255.27 3166.53 254.453 3166.9 253.945C3167.1 253.66 3167.44 253.421 3167.91 253.421Z" fill="url(#paint83_linear_123_153)"/>
+<path id="Vector_1150" d="M3164.22 266.795H3169.6C3171.14 266.795 3172.06 264.77 3172.68 262.745C3173.41 260.345 3174.36 257.136 3171.6 257.136H3169.28C3168.94 257.136 3168.61 257.245 3168.34 257.448C3168.07 257.65 3167.87 257.935 3167.78 258.259C3167.23 260.174 3166.68 262.086 3166.11 263.996C3165.83 264.947 3165.59 265.763 3165.23 266.272C3165.03 266.557 3164.69 266.795 3164.22 266.795Z" fill="url(#paint84_radial_123_153)"/>
+<path id="Vector_1151" d="M3164.22 266.795H3169.6C3171.14 266.795 3172.06 264.77 3172.68 262.745C3173.41 260.345 3174.36 257.136 3171.6 257.136H3169.28C3168.6 257.135 3167.97 257.611 3167.78 258.259C3167.23 260.174 3166.68 262.086 3166.11 263.996C3165.83 264.947 3165.59 265.763 3165.23 266.272C3165.03 266.557 3164.69 266.795 3164.22 266.795Z" fill="url(#paint85_linear_123_153)"/>
+</g>
+</g></svg>

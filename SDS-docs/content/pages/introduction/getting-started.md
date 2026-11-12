@@ -2,7 +2,7 @@
 title: Getting Started
 description: Chọn điểm bắt đầu phù hợp với công việc của bạn trong đội ngũ SmartAds.
 section: Introduction
-updated: 09/11/2026
+updated: 12/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -30,6 +30,8 @@ Khi cần khoảng cách trong website docs, mở [Spacing](/foundation/spacing/
 Kiểm tra nội dung, trạng thái và cách dùng thành phần có đúng với thiết kế đã duyệt hay chưa. Khi ghi nhận vấn đề, bổ sung tên màn hình, trạng thái, thiết bị và liên kết Figma để người thực hiện đối chiếu.
 
 ## Nếu bạn làm việc với AI
+
+Khi giao **component sản phẩm từ Figma**, yêu cầu đọc `SDS-docs/content/rules/component-code-rules.md`: code thực tế, snippet và handoff phải dùng HTML/CSS/JavaScript thuần, có token/asset phụ thuộc và cách chạy độc lập. Website tài liệu giữ Next.js/React; quy tắc này không yêu cầu thay đổi UI website.
 
 Cung cấp mục tiêu cụ thể, phạm vi cần thay đổi và nguồn thiết kế. Mở `SmartAds - SDS/` để Codex đọc quy tắc gốc; khi sửa UI website, yêu cầu đọc thêm `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `SDS-docs/content/rules/website-ui-rules.md`. Có thể giao phần FE cho chat SDS — FE Website Builder. Sau mỗi thay đổi trong folder, Codex cần rà các trang website có thể đã cũ, cập nhật trang liên quan rồi build lại. Đọc [AI Agents](/introduction/ai-agents/) để xem bảng chọn skill, prompt mẫu và quy trình đồng bộ.
 
