@@ -3,7 +3,7 @@ import { navigation, plannedNavigation } from '../src/lib/navigation.js';
 
 const published = [
   ...navigation,
-  ...plannedNavigation.flatMap(group => group.items).filter(item => ['foundation/colors', 'foundation/typography', 'foundation/spacing'].includes(item.id)),
+  ...plannedNavigation.flatMap(group => group.items).filter(item => ['foundation/colors', 'foundation/typography', 'foundation/spacing', 'foundation/layout', 'foundation/icons', 'foundation/logo'].includes(item.id)),
   { href: '/resource/figma/', file: 'resource/figma.md' },
 ];
 
@@ -27,7 +27,7 @@ test('source block keeps the same order and readable cards on mobile dark mode',
   await page.setViewportSize({ width: 390, height: 844 });
   await page.goto('/');
   await page.getByRole('button', { name: 'Chuyển giao diện tối' }).click();
-  for (const route of ['/introduction/ai-agents/', '/foundation/typography/', '/foundation/spacing/', '/resource/figma/']) {
+  for (const route of ['/introduction/ai-agents/', '/foundation/typography/', '/foundation/spacing/', '/foundation/layout/', '/foundation/icons/', '/foundation/logo/', '/resource/figma/']) {
     await page.goto(route);
     await expect(page.locator('html')).toHaveAttribute('data-theme', 'dark');
     const source = page.locator('#main-content > .sa-ai-files');

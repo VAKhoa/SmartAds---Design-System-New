@@ -1,4 +1,5 @@
 import { updateSiteInfo } from './site-info.mjs';
+import './generate-mingcute-catalog.mjs';
 import { renderToStaticMarkup } from 'react-dom/server';
 import Icon from '../src/components/Icon.js';
 import { readFileSync, writeFileSync, mkdirSync, existsSync, rmSync } from 'node:fs';

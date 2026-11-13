@@ -16,7 +16,7 @@ Xuất website Next.js thành HTML tĩnh không biến source JSX thành compone
 - Xác định node, variant, state, mode và responsive trong Figma được giao. Ghi file key, node/variable/style ID, ngày kiểm chứng hoặc ngày snapshot trong tài liệu component.
 - Dùng semantic token đã xác minh qua CSS custom properties khi có; giữ prefix `sa`. Ghi rõ ánh xạ từ tên CSS tới ID/tên Figma, không tự coi tên đề xuất là tên đã duyệt.
 - Quy tắc typography, màu dark, icon Tabler React và biến `--sa-docs-*` của website chỉ phục vụ lớp tài liệu. Component sản phẩm theo thiết kế/token của chính component; không kế thừa chúng chỉ vì preview được đặt trong website.
-- Asset/font/icon phải có nguồn và đi kèm hướng dẫn tải. Không đưa `@tabler/icons-react` vào code component thuần; dùng asset SVG đã được xác minh khi phù hợp.
+- Asset/font/icon phải có nguồn và đi kèm hướng dẫn tải. Không đưa `@tabler/icons-react` vào code component thuần. Với icon sản phẩm từ MingCute, dùng SVG public đã khóa phiên bản và dán inline khi cần màu `currentColor`; không sửa path theo token stroke/radius chưa được xác nhận. Logo và asset thương hiệu vẫn lấy từ Figma, không thay bằng icon cùng tên trong MingCute.
 - Thiếu thiết kế state hoặc binding token thì ghi phần chưa xác minh; tách đề xuất xử lý khỏi dữ liệu thiết kế đã xác nhận.
 
 ## Cấu trúc code bàn giao

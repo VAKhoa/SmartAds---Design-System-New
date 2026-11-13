@@ -2,14 +2,14 @@
 title: Logo
 description: Danh mục tài sản SmartAds, Publisher, Partnership và Third Party với bản xem trước và tải SVG/PNG.
 section: Foundation
-updated: 12/11/2026
+updated: 13/11/2026
 status: draft
 sources:
   - label: SmartAds Design System — Logo, node 123:153
     url: https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=123-153&m=dev
   - label: SmartAds Design System — logo đầy đủ, node 123:497
     url: https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=123-497&m=dev
-  - label: SmartAds Design System — Publisher vnEGO, node 2391:619
+  - label: SmartAds Design System — Publisher vnEgo, node 2391:619
     url: https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System?node-id=2391-619&m=dev
 ---
 

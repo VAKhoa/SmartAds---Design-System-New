@@ -1,6 +1,6 @@
 ﻿# Website SmartAds Design System
 
-Website dùng **Next.js + React, JavaScript/JSX và CSS thuần**, xuất HTML/CSS/JS tĩnh. Gồm 7 trang Introduction, trang Resource / Figma tổng hợp file thiết kế và bốn bài Foundation: Colors và Typography ở trạng thái draft; Spacing ở trạng thái beta; Logo ở trạng thái draft với 177 biến thể SVG xuất từ Figma và PNG render tương ứng. Email phiên Figma Local chưa xác minh được qua `whoami`. MUI và shadcn chỉ là tham khảo bố cục.
+Website dùng **Next.js + React, JavaScript/JSX và CSS thuần**, xuất HTML/CSS/JS tĩnh. Gồm 7 trang Introduction, trang Resource / Figma tổng hợp file thiết kế và sáu bài Foundation: Colors và Typography ở trạng thái draft; Spacing ở trạng thái beta; Layout ở trạng thái draft theo snapshot viewport/grid và node Figma (breakpoint sản phẩm chưa duyệt); Icons ở trạng thái draft với catalog SVG public MingCute; Logo ở trạng thái draft với 177 biến thể SVG xuất từ Figma và PNG render tương ứng. Email phiên Figma Local chưa xác minh được qua `whoami`. MUI và shadcn chỉ là tham khảo bố cục.
 
 Khi sửa giao diện, đọc [quy tắc UI của website](../content/rules/website-ui-rules.md) cùng `SDS-docs/content/rules/SDS-rules.md`. File đó ghi nguồn giá trị, màu, typography, layout, state và cách kiểm tra; các quy tắc này chỉ áp dụng cho website docs.
 
@@ -45,10 +45,10 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/app/layout.js` | HTML gốc, font cục bộ, metadata, theme. |
 | `src/app/page.js` | Route Overview. |
 | `src/app/introduction/[slug]/page.js` | Sinh 6 route còn lại. |
-| `src/app/[section]/[slug]/page.js` | Hiển thị Colors, Typography, Spacing và Logo; giữ trống 16 route Foundation, Components, Patterns chưa có bài. Typography, Spacing và Logo dùng giao diện tham chiếu riêng nhưng cùng khối Markdown nguồn ở đầu trang. |
+| `src/app/[section]/[slug]/page.js` | Hiển thị Colors, Typography, Spacing, Layout, Icons và Logo; giữ trống 14 route Foundation, Components, Patterns chưa có bài. Các trang có giao diện tham chiếu riêng vẫn dùng cùng khối Markdown nguồn ở đầu trang. |
 | `src/app/resource/figma/page.js` | Trang tổng hợp file Figma, dùng cùng toolbar, title/status/subtitle và khối Markdown nguồn ở đầu trang. |
 | `src/app/not-found.js` | Trang 404. |
-| `src/lib/navigation.js` | Danh sách 7 mục Introduction, 20 mục Foundation/Components/Patterns và ánh xạ Colors tới `foundation/sds-color.md`; Typography, Spacing và Logo dùng đường dẫn chuẩn `foundation/typography.md`, `foundation/spacing.md`, `foundation/logo.md`. `Foundation / Overview` đã bỏ. |
+| `src/lib/navigation.js` | Danh sách 7 mục Introduction, 20 mục Foundation/Components/Patterns và ánh xạ Colors tới `foundation/sds-color.md`; Typography, Spacing, Layout, Icons và Logo dùng đường dẫn chuẩn trong `foundation/`. `Foundation / Overview` đã bỏ. |
 | `src/lib/figma-resources.js` | Route Resource, đường dẫn Markdown chính và kiểm tra URL Figma. |
 | `src/components/DocsPage.js` | Đọc dữ liệu bài và đưa vào khung. |
 | `src/components/DocsShell.js` | Header, sidebar, search, theme, mục lục, khối Markdown nguồn ngay sau title/subtitle, copy Markdown, điều hướng, footer. |
@@ -61,6 +61,8 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/components/TypographyReference.js` | Trang Typography với 77 specimen, 21 Text variables, thông số và binding ID đọc từ snapshot Figma lúc build. |
 | `src/components/SpacingReference.js` | Trang Spacing đọc collection `Spacing` từ snapshot, đối chiếu 13 mức numeric với ID Figma và liệt kê ngoại lệ. |
 | `src/components/SpacingExplorer.js`, `src/components/SpacingValue.js` | Bảng copy giá trị/token, cặp px/rem, sơ đồ Table Cell dựa trên ba binding Figma và code tabs của trang Spacing. |
+| `src/components/LayoutReference.js`, `src/components/LayoutExplorer.js`, `src/components/LayoutCapture.js` | Trang Layout đọc Markdown nguồn, hiển thị Grid/Body Layout, số đo frame và ảnh UI thật của Drawer, Create Campaign, Dashboard với lớp chú thích bật/tắt. Chú thích/sơ đồ chỉ phục vụ website tài liệu, không phải code component sản phẩm. |
+| `src/components/IconReference.js`, `src/components/IconConnectionGuide.js`, `src/components/IconExplorer.js` | Trang Icons đọc Markdown nguồn, hiển thị sơ đồ ba bước GitHub → gói SVG → asset SmartAds với nút GitHub, rồi tìm/lọc 2.263 tên MingCute, đổi Regular/Filled, sao chép tên/SVG/HTML và tải SVG. |
 | `src/components/LogoReference.js`, `src/components/LogoExplorer.js` | Trang Logo: Markdown nguồn, catalog 177 biến thể, lọc/tìm kiếm, xem trước và tải SVG/PNG. |
 | `src/data/figma-files.json` | Danh sách các file Figma; sửa file này khi thêm tài nguyên. |
 | `../content/pages/index.md` | Nội dung Overview. |
@@ -71,7 +73,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `../content/pages/introduction/faq.md` | Câu hỏi thường gặp. |
 | `../content/pages/introduction/glossary.md` | Thuật ngữ. |
 | `../content/pages/resource/figma.md` | Title, subtitle và hướng dẫn trang Resource / Figma; danh sách thẻ vẫn ở JSON. |
-| `../content/pages/foundation/` | Bài Colors nằm tại `sds-color.md`, Typography tại `typography.md`, Spacing tại `spacing.md`, Logo tại `logo.md`; các bài khác xem bảng trong `content-guide.md`. |
+| `../content/pages/foundation/` | Bài Colors nằm tại `sds-color.md`, Typography tại `typography.md`, Spacing tại `spacing.md`, Layout tại `layout.md`, Icons tại `icons.md`, Logo tại `logo.md`; các bài khác xem bảng trong `content-guide.md`. |
 | `../content/pages/components/` | Mỗi component có một file Markdown chính; hiện chờ nội dung. |
 | `../content/pages/patterns/` | Mỗi pattern có một file Markdown chính; hiện chờ nội dung. |
 | `src/styles/globals.css` | CSS thuần, responsive, trạng thái, theme sáng/tối. |
@@ -79,18 +81,28 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `src/styles/color-showcase.css` | Giao diện bảng swatch Colors, responsive và light/dark. |
 | `src/styles/typography-reference.css` | Giao diện trang Typography, responsive và light/dark. |
 | `src/styles/spacing-reference.css` | Giao diện trang Spacing, responsive và light/dark; lớp numeric `--sa-space-*` chỉ phục vụ website docs. |
+| `src/styles/layout-reference.css` | Giao diện minh họa Layout, ảnh Figma và lớp annotation tuyệt đối, responsive và light/dark. |
+| `src/styles/icon-reference.css` | Giao diện catalog MingCute, tìm/lọc, nút copy/tải, responsive và light/dark. |
 | `src/styles/logo-reference.css` | Giao diện danh mục Logo, responsive, trạng thái bàn phím và light/dark. |
 | `src/styles/figma.generated.css` | CSS sinh từ snapshot Figma; không sửa tay. |
 | `src/data/docs.generated.json` | HTML, Markdown, mục lục và search index tự sinh; không sửa tay. |
 | `src/data/color.generated.json` | Danh mục color rút từ `variable-figma-export/` khi prepare; không sửa tay. |
+| `src/data/mingcute.generated.json` | Danh mục icon public sinh từ metadata của `@mingcute/svg`; không sửa tay. |
 | `src/data/ai-source-files.js` | Ba file tham chiếu bổ sung cho bài chính trên trang AI Agents. |
+| `src/data/layout-campaign.json`, `src/data/layout-dashboard.json` | Số đo frame Figma có node ID và ngày đọc cho minh họa Layout; không phải token/breakpoint đã phát hành. |
+| `public/figma/layout/` | Ba PNG export chỉ đọc từ file SmartAds: `drawer-variants.png` (`8454:44595`, bản xuất cả bảng, chỉ hiện vùng Drawer), `create-campaign-1440.png` (`12055:211379`), `dashboard-1440.png` (`14416:251235`). Giữ ảnh nguyên tỷ lệ; viền và nhãn đo là overlay của docs, không sửa vào ảnh nguồn. |
+| `public/mingcute/` | 4.526 SVG public và giấy phép Apache-2.0 sinh từ gói `@mingcute/svg@3.1.0` lúc prepare; không sửa tay, không gồm Pro. |
 | `public/source/` | Bản sao `.md` nguyên văn được sinh khi prepare/build để URL file hoạt động; không sửa tay. |
-| `scripts/prepare.mjs` | Kiểm tra frontmatter, chuyển bài Markdown hiện có (gồm Resource / Figma), sinh danh mục color, sao chép file gốc và ba file quy tắc để mở bằng URL, gọi sinh theme. |
+| `scripts/prepare.mjs` | Kiểm tra frontmatter, chuyển bài Markdown hiện có (gồm Resource / Figma), sinh danh mục color và MingCute, sao chép file gốc và ba file quy tắc để mở bằng URL, gọi sinh theme. |
+| `scripts/generate-mingcute-catalog.mjs` | Đối chiếu metadata Regular/Filled, sinh manifest 2.263 tên và copy SVG/giấy phép từ gói MingCute public đã khóa phiên bản. |
 | `scripts/extract-logo-library.mjs` | Từ SVG root của node `123:153`, tách 177 biến thể với `width/height` cùng tỷ lệ `viewBox`, thay ba vnEgo bằng vector node riêng, render PNG 4× và ghi kết quả tương phản; cần truyền lại file SVG root khi tái tạo. |
 | `scripts/logo-source/vnego-*.svg` | Ba vector gốc từ Publisher set `2391:619`, node `11112:362370`, `11112:362369`, `11112:362368`; nguồn cho các bản vnEgo không có nền frame. |
 | `scripts/analyze-logo-contrast.mjs` | Phân tích tương phản logo trên nền Light/Dark; CLI chỉ đọc manifest và PNG, xuất báo cáo JSON ra stdout. |
 | `public/brand/logo-library/manifest.json` | Nguồn, kích thước nội tại, tag nền và kết quả tương phản của 177 cặp SVG/PNG; PNG trong catalog được render từ SVG, còn `smartads-full-light.*` là bản xuất trực tiếp có nền của node `123:497`. |
 | `tests/typography-reference.spec.js` | Kiểm tra đủ 77 styles và 21 variables trên route Typography, responsive và dark mode. |
+| `tests/logo-reference.spec.js` | Kiểm tra tỷ lệ và PNG 4× của 177 logo, tên/tag vnEgo, tải file, responsive và dark mode. |
+| `tests/layout-reference.spec.js` | Kiểm tra source Markdown, Grid/Body Layout, frame Create Campaign/Dashboard, responsive và dark mode. |
+| `tests/icon-reference.spec.js` | Kiểm tra catalog MingCute, tìm/lọc, hai style, copy SVG/HTML/tên, tải SVG, responsive và dark mode. |
 | `public/source/docs/` | Bản sao tự sinh của các bài Markdown; không sửa tay. |
 | `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/. |
 | `scripts/serve.mjs` | Server Node xem bản build tĩnh. |
@@ -185,7 +197,7 @@ Kh?ng c?n Astro, Starlight, Pagefind ho?c c?u h?nh TypeScript trong m? ngu?n web
 
 ## Icon
 
-Icon chức năng chỉ dùng [Tabler Icons](https://tabler.io/icons) qua gói `@tabler/icons-react`. `src/components/Icon.js` ánh xạ tên chức năng sang named imports Tabler. Thêm icon tại đây; không tự vẽ SVG hoặc thêm bộ icon khác. Markdown có thể dùng `span data-icon` với tên đã khai báo, được `scripts/prepare.mjs` render thành SVG Tabler khi build. Logo SmartAds vẫn dùng SVG thương hiệu từ Figma; sidebar không có icon.
+Icon chức năng của **website docs** dùng [Tabler Icons](https://tabler.io/icons) qua gói `@tabler/icons-react`. `src/components/Icon.js` ánh xạ tên chức năng sang named imports Tabler; Markdown có thể dùng `span data-icon` với tên đã khai báo, được `scripts/prepare.mjs` render thành SVG Tabler khi build. Trang [Foundation / Icons](/foundation/icons/) phục vụ **icon sản phẩm SmartAds** từ [MingCute](https://www.mingcute.com/) public: `@mingcute/svg@3.1.0` sinh catalog và file tải local khi prepare. Sơ đồ ba bước giải thích luồng GitHub → cài gói SVG → asset SmartAds; nút **GitHub MingCute** có giao diện cùng vai trò với nút GitHub ở header và dẫn tới [repository chính thức](https://github.com/mingcute-design/mingcute-icons). Bài Markdown hướng dẫn cài đúng phiên bản và sao chép SVG vào dự án HTML/CSS/JS thuần. Không thay bộ icon của docs shell theo catalog này. Với sản phẩm, copy SVG inline hoặc HTML thuần từ trang Icons; alias `--sa-icon-*` vẫn ở trạng thái đề xuất. Logo SmartAds giữ SVG thương hiệu Figma; sidebar docs không có icon.
 
 ## Public Sans / primary
 

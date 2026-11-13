@@ -6,6 +6,8 @@ import ColorShowcase from '../../../components/ColorShowcase';
 import TypographyReference from '../../../components/TypographyReference';
 import SpacingReference from '../../../components/SpacingReference';
 import LogoReference from '../../../components/LogoReference';
+import LayoutReference from '../../../components/LayoutReference';
+import IconReference from '../../../components/IconReference';
 
 const pages = plannedNavigation.flatMap(group => group.items.map(item => ({ ...item, section: group.slug })));
 
@@ -30,6 +32,8 @@ export default async function SectionPage({ params }) {
   if (page.id === 'foundation/typography') return <TypographyReference />;
   if (page.id === 'foundation/spacing') return <SpacingReference />;
   if (page.id === 'foundation/logo') return <LogoReference />;
+  if (page.id === 'foundation/layout') return <LayoutReference />;
+  if (page.id === 'foundation/icons') return <IconReference />;
   return <DocsShell document={document} searchIndex={searchIndex}>
     {page.id === 'foundation/colors' && <ColorShowcase />}
     <div className="sa-prose" dangerouslySetInnerHTML={{ __html: document.html }} />

@@ -12,7 +12,7 @@ Code component từ Figma và code bàn giao dùng **HTML/CSS/JavaScript thuần
 SDS-docs/content/pages/
 ├─ index.md                         # Introduction / Overview
 ├─ introduction/                    # 6 bài Introduction còn lại
-├─ foundation/                      # Nền tảng thiết kế; đã có Colors, Typography, Spacing và Logo
+├─ foundation/                      # Nền tảng thiết kế; đã có Colors, Typography, Spacing, Layout, Icons và Logo
 ├─ resource/                        # Resource / Figma: metadata và hướng dẫn trang
 ├─ components/                      # Một component = một file chính
 └─ patterns/                        # Một pattern = một file chính
@@ -55,7 +55,7 @@ SDS-docs/content/pages/
 | Patterns | Data Tables | `patterns/data-tables.md` |
 | Patterns | Navigation | `patterns/navigation.md` |
 
-Mục `Foundation / Overview` đã được bỏ vì không có bài riêng và trùng mục đích với `Introduction / Overview` ở trang chủ. `Layout` và `Logo` đã được thêm vào nhóm Foundation theo nhu cầu bạn nêu. **Colors** có `foundation/sds-color.md`; **Typography** có `foundation/typography.md`; **Spacing** có `foundation/spacing.md` và quy ước numeric `--sa-space-*` đã được duyệt cho website docs; **Logo** có `foundation/logo.md` ở trạng thái draft với 177 biến thể SVG xuất từ node Figma `123:153` và PNG render từ từng SVG. Các bản PNG trong catalog không phải bản xuất PNG gốc riêng của Figma; chưa xác minh được email qua `whoami` và chưa đối chiếu riêng mọi biến thể. 16 mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và khối Markdown nguồn ngay sau title/subtitle. Colors dùng `/foundation/colors/`; Typography dùng `/foundation/typography/` với catalog từ snapshot Figma; Spacing dùng `/foundation/spacing/` với bảng đối chiếu snapshot; Logo dùng `/foundation/logo/` với nguồn node Figma `123:153`.
+Mục `Foundation / Overview` đã được bỏ vì không có bài riêng và trùng mục đích với `Introduction / Overview` ở trang chủ. **Colors** có `foundation/sds-color.md`; **Typography** có `foundation/typography.md`; **Spacing** có `foundation/spacing.md` và quy ước numeric `--sa-space-*` đã được duyệt cho website docs; **Layout** có `foundation/layout.md` ở trạng thái draft, dựa trên snapshot viewport/grid và node Figma, chưa công bố breakpoint sản phẩm đã duyệt; **Icons** có `foundation/icons.md` ở trạng thái draft, catalog public MingCute `@mingcute/svg@3.1.0` với 2.263 tên và hai style; **Logo** có `foundation/logo.md` ở trạng thái draft với 177 biến thể SVG xuất từ node Figma `123:153` và PNG render từ từng SVG. Các bản PNG trong catalog Logo không phải bản xuất PNG gốc riêng của Figma; chưa xác minh được email qua `whoami` và chưa đối chiếu riêng mọi biến thể. 14 mục Foundation, Components và Patterns khác giữ trang trống cho tới khi có file chính tương ứng. Thêm file đúng đường dẫn trong bảng rồi build để route hiển thị bài viết và khối Markdown nguồn ngay sau title/subtitle. Icons dùng `/foundation/icons/` để tìm, lọc, copy và tải SVG từ gói MingCute; tên CSS alias ở đây chưa phải token sản phẩm đã duyệt.
 
 ## Tạo một bài mới
 

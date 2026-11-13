@@ -1,0 +1,19 @@
+{
+  "fileKey": "cRZ5kIi4kD6j9lh1dbh5mh",
+  "readDate": "2026-11-13",
+  "method": "Figma Local get_design_context frame metadata; frame-level response is sparse, so these are observed widths, not Auto Layout rules",
+  "scenarios": [
+    { "viewport": 1920, "state": "expanded", "frameId": "12055:211341", "sidebar": 248, "header": 128, "main": 1257, "gap": 20, "overview": 350 },
+    { "viewport": 1440, "state": "expanded", "frameId": "12055:211379", "sidebar": 248, "header": 128, "main": 847, "gap": 20, "overview": 280 },
+    { "viewport": 1366, "state": "expanded", "frameId": "12055:211451", "sidebar": 248, "header": 128, "main": 773, "gap": 20, "overview": 280 },
+    { "viewport": 1280, "state": "expanded", "frameId": "12055:211415", "sidebar": 248, "header": 128, "main": 687, "gap": 20, "overview": 280 },
+    { "viewport": 1920, "state": "collapsed", "frameId": "14634:348767", "sidebar": 60, "header": 128, "main": 1445, "gap": 20, "overview": 350 },
+    { "viewport": 1440, "state": "collapsed", "frameId": "14634:351243", "sidebar": 60, "header": 128, "main": 1011, "gap": 20, "overview": 280 },
+    { "viewport": 1366, "state": "collapsed", "frameId": "14634:359780", "sidebar": 60, "header": 128, "main": 961, "gap": 20, "overview": 280 },
+    { "viewport": 1280, "state": "collapsed", "frameId": "14637:362268", "sidebar": 60, "header": 128, "main": 875, "gap": 20, "overview": 280 },
+    { "viewport": 1920, "state": "chat", "frameId": "14637:364814", "sidebar": 60, "header": 128, "main": 1020, "gap": 20, "overview": 350, "chatPanel": 424 },
+    { "viewport": 1440, "state": "chat", "frameId": "14637:364776", "sidebar": 60, "header": 128, "main": 674, "gap": 20, "overview": 280, "chatPanel": 360 },
+    { "viewport": 1366, "state": "chat", "frameId": "14637:364738", "sidebar": 60, "header": 128, "main": 600, "gap": 20, "overview": 280, "chatPanel": 360 },
+    { "viewport": 1280, "state": "chat", "frameId": "14637:364702", "sidebar": 60, "header": 128, "main": 554, "gap": 20, "overview": 280, "chatPanel": 320 }
+  ]
+}

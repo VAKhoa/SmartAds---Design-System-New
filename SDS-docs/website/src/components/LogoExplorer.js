@@ -8,7 +8,7 @@ const normalize = value => String(value).toLocaleLowerCase('vi').normalize('NFD'
 const formatSize = value => Number(value).toLocaleString('en-US', { maximumFractionDigits: 1 });
 
 function Download({ href, label, filename }) {
-  return <a className="sa-logo-download" href={href} download={filename} aria-label={`Tải ${label}: ${filename}`}>{label}</a>;
+  return <a className="sa-logo-download" href={href} download={filename} aria-label={`${label}: ${filename}`}>{label}</a>;
 }
 
 function AssetCard({ asset, previewMode }) {

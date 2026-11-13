@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho Codex trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 12/11/2026
+updated: 13/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -163,10 +163,13 @@ SDS-docs/content/rules/website-ui-rules.md. Sửa [trang/component]
 trong website theo node Figma [URL]. Phạm vi: [light/dark,
 state, desktop/mobile]. Giữ Public Sans, line-height 200% cho
 body content và 120% cho header/sidebar; chọn cỡ chữ body
-theo website-ui-rules.md. Giữ Tabler Icons, primary theo vai trò light/dark và prefix sa.
+theo website-ui-rules.md. Giữ Tabler cho chức năng docs shell; icon sản phẩm
+tra catalog MingCute tại Foundation / Icons. Giữ primary theo vai trò light/dark và prefix sa.
 Rà các trang docs bị ảnh hưởng; chạy build, kiểm tra route và báo
 nguồn cùng phần Figma chưa rõ.
 ```
+
+**Catalog Icons từ MingCute:** “Đọc `content/pages/foundation/icons.md` và `content/rules/component-code-rules.md`. Dùng gói public `@mingcute/svg` đã khóa để sinh danh mục, không lấy asset Pro. Giữ tên file/style gốc, search/filter, copy SVG/HTML và tải SVG; sơ đồ kết nối thể hiện GitHub → gói SVG → asset SmartAds, nút GitHub MingCute cùng kiểu với header và mở đúng repository chính thức. Hướng dẫn cài gói đúng phiên bản cho HTML/CSS/JS thuần. Đối chiếu ID Figma của `icon/*` và `component/icon/common/*` từ snapshot; phân biệt alias đề xuất với token đã duyệt và gửi node nếu cần xác nhận subset đang dùng. Kiểm tra light/dark, mobile, keyboard và build.”
 
 **Audit token**
 
@@ -219,4 +222,4 @@ Dev và preview dùng cùng cổng 4321, nên dừng tiến trình cũ trước 
 | Đã kiểm tra đủ chưa? | Build đạt; xem đúng route, mode, state, kích thước và liên kết theo phạm vi task. |
 | Có thể tiếp tục từ kết quả này không? | Báo file đã sửa, nguồn, lệnh đã chạy, điểm còn thiếu dữ liệu hoặc chờ bạn quyết định. |
 
-**Trạng thái hiện tại:** website có 7 trang Introduction, trang Resource / Figma và bốn bài Colors tại `/foundation/colors/`, Typography tại `/foundation/typography/`, Spacing tại `/foundation/spacing/`, Logo tại `/foundation/logo/` (draft); 16 route Foundation, Components, Patterns còn lại đang chờ file Markdown chính. `Foundation / Overview` đã bỏ; `Introduction / Overview` ở trang chủ vẫn là trang mở đầu. `variable-figma-export/` là snapshot; bộ tên numeric `--sa-space-*` của Spacing đã được duyệt cho website docs, không phải gói token sản phẩm. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.
+**Trạng thái hiện tại:** website có 7 trang Introduction, trang Resource / Figma và sáu bài Colors tại `/foundation/colors/`, Typography tại `/foundation/typography/`, Spacing tại `/foundation/spacing/`, Layout tại `/foundation/layout/` (draft), Icons tại `/foundation/icons/` (draft), Logo tại `/foundation/logo/` (draft); 14 route Foundation, Components, Patterns còn lại đang chờ file Markdown chính. Layout dùng snapshot viewport/grid và node Figma, chưa có breakpoint sản phẩm được duyệt. Icons lấy 2.263 tên icon × 2 style từ gói SVG public MingCute đã khóa, chưa xác minh subset/icon binding trong frame SmartAds; Tabler vẫn chỉ dùng cho chức năng của website tài liệu. `Foundation / Overview` đã bỏ; `Introduction / Overview` ở trang chủ vẫn là trang mở đầu. `variable-figma-export/` là snapshot; bộ tên numeric `--sa-space-*` của Spacing đã được duyệt cho website docs, không phải gói token sản phẩm. SDS chưa có gói token CSS hoặc thư viện component code dành cho sản phẩm để cài đặt như một thư viện phát hành.

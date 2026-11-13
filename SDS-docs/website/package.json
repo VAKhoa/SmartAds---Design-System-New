@@ -13,6 +13,7 @@
     "test:e2e": "playwright test"
   },
   "dependencies": {
+    "@mingcute/svg": "3.1.0",
     "@tabler/icons-react": "3.50.0",
     "gray-matter": "4.0.3",
     "marked": "18.1.2",

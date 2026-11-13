@@ -46,5 +46,5 @@
 .sa-logo-more:hover { border-color: var(--sa-docs-primary); background: var(--sa-docs-panel); }
 .sa-logo-render-note, .sa-logo-no-results { margin: 20px 0; color: var(--sa-docs-muted); font-size: 12px; line-height: 2; }
 .sa-logo-no-results { padding: 30px; border: 1px dashed var(--sa-docs-border); border-radius: 10px; text-align: center; }
-@media (max-width: 1120px) { .sa-logo-asset-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
+@media (max-width: 1600px) { .sa-logo-asset-grid { grid-template-columns: repeat(2, minmax(0,1fr)); } }
 @media (max-width: 760px) { .sa-logo-feature { grid-template-columns: 1fr; } .sa-logo-asset-grid { grid-template-columns: 1fr; } .sa-logo-feature-detail { padding: 20px; } }

@@ -11,3 +11,5 @@ src/data/typography.generated.json
 public/source/
 
 src/data/site.generated.json
+src/data/mingcute.generated.json
+public/mingcute/

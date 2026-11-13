@@ -2,7 +2,7 @@
 title: FAQ
 description: Những câu hỏi thường gặp khi bắt đầu sử dụng tài liệu SmartAds Design System.
 section: Introduction
-updated: 12/11/2026
+updated: 13/11/2026
 status: draft
 sources:
   - label: SmartAds
@@ -17,7 +17,7 @@ SmartAds là nền tảng quảng cáo. SDS là hệ thống thiết kế đư�
 
 ## Website này đã có thư viện component chưa?
 
-Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/), [Typography](/foundation/typography/), [Spacing](/foundation/spacing/) và [Logo](/foundation/logo/) trong Foundation; 16 mục Foundation, Components, Patterns còn lại đang chờ bài. `Foundation / Overview` đã được bỏ; trang chủ [Overview](/) tiếp tục giới thiệu SDS.
+Chưa có thư viện component code dành cho sản phẩm. Website hiện có 7 trang Introduction, trang Resource / Figma, [Colors](/foundation/colors/), [Typography](/foundation/typography/), [Spacing](/foundation/spacing/), [Layout](/foundation/layout/), [Icons](/foundation/icons/) và [Logo](/foundation/logo/) trong Foundation; 14 mục Foundation, Components, Patterns còn lại đang chờ bài. `Foundation / Overview` đã được bỏ; trang chủ [Overview](/) tiếp tục giới thiệu SDS.
 
 ## Component từ Figma dùng công nghệ nào?
 
@@ -25,11 +25,15 @@ Code component thực tế, snippet để Dev copy và code handoff dùng **HTML
 
 ## Thêm bài cho một mục sidebar như thế nào?
 
-Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md`; **Typography** dùng `content/pages/foundation/typography.md`; **Spacing** dùng `content/pages/foundation/spacing.md`; **Logo** dùng `content/pages/foundation/logo.md` (draft, có 177 SVG xuất từ node Figma và PNG render tương ứng; email nguồn chưa xác minh qua `whoami`). Mọi trang đã có nội dung, gồm Resource / Figma, hiển thị khối “Tài liệu nguồn” ngay dưới title/subtitle để mở Markdown chính. Danh sách thẻ Figma của Resource vẫn lấy từ `website/src/data/figma-files.json`. Mục chưa có bài tiếp tục để trống.
+Tra `SDS-docs/content/guides/content-guide.md` để biết file chính của từng mục. **Colors** dùng `content/pages/foundation/sds-color.md`; **Typography** dùng `content/pages/foundation/typography.md`; **Spacing** dùng `content/pages/foundation/spacing.md`; **Layout** dùng `content/pages/foundation/layout.md` (draft, breakpoint sản phẩm chưa duyệt); **Icons** dùng `content/pages/foundation/icons.md` (draft, catalog MingCute public và token snapshot); **Logo** dùng `content/pages/foundation/logo.md` (draft, có 177 SVG xuất từ node Figma và PNG render tương ứng; email nguồn chưa xác minh qua `whoami`). Mọi trang đã có nội dung, gồm Resource / Figma, hiển thị khối “Tài liệu nguồn” ngay dưới title/subtitle để mở Markdown chính. Danh sách thẻ Figma của Resource vẫn lấy từ `website/src/data/figma-files.json`. Mục chưa có bài tiếp tục để trống.
 
 ## Tra giá trị thiết kế ở đâu?
 
 Mở mục [Resource / Figma file](/resource/figma/) để vào các file thiết kế SmartAds. Trong bộ mã nguồn SDS, `variable-figma-export/` lưu bản chụp variables và styles để đối chiếu; bản chụp không tự cập nhật mỗi khi Figma thay đổi.
+
+## Tìm và dùng icon SmartAds ở đâu?
+
+Mở [Foundation / Icons](/foundation/icons/) để tìm, lọc nhóm, đổi Regular/Filled, sao chép SVG hoặc HTML thuần và tải SVG từ gói MingCute public đã khóa phiên bản. Sơ đồ ba bước “Kết nối thư viện từ GitHub” cho thấy luồng từ repository tới gói SVG và asset SmartAds; nút **GitHub MingCute** trong sơ đồ dẫn tới repository chính thức. Phần bên dưới hướng dẫn cài `@mingcute/svg@3.1.0` và đưa SVG vào dự án HTML/CSS/JS. Tên asset `sa-icon-*` và CSS alias trong bài còn là đề xuất; trang chưa xác nhận icon nào đang được dùng ở từng node Figma. Icon chức năng của website tài liệu vẫn dùng Tabler.
 
 ## Tên viết tắt và tiền tố CSS là gì?
 
