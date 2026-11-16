@@ -1,8 +1,8 @@
 ---
 title: AI Agents
-description: Quy trình giao việc cho Codex trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
+description: Quy trình giao việc cho AI agent (Codex, Claude Code…) trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 13/11/2026
+updated: 14/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -17,17 +17,17 @@ Ngay dưới title/subtitle, khối “Tài liệu nguồn” mở `SDS-docs/con
 
 Khối **Cách sử dụng** phía trên cung cấp [đường dẫn website SDS đã triển khai](https://smart-ads-design-system-new.vercel.app/) để gửi cho AI agent. Nút **Sao chép** chỉ sao chép URL đó. Nút **Sao chép trang** ở thanh công cụ sao chép nội dung Markdown của trang AI Agents. Khi giao việc cần nguồn thiết kế cụ thể, hãy gửi thêm link đúng node Figma và phạm vi cần sửa.
 
-Trang này hướng dẫn bạn giao việc cho **Codex** trong thư mục `SmartAds - SDS/`. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. Chat chuyên trách **SDS — FE Website Builder** có thể nhận phần triển khai FE dưới sự điều phối của Codex chính; một Codex chính vẫn có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
+Trang này hướng dẫn bạn giao việc cho **AI agent (Codex, Claude Code…)** trong thư mục gốc repo. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. Chat chuyên trách **SDS — FE Website Builder** có thể nhận phần triển khai FE dưới sự điều phối của AI agent chính; một AI agent chính vẫn có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
 
-Khi đọc Figma SmartAds, Codex ưu tiên plugin **`figma-local@figma-local-workspace`**, gọi `whoami` để xác minh **`info@smartads.tech`** rồi dùng công cụ đọc đúng file. Nếu plugin thiếu công cụ, sai tài khoản hoặc thiếu quyền, ghi rõ giới hạn; không tự chuyển sang plugin marketplace, app desktop hoặc Chrome. Khi được giao mở app desktop riêng, chọn **Dev Mode** và kiểm tra panel Inspect; URL `?m=dev` không tự xác nhận tài khoản hay quyền. Không tự gửi yêu cầu cấp quyền.
+Khi đọc Figma SmartAds, AI agent ưu tiên plugin **`figma-local@figma-local-workspace`**, gọi `whoami` để xác minh **`info@smartads.tech`** rồi dùng công cụ đọc đúng file. Nếu plugin chưa có, được dùng Figma MCP connector chỉ khi `whoami` trả đúng `info@smartads.tech`; nếu thiếu công cụ, sai tài khoản hoặc thiếu quyền, ghi rõ giới hạn; không tự chuyển sang plugin marketplace, app desktop hoặc Chrome. Khi được giao mở app desktop riêng, chọn **Dev Mode** và kiểm tra panel Inspect; URL `?m=dev` không tự xác nhận tài khoản hay quyền. Không tự gửi yêu cầu cấp quyền.
 
-Codex chỉ truy cập **file Figma được giao cho yêu cầu hiện tại**, đối chiếu file key trong link trước khi gọi plugin; không tự mở file khác, Recents hoặc thư viện liên kết. Nếu chưa rõ file, cần xác nhận nguồn. Plugin chỉ đọc qua API, còn app desktop chỉ dùng theo yêu cầu riêng và mặc định chuyển sang **Dev Mode**. Việc được giao sửa website hoặc tài liệu không cấp quyền chỉnh sửa Figma; chỉ thay đổi Figma khi bạn cho phép rõ thao tác và file tương ứng.
+AI agent chỉ truy cập **file Figma được giao cho yêu cầu hiện tại**, đối chiếu file key trong link trước khi gọi plugin; không tự mở file khác, Recents hoặc thư viện liên kết. Nếu chưa rõ file, cần xác nhận nguồn. Plugin chỉ đọc qua API, còn app desktop chỉ dùng theo yêu cầu riêng và mặc định chuyển sang **Dev Mode**. Việc được giao sửa website hoặc tài liệu không cấp quyền chỉnh sửa Figma; chỉ thay đổi Figma khi bạn cho phép rõ thao tác và file tương ứng.
 
 Để bắt đầu một việc mới:
 
-1. Mở **`SmartAds - SDS/`** trong Codex. Codex đọc `AGENTS.md` ở gốc; file này dẫn tới `SDS-docs/content/rules/SDS-rules.md`. Nếu task sửa UI website, đọc thêm `SDS-docs/content/rules/website-ui-rules.md`.
+1. Mở **thư mục gốc repo** trong AI agent. AI agent đọc `AGENTS.md` ở gốc; file này dẫn tới `SDS-docs/content/rules/SDS-rules.md`. Nếu task sửa UI website, đọc thêm `SDS-docs/content/rules/website-ui-rules.md`.
 2. Nói rõ **cần làm gì**, **nguồn nào phải đối chiếu**, **phạm vi được sửa** và **thế nào là xong**. Với UI, gửi đúng URL node Figma và nêu light/dark, trạng thái, kích thước màn hình cần kiểm tra.
-3. Yêu cầu Codex chọn skill phù hợp theo bảng dưới, kiểm tra kết quả, rà các trang website có thể đã cũ và báo những điểm chưa có dữ liệu hoặc còn chờ quyết định.
+3. Yêu cầu AI agent chọn skill phù hợp theo bảng dưới, kiểm tra kết quả, rà các trang website có thể đã cũ và báo những điểm chưa có dữ liệu hoặc còn chờ quyết định.
 
 Ví dụ ngắn:
 
@@ -41,13 +41,13 @@ Rà các trang docs bị ảnh hưởng, rồi báo file đã sửa và phần t
 
 ## File nào làm việc gì?
 
-`AGENTS.md` là **tên file theo quy ước để Codex tự đọc**, không phải tên một agent để bạn gọi. Khi viết prompt, bạn có thể nhắc trực tiếp `SDS-docs/content/rules/SDS-rules.md`. `website-ui-rules.md` là **file quy tắc UI của website, không phải một skill**; skill là hướng dẫn chuyên môn theo từng loại task. Figma và bản export là **nguồn dữ liệu thiết kế**; website là **đầu ra hiển thị**.
+`AGENTS.md` là **tên file theo quy ước để Codex và các AI agent khác tự đọc** (Claude Code đọc qua `CLAUDE.md` chỉ chứa `@AGENTS.md`), không phải tên một agent để bạn gọi. Khi viết prompt, bạn có thể nhắc trực tiếp `SDS-docs/content/rules/SDS-rules.md`. `website-ui-rules.md` là **file quy tắc UI của website, không phải một skill**; skill là hướng dẫn chuyên môn theo từng loại task. Figma và bản export là **nguồn dữ liệu thiết kế**; website là **đầu ra hiển thị**.
 
-Các file Markdown do nhóm biên soạn tập trung trong `SDS-docs/content/`: `rules/` là quy tắc, `guides/` là hướng dẫn, `pages/` là bài đăng lên website. Bắt đầu từ `SDS-docs/content/README.md` nếu chưa biết file cần tìm nằm ở đâu. `AGENTS.md`, các `README.md` điểm vào và `SKILL.md` của skill giữ ở vị trí theo quy ước để Codex và người đọc tìm được chúng.
+Các file Markdown do nhóm biên soạn tập trung trong `SDS-docs/content/`: `rules/` là quy tắc, `guides/` là hướng dẫn, `pages/` là bài đăng lên website. Bắt đầu từ `SDS-docs/content/README.md` nếu chưa biết file cần tìm nằm ở đâu. `AGENTS.md`, các `README.md` điểm vào và `SKILL.md` của skill giữ ở vị trí theo quy ước để AI agent và người đọc tìm được chúng.
 
 | File hoặc thư mục | Vai trò thực tế | Khi cần mở |
 | --- | --- | --- |
-| `AGENTS.md` ở gốc | Điểm vào tự động; chỉ đường đến quy tắc SDS. | Codex đọc khi mở dự án. |
+| `AGENTS.md` ở gốc | Điểm vào duy nhất: bảng việc → file cần đọc, bản đồ cấu trúc (gồm `docs/_audit/`, `tokens/generated/`), nguồn sự thật, quyết định đã chốt (D1, D9 Light-only, D10 HTML/CSS/JS thuần), quy tắc tên CSS, lệnh và quy tắc truy cập Figma chỉ đọc. | AI agent đọc khi mở dự án; với AI khác chỉ cần nhắc `@AGENTS.md`. |
 | `SDS-docs/content/README.md` | Bản đồ quy tắc, hướng dẫn và bài website. | Khi chưa biết một file Markdown thuộc nhóm nào. |
 | `SDS-docs/content/rules/SDS-rules.md` | Quy tắc về nguồn, nội dung, token, Figma và website. | Mọi task trong SDS; đây là file nên nhắc trong prompt. |
 | `SDS-docs/ds.config.json` | File key Figma, tên viết tắt `SDS`, prefix CSS `sa`, collection và mode đã ghi nhận. | Task liên quan Figma, token hoặc tên CSS. |
@@ -63,7 +63,7 @@ Bản export Figma **không tự đồng bộ**. Các file trong `tests/fixtures
 
 ## Chọn đúng skill theo task
 
-Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thật sự cần chuyên môn đó; không cần gọi nhiều skill cho mọi yêu cầu.
+Bạn giao task cho **AI agent chính**. Chỉ định skill khi công việc thật sự cần chuyên môn đó; không cần gọi nhiều skill cho mọi yêu cầu.
 
 | Việc cần làm | Skill hoặc hướng dẫn cần đọc | Nguồn chính | Kết quả cần kiểm tra |
 | --- | --- | --- | --- |
@@ -77,7 +77,7 @@ Bạn giao task cho **Codex chính**. Chỉ định skill khi công việc thậ
 | Viết hoặc build Foundation / Spacing | `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`, `ds-conventions`; nếu build UI, đọc thêm skill FE và `website-ui-rules.md`. | `foundation/spacing.md`, snapshot collection `Spacing` và mã website. | Đủ đối chiếu ID, px/rem, ngoại lệ, light/dark, responsive và copy; không gọi API docs là token package sản phẩm. |
 | Sửa script kiểm tra token | `figma-token-workflow` nếu cần dữ liệu Figma. | `SDS-docs/scripts/` và `SDS-docs/tests/`. | `node tests/run-tests.mjs` đạt. |
 
-Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` tại gốc `SmartAds - SDS/`; các skill nội dung/token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md`, `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md` và `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`. Nếu Codex không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
+Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo; các skill nội dung/token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md`, `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md` và `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`. Nếu AI agent không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
 
 ## Một task đi qua những bước nào?
 
@@ -101,16 +101,16 @@ Với UI, xem đúng route ở light/dark, màn lớn/nhỏ, kiểm tra hover, a
 
 ### 5. Bàn giao để người khác review được
 
-Codex cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy kiểm tra gì, trang website nào đã rà/cập nhật và còn điểm nào chưa được xác nhận**. Nếu gặp quyết định D2–D8 hoặc một tên token mơ hồ, để ở trạng thái đề xuất hoặc `needs-decision` cho tới khi bạn chốt. Việc sửa Figma chỉ thực hiện khi bạn yêu cầu rõ và mục đổi tên liên quan đã được duyệt.
+AI agent cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy kiểm tra gì, trang website nào đã rà/cập nhật và còn điểm nào chưa được xác nhận**. Nếu gặp quyết định D2–D8 hoặc một tên token mơ hồ, để ở trạng thái đề xuất hoặc `needs-decision` cho tới khi bạn chốt. Việc sửa Figma chỉ thực hiện khi bạn yêu cầu rõ và mục đổi tên liên quan đã được duyệt.
 
 ## Quy trình cụ thể cho từng việc thường gặp
 
 ### Xây hoặc sửa UI website từ Figma
 
-1. Gửi URL **đúng node** và nói phần cần triển khai: header, sidebar, trang hoặc component. Codex đọc `content/rules/website-ui-rules.md` trước khi sửa UI.
-2. Nêu mode và state phải có. Codex đọc thiết kế, asset, mã hiện có, `SDS-rules.md` và `website-ui-rules.md`. File quy tắc UI ghi rõ font/weight/size, màu, spacing, breakpoint, state và bước kiểm tra của website docs; nó không phải token sản phẩm SDS.
-3. Codex sửa component/CSS/asset nguồn, rồi chạy `npm run build` trong `SDS-docs/website/`. Khi đổi điều hướng, tương tác hoặc layout responsive, chạy thêm `npm run test:e2e`.
-4. Mở route được sửa để kiểm tra bằng mắt, rồi rà các bài Introduction mô tả quy tắc hoặc UI vừa đổi. Nếu Figma không có một state hoặc kích thước cần thiết, Codex phải nói rõ phần suy luận hoặc phần chưa xác định.
+1. Gửi URL **đúng node** và nói phần cần triển khai: header, sidebar, trang hoặc component. AI agent đọc `content/rules/website-ui-rules.md` trước khi sửa UI.
+2. Nêu mode và state phải có. AI agent đọc thiết kế, asset, mã hiện có, `SDS-rules.md` và `website-ui-rules.md`. File quy tắc UI ghi rõ font/weight/size, màu, spacing, breakpoint, state và bước kiểm tra của website docs; nó không phải token sản phẩm SDS.
+3. AI agent sửa component/CSS/asset nguồn, rồi chạy `npm run build` trong `SDS-docs/website/`. Khi đổi điều hướng, tương tác hoặc layout responsive, chạy thêm `npm run test:e2e`.
+4. Mở route được sửa để kiểm tra bằng mắt, rồi rà các bài Introduction mô tả quy tắc hoặc UI vừa đổi. Nếu Figma không có một state hoặc kích thước cần thiết, AI agent phải nói rõ phần suy luận hoặc phần chưa xác định.
 
 ### Đồng bộ và audit token Figma
 
@@ -133,7 +133,7 @@ Codex cần nêu **đã sửa file nào, dựa vào nguồn nào, đã chạy ki
 
 ## Khi folder thay đổi, website được đồng bộ thế nào?
 
-**Build không tự viết lại bài docs.** Nó chỉ chuyển Markdown hiện có thành HTML. Vì vậy một task chỉ hoàn tất sau khi Codex kiểm tra tác động lên các trang website, kể cả khi thay đổi ban đầu nằm ngoài `website/`.
+**Build không tự viết lại bài docs.** Nó chỉ chuyển Markdown hiện có thành HTML. Vì vậy một task chỉ hoàn tất sau khi AI agent kiểm tra tác động lên các trang website, kể cả khi thay đổi ban đầu nằm ngoài `website/`.
 
 | Nguồn vừa đổi | Trang cần rà trước tiên |
 | --- | --- |
@@ -149,7 +149,7 @@ Thực hiện theo thứ tự:
 3. **Sinh lại và xem trang:** chạy `npm run build`, mở các route bị ảnh hưởng, kiểm tra link, mục lục và nội dung hiển thị. Với thay đổi layout, theme, điều hướng hoặc hành vi, chạy thêm `npm run test:e2e`.
 4. **Bàn giao:** báo các file nguồn và trang website đã cập nhật, các trang đã kiểm tra nhưng giữ nguyên, kết quả build/test và phần còn chờ duyệt.
 
-Ví dụ hiện tại: khi thêm `SDS-docs/content/rules/website-ui-rules.md`, Codex phải kiểm tra trang **AI Agents**. Chỉ thêm tên file vào bảng là chưa đủ; các bước sửa UI và prompt mẫu cũng cần yêu cầu đọc file này. **Getting Started** và **FAQ** đã được cập nhật để người mới biết mở hướng dẫn nào; **Overview** được sửa lời dẫn tới AI Agents, **Glossary** được bổ sung thuật ngữ. **Design System?** và **Principles** đã được rà, nội dung vẫn đúng vì hai trang đó nói về SDS của sản phẩm chứ không mô tả quy trình build website.
+Ví dụ hiện tại: khi thêm `SDS-docs/content/rules/website-ui-rules.md`, AI agent phải kiểm tra trang **AI Agents**. Chỉ thêm tên file vào bảng là chưa đủ; các bước sửa UI và prompt mẫu cũng cần yêu cầu đọc file này. **Getting Started** và **FAQ** đã được cập nhật để người mới biết mở hướng dẫn nào; **Overview** được sửa lời dẫn tới AI Agents, **Glossary** được bổ sung thuật ngữ. **Design System?** và **Principles** đã được rà, nội dung vẫn đúng vì hai trang đó nói về SDS của sản phẩm chứ không mô tả quy trình build website.
 
 ## Prompt có thể dùng ngay
 
@@ -158,7 +158,7 @@ Ví dụ hiện tại: khi thêm `SDS-docs/content/rules/website-ui-rules.md`, C
 **UI website tài liệu từ Figma**
 
 ```text
-Trong SmartAds - SDS, đọc SDS-docs/content/rules/SDS-rules.md và
+Trong repo SDS, đọc SDS-docs/content/rules/SDS-rules.md và
 SDS-docs/content/rules/website-ui-rules.md. Sửa [trang/component]
 trong website theo node Figma [URL]. Phạm vi: [light/dark,
 state, desktop/mobile]. Giữ Public Sans, line-height 200% cho
@@ -195,7 +195,7 @@ Rà các trang khác có nội dung phụ thuộc vào bài vừa đổi.
 
 ## Chạy và kiểm tra website
 
-Mở terminal tại `SmartAds - SDS/SDS-docs/website/`. Cài thư viện một lần bằng `npm ci`:
+Mở terminal tại `SDS-docs/website/` (tính từ thư mục gốc repo). Cài thư viện một lần bằng `npm ci`:
 
 ```powershell
 npm ci
@@ -211,7 +211,7 @@ npm run preview
 
 Dev và preview dùng cùng cổng 4321, nên dừng tiến trình cũ trước khi chạy tiến trình mới. Không mở `out/index.html` bằng `file://` hoặc Live Server. Với thay đổi hành vi, route hoặc layout nhiều breakpoint, chạy `npm run test:e2e` **sau build**; lệnh này cần Chrome trên máy và mở server test riêng. Khi sửa script token, chạy `node tests/run-tests.mjs` từ `SDS-docs/`.
 
-## Kiểm tra kết quả Codex trước khi chấp nhận
+## Kiểm tra kết quả AI agent trước khi chấp nhận
 
 | Câu hỏi | Cách kiểm tra |
 | --- | --- |

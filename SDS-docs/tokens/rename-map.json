@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "note": "Chỉ gồm các mục đã quan sát được qua audit ban đầu. Chạy `ds-tokens.mjs suggest` trên dump đầy đủ để bổ sung. Chỉ người dùng được đổi status sang approved/rejected.",
+  "version": 2,
+  "note": "Đề xuất đổi tên (chưa áp dụng). Cập nhật 14/11/2026 từ audit toàn file (xem docs/_audit/SDS-AUDIT.md §4): thêm mục chính tả, khoảng trắng, token trùng/không dùng và tên prop component. Chỉ người dùng được đổi status sang approved/rejected. `kind: group` = áp cho cả nhóm tên; `kind: component-prop` = tên prop/giá trị variant (không phải token); `order` = thứ tự thực hiện.",
   "statuses": [
     "proposed",
     "approved",
@@ -54,7 +54,8 @@
       "to": null,
       "reason": "Tên không theo vai trò; cần biết ý nghĩa (D3) trước khi đặt tên Semantic",
       "status": "needs-decision",
-      "source": "observed-in-figma"
+      "source": "observed-in-figma",
+      "note": "Không có trong 6 collection local 14/11/2026; chỉ thấy bind ở frame tài liệu Color (thư viện cũ). Không cần đổi tên trong thư viện hiện tại."
     },
     {
       "collection": "Base",
@@ -93,8 +94,9 @@
       "from": "spacing/1 (1px)",
       "to": "spacing/1",
       "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
-      "status": "proposed",
-      "source": "observed-in-figma"
+      "status": "needs-decision",
+      "source": "observed-in-figma",
+      "note": "Không có trong Figma 14/11/2026 (chỉ có `screen/1 (1px)` trong Spacing, không component nào dùng). Tên thuộc thư viện cũ \"Design System 2\". Chờ quyết định xóa `screen/*`."
     },
     {
       "collection": "TextStyles",
@@ -135,6 +137,605 @@
       "reason": "Đề xuất tách collection Component khỏi Semantic (D6)",
       "status": "needs-decision",
       "source": "observed-in-figma"
+    },
+    {
+      "collection": "Base",
+      "from": "color/red light/*",
+      "to": "color/red-light/*",
+      "reason": "Khoảng trắng (naming.md §2). Câu hỏi mở: gộp thành một họ đỏ?",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/red dark/*",
+      "to": "color/red-dark/*",
+      "reason": "Khoảng trắng. 8/10 bậc không component nào dùng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/secondary dark/*",
+      "to": "color/secondary-dark/*",
+      "reason": "Khoảng trắng; chờ D3 (gộp với gray thành neutral?)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/secondary light/*",
+      "to": "color/secondary-light/*",
+      "reason": "Khoảng trắng; 9/10 bậc không dùng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/green light/*",
+      "to": "color/green-light/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/semantic tokens/color-ai-*",
+      "to": "color/ai/*",
+      "reason": "Tên mang nghĩa semantic ở tầng Base + khoảng trắng; `color-ai-2light-blue` → `light-blue-2`",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/brand/fpt/{F,P,T}",
+      "to": "color/brand/fpt/{blue,orange,green}",
+      "reason": "F/P/T là suy ra từ màu (#1169b0, #f27227, #16b14b); cần xác nhận ý nghĩa",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "color/brand/fpt/Color-{F,P,T}-20%",
+      "to": "color/brand/fpt/{blue,orange,green}-alpha-20",
+      "reason": "Chữ hoa, dấu %, opacity nhúng trong tên",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "Subtitble",
+      "to": "subtitle",
+      "reason": "Lỗi chính tả (BOOLEAN, không được dùng)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Base",
+      "from": "Action Add",
+      "to": "action-add",
+      "reason": "Khoảng trắng; BOOLEAN không được dùng, nên chuyển sang collection cấu hình hoặc xóa",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/text/<N> (size <N>)",
+      "to": "typography/text/<N>",
+      "reason": "Khoảng trắng + ngoặc; trùng với `typography/text/text-<n>` trong Spacing",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/size/fs-base 1",
+      "to": "typography/size/fs-base-1",
+      "reason": "Khoảng trắng (tạm, trước quyết định D4)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/size/fs-base 2",
+      "to": "typography/size/fs-base-2",
+      "reason": "Khoảng trắng (tạm, trước quyết định D4)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Base",
+      "from": "typography/size/fs-base 3",
+      "to": "typography/size/fs-base-3",
+      "reason": "Khoảng trắng (tạm, trước quyết định D4)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Base",
+      "from": "space/1536",
+      "to": null,
+      "reason": "Giá trị 1563 không khớp tên; sửa giá trị hoặc đổi tên (cần xác nhận)",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "value"
+    },
+    {
+      "collection": "Alias",
+      "from": "sematic/*",
+      "to": "semantic/*",
+      "reason": "Lỗi chính tả \"sematic\" (ai, dina, dashboard); vị trí đích còn chờ quyết định",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "background/sucess",
+      "to": "background/success",
+      "reason": "Lỗi chính tả",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/badge/sucess/surface-success",
+      "to": "component/badge/surface/success/rest",
+      "reason": "Lỗi chính tả + cấu trúc (như badge/info)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/state layers/*",
+      "to": "component/state-layers/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/text input/*",
+      "to": "component/text-input/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/digital verify code/*",
+      "to": "component/digital-verify-code/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/button group/*",
+      "to": "component/button-group/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/segmented control/*",
+      "to": "component/segmented-control/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/inline editable/*",
+      "to": "component/inline-editable/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/creative assets/*",
+      "to": "component/creative-assets/*",
+      "reason": "Khoảng trắng",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/toast alert/*",
+      "to": "component/toast-alert/*",
+      "reason": "Khoảng trắng (cấu trúc đầy đủ: xem mục `surface-rest`)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Alias",
+      "from": "border/primary-opacity-haf",
+      "to": "border/primary-opacity-30",
+      "reason": "Lỗi chính tả \"haf\"; giá trị là opacity 30%",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "text/secondary-black (main)",
+      "to": null,
+      "reason": "Ngoặc + vai trò sai (đang là chữ body chính, không có `text/primary`). Cần quyết định bộ vai trò text (xem SDS-AUDIT TK-03)",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "text/secondary-black (700)",
+      "to": null,
+      "reason": "Ngoặc; cùng quyết định bộ vai trò text",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "component/icon/common/secondary-black (main)",
+      "to": null,
+      "reason": "Ngoặc; cùng quyết định bộ vai trò text/icon",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "surface/primary-default",
+      "to": null,
+      "reason": "Giá trị là gray/100 chứ không phải primary; trùng `surface/primary-disable`",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Alias",
+      "from": "text|surface|border đặt theo giá trị (`text/gray-on-surface`, `surface/neutral-white`, `border/gray-stronger`, `text/primary-white`, …)",
+      "to": null,
+      "reason": "Semantic nên đặt theo vai trò, không theo màu (naming.md tầng Semantic). 19 token đang dùng — cần bảng vai trò mới",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Spacing",
+      "from": "spacing/lg",
+      "to": "spacing/lg-plus",
+      "reason": "Trùng gốc với `spacing/lg (Base)`; thực hiện TRƯỚC mục tiếp theo",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "order": 1
+    },
+    {
+      "collection": "Spacing",
+      "from": "spacing/lg (Base)",
+      "to": "spacing/lg",
+      "reason": "Ngoặc/khoảng trắng; thực hiện SAU khi `spacing/lg` (18) đổi thành `lg-plus`",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "order": 2
+    },
+    {
+      "collection": "Spacing",
+      "from": "spacing/odd-7",
+      "to": null,
+      "reason": "Tên \"odd\" không mang nghĩa; giá trị 7px (đang dùng 192 lần)",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Spacing",
+      "from": "screen/* (42 token)",
+      "to": null,
+      "reason": "Bản sao thang `space/*`; không component nào dùng. Đề xuất xóa",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Spacing",
+      "from": "typography/text/text-* (13 token)",
+      "to": null,
+      "reason": "Trùng `typography/text/*` ở Base; không dùng. Đề xuất xóa",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Text",
+      "from": "typography/weight/Regular",
+      "to": "typography/weight/regular",
+      "reason": "Chữ hoa; `Semi` → `semibold` (tên đầy đủ, khớp font style)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Text",
+      "from": "typography/weight/Medium",
+      "to": "typography/weight/medium",
+      "reason": "Chữ hoa; `Semi` → `semibold` (tên đầy đủ, khớp font style)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Text",
+      "from": "typography/weight/Semi",
+      "to": "typography/weight/semibold",
+      "reason": "Chữ hoa; `Semi` → `semibold` (tên đầy đủ, khớp font style)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Text",
+      "from": "typography/weight/Bold",
+      "to": "typography/weight/bold",
+      "reason": "Chữ hoa; `Semi` → `semibold` (tên đầy đủ, khớp font style)",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Text",
+      "from": "typography/family/text",
+      "to": null,
+      "reason": "Trùng giá trị với `typography/family/display` (Public Sans)",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "Viewport Desktop",
+      "from": "Width/wd-* · Screen/*",
+      "to": "layout/width/* · layout/*",
+      "reason": "PascalCase; chờ quyết định D6 (cấu trúc collection)",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "Viewport Mobile Tablet",
+      "from": "Screen/Navigation/btn-create-campagin",
+      "to": "layout/navigation/show-create-campaign",
+      "reason": "Lỗi chính tả \"campagin\" + PascalCase",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "TextStyles",
+      "from": "Brand/Microscope/*",
+      "to": null,
+      "reason": "Cỡ 13 nằm giữa Body-xs (14) và Body-caption (12) nhưng tên không theo thang; chờ D4",
+      "status": "needs-decision",
+      "source": "audit-2026-11-14",
+      "kind": "group"
+    },
+    {
+      "collection": "EffectStyles",
+      "from": "Focus/ring-sucess-sm",
+      "to": "Focus/ring-success-sm",
+      "reason": "Lỗi chính tả",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "EffectStyles",
+      "from": "Shadow/semantic/element/pannel-left",
+      "to": "Shadow/semantic/element/panel-left",
+      "reason": "Lỗi chính tả \"pannel\"",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "EffectStyles",
+      "from": "Shadow/semantic/element/pannel-right",
+      "to": "Shadow/semantic/element/panel-right",
+      "reason": "Lỗi chính tả \"pannel\"",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "PaintStyles",
+      "from": "Gradient/gradient-linear-siver",
+      "to": "Gradient/gradient-linear-silver",
+      "reason": "Lỗi chính tả",
+      "status": "proposed",
+      "source": "audit-2026-11-14"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Retangle",
+      "to": "Rectangle",
+      "reason": "Chính tả (_focus-ring, primitive-paging, primitive-control, _button-close)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Waring",
+      "to": "Warning",
+      "reason": "Chính tả (inline-alert, _modal-dialogs, _text-input-main, …)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Sucess",
+      "to": "Success",
+      "reason": "Chính tả (toast-alert, _hint-text, _text-input-main, _modal-dialogs, …)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Errror",
+      "to": "Error",
+      "reason": "Chính tả (button-state Type)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Sellect All",
+      "to": "Select All",
+      "reason": "Chính tả (Text Action Type)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: alt_waring · alt_sucess",
+      "to": "alt_warning · alt_success",
+      "reason": "Chính tả (alert-plain-inline State)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Slected (calendar) · …last moth",
+      "to": "Selected · …last month",
+      "reason": "Chính tả (primitive-calendar-cell Type)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Sudbed Desicion · Sudbed Confirm",
+      "to": "Subdued Decision · Subdued Confirm",
+      "reason": "Chính tả (primitive-dialog-footer Type)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Checbox Only",
+      "to": "Checkbox Only",
+      "reason": "Chính tả (_input-checkbox)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "value: Indeteriminate",
+      "to": "Indeterminate",
+      "reason": "Chính tả (primitive-checkbox Type)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Laungue",
+      "to": "Language",
+      "reason": "Chính tả (Sidebar V2)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Publiser",
+      "to": "Publisher",
+      "reason": "Chính tả (Sidebar)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: backgroud",
+      "to": "background",
+      "reason": "Chính tả (_primitives-single-button-delete)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Weigh",
+      "to": "Weight",
+      "reason": "Chính tả (primitive-label)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Dissmissible",
+      "to": "Dismissible",
+      "reason": "Chính tả (_modal-dialogs)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Show lcon",
+      "to": "Show Icon",
+      "reason": "Chính tả (primitive-info-tips)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "prop: Containter body",
+      "to": "Container body",
+      "reason": "Chính tả (_panel-add-a-creative)",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "component: __warp_icon_left · __warp_icon_search",
+      "to": "__wrap_icon_left · __wrap_icon_search",
+      "reason": "Chính tả",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "page/component: Lable (Process)",
+      "to": "Label",
+      "reason": "Chính tả",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
+    },
+    {
+      "collection": "ComponentProps",
+      "from": "State vocabulary: Default/Enable → Rest; Press → Pressed; Disable → Disabled; Focused → Focus",
+      "to": "Rest, Hover, Focus, Pressed, Disabled, Selected",
+      "reason": "Từ vựng trạng thái theo naming.md §3",
+      "status": "proposed",
+      "source": "audit-2026-11-14",
+      "kind": "component-prop"
     }
-  ]
+  ],
+  "updated": "2026-11-14"
 }

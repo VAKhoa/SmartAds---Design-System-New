@@ -15,4 +15,8 @@ D1 đã được duyệt. Các mục có dấu ⭐ còn lại là lựa chọn t
 
 Quyết định D1 (02/11/2026): dùng `sa` làm tiền tố code và CSS. Tên viết tắt của SmartAds Design System là `SDS`.
 
-Với D2–D8, ghi quyết định và ngày chốt dưới bảng trước khi áp dụng.
+Quyết định D9 (14/11/2026): **dark mode loại khỏi phạm vi token sản phẩm**; `ds.config.json` `themes: ["light"]`. Mode Dark của `Alias` còn trong Figma (xóa hay ẩn: chờ bạn duyệt, `docs/_audit/SDS-AUDIT.md` câu hỏi 4); theme dark của website docs vẫn dùng nó.
+
+Quyết định D10 (12/11/2026, xác nhận 14/11/2026): component bàn giao dùng **HTML/CSS/JavaScript thuần** (`content/rules/component-code-rules.md`).
+
+Với D2–D8, ghi quyết định và ngày chốt dưới bảng trước khi áp dụng. Các câu hỏi đang chờ (D2–D8 cùng thang cỡ chữ, trung tính, spacing, data-viz, lifecycle, density, format số/tiền): `docs/_audit/SDS-AUDIT.md` §6.

@@ -36,7 +36,7 @@ Từ một màu thể hiện trạng thái đến cách trình bày một màn h
   <a class="sa-entry" href="/introduction/design-system/"><strong>Hiểu về SDS</strong><span>Design system là gì, dành cho ai và gồm những phần nào?</span></a>
   <a class="sa-entry" href="/introduction/getting-started/"><strong>Dùng SDS trong công việc</strong><span>Điểm bắt đầu cho designer, developer và người review.</span></a>
   <a class="sa-entry" href="/introduction/principles/"><strong>Nguyên tắc thiết kế</strong><span>Những định hướng đang được đề xuất cho giao diện SmartAds.</span></a>
-  <a class="sa-entry" href="/introduction/ai-agents/"><strong>Làm việc cùng Codex</strong><span>Chọn quy tắc, skill và kiểm tra tài liệu sau khi dự án thay đổi.</span></a>
+  <a class="sa-entry" href="/introduction/ai-agents/"><strong>Làm việc cùng AI agent</strong><span>Chọn quy tắc, skill và kiểm tra tài liệu sau khi dự án thay đổi.</span></a>
 </div>
 
 ## Phạm vi hiện tại

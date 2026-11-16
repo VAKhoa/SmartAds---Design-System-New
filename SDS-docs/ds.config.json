@@ -7,7 +7,7 @@
     "url": "https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System"
   },
   "language": "vi",
-  "themes": ["light", "dark"],
+  "themes": ["light"],
   "collections": {
     "base": ["Primitives "],
     "semantic": ["Alias"],
@@ -16,5 +16,5 @@
     "font": ["Text"],
     "viewport": ["Viewport Desktop", "Viewport Mobile Tablet"]
   },
-  "note": "Prefix CSS sa đã duyệt ngày 02/11/2026 (D1). Collections ghi tên đang có trong Figma ngày 02/11/2026, không phải cấu trúc đích; D6 còn mở."
+  "note": "Prefix CSS sa đã duyệt ngày 02/11/2026 (D1). Collections ghi tên đang có trong Figma ngày 02/11/2026, không phải cấu trúc đích; D6 còn mở. themes: [light] theo quyết định 14/11/2026 (token sản phẩm chỉ Light; mode Dark của Alias vẫn còn trong Figma và chỉ được theme dark của website docs dùng)."
 }

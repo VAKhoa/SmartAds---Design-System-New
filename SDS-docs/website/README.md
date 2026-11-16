@@ -40,7 +40,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `package-lock.json` | Khóa phiên bản cho npm ci. |
 | `../content/rules/website-ui-rules.md` | Quy tắc UI riêng của website docs; đọc trước khi sửa font, màu, layout hoặc state. |
 | `../content/guides/content-guide.md` | Bảng ánh xạ từng mục sidebar tới file Markdown và quy trình tạo bài. |
-| `next.config.mjs` | Cấu hình Next, static export và tắt tự sinh `website/AGENTS.md` để giữ một điểm vào Codex ở gốc dự án. |
+| `next.config.mjs` | Cấu hình Next, static export và tắt tự sinh `website/AGENTS.md` để giữ một điểm vào AI agent ở gốc dự án. |
 | `jsconfig.json` | Alias @/ tới src/. |
 | `src/app/layout.js` | HTML gốc, font cục bộ, metadata, theme. |
 | `src/app/page.js` | Route Overview. |
@@ -69,7 +69,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `../content/pages/introduction/design-system.md` | Nội dung Design System?. |
 | `../content/pages/introduction/principles.md` | Nguyên tắc đề xuất, chờ review. |
 | `../content/pages/introduction/getting-started.md` | Hướng dẫn bắt đầu theo vai trò. |
-| `../content/pages/introduction/ai-agents.md` | Hướng dẫn Codex và skill hiện có. |
+| `../content/pages/introduction/ai-agents.md` | Hướng dẫn AI agent và skill hiện có. |
 | `../content/pages/introduction/faq.md` | Câu hỏi thường gặp. |
 | `../content/pages/introduction/glossary.md` | Thuật ngữ. |
 | `../content/pages/resource/figma.md` | Title, subtitle và hướng dẫn trang Resource / Figma; danh sách thẻ vẫn ở JSON. |
@@ -104,7 +104,8 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `tests/layout-reference.spec.js` | Kiểm tra source Markdown, Grid/Body Layout, frame Create Campaign/Dashboard, responsive và dark mode. |
 | `tests/icon-reference.spec.js` | Kiểm tra catalog MingCute, tìm/lọc, hai style, copy SVG/HTML/tên, tải SVG, responsive và dark mode. |
 | `public/source/docs/` | Bản sao tự sinh của các bài Markdown; không sửa tay. |
-| `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/. |
+| `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/ theo danh sách trong `scripts/theme-tokens.mjs`; tên CSS qua `../scripts/css-name.mjs`. Gồm các primitive màu thay cho hex hard-code trong CSS docs (`--sa-color-primary-200|300|500`, `--sa-color-secondary-dark-900`, `--sa-color-gray-500|800`, `--sa-color-base-white`). |
+| `scripts/theme-tokens.mjs` | Danh sách token Figma được đưa vào theme (dùng chung với `../scripts/build-tokens.mjs`). |
 | `scripts/serve.mjs` | Server Node xem bản build tĩnh. |
 | `public/brand/smartads-symbol.svg` | Biểu tượng SmartAds xanh gốc. |
 | `public/brand/ai-file-*.svg` | Các lớp icon file Markdown ở hai mode, tải từ Figma `361:864` và `361:2170`. |
@@ -170,7 +171,7 @@ Mẫu thẻ lấy từ Figma `sQYYGDipDACa8UIqgdWWZq`, node `9:4767`: preview 14
 
 Sửa FAQ: mở `../content/pages/introduction/faq.md`, thay câu trả lời và updated, chạy `npm run prepare:content`, xem lại trang FAQ ở dev. Frontmatter bắt buộc gồm title, section, updated, status. Giữ draft cho nội dung chưa duyệt.
 
-Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. Codex chính hoặc chat SDS — FE Website Builder đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, sửa phần tương ứng và kiểm tra lại.
+Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. AI agent chính hoặc chat SDS — FE Website Builder đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, sửa phần tương ứng và kiểm tra lại.
 
 `../content/guides/` là hướng dẫn vận hành dự án; `../content/pages/` là nội dung trên website. Không tạo bản sao bài viết thủ công.
 

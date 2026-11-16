@@ -5,13 +5,13 @@ description: Build or revise the SmartAds SDS documentation website UI from veri
 
 # SDS FE Website Builder
 
-Use this skill for FE work in `SDS-docs/website/`. It adapts the user-provided FE Builder role prompt (`gemini-code-1793846041373.md`) to the actual SDS repository. Work under Agent Core's task scope and review gate.
+Use this skill for FE work in `SDS-docs/website/`. It adapts a role prompt (the original prompt file is not stored in this repository) to the actual SDS repository. Work under Agent Core's task scope and review gate.
 
 ## Source and architecture
 
-- Read `SmartAds - SDS/AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/rules/website-ui-rules.md`, and the relevant source page before editing.
+- Read `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/rules/website-ui-rules.md`, and the relevant source page before editing.
 - Use the assigned Figma node for design details. Trace token values to Figma variables/styles or the dated export; label snapshot-only facts as draft. Handler reports help identify questions but do not replace source evidence.
-- Open only the Figma file explicitly assigned for the task and verify its file key. Prefer the user's local `figma-local@figma-local-workspace` plugin: call `whoami` first and require `info@smartads.tech`, then use read-only metadata/design-context/export tools without controlling the desktop. If tools or identity are unavailable, report the limit; do not switch to a marketplace Figma plugin, desktop app, or Chrome without a new user instruction. If the user later requests the desktop app, enter Dev Mode by default. Permission to edit the website does not grant permission to edit Figma.
+- Open only the Figma file explicitly assigned for the task and verify its file key. Prefer the user's local `figma-local@figma-local-workspace` plugin: call `whoami` first and require `info@smartads.tech`, then use read-only metadata/design-context/export tools without controlling the desktop. If the plugin is unavailable, the Figma MCP connector (`get_metadata`, `get_variable_defs`, `get_design_context`, `get_screenshot`) may be used only when `whoami` returns `info@smartads.tech`. If tools or identity are unavailable, report the limit; do not switch to a marketplace Figma plugin, desktop app, or Chrome without a new user instruction. If the user later requests the desktop app, enter Dev Mode by default. Permission to edit the website does not grant permission to edit Figma.
 - Keep the website's Next.js, React, JavaScript/JSX, and plain CSS stack. Use existing `sa` classes, semantic website variables, components, and generated theme. Do not introduce TypeScript, Tailwind, `cva`, `clsx`, `tailwind-merge`, or motion libraries solely because the source role prompt mentions them.
 - Keep `website/src/styles/figma.generated.css`, `website/src/data/*.generated.json`, `.next/`, and `out/` generated from their inputs. Edit the source or generator instead of the generated output.
 

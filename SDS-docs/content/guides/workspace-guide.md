@@ -13,13 +13,13 @@ Tài liệu này giải thích **các file trong thư mục xây SDS và cách v
 
 ## Bắt đầu một task như thế nào?
 
-Mở thư mục **`SmartAds - SDS/`** trong Codex. File `AGENTS.md` ở gốc là điểm vào tự động và dẫn tới `SDS-docs/content/rules/SDS-rules.md`, nơi chứa quy tắc chi tiết. Khi giao task, bạn chỉ cần nhắc **`SDS-docs/content/rules/SDS-rules.md`**; không cần gọi `AGENTS.md` như tên một agent. Giao việc cho **Codex chính**, mô tả kết quả mong muốn và gửi link Figma đúng node nếu task liên quan UI. Skill là hướng dẫn theo chuyên môn mà Codex đọc khi task phù hợp; nó không phải một agent chạy độc lập và không tự sinh ra nội dung được duyệt.
+Mở thư mục gốc repo trong AI agent (Codex, Claude Code…). File `AGENTS.md` ở gốc là điểm vào tự động và dẫn tới `SDS-docs/content/rules/SDS-rules.md`, nơi chứa quy tắc chi tiết. Khi giao task, bạn chỉ cần nhắc **`SDS-docs/content/rules/SDS-rules.md`**; không cần gọi `AGENTS.md` như tên một agent. Giao việc cho **AI agent chính**, mô tả kết quả mong muốn và gửi link Figma đúng node nếu task liên quan UI. Skill là hướng dẫn theo chuyên môn mà AI agent đọc khi task phù hợp; nó không phải một agent chạy độc lập và không tự sinh ra nội dung được duyệt.
 
-Với nguồn Figma SmartAds, Codex ưu tiên **`figma-local@figma-local-workspace`**: gọi `whoami` để xác minh **`info@smartads.tech`**, sau đó dùng công cụ đọc của plugin ở chế độ chỉ đọc để lấy metadata, design context hoặc asset từ đúng file mà không điều khiển máy. Nếu plugin thiếu công cụ, sai tài khoản hoặc thiếu quyền Inspect, ghi rõ giới hạn; không tự chuyển sang plugin marketplace, app desktop hoặc Chrome. Khi bạn giao dùng app desktop riêng, Codex chuyển sang **Dev Mode** và xác nhận panel Inspect trước khi lấy thông số handoff.
+Với nguồn Figma SmartAds, AI agent ưu tiên **`figma-local@figma-local-workspace`**: gọi `whoami` để xác minh **`info@smartads.tech`**, sau đó dùng công cụ đọc của plugin ở chế độ chỉ đọc để lấy metadata, design context hoặc asset từ đúng file mà không điều khiển máy. Nếu plugin chưa có, được dùng Figma MCP connector chỉ khi `whoami` trả đúng `info@smartads.tech`; nếu thiếu công cụ, sai tài khoản hoặc thiếu quyền Inspect, ghi rõ giới hạn; không tự chuyển sang plugin marketplace, app desktop hoặc Chrome. Khi bạn giao dùng app desktop riêng, AI agent chuyển sang **Dev Mode** và xác nhận panel Inspect trước khi lấy thông số handoff.
 
 Chỉ truy cập **đúng file Figma được giao trong task**, kiểm tra file key trước khi gọi công cụ và không tự duyệt file khác hoặc thư viện liên kết. Nếu thiếu link/file key, xác nhận lại. Chỉ đọc thiết kế; Dev Mode là bước mặc định khi được giao mở bằng app desktop, còn plugin đọc qua API không có nút chuyển chế độ. Không thay đổi nội dung hay cài đặt Figma khi chưa được cho phép rõ ràng cho đúng file và thao tác. Quyền sửa mã website hoặc tài liệu không bao gồm quyền sửa Figma.
 
-Mỗi yêu cầu nên có bốn thông tin: **đầu ra** (trang/tài liệu/token nào), **nguồn** (node Figma/file/link nào), **phạm vi** (light/dark, desktop/mobile, state nào), và **điều kiện hoàn tất** (build, kiểm tra tương tác, báo phần chưa có nguồn). Nếu thiếu một phần, Codex cần đọc những gì đã có trong repo trước, nêu giả định, rồi mới sửa.
+Mỗi yêu cầu nên có bốn thông tin: **đầu ra** (trang/tài liệu/token nào), **nguồn** (node Figma/file/link nào), **phạm vi** (light/dark, desktop/mobile, state nào), và **điều kiện hoàn tất** (build, kiểm tra tương tác, báo phần chưa có nguồn). Nếu thiếu một phần, AI agent cần đọc những gì đã có trong repo trước, nêu giả định, rồi mới sửa.
 
 ### Phân biệt file quy tắc và file hướng dẫn
 
@@ -27,32 +27,32 @@ Bốn file dưới đây có nhiệm vụ riêng. Bạn chỉ cần mở file ph
 
 | File | Vai trò | Bạn cần mở khi nào? |
 | --- | --- | --- |
-| `SmartAds - SDS/AGENTS.md` | Điểm vào tự động theo quy ước của Codex; dẫn tới file quy tắc chi tiết. | Codex tự đọc khi bắt đầu; bạn không cần gọi file này. |
+| `AGENTS.md` | Điểm vào tự động theo quy ước của Codex và các AI agent khác (Claude Code đọc qua `CLAUDE.md` chỉ chứa `@AGENTS.md`): bảng "việc nào → đọc file nào", bản đồ cấu trúc, nguồn sự thật, quyết định đã chốt (D1, D9 Light-only, D10 HTML/CSS/JS thuần), quy tắc tên CSS, lệnh, truy cập Figma chỉ đọc. | AI agent tự đọc khi bắt đầu; với AI khác, chỉ cần nhắc `@AGENTS.md`. |
 | `SDS-docs/content/rules/SDS-rules.md` | Quy tắc bắt buộc cho dữ liệu Figma, token, nội dung và website. | Đây là file bạn nhắc trong prompt hoặc mở khi muốn đổi quy tắc chung. |
 | `SDS-docs/README.md` | Trang dẫn nhập cho người mới, chỉ dẫn đến hai tài liệu `content/guides/` và bản đồ `content/README.md`. | Bạn mở khi lần đầu vào `SDS-docs/`. |
 | `SDS-docs/website/README.md` | Cách chạy website, danh mục file code và cách thêm file Figma. | Mở khi sửa hoặc chạy website. |
 
 Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn website README là **hướng dẫn kỹ thuật của website**. Không chép toàn bộ quy tắc vào prompt mỗi lần: chỉ cần giao đầu ra, nguồn, phạm vi và điều kiện hoàn tất như bảng trên.
 
-| Bạn muốn làm | Gọi Codex và skill nào | Nguồn và file thường sửa | Điều kiện hoàn tất |
+| Bạn muốn làm | Gọi AI agent và skill nào | Nguồn và file thường sửa | Điều kiện hoàn tất |
 | --- | --- | --- | --- |
-| Sửa layout, màu, nút, icon website | Codex chính hoặc chat SDS — FE Website Builder; đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
+| Sửa layout, màu, nút, icon website | AI agent chính hoặc chat SDS — FE Website Builder; đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
 | Build component sản phẩm từ Figma | Đọc `SDS-docs/content/rules/component-code-rules.md`; dùng hướng dẫn token/component/spec liên quan. | Node, state và token đã kiểm chứng; thư mục sản phẩm được giao. | HTML/CSS/JavaScript thuần chạy độc lập; preview cùng source; kiểm tra state, responsive, keyboard và nguồn. |
-| Viết hoặc sửa bài cho sidebar | Codex chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token; với Spacing đọc `sds-spacing-foundation`. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
-| Cập nhật thư viện Icons | Codex chính; đọc `foundation/icons.md`, quy tắc component và FE website. | Gói public `@mingcute/svg` đã khóa trong `website/package-lock.json`, `website/scripts/generate-mingcute-catalog.mjs`, snapshot `icon/*` và `component/icon/common/*`. | Hai style cùng danh sách tên; search/filter, copy SVG/HTML, tải file và license hoạt động; không nhận alias đề xuất là token đã duyệt hoặc tự suy subset Figma. |
-| Thêm file vào Resource / Figma | Codex chính; không cần skill token. | `website/src/data/figma-files.json` và link Figma thật; `content/pages/resource/figma.md` khi title/subtitle/hướng dẫn chung đổi. | Thẻ mới có link/tiêu đề đúng, mở tab mới, layout không tràn; khối Markdown nguồn vẫn ngay sau title/subtitle; build. |
-| Làm mới bản chụp variables/styles | Codex chính + `figma-token-workflow`. | File key trong `ds.config.json`, Figma hiện tại; đầu ra `variable-figma-export/`. | Đếm ID, collection, mode, style; lưu ngày và nguồn; đối chiếu chênh lệch với bản cũ. |
-| Kiểm kê, đề xuất tên token hoặc viết Foundation | Codex chính + `ds-conventions`; dùng thêm `figma-token-workflow` khi cần đối chiếu dữ liệu mới. | Figma/snapshot, references theo loại, `tokens/rename-map.json`, `docs/_audit/`. | Có ID và giá trị nguồn; tách quy tắc đã duyệt với đề xuất; không tự áp dụng rename. |
-| Chỉnh script xuất/kiểm tra token | Codex chính + `figma-token-workflow` nếu liên quan Figma. | `scripts/`, `tests/`. | `node tests/run-tests.mjs` đạt; báo giới hạn của dữ liệu mẫu. |
-| Phát hành token hoặc component sản phẩm | Codex chính + `ds-conventions` và `figma-token-workflow`; chỉ bắt đầu sau khi phạm vi và quyết định liên quan được chốt. | Figma, rename map, token/source được kiểm chứng. | Mỗi giá trị truy được nguồn; alias/mode và state đúng; có kiểm tra đầu ra riêng. |
+| Viết hoặc sửa bài cho sidebar | AI agent chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token; với Spacing đọc `sds-spacing-foundation`. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
+| Cập nhật thư viện Icons | AI agent chính; đọc `foundation/icons.md`, quy tắc component và FE website. | Gói public `@mingcute/svg` đã khóa trong `website/package-lock.json`, `website/scripts/generate-mingcute-catalog.mjs`, snapshot `icon/*` và `component/icon/common/*`. | Hai style cùng danh sách tên; search/filter, copy SVG/HTML, tải file và license hoạt động; không nhận alias đề xuất là token đã duyệt hoặc tự suy subset Figma. |
+| Thêm file vào Resource / Figma | AI agent chính; không cần skill token. | `website/src/data/figma-files.json` và link Figma thật; `content/pages/resource/figma.md` khi title/subtitle/hướng dẫn chung đổi. | Thẻ mới có link/tiêu đề đúng, mở tab mới, layout không tràn; khối Markdown nguồn vẫn ngay sau title/subtitle; build. |
+| Làm mới bản chụp variables/styles | AI agent chính + `figma-token-workflow`. | File key trong `ds.config.json`, Figma hiện tại; đầu ra `variable-figma-export/`. | Đếm ID, collection, mode, style; lưu ngày và nguồn; đối chiếu chênh lệch với bản cũ. |
+| Kiểm kê, đề xuất tên token hoặc viết Foundation | AI agent chính + `ds-conventions`; dùng thêm `figma-token-workflow` khi cần đối chiếu dữ liệu mới. | Figma/snapshot, references theo loại, `tokens/rename-map.json`, `docs/_audit/`. | Có ID và giá trị nguồn; tách quy tắc đã duyệt với đề xuất; không tự áp dụng rename. |
+| Chỉnh script xuất/kiểm tra token | AI agent chính + `figma-token-workflow` nếu liên quan Figma. | `scripts/`, `tests/`. | `node tests/run-tests.mjs` đạt; báo giới hạn của dữ liệu mẫu. |
+| Phát hành token hoặc component sản phẩm | AI agent chính + `ds-conventions` và `figma-token-workflow`; chỉ bắt đầu sau khi phạm vi và quyết định liên quan được chốt. | Figma, rename map, token/source được kiểm chứng. | Mỗi giá trị truy được nguồn; alias/mode và state đúng; có kiểm tra đầu ra riêng. |
 
 `sds-fe-website-builder` ở `../../.agents/skills/sds-fe-website-builder/SKILL.md` bám theo Next.js, JavaScript và CSS thuần của website hiện tại. `external-design-system` ở `../../.agents/skills/external-design-system/skill-design-system.md` trỏ tới `E:\Test-Codex\design-system\SKILL.md`. Nó hữu ích cho cấu trúc token và state, nhưng đường dẫn này phụ thuộc máy đang dùng; nếu chuyển máy, cần cài lại hoặc cập nhật đường dẫn. Ví dụ màu trong skill là ví dụ chung, **không phải** giá trị SmartAds. Các skill `ds-conventions` và `figma-token-workflow` nằm ngay trong repo nên có thể chỉ đích danh bằng đường dẫn nếu lệnh `$...` không được môi trường nhận diện.
 
-### Prompt mẫu để Codex làm đúng ngay từ đầu
+### Prompt mẫu để AI agent làm đúng ngay từ đầu
 
 **Component sản phẩm từ Figma:** “Đọc `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/component-code-rules.md`. Triển khai component [tên] từ node [URL] bằng HTML/CSS/JavaScript thuần trong [thư mục đích]. Giao markup, CSS, JS khi có tương tác, token/asset phụ thuộc và hướng dẫn chạy độc lập. Kiểm tra [state/viewport], keyboard, focus và nhiều instance. Ghi nguồn và phần chưa xác minh; snippet, preview và code bàn giao dùng cùng source. Website docs giữ Next.js/React và cách trình bày hiện tại.”
 
-**UI website tài liệu từ Figma:** “Trong `SmartAds - SDS/SDS-docs/website`, đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component] trong cấu trúc Next.js, JavaScript và CSS hiện tại. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, Tabler cho chức năng của docs shell, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Với icon sản phẩm, đối chiếu catalog MingCute và node Figma thay vì dùng Tabler. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
+**UI website tài liệu từ Figma:** “Trong `SDS-docs/website` (từ thư mục gốc repo), đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component] trong cấu trúc Next.js, JavaScript và CSS hiện tại. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, Tabler cho chức năng của docs shell, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Với icon sản phẩm, đối chiếu catalog MingCute và node Figma thay vì dùng Tabler. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
 
 **Cập nhật Icons:** “Đọc `content/pages/foundation/icons.md`, `component-code-rules.md` và metadata của gói public `@mingcute/svg` được khóa. Tạo lại catalog bằng `npm run prepare:content`, giữ Regular/Filled, tên nguồn, SVG và license. Sơ đồ kết nối ba bước phải giữ đúng luồng GitHub → gói SVG → asset SmartAds; nút GitHub MingCute cùng kiểu với header và dẫn tới repository chính thức. Hướng dẫn cần chỉ rõ phiên bản cài đặt và cách đưa SVG vào dự án HTML/CSS/JS thuần. Đối chiếu các variable `icon/*` và `component/icon/common/*` theo ID snapshot; nếu muốn khẳng định icon đang dùng trong SmartAds, gửi node Figma cụ thể. Kiểm tra search/filter, copy/download, keyboard, light/dark và responsive; không đổi tên variable Figma khi chưa duyệt.”
 
@@ -94,13 +94,13 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 ## Cấu trúc hiện tại
 
 ```text
-SmartAds - SDS/
+<thư-mục-gốc-repo>/
 ├─ AGENTS.md, .agents/skills/{sds-fe-website-builder/SKILL.md,external-design-system/skill-design-system.md}
 └─ SDS-docs/
    ├─ README.md, ds.config.json, .gitignore
    ├─ content/
    │  ├─ README.md                 (bản đồ tài liệu Markdown)
-   │  ├─ rules/{SDS-rules.md,website-ui-rules.md}
+   │  ├─ rules/{SDS-rules.md,component-code-rules.md,website-ui-rules.md}
    │  ├─ guides/{about-smartads.md,workspace-guide.md,content-guide.md}
    │  └─ pages/{index.md,introduction/,foundation/,components/,patterns/}
    ├─ .agents/skills/
@@ -108,12 +108,12 @@ SmartAds - SDS/
    │  ├─ ds-conventions/references/{naming,color,typography,spacing-radius,effects,open-decisions}.md
    │  ├─ figma-token-workflow/SKILL.md
    │  └─ sds-spacing-foundation/SKILL.md
-   ├─ scripts/{ds-tokens.mjs,dump-variables.figma.js,dump-styles.figma.js}
+   ├─ scripts/{ds-tokens.mjs,css-name.mjs,build-tokens.mjs,dump-variables.figma.js,dump-styles.figma.js,dump-usage.figma.js}
    ├─ tests/{run-tests.mjs,fixtures/observed-sample.json}
-   ├─ tokens/rename-map.json
-   ├─ variable-figma-export/{overview.json,styles.json,variables.*.json}
+   ├─ tokens/{rename-map.json,generated/}   (generated/ sinh bằng build-tokens.mjs, không commit)
+   ├─ variable-figma-export/{overview.json,styles.json,usage.json,variables.*.json}
    ├─ website/               (Next.js + React, Introduction + Resource / Figma + Colors)
-   └─ docs/_audit/.gitkeep    (chưa có báo cáo)
+   └─ docs/_audit/{SDS-CONTEXT.md,SDS-AUDIT.md,SDS-RECONCILIATION.md}   (báo cáo audit 14/11/2026)
 ```
 
 | Nhóm | Ý nghĩa và cách dùng |
@@ -123,7 +123,7 @@ SmartAds - SDS/
 | `content/guides/about-smartads.md` | Giải thích sản phẩm SmartAds, mục tiêu SDS, đối tượng sử dụng và nguồn thông tin. |
 | `content/guides/workspace-guide.md` | Tài liệu bạn đang đọc: cấu trúc thư mục và cách vận hành. |
 | `content/README.md` | Bản đồ duy nhất để tìm quy tắc, hướng dẫn và bài website. |
-| `content/rules/` | Hai quy tắc: toàn dự án và UI website. |
+| `content/rules/` | Ba quy tắc: toàn dự án, code component bàn giao (HTML/CSS/JS thuần) và UI website. |
 | `content/guides/` | Giới thiệu SmartAds, cách vận hành và bảng file theo sidebar. |
 | `content/pages/` | Bài Markdown hiển thị trên website; thêm file ở đây để tạo nội dung cho route tương ứng. |
 | `ds.config.json` | Tên viết tắt `SDS`, file Figma, tên collection đang có và prefix CSS `sa` đã duyệt; cấu trúc collection đích chưa được duyệt. |
@@ -134,16 +134,20 @@ SmartAds - SDS/
 | `scripts/dump-styles.figma.js` | Mã đọc text/effect styles; paint/grid styles cần đọc bổ sung khi làm snapshot đầy đủ. |
 | `scripts/ds-tokens.mjs` | Lệnh `lint` kiểm tra tên và `suggest` gợi ý đổi tên từ JSON export. Không tự sửa Figma. |
 | `tests/run-tests.mjs`, `tests/fixtures/` | Kiểm tra script bằng dữ liệu cố ý có lỗi; không dùng fixture làm token thật. |
-| `tokens/rename-map.json` | Danh sách đề xuất đổi tên, còn chờ duyệt và cần đối chiếu lại với Figma hiện tại. |
-| `variable-figma-export/` | Bản chụp toàn bộ tên và giá trị token Figma ngày 02/11/2026: `overview.json`, 6 file variables theo collection, `styles.json`. Đây là dữ liệu đầu vào để xử lý tiếp, không phải CSS phát hành. |
-| `docs/_audit/` | Nơi sẽ lưu báo cáo audit. `.gitkeep` chỉ giữ thư mục rỗng. |
+| `tokens/rename-map.json` | Danh sách đề xuất đổi tên (85 mục: 64 `proposed`, 21 `needs-decision`, 0 `approved`), còn chờ duyệt. Gồm cả tên prop/variant component (`kind: component-prop`). |
+| `tokens/generated/tokens.json` | Output sinh bằng `node scripts/build-tokens.mjs` (không commit, không sửa tay): 690 token theo `ds.config.json` `themes` (hiện chỉ Light), mỗi token có `gate` A/B/E, `gateReasons` và tên CSS. |
+| `scripts/css-name.mjs` | Quy tắc duy nhất đổi tên Figma → tên CSS (`--sa-` + slug). `generate-theme.mjs` và `build-tokens.mjs` cùng dùng. |
+| `scripts/build-tokens.mjs` | Đọc `variable-figma-export/` + `usage.json`, ghi `tokens/generated/tokens.json`. Không gọi Figma. |
+| `scripts/dump-usage.figma.js` | Mã chỉ-đọc chạy trong Figma Plugin API để biết variable/style nào được component dùng (ghi vào `usage.json`). |
+| `variable-figma-export/` | Bản chụp toàn bộ tên và giá trị token Figma ngày 02/11/2026 (đối chiếu Figma live 14/11/2026: khớp 100%): `overview.json`, 6 file variables theo collection, `styles.json`, và `usage.json` (token/style nào được component dùng, đọc 14/11/2026). Đây là dữ liệu đầu vào để xử lý tiếp, không phải CSS phát hành. |
+| `docs/_audit/` | Báo cáo audit 14/11/2026: `SDS-CONTEXT.md` (nguồn sự thật nén, chỉ nội dung qua gate), `SDS-RECONCILIATION.md` (đối chiếu Figma ↔ repo, nhóm A–E), `SDS-AUDIT.md` (vấn đề, đề xuất, mapping đổi tên, lộ trình, câu hỏi). Số liệu lấy từ snapshot + `usage.json`; cập nhật lại khi Figma đổi. |
 | `website/` | Mã website hiển thị cho người đọc. Đọc `content/rules/website-ui-rules.md` khi build UI; xem [hướng dẫn website](../../website/README.md) để biết từng file, trang Resource / Figma và cách chạy. |
 
 ## Mở file nào khi cần tra một việc cụ thể?
 
 ### Sáu reference của quy ước token
 
-Các file dưới đây là **quy tắc và ghi chép audit ban đầu**, không phải bản export mới nhất từ Figma. Codex chỉ cần mở file liên quan đến việc đang làm.
+Các file dưới đây là **quy tắc và ghi chép audit ban đầu**, không phải bản export mới nhất từ Figma. AI agent chỉ cần mở file liên quan đến việc đang làm.
 
 | File trong `.agents/skills/ds-conventions/references/` | Mở khi cần |
 | --- | --- |
@@ -180,10 +184,10 @@ Trong mỗi variable, `name` là tên Figma hiện tại, `values` giữ giá tr
 | `scripts/dump-styles.figma.js` | Mã tham khảo đọc text/effect style trong Figma; khi làm snapshot đầy đủ phải đọc paint/grid thêm. |
 | `tests/run-tests.mjs` | Kiểm tra logic script. Kết quả “OK” nghĩa là công cụ chạy đúng với fixture, không có nghĩa Figma đã sạch lỗi. |
 | `tests/fixtures/observed-sample.json` | 19 token mẫu cố ý có tên sai để kiểm thử. Không dùng làm nguồn thiết kế. |
-| `tokens/rename-map.json` | Đề xuất từ tên cũ sang tên mới; hiện 11 mục `proposed`, 5 mục `needs-decision`, chưa có mục được duyệt. |
-| `docs/_audit/.gitkeep` | File rỗng để giữ thư mục báo cáo. Chưa có báo cáo audit chính thức. |
+| `tokens/rename-map.json` | Đề xuất từ tên cũ sang tên mới; hiện 64 mục `proposed`, 21 mục `needs-decision`, chưa có mục được duyệt. |
+| `docs/_audit/.gitkeep` | File rỗng giữ thư mục; báo cáo audit nằm cạnh nó. |
 
-`.gitignore` ở gốc SDS-docs quy định file Git sẽ bỏ qua. Repository Git nằm tại `SmartAds - SDS/`, thư mục cha của `SDS-docs/`. `ds.config.json` là nơi lấy file key Figma và tiền tố `sa`, còn `SDS-rules.md` là quy tắc Codex phải theo.
+`.gitignore` ở gốc SDS-docs quy định file Git sẽ bỏ qua. Repository Git nằm ở thư mục gốc repo, thư mục cha của `SDS-docs/`. `ds.config.json` là nơi lấy file key Figma và tiền tố `sa`, còn `SDS-rules.md` là quy tắc AI agent phải theo.
 
 ## Ví dụ: xử lý một tên token chưa chuẩn
 
@@ -192,7 +196,7 @@ Giả sử snapshot cho thấy tên Figma `color/red light/500`, còn quy ước
 1. **Tra dữ liệu:** tìm tên hiện tại trong `variables.primitives.json`; đọc ID và giá trị để biết đang xét đúng variable.
 2. **Kiểm tra:** `lint` báo tên có khoảng trắng; `suggest` chỉ đưa ra tên đề xuất.
 3. **Ghi đề xuất:** xem dòng tương ứng trong `tokens/rename-map.json`, lý do và trạng thái `proposed`.
-4. **Bạn duyệt:** chỉ định rõ mục hoặc nhóm tên được phép đổi. Codex chuyển đúng mục đó thành `approved` và áp dụng khi bạn yêu cầu.
+4. **Bạn duyệt:** chỉ định rõ mục hoặc nhóm tên được phép đổi. AI agent chuyển đúng mục đó thành `approved` và áp dụng khi bạn yêu cầu.
 5. **Đồng bộ lại:** đọc Figma lần nữa để xác nhận tên mới, ID, alias và binding vẫn đúng; cập nhật snapshot. Sau đó tài liệu/code mới dùng tên đã duyệt.
 
 Hiện lệnh lint đọc 810 mục (690 variables, 77 text và 43 effect styles) và báo 209 lỗi, 314 cảnh báo. Một mục có thể bị báo nhiều lần; kết quả này là danh sách cần phân loại, không phải lệnh tự động sửa 523 token. Paint/grid styles có trong snapshot nhưng chưa được script lint tên.

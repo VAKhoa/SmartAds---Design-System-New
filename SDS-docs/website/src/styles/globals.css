@@ -3,13 +3,13 @@
   color-scheme: light;
   --sa-docs-bg: var(--sa-background-neutral);
   --sa-docs-panel: var(--sa-background-gray);
-  --sa-docs-heading: #1f1f1f;
+  --sa-docs-heading: var(--sa-color-secondary-dark-900);
   --sa-docs-text: var(--sa-text-on-primary-black-weak);
   --sa-docs-muted: var(--sa-border-secondary-hover);
   --sa-docs-border: var(--sa-border-gray-muted);
-  --sa-docs-primary: #048845;
-  --sa-docs-primary-fill: #048845;
-  --sa-docs-on-primary-fill: #ffffff;
+  --sa-docs-primary: var(--sa-color-primary-500);
+  --sa-docs-primary-fill: var(--sa-color-primary-500);
+  --sa-docs-on-primary-fill: var(--sa-color-base-white);
   --sa-docs-link: var(--sa-docs-primary);
   --sa-docs-selected: var(--sa-background-primary-selected);
   --sa-docs-header-height: 64px;
@@ -26,8 +26,8 @@
   --sa-docs-panel: var(--sa-background-secondary);
   --sa-docs-text: var(--sa-text-secondary);
   --sa-docs-muted: var(--sa-border-secondary-hover);
-  --sa-docs-primary: #8cc8a9;
-  --sa-docs-primary-fill: #57af82;
+  --sa-docs-primary: var(--sa-color-primary-200);
+  --sa-docs-primary-fill: var(--sa-color-primary-300);
   --sa-docs-on-primary-fill: #09090a;
   --sa-docs-link: var(--sa-docs-primary);
   --sa-docs-page-nav-bg: #262626;

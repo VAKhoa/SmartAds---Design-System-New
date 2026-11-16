@@ -9,7 +9,7 @@ description: Viết, rà soát và triển khai tài liệu Foundation / Spacing
 
 ## Nguồn và quyết định
 
-1. Đọc `SmartAds - SDS/AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/content-guide.md`, `SDS-docs/ds.config.json`, skill `ds-conventions` và `references/spacing-radius.md` của nó.
+1. Đọc `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/content-guide.md`, `SDS-docs/ds.config.json`, skill `ds-conventions` và `references/spacing-radius.md` của nó.
 2. Lấy tên, ID, mode, alias và giá trị từ `SDS-docs/variable-figma-export/variables.spacing.json`. Ghi ngày của snapshot. Nếu task đòi hiện trạng hoặc mapping mới, đối chiếu đúng file Figma được giao theo `AGENTS.md`; chỉ đọc qua app desktop `info@smartads.tech` ở Dev Mode. Không dùng Figma file khác hay sửa Figma.
 3. Phân biệt **Figma observed**, **quy ước đã duyệt cho website docs**, **CSS website đã sinh** và **CSS product đã phát hành**. `--sa-space-*` numeric đã được duyệt cho trang Spacing của website docs, chưa phải package sản phẩm. `spacing/lg (Base)` và `spacing/lg` là hai ID và hai giá trị khác nhau. Không sửa `tokens/rename-map.json` hoặc nguồn Figma chỉ vì tài liệu nêu phương án.
 4. Với mọi giá trị kích thước hiển thị trên trang Spacing, hiện `px` cùng `rem` quy đổi trên cơ sở 16px (1rem); công thức `rem = px / 16`. Không tạo input/calculator. Nguồn Figma có giá trị ngoài bước ưu tiên 4px (0.25rem), nên không tự làm tròn hay loại bỏ.

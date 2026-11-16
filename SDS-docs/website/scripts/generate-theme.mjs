@@ -1,7 +1,10 @@
 import { readFileSync, mkdirSync, writeFileSync } from 'node:fs';
+import { cssVarName } from '../../scripts/css-name.mjs';
+import { colorNames, dimensionNames, primitiveColorNames } from './theme-tokens.mjs';
 
 // This is a small website theme, not a release of the complete SDS token library.
 // Preserve Figma names; no rename-map proposals are applied by this script.
+// CSS names come from scripts/css-name.mjs (one slug rule for every token, including names with spaces).
 export function generateTheme() {
   const root = new URL('../../', import.meta.url);
   const config = JSON.parse(readFileSync(new URL('ds.config.json', root), 'utf8'));
@@ -14,14 +17,7 @@ export function generateTheme() {
   const spacing = read('variables.spacing.json');
   const text = read('variables.text.json');
   const styles = read('styles.json');
-  const colorNames = [
-    'background/neutral', 'background/secondary', 'background/primary-selected',
-    'background/gray', 'text/on-primary-black-inverse', 'text/on-primary-black-weak',
-    'text/primary-white', 'text/primary-green', 'text/secondary',
-    'border/gray-muted', 'border/primary', 'border/primary-hover',
-    'border/secondary-hover', 'text/accent-hover',
-  ];
-  const dimensionNames = ['spacing/xs', 'spacing/sm', 'spacing/md', 'spacing/xl', 'radius/sm', 'radius/md', 'radius/lg'];
+  const primitives = read('variables.primitives.json');
   function variable(data, name) {
     const item = data.variables.find(v => v.name === name);
     if (!item) throw new Error(`Missing Figma variable: ${name}`);
@@ -32,12 +28,13 @@ export function generateTheme() {
     const value = item.resolvedValues[mode];
     if (value == null || typeof value === 'object') throw new Error(`Unresolved variable: ${name} / ${mode}`);
     const formatted = item.type === 'STRING' ? JSON.stringify(value) : `${value}${unit}`;
-    return `  /* Figma ${item.id}: ${name} */\n  --${config.prefix}-${name.replaceAll('/', '-')}: ${formatted};`;
+    return `  /* Figma ${item.id}: ${name} */\n  ${cssVarName(config.prefix, name)}: ${formatted};`;
   }
   const mode = (dark) => colors.modes.find(m => m.name.includes(dark ? 'Dark' : 'Light'))?.name;
   if (!mode(false) || !mode(true)) throw new Error('Expected Light and Dark modes');
   const global = dimensionNames.map(name => declaration(spacing, name, spacing.modes[0].name, 'px'));
   global.push(declaration(text, 'typography/family/display', text.modes[0].name));
+  for (const name of primitiveColorNames) global.push(declaration(primitives, name, primitives.modes[0].name));
   for (const [name, property] of [
     ['Brand/Display-lg/Bold', 'heading-size'],
     ['Brand/Display-sm/Bold', 'heading-mobile-size'],

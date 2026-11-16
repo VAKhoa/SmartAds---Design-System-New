@@ -1,25 +1,37 @@
-# Effects (shadow, elevation)
+# Effects (shadow, focus, border)
 
-## Đã quan sát trong Figma
+Đọc trực tiếp từ Figma ngày 14/11/2026: 43 effect style. Phạm vi sản phẩm: Light (`Shadow/elevation-dark/*` — 7 style — nằm ngoài phạm vi, vẫn còn trong Figma).
 
-- `Shadow/elevation-light/{200,300,…}` và `Shadow/elevation-dark/{100…700}`.
-- Mô tả có sẵn trong `elevation-dark`:
+## Elevation (`Shadow/elevation-light/<mức>`, 2-layer drop shadow, chưa bind variable)
 
-| Mức | Công dụng (trích mô tả Figma, tiếng Việt) |
-|---|---|
-| 100 | Card tĩnh, widget dashboard |
-| 200 | Bento/widget dashboard (tối đa nâng lên 300) |
-| 300 | Hover, press, card bấm được, alert |
-| 400 | Dropdown, menu |
-| 600 | Modal, dialog, snackbar |
-| 700 | Phần tử đang kéo |
+| Mức | Công dụng (mô tả Figma) | Dùng bởi component |
+|---|---|---|
+| 100 | Card tĩnh, widget dashboard | có (2) |
+| 200 | Bento/widget dashboard (tối đa nâng lên 300) | có |
+| 300 | Hover, press, card bấm được, alert | có |
+| 400 | Dropdown, menu | có (nhiều nhất) |
+| 500 | (chưa có mô tả) | có |
+| 600 | Modal, dialog, snackbar | có |
+| 700 | Phần tử đang kéo | không |
 
-- `Shadow/semantic/edge/{top,left,right}-sm`: bóng cạnh (edge).
-- Thư viện cũ: `Shadow/Shadow-default/Shadow-x1…x8` (không dùng nếu D5 chọn thư viện mới).
+## Semantic
+- `Shadow/semantic/element/floating-tooltip` (Tooltip & Popover) — đang dùng.
+- `…/navigation-sticky-right` (Sticky sidebar menu) — đang dùng; `…/navigation-sticky-bottom` — không dùng.
+- `…/pannel-left`, `…/pannel-right` (Modal/dialog/snackbar; tên sai chính tả "pannel").
+- `Shadow/semantic/edge/{top,left,right}-sm` — `top-sm` đang dùng.
+- `Shadow/semantic/element/tab-header-top` — không dùng.
+
+## Focus
+- `Focus/ring-{primary-xs, primary-lg, gray-lg, gray-sm, info-sm, sucess-sm, danger-sm, danger-lg}` — 4 style bind variable (`info-sm`, `sucess-sm`, `danger-sm`, `danger-lg`).
+- `Focus/ringShadow-{primary-lg, secondaryLight-lg, info-lg, warning-lg, danger-lg, gray-lg, link}`.
+- Button dùng thêm variable `component/button/border/focus/focus` (#8cc8a9). Ba cơ chế focus song song: cần chọn một (`SDS-AUDIT.md` TK/A11Y-03; ring #8cc8a9 trên trắng chỉ 1.92:1).
+
+## Border
+`Border/primary-line/border-width-{1-70%, 2-10%, 4-10%, 4-15%}`, `Border/warning-line/border-width-2-10%` — độ dày và opacity nằm trong tên; bind variable màu.
 
 ## Quy tắc đề xuất
-
-1. Tên: `shadow/elevation/<mức>` (không tách `light`/`dark` trong tên); `shadow/edge/<hướng>-<size>`.
-2. Light và Dark là hai bộ giá trị của cùng một tên; lúc build, CSS đổi theo `data-theme`. (Figma hiện tách hai bộ style: ghi nhận ở D6 để chọn cách ánh xạ.)
-3. Mức elevation dùng cho vai trò ghi trong mô tả; Docs Writer lấy từ mô tả.
-4. Mô tả còn thiếu cho 400/500/600 ở bản light: bổ sung khi dump.
+1. Tên: `shadow/elevation/<mức>`, `shadow/edge/<hướng>-<size>`; không tách `light/dark` trong tên khi có dark mode (hiện không áp dụng).
+2. Mức elevation theo vai trò ghi trong mô tả; bổ sung mô tả cho 500 (và 400/600 nếu chưa đủ).
+3. Bind màu/offset vào variable (hiện 34/43 effect style hard-code).
+4. Border-width nên là variable số; focus ring dùng một cơ chế duy nhất.
+5. Thư viện cũ `Shadow/Shadow-default/Shadow-x1…x8` vẫn còn được bind ở vài component (remote) — không dùng cho thiết kế mới.
