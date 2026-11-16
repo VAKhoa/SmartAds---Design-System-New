@@ -1,7 +1,7 @@
 ---
 title: SmartAds và SmartAds Design System
 section: Introduction
-updated: 03/11/2026
+updated: 16/11/2026
 status: in-review
 ---
 
@@ -36,7 +36,7 @@ SDS dự kiến có bốn lớp:
 3. **Components:** mô tả mục đích, biến thể, trạng thái, hành vi, accessibility và cách triển khai của những component được chọn để phát hành.
 4. **Tài liệu cho người và máy:** website hướng dẫn, dữ liệu JSON/CSS, Markdown cho AI agent và bản phát hành có phiên bản khi hệ thống đủ điều kiện.
 
-Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và website với 7 trang Introduction, trang Resource / Figma cùng bài Colors trong `SDS-docs/website/`. Nội dung Introduction và Colors đang chờ duyệt; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
+Đây là **định hướng xây SDS**, không phải danh sách tính năng đã hoàn thành. Hiện dự án có hướng dẫn, công cụ kiểm tra, bản chụp token/style từ Figma và website với 7 trang Introduction, trang Resource / Figma và sáu bài Foundation (Colors, Typography, Spacing, Layout, Icons, Logo) trong `SDS-docs/website/`. Nội dung Introduction, Colors và Typography đang chờ duyệt, Layout, Icons và Logo là bản nháp; chưa có gói CSS token phát hành hoặc thư viện component code dành cho sản phẩm.
 
 ## Ai sẽ dùng SDS?
 
@@ -64,4 +64,4 @@ Tài liệu [VDS mẫu](<../../../../Prompt Docs VNE (DON'T TOUCH)/llms-full.txt
 
 ## SDS đang ở đâu?
 
-Ngày 02/11/2026, bản chụp trong dự án ghi **690 local variables** thuộc sáu collection và **132 local styles** (77 text, 43 effect, 7 paint, 5 grid). Tiền tố CSS `sa` đã được duyệt. Các quyết định khác về tên, thang đo và cấu trúc collection còn mở; các đề xuất đổi tên chưa được áp dụng vào Figma. Xem [hướng dẫn vận hành](workspace-guide.md) để biết cách đọc dữ liệu, audit và cập nhật.
+Ngày 02/11/2026, bản chụp trong dự án ghi **690 local variables** (sau khi dọn màu ngày 16/11/2026 còn **660**) thuộc sáu collection và **132 local styles** (77 text, 43 effect, 7 paint, 5 grid). Tiền tố CSS `sa` đã được duyệt. Các quyết định khác về tên, thang đo và cấu trúc collection còn mở; các đề xuất đổi tên chưa được áp dụng vào Figma. Xem [hướng dẫn vận hành](workspace-guide.md) để biết cách đọc dữ liệu, audit và cập nhật.

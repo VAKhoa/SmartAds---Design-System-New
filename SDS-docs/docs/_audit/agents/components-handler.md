@@ -27,7 +27,7 @@ Sub agent phụ trách **toàn bộ phần component** của SDS: mô tả/spec,
 ## Quy trình mỗi component
 1. Nhận node Figma từ Agent Core; `whoami`; đọc metadata/design context/screenshot (chỉ đọc).
 2. Ghi variant, state, size, SLOT/BOOLEAN, token bind (tên Figma gốc + tên CSS `--sa-*` qua `css-name.mjs`).
-3. Chỉ dùng token đã có và qua gate; cần token mới/đổi tên → gửi yêu cầu Tokens Handler qua Agent Core.
+3. Chỉ dùng token đã có và qua gate (tra `tokens/generated/tokens.json`; màu xám dùng token ngữ nghĩa hoặc `color/neutral/*`, không dùng token DEPRECATED hay đã xóa); cần token mới/đổi tên → gửi yêu cầu Tokens Handler qua Agent Core.
 4. Viết HTML/CSS/JS thuần: CSS có phạm vi `sa-…`, nhiều instance, keyboard/focus, ARIA; icon MingCute SVG inline khóa phiên bản; logo/asset từ Figma.
 5. Viết bài `.md` (frontmatter `title, description, section, updated, status, sources`), preview dùng cùng source bàn giao.
 6. Kiểm tra độc lập ngoài docs shell; đối chiếu giá trị với Figma; ghi phần chưa xác minh.
@@ -38,3 +38,17 @@ Sub agent phụ trách **toàn bộ phần component** của SDS: mô tả/spec,
 - Không dùng React/JSX, Vue, TS, SCSS, Tailwind, Bootstrap, jQuery cho code bàn giao.
 - Hiện repo có 0 component sản phẩm; mọi component trong catalog ở nhóm B (chỉ Figma, chưa có code) cho tới khi được viết và kiểm.
 - Mô tả chỉ Light mode (D9). Đề xuất đổi tên không được coi là tên đã duyệt.
+
+## Trạng thái hiện tại cần biết (cập nhật 16/11/2026)
+- **Đọc trước:** `docs/_audit/FIGMA-CHANGELOG.md` (Figma đã đổi gì và khi nào).
+- **Màu trung tính = `color/neutral/{50,100,200,300,350,400,500,600,650,700,800,900,950}`.** Không dùng lại tên `color/gray/*`. Số bậc mới không trùng số cũ (ví dụ `gray/500` → `neutral/400`); bảng đối chiếu: `docs/_audit/NEUTRAL-MERGE.md` §1.
+- **Không dùng:** 9 token `color/secondary dark/{10,30,50,100,200,300,400,600,700}` (DEPRECATED, chờ xóa).
+- **Đã xóa khỏi Figma:** `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Không tạo lại, không tham chiếu.
+- **Đang treo (mode Dark, ngoài phạm vi Light):** `border/primary-press`, `component/button/border/danger/default`, `component/button/border/danger/subtle` trỏ vào màu đã xóa.
+- **Quy mô:** 660 variable (Primitives 226). Gate A 17 · B 219 · E 424. Token không dùng: `docs/_audit/UNUSED-TOKENS.md` (309).
+- **Quyết định mới:** D3 trung tính (đã áp dụng) · D4 thang cỡ chữ dùng số px · D11 spacing giữ t-shirt · D12 mode Dark tạm ẩn, không xóa (D4, D12 chưa áp dụng vào Figma).
+- **CSS website:** `--sa-color-neutral-400|700|950` thay cho `--sa-color-gray-500|800` và `--sa-color-secondary-dark-900`.
+
+## Thông báo cập nhật và recap (bắt buộc, từ 16/11/2026)
+- Khi file vai trò, quyết định, trạng thái Figma hoặc quy ước của bạn thay đổi, Agent Core gửi **thông báo cập nhật** cho bạn (nội dung đổi, file, ngày, việc cần làm). Đọc thông báo, đối chiếu file nguồn rồi **xác nhận đã nhận** (nêu phần đã hiểu và phần chưa rõ).
+- Khi bạn tự cập nhật bất cứ thứ gì trong phạm vi của mình, báo ngược Agent Core: file đã sửa, nguồn, ngày, kết quả kiểm, phần còn nháp.

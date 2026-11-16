@@ -1,7 +1,7 @@
 ---
 title: Hướng dẫn thư mục và vận hành SDS Docs
 section: Introduction
-updated: 13/11/2026
+updated: 16/11/2026
 status: beta
 ---
 
@@ -113,7 +113,8 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
    ├─ tokens/{rename-map.json,generated/}   (generated/ sinh bằng build-tokens.mjs, không commit)
    ├─ variable-figma-export/{overview.json,styles.json,usage.json,variables.*.json}
    ├─ website/               (Next.js + React, Introduction + Resource / Figma + Colors)
-   └─ docs/_audit/{SDS-CONTEXT.md,SDS-AUDIT.md,SDS-RECONCILIATION.md}   (báo cáo audit 14/11/2026)
+   ├─ docs/_audit/{SDS-CONTEXT,SDS-AUDIT,SDS-RECONCILIATION,FIGMA-CHANGELOG,NEUTRAL-MERGE,UNUSED-TOKENS}.md + agents/{tokens-handler,components-handler,knowledge-keeper}.md
+   └─ docs/_knowledge/{INDEX,decisions,open-questions,glossary,agents,CHANGELOG}.md + topics/   (kho tri thức phái sinh)
 ```
 
 | Nhóm | Ý nghĩa và cách dùng |
@@ -140,7 +141,9 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 | `scripts/build-tokens.mjs` | Đọc `variable-figma-export/` + `usage.json`, ghi `tokens/generated/tokens.json`. Không gọi Figma. |
 | `scripts/dump-usage.figma.js` | Mã chỉ-đọc chạy trong Figma Plugin API để biết variable/style nào được component dùng (ghi vào `usage.json`). |
 | `variable-figma-export/` | Bản chụp toàn bộ tên và giá trị token Figma ngày 02/11/2026 (đối chiếu Figma live 14/11/2026: khớp 100%): `overview.json`, 6 file variables theo collection, `styles.json`, và `usage.json` (token/style nào được component dùng, đọc 14/11/2026). Đây là dữ liệu đầu vào để xử lý tiếp, không phải CSS phát hành. |
-| `docs/_audit/` | Báo cáo audit 14/11/2026: `SDS-CONTEXT.md` (nguồn sự thật nén, chỉ nội dung qua gate), `SDS-RECONCILIATION.md` (đối chiếu Figma ↔ repo, nhóm A–E), `SDS-AUDIT.md` (vấn đề, đề xuất, mapping đổi tên, lộ trình, câu hỏi). Số liệu lấy từ snapshot + `usage.json`; cập nhật lại khi Figma đổi. |
+| `docs/_audit/` | Báo cáo audit (số liệu gốc 14/11/2026, đã vá ghi chú đầu file ngày 16/11/2026): `SDS-CONTEXT.md` (nguồn sự thật nén, chỉ nội dung qua gate), `SDS-RECONCILIATION.md` (đối chiếu Figma ↔ repo, nhóm A–E), `SDS-AUDIT.md` (vấn đề, đề xuất, mapping đổi tên, lộ trình, câu hỏi). **Đọc `FIGMA-CHANGELOG.md` trước** để biết Figma đã đổi gì (hiện 660 variable). `NEUTRAL-MERGE.md` ghi việc gộp `color/gray` + `color/secondary dark` thành `color/neutral`; `UNUSED-TOKENS.md` liệt kê token không được component dùng. Số liệu lấy từ snapshot + `usage.json`; cập nhật lại khi Figma đổi. |
+| `docs/_audit/agents/` | Ba file mô tả vai trò khi chia việc: `tokens-handler.md`, `components-handler.md`, `knowledge-keeper.md` (phạm vi, quy trình, trạng thái hiện tại, quy tắc thông báo và recap). Là mô tả công việc, AI nào nhận cũng làm được. Khi đổi các file này hoặc trạng thái Figma, báo các vai bị ảnh hưởng và để Knowledge Keeper recap (xem `AGENTS.md` mục 11). |
+| `docs/_knowledge/` | Kho tri thức **phái sinh** (chỉ mục, quyết định, câu hỏi mở, glossary, nhật ký `CHANGELOG.md`). Không phải nguồn: mâu thuẫn với file nguồn thì file nguồn thắng. Bắt đầu từ `INDEX.md`. |
 | `website/` | Mã website hiển thị cho người đọc. Đọc `content/rules/website-ui-rules.md` khi build UI; xem [hướng dẫn website](../../website/README.md) để biết từng file, trang Resource / Figma và cách chạy. |
 
 ## Mở file nào khi cần tra một việc cụ thể?
@@ -165,7 +168,7 @@ Mở `overview.json` trước để biết tổng quan; sau đó chỉ mở coll
 | File | Nội dung | Ví dụ cần tra |
 | --- | --- | --- |
 | `overview.json` | Sáu collection, mode, số variable từng loại và số style. | “Có bao nhiêu variable màu?” |
-| `variables.primitives.json` | 256 variable gốc: màu, số và boolean. | Giá trị `color/primary/500`. |
+| `variables.primitives.json` | 226 variable gốc: màu, số và boolean (16/11/2026). | Giá trị `color/primary/500`. |
 | `variables.spacing.json` | 98 variable số; collection hiện còn chứa radius, screen, icon và typography. | `spacing/md`, `radius/md`. |
 | `variables.alias.json` | 293 variable màu theo Light/Dark, gồm semantic và token component hiện đặt chung. | Màu `background/neutral` ở hai mode. |
 | `variables.text.json` | 21 variable về family, weight và size chữ. | `typography/size/fs-sm`. |
@@ -184,8 +187,7 @@ Trong mỗi variable, `name` là tên Figma hiện tại, `values` giữ giá tr
 | `scripts/dump-styles.figma.js` | Mã tham khảo đọc text/effect style trong Figma; khi làm snapshot đầy đủ phải đọc paint/grid thêm. |
 | `tests/run-tests.mjs` | Kiểm tra logic script. Kết quả “OK” nghĩa là công cụ chạy đúng với fixture, không có nghĩa Figma đã sạch lỗi. |
 | `tests/fixtures/observed-sample.json` | 19 token mẫu cố ý có tên sai để kiểm thử. Không dùng làm nguồn thiết kế. |
-| `tokens/rename-map.json` | Đề xuất từ tên cũ sang tên mới; hiện 64 mục `proposed`, 21 mục `needs-decision`, chưa có mục được duyệt. |
-| `docs/_audit/.gitkeep` | File rỗng giữ thư mục; báo cáo audit nằm cạnh nó. |
+| `tokens/rename-map.json` | Đề xuất từ tên cũ sang tên mới; hiện 98 mục: 60 `proposed`, 21 `needs-decision`, 13 `approved` (đã áp dụng trong Figma, gộp `color/neutral` ngày 16/11/2026) và 4 `rejected`. |
 
 `.gitignore` ở gốc SDS-docs quy định file Git sẽ bỏ qua. Repository Git nằm ở thư mục gốc repo, thư mục cha của `SDS-docs/`. `ds.config.json` là nơi lấy file key Figma và tiền tố `sa`, còn `SDS-rules.md` là quy tắc AI agent phải theo.
 
@@ -199,7 +201,7 @@ Giả sử snapshot cho thấy tên Figma `color/red light/500`, còn quy ước
 4. **Bạn duyệt:** chỉ định rõ mục hoặc nhóm tên được phép đổi. AI agent chuyển đúng mục đó thành `approved` và áp dụng khi bạn yêu cầu.
 5. **Đồng bộ lại:** đọc Figma lần nữa để xác nhận tên mới, ID, alias và binding vẫn đúng; cập nhật snapshot. Sau đó tài liệu/code mới dùng tên đã duyệt.
 
-Hiện lệnh lint đọc 810 mục (690 variables, 77 text và 43 effect styles) và báo 209 lỗi, 314 cảnh báo. Một mục có thể bị báo nhiều lần; kết quả này là danh sách cần phân loại, không phải lệnh tự động sửa 523 token. Paint/grid styles có trong snapshot nhưng chưa được script lint tên.
+Hiện lệnh lint đọc 780 mục (660 variables, 77 text và 43 effect styles) và báo 186 lỗi, 314 cảnh báo (16/11/2026). Một mục có thể bị báo nhiều lần; kết quả này là danh sách cần phân loại, không phải lệnh tự động sửa 523 token. Paint/grid styles có trong snapshot nhưng chưa được script lint tên.
 
 ## Lưu ý về dữ liệu cũ
 

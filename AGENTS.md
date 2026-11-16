@@ -26,13 +26,13 @@ SmartAds (smartads.tech) là nền tảng AdTech self-serve ads manager + analyt
 ├─ .agents/skills/                sds-fe-website-builder (FE docs) · external-design-system (liên kết tới thư mục ngoài repo; hỏng thì báo, không thay nguồn khác)
 └─ SDS-docs/
    ├─ ds.config.json              file key Figma · prefix CSS `sa` · themes · tên collection
-   ├─ variable-figma-export/      bản chụp Figma (02/11/2026, đã đối chiếu live 14/11/2026: khớp 100%) + usage.json (token/style nào được component dùng)
+   ├─ variable-figma-export/      bản chụp Figma (02/11/2026, đối chiếu live 14/11/2026, cập nhật 16/11/2026: 660 variable) + usage.json (token/style nào được component dùng)
    ├─ tokens/rename-map.json      đề xuất đổi tên (chưa mục nào `approved`)
    ├─ tokens/generated/           OUTPUT sinh bằng build-tokens.mjs — không sửa tay, không commit
    ├─ scripts/                    ds-tokens.mjs (lint/suggest) · build-tokens.mjs · css-name.mjs · dump-*.figma.js (mã chạy trong Figma Plugin API, chỉ đọc)
    ├─ tests/                      run-tests.mjs (+ fixtures: dữ liệu mẫu, không phải token thật)
    ├─ content/{rules,guides,pages}  quy tắc · hướng dẫn · bài hiển thị trên website
-   ├─ docs/_audit/                SDS-CONTEXT · SDS-AUDIT · SDS-RECONCILIATION (báo cáo audit) · agents/ (mô tả vai trò sub agent: tokens, components, knowledge — mô tả công việc, không phụ thuộc công cụ)
+   ├─ docs/_audit/                SDS-CONTEXT · SDS-AUDIT · SDS-RECONCILIATION (báo cáo audit) · FIGMA-CHANGELOG (Figma đã đổi gì, đọc trước khi dùng số liệu) · NEUTRAL-MERGE · UNUSED-TOKENS · agents/ (mô tả vai trò sub agent: tokens, components, knowledge — mô tả công việc, không phụ thuộc công cụ)
    ├─ docs/_knowledge/            kho tri thức PHÁI SINH (chỉ mục, quyết định, câu hỏi mở, glossary) — không phải nguồn; mâu thuẫn thì file nguồn thắng
    ├─ .agents/skills/             ds-conventions · figma-token-workflow · sds-spacing-foundation
    └─ website/                    Next.js + React (JS, CSS thuần) — website tài liệu
@@ -50,7 +50,10 @@ SmartAds (smartads.tech) là nền tảng AdTech self-serve ads manager + analyt
 - **D1** (02/11/2026): prefix code/CSS là `sa`; tên viết tắt dự án là `SDS`.
 - **D9** (14/11/2026): token sản phẩm **chỉ Light mode** (`ds.config.json` `themes: ["light"]`). Mode Dark của `Alias` và `Shadow/elevation-dark/*` vẫn còn trong Figma nhưng ngoài phạm vi (xóa/ẩn chờ người dùng duyệt). Theme dark của **website tài liệu** vẫn giữ (tách biệt với token sản phẩm).
 - **D10** (12/11/2026, xác nhận 14/11/2026): component thực tế, ví dụ cho Dev copy và code handoff dùng **HTML/CSS/JavaScript thuần**, chạy độc lập framework (`SDS-docs/content/rules/component-code-rules.md`). Website tài liệu giữ Next.js/React và cách trình bày hiện tại; React/JSX của shell, viewer, công cụ tài liệu không phải code component bàn giao. Không chuyển website sang stack khác vì quy tắc này. Skill/hướng dẫn nào nhắc Bootstrap/jQuery/Tailwind cho component bàn giao là không áp dụng.
-- D2–D8 (thang cỡ chữ, trung tính, spacing, … ): còn mở — xem `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md` và `SDS-docs/docs/_audit/SDS-AUDIT.md` §6.
+- **D3 — trung tính** (16/11/2026, đã áp dụng trong Figma): một thang `color/neutral/{50…950}` 13 bậc, gộp từ `color/gray` + `color/secondary dark`. Không dùng lại tên `color/gray/*`; 9 token `color/secondary dark/*` còn lại là `DEPRECATED`. Chi tiết: `SDS-docs/docs/_audit/NEUTRAL-MERGE.md`.
+- **Đã xóa khỏi Figma** (16/11/2026, người dùng xóa): `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Không tạo lại, không tham chiếu. Nhật ký thay đổi Figma: `SDS-docs/docs/_audit/FIGMA-CHANGELOG.md`.
+- **D4** thang cỡ chữ dùng số px · **D11** spacing giữ t-shirt · **D12** mode Dark tạm ẩn, không xóa (16/11/2026; D4 và D12 chưa áp dụng vào Figma).
+- D2, D5–D8 và phần còn lại của D3: còn mở — xem `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md` và `SDS-docs/docs/_audit/SDS-AUDIT.md` §6.
 
 ## 6. Quy tắc đặt tên và tên CSS
 - Mọi tên CSS của token theo **một** quy tắc trong `SDS-docs/scripts/css-name.mjs`: `--sa-` + tên Figma chữ thường, bỏ ngoặc, khoảng trắng và `/` → `-` (vd `color/red light/500` → `--sa-color-red-light-500`). Không tự nghĩ tên CSS khác.
@@ -88,4 +91,5 @@ node scripts/build-tokens.mjs                          # sinh tokens/generated/t
 - Skill nằm ở `.agents/skills/` và `SDS-docs/.agents/skills/` (định dạng `SKILL.md` dùng được cho cả hai). Claude Code không tự nạp thư mục này: mở đúng skill theo bảng mục 2.
 - Không dựa vào tính năng chỉ một công cụ có (nhắn tin giữa phiên, hook, mã phiên). Phân vai trong `docs/_audit/agents/` là mô tả công việc, ai nhận cũng làm được.
 - Trước khi sửa: xem `git status`; không sửa cùng một file khi AI khác đang sửa. Không commit/push khi chưa được yêu cầu.
+- **Thông báo khi cập nhật (yêu cầu của người dùng 16/11/2026):** mọi thay đổi liên quan sub agent (file vai trò trong `docs/_audit/agents/`, quyết định, trạng thái Figma, quy ước, cấu trúc repo) phải kèm bước: (1) AI điều phối (Agent Core) báo cho từng sub agent bị ảnh hưởng — nội dung đổi, file nào, ngày, việc họ cần làm; (2) **Knowledge Keeper gửi recap** kiến thức mới/đã sửa (thêm/sửa gì, file, nguồn, ngày, còn gì treo) về người dùng; (3) ghi một dòng vào `docs/_knowledge/CHANGELOG.md`. Không coi việc cập nhật là xong khi chưa báo và chưa có recap. Quy trình đầy đủ: `docs/_audit/agents/knowledge-keeper.md`.
 - Một kiểu xuống dòng (LF, `.gitattributes`). File sinh ra (mục 6) chỉ tạo lại bằng script, không sửa tay.

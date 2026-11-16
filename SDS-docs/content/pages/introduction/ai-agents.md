@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho AI agent (Codex, Claude Code…) trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 14/11/2026
+updated: 16/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -52,7 +52,8 @@ Các file Markdown do nhóm biên soạn tập trung trong `SDS-docs/content/`: 
 | `SDS-docs/content/rules/SDS-rules.md` | Quy tắc về nguồn, nội dung, token, Figma và website. | Mọi task trong SDS; đây là file nên nhắc trong prompt. |
 | `SDS-docs/ds.config.json` | File key Figma, tên viết tắt `SDS`, prefix CSS `sa`, collection và mode đã ghi nhận. | Task liên quan Figma, token hoặc tên CSS. |
 | `SDS-docs/content/guides/workspace-guide.md` | Hướng dẫn cấu trúc repo, quy trình và lệnh chi tiết. | Khi chưa biết sửa file nào hoặc chạy lệnh nào. |
-| `SDS-docs/variable-figma-export/` | Bản chụp variables và styles ngày 02/11/2026. | Tra ID, tên, mode, alias, giá trị đã xuất; đối chiếu Figma khi cần dữ liệu hiện tại. |
+| `SDS-docs/docs/_audit/FIGMA-CHANGELOG.md` | Nhật ký Figma đã đổi gì và việc còn treo (hiện 660 variable). Cùng thư mục: `agents/` mô tả vai khi chia việc; `../_knowledge/` là kho tri thức phái sinh (không phải nguồn). | Đọc trước khi dùng số liệu audit; khi chia việc theo vai; sau mỗi lần Figma đổi để ghi tiếp. |
+| `SDS-docs/variable-figma-export/` | Bản chụp variables và styles (02/11/2026, cập nhật 16/11/2026). | Tra ID, tên, mode, alias, giá trị đã xuất; đối chiếu Figma khi cần dữ liệu hiện tại. |
 | `SDS-docs/content/rules/website-ui-rules.md` | Quy tắc font, màu, layout, responsive và state dành riêng cho website docs. | Mọi task build hoặc sửa UI website. |
 | `SDS-docs/content/pages/` | Bài Markdown cho Introduction và nơi thêm Foundation/Components/Patterns. | Viết hoặc sửa file chính của mục sidebar. |
 | `SDS-docs/content/guides/content-guide.md` | Bảng liên kết mục sidebar với tên file, mẫu frontmatter và quy trình thêm bài. | Trước khi tạo một bài Foundation, Component hoặc Pattern. |

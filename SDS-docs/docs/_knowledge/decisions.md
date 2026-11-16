@@ -1,14 +1,16 @@
 # Sổ quyết định SDS
 
-> Cập nhật: 2026-11-15. Chỉ ghi quyết định có bằng chứng. "Duyệt" = người dùng (chủ dự án); không ghi tên cá nhân.
+> Cập nhật: 2026-11-16 (đối chiếu lại với `open-decisions.md`). Chỉ ghi quyết định có bằng chứng. "Duyệt" = người dùng (chủ dự án); không ghi tên cá nhân.
 
-## A. Quyết định thiết kế (D1–D10)
+## A. Quyết định thiết kế (D1–D12)
 | ID | Nội dung | Ngày | Duyệt | Trạng thái | Nguồn |
 |---|---|---|---|---|---|
 | D1 | Prefix code/CSS = `sa`; tên viết tắt = `SDS` | 2026-11-02 | Người dùng | **Đã chốt** | `ds-conventions/references/open-decisions.md` (dòng 7, 16); `ds.config.json` |
 | D2 | "Tini" có phải "Tiny"? (đề xuất ⭐ đổi `tiny`) | — | — | Mở (đề xuất `proposed`) | `open-decisions.md` |
-| D3 | Neutral vs gray; "Secondary option 1/2"; `Alias/Primary - On Theme` | — | — | Mở, cần xác nhận | `open-decisions.md`; `SDS-AUDIT.md` §6 câu 2 |
-| D4 | Thang cỡ chữ: t-shirt (⭐) hay số px | — | — | Mở | `open-decisions.md`; Audit TK-02 đề xuất số |
+| D3 | Màu trung tính: gộp `color/gray` + `color/secondary dark` → `color/neutral/{50,100,200,300,350,400,500,600,650,700,800,900,950}` (đã áp dụng trong Figma; 9 token `secondary dark` DEPRECATED, chưa xóa). Hai ý còn lại ("Secondary option 1/2", `Alias/Primary - On Theme`) vẫn mở | 2026-11-16 | Người dùng | Phần trung tính **đã chốt + áp dụng**; phần còn lại mở | `open-decisions.md`; `docs/_audit/NEUTRAL-MERGE.md`; `FIGMA-CHANGELOG.md` |
+| D4 | Thang cỡ chữ dùng số px (`typography/size/{10,11,12,13,14,16,18,20,24,28,32,40,48,60,80}`). Người dùng ghi "thang cỡ chữ theo số hiện tại A" — hiểu là phương án A (số); cần xác nhận nếu ý khác | 2026-11-16 | Người dùng | **Đã chốt, chưa áp dụng vào Figma** | `open-decisions.md` |
+| D11 | Spacing giữ t-shirt (`spacing/2xs…`); `--sa-space-*` numeric chỉ là quy ước docs (chưa quyết đổi docs hay giữ) | 2026-11-16 | Người dùng | **Đã chốt** | `open-decisions.md` |
+| D12 | Mode Dark + `Shadow/elevation-dark/*` trong Figma: tạm ẩn, không xóa (bổ sung D9) | 2026-11-16 | Người dùng | **Đã chốt, chưa áp dụng vào Figma** | `open-decisions.md` |
 | D5 | Thư viện chuẩn = "SmartAds - Design System"; "Design System 2" legacy | — | — | Mở (⭐ tạm) | `open-decisions.md` |
 | D6 | Cấu trúc collection đích (Base·Semantic·Component·Spacing·Radius·Font) | — | — | Mở | `open-decisions.md`; `ds.config.json` note |
 | D7 | Có Base `dimension/<px>` không | — | — | Mở (⭐ có) | `open-decisions.md` |
@@ -30,6 +32,6 @@ Ghi chú nhãn: Audit gọi hai quyết định 14/11 là **Q1 (bỏ dark)** và
 
 ## C. Đề xuất chưa duyệt (KHÔNG coi là quyết định)
 - Thứ tự "sửa Figma trước, repo theo" (Agent Core đề xuất 2026-11-15 11:27) — chưa duyệt; mọi bước sửa Figma cần cho phép riêng.
-- 85 mục `rename-map.json` (64 proposed, 21 needs-decision) và lộ trình `SDS-AUDIT.md` §5.
-- Thêm `docs/_audit/agents/` vào `AGENTS.md` + `workspace-guide.md`; tạo `CLAUDE.md` chứa `@AGENTS.md`.
+- `rename-map.json` 98 mục: 13 `approved` (neutral, đã áp dụng), 4 `rejected`, 60 `proposed`, 21 `needs-decision` (đếm 2026-11-16); lộ trình `SDS-AUDIT.md` §5 còn lại chưa duyệt.
+- Thêm `docs/_audit/agents/` + `docs/_knowledge/` vào `workspace-guide.md` (AGENTS.md và CLAUDE.md đã có, đọc 2026-11-16).
 Chi tiết ở [open-questions.md](open-questions.md).

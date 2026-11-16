@@ -40,6 +40,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `package-lock.json` | Khóa phiên bản cho npm ci. |
 | `../content/rules/website-ui-rules.md` | Quy tắc UI riêng của website docs; đọc trước khi sửa font, màu, layout hoặc state. |
 | `../content/guides/content-guide.md` | Bảng ánh xạ từng mục sidebar tới file Markdown và quy trình tạo bài. |
+| `../docs/_audit/`, `../docs/_knowledge/` | Báo cáo audit, nhật ký Figma, mô tả vai sub agent (`_audit/agents/`) và kho tri thức phái sinh (`_knowledge/`). Website **không** hiển thị các thư mục này; chỉ đọc khi cần số liệu hoặc quyết định. Mở `../docs/_audit/FIGMA-CHANGELOG.md` trước để biết Figma đã đổi gì. |
 | `next.config.mjs` | Cấu hình Next, static export và tắt tự sinh `website/AGENTS.md` để giữ một điểm vào AI agent ở gốc dự án. |
 | `jsconfig.json` | Alias @/ tới src/. |
 | `src/app/layout.js` | HTML gốc, font cục bộ, metadata, theme. |
@@ -104,7 +105,7 @@ Build tự chuẩn bị nội dung/theme và xuất vào `out/`. Dừng dev trư
 | `tests/layout-reference.spec.js` | Kiểm tra source Markdown, Grid/Body Layout, frame Create Campaign/Dashboard, responsive và dark mode. |
 | `tests/icon-reference.spec.js` | Kiểm tra catalog MingCute, tìm/lọc, hai style, copy SVG/HTML/tên, tải SVG, responsive và dark mode. |
 | `public/source/docs/` | Bản sao tự sinh của các bài Markdown; không sửa tay. |
-| `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/ theo danh sách trong `scripts/theme-tokens.mjs`; tên CSS qua `../scripts/css-name.mjs`. Gồm các primitive màu thay cho hex hard-code trong CSS docs (`--sa-color-primary-200|300|500`, `--sa-color-secondary-dark-900`, `--sa-color-gray-500|800`, `--sa-color-base-white`). |
+| `scripts/generate-theme.mjs` | Đọc tập con variables/styles từ ../variable-figma-export/ theo danh sách trong `scripts/theme-tokens.mjs`; tên CSS qua `../scripts/css-name.mjs`. Gồm các primitive màu thay cho hex hard-code trong CSS docs (`--sa-color-primary-200|300|500`, `--sa-color-neutral-950`, `--sa-color-neutral-400|700`, `--sa-color-base-white`). |
 | `scripts/theme-tokens.mjs` | Danh sách token Figma được đưa vào theme (dùng chung với `../scripts/build-tokens.mjs`). |
 | `scripts/serve.mjs` | Server Node xem bản build tĩnh. |
 | `public/brand/smartads-symbol.svg` | Biểu tượng SmartAds xanh gốc. |
