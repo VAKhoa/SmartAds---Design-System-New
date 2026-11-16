@@ -59,15 +59,15 @@ for (const c of Object.values(built.collections)) {
     assert.ok(isValidCssVarName(t.css), `tên CSS không hợp lệ: ${n} → ${t.css}`);
   }
 }
-assert.equal(nTok, 690);
+assert.equal(nTok, 660);
 const find = (n) => Object.values(built.collections).map((c) => c.tokens[n]).find(Boolean);
 assert.equal(find('spacing/md').gate, 'A');
 assert.equal(find('background/neutral').gate, 'A');
 assert.equal(find('surface/primary').gate, 'B');
 assert.equal(find('color/red light/500').gate, 'E');
 assert.ok(find('text/secondary').gateReasons.some((r) => r.startsWith('a11y')));
-assert.ok(find('color/orange/500').gateReasons.includes('orphan'));
-assert.equal(built.meta.gateCounts.A + built.meta.gateCounts.B + built.meta.gateCounts.E, 690);
+assert.ok(find('color/neutral/650').gateReasons.includes('orphan'));
+assert.equal(built.meta.gateCounts.A + built.meta.gateCounts.B + built.meta.gateCounts.E, 660);
 assert.ok(Math.abs(contrast('#ffffff', '#000000') - 21) < 0.01);
 
 console.log(`OK – ${issues.length} cảnh báo trên mẫu, ${sug.length} gợi ý đổi tên, ${nTok} token, gate ${JSON.stringify(built.meta.gateCounts)}`);

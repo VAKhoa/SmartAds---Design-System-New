@@ -3,7 +3,7 @@
   color-scheme: light;
   --sa-docs-bg: var(--sa-background-neutral);
   --sa-docs-panel: var(--sa-background-gray);
-  --sa-docs-heading: var(--sa-color-secondary-dark-900);
+  --sa-docs-heading: var(--sa-color-neutral-950);
   --sa-docs-text: var(--sa-text-on-primary-black-weak);
   --sa-docs-muted: var(--sa-border-secondary-hover);
   --sa-docs-border: var(--sa-border-gray-muted);

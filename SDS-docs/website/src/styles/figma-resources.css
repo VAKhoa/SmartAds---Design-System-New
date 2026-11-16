@@ -2,11 +2,11 @@
    values reuse the approved SDS website palette; these are not product tokens. */
 .sa-reading-layout-resource {
   --sa-resource-surface: var(--sa-docs-bg);
-  --sa-resource-border: var(--sa-color-gray-500);
+  --sa-resource-border: var(--sa-color-neutral-400);
   --sa-resource-preview: rgba(236, 236, 240, .2);
   --sa-resource-divider: rgba(0, 0, 0, .03);
   --sa-resource-text: var(--sa-docs-heading);
-  --sa-resource-muted: var(--sa-color-gray-800);
+  --sa-resource-muted: var(--sa-color-neutral-700);
   --sa-resource-hover: var(--sa-docs-panel);
   --sa-resource-pressed: var(--sa-docs-page-nav-bg);
   --sa-resource-action-bg: var(--sa-docs-bg);

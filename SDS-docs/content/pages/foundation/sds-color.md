@@ -2,7 +2,7 @@
 title: Colors
 description: Bảng màu, vai trò token và cách kiểm tra Light/Dark của SmartAds Design System.
 section: Foundation
-updated: 09/11/2026
+updated: 16/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System — Color
@@ -17,7 +17,7 @@ sources:
 
 Đây là tài liệu **draft** của hệ màu SDS. Trang Color trong Figma (`55:153`) hiện có ba phần: ví dụ kiểm tra contrast (`11898:82644`), bảng Primitives Color (`11898:82732`) và Gradient (`11898:82872`). Bảng Figma là minh họa trực quan; danh mục variable bên dưới lấy từ các collection thật, không suy ra chỉ từ số ô màu trên canvas.
 
-Ngày 04/11/2026, tôi đọc trực tiếp Figma và thấy **191 color variables** trong collection `Primitives ` (mode `Value`), **293 color variables** trong `Alias` (hai mode `Accessible (Light Mode)` và `Accessible (Dark Mode)`), cùng **7 paint styles dạng linear gradient**. Các bảng đầy đủ cuối trang được dựng từ bản export ngày 02/11/2026 trong `SDS-docs/variable-figma-export/`. Toàn bộ **484 ID, tên và giá trị màu đã giải alias theo mode** trong export được đối chiếu với Figma ngày 04/11/2026 và khớp. Export vẫn là snapshot, không tự cập nhật khi Figma đổi.
+Ngày 04/11/2026, tôi đọc trực tiếp Figma và thấy **191 color variables** trong collection `Primitives ` (mode `Value`; từ 16/11/2026 còn **161** sau khi xóa `color/secondary light`, `color/red dark`, `color/orange`), **293 color variables** trong `Alias` (hai mode `Accessible (Light Mode)` và `Accessible (Dark Mode)`), cùng **7 paint styles dạng linear gradient**. Các bảng đầy đủ cuối trang được dựng từ bản export ngày 02/11/2026 trong `SDS-docs/variable-figma-export/`. Toàn bộ **484 ID, tên và giá trị màu đã giải alias theo mode** trong export được đối chiếu với Figma ngày 04/11/2026 và khớp. Export vẫn là snapshot, không tự cập nhật khi Figma đổi.
 
 `#048845` là `color/primary/500` (`VariableID:6:28`) và là màu primary của website SDS ở light mode. Trong dark mode, lớp website docs dùng `#8CC8A9` từ `color/primary/200` (`VariableID:6:25`) cho chữ/link/focus và `#57AF82` từ `color/primary/300` (`VariableID:6:26`) cho nền nút primary với chữ `#09090A`. Đây là ánh xạ vai trò của website để tăng độ rõ trên nền tối, không thay giá trị alias Figma hay phê duyệt token sản phẩm mới. Nhiều tên khác vẫn phản ánh lịch sử thiết kế và chưa được chuẩn hóa; bảng này mô tả **tên đang tồn tại**, không phê duyệt một hệ đặt tên mới.
 
@@ -50,11 +50,11 @@ Tên CSS nếu xuất từ **tên Figma hiện tại** theo quy tắc tiền t�
 | Vai trò quan sát được | Light | Dark | Lưu ý sử dụng |
 | --- | --- | --- | --- |
 | `background/neutral` | `#FFFFFF` | `#000000` | Nền trung tính gốc theo hai mode. |
-| `background/secondary` | `#F0F0F0` | `#1F1F1F` | Nền phụ; alias đến hai bước khác nhau của `secondary dark`. |
+| `background/secondary` | `#F0F2F4` | `#1F1F1F` | Nền phụ; alias đến `color/neutral/200` (Light) và `color/neutral/950` (Dark). |
 | `surface/elevation` | `#FCFCFD` | `#5E5F61` | Bề mặt nâng; kiểm tra foreground thực tế. |
 | `text/secondary` | `#7B7D80` | `#DFE3E8` | Chữ phụ; không dùng cho thông tin chính nếu contrast chưa đạt. |
 | `text/on-primary-white` | `#FCFCFD` | `#FFFFFF` | Chữ sáng dự kiến trên nền primary; xem cảnh báo contrast bên dưới. |
-| `border/secondary-muted` | `#E8E8E8` | `#636363` | Viền phụ, cần kiểm tra vai trò thông tin. |
+| `border/secondary-muted` | `#EAECF0` | `#5E5F61` | Viền phụ, cần kiểm tra vai trò thông tin. |
 
 Collection `Alias` hiện có 8 `background`, 30 `surface`, 37 `text`, 27 `border`, 4 `foreground`, 26 `overlay`, 6 `chart`, 147 `component` và 8 `sematic` color variables. Các nhóm component chứa icon, button và nhiều thành phần khác; bảng đầy đủ ở cuối trang giữ nguyên tên và giá trị theo từng mode để tra cứu.
 
@@ -77,7 +77,7 @@ Figma có 7 paint styles `GRADIENT_LINEAR`, được kiểm tra lại ngày 04/1
 
 ## Danh mục màu gốc
 
-Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primitives.json` ngày 02/11/2026. Màu alpha ghi 8 chữ số hex. Đây là bảng tra cứu, không phải hướng dẫn lấy Primitive trực tiếp cho UI.
+Bảng dưới giữ nguyên **161 tên và giá trị** từ `variables.primitives.json` (bản chụp 02/11/2026, cập nhật 16/11/2026: gộp `color/neutral`, xóa ba họ màu không dùng). Màu alpha ghi 8 chữ số hex. Đây là bảng tra cứu, không phải hướng dẫn lấy Primitive trực tiếp cho UI.
 
 ### base (3)
 
@@ -115,21 +115,6 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/brand/smartads/text-logo` | `#637381` |
 | `color/brand/smartads/text-powered` | `#919EAB` |
 
-### gray (10)
-
-| Figma variable | Value |
-| --- | --- |
-| `color/gray/100` | `#F7F7F8` |
-| `color/gray/200` | `#F0F2F4` |
-| `color/gray/300` | `#EAECF0` |
-| `color/gray/400` | `#E5E9ED` |
-| `color/gray/50` | `#FCFCFD` |
-| `color/gray/500` | `#DFE3E8` |
-| `color/gray/600` | `#CBCFD3` |
-| `color/gray/700` | `#9EA1A5` |
-| `color/gray/800` | `#7B7D80` |
-| `color/gray/900` | `#5E5F61` |
-
 ### green (10)
 
 | Figma variable | Value |
@@ -152,6 +137,26 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/green light/100` | `#EDFEEC` |
 | `color/green light/200` | `#DFFCDD` |
 | `color/green light/50` | `#F4FFF4` |
+
+### neutral (13)
+
+Thang trung tính duy nhất, gộp từ `color/gray` và `color/secondary dark` ngày 16/11/2026 (ID variable giữ nguyên). Bậc 50–800 có sắc xanh lạnh nhẹ; 650, 900, 950 là xám thuần.
+
+| Figma variable | Value |
+| --- | --- |
+| `color/neutral/50` | `#FCFCFD` |
+| `color/neutral/100` | `#F7F7F8` |
+| `color/neutral/200` | `#F0F2F4` |
+| `color/neutral/300` | `#EAECF0` |
+| `color/neutral/350` | `#E5E9ED` |
+| `color/neutral/400` | `#DFE3E8` |
+| `color/neutral/500` | `#CBCFD3` |
+| `color/neutral/600` | `#9EA1A5` |
+| `color/neutral/650` | `#8C8C8C` |
+| `color/neutral/700` | `#7B7D80` |
+| `color/neutral/800` | `#5E5F61` |
+| `color/neutral/900` | `#3C3C3C` |
+| `color/neutral/950` | `#1F1F1F` |
 
 ### opacity (69)
 
@@ -227,21 +232,6 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/opacity/yellow/20` | `#FAAD1433` |
 | `color/opacity/yellow/8` | `#FAAD1414` |
 
-### orange (10)
-
-| Figma variable | Value |
-| --- | --- |
-| `color/orange/100` | `#FFDFB4` |
-| `color/orange/200` | `#FFD090` |
-| `color/orange/300` | `#FFBA5D` |
-| `color/orange/400` | `#FFAD3D` |
-| `color/orange/50` | `#FFF5E7` |
-| `color/orange/500` | `#FF980D` |
-| `color/orange/600` | `#E88A0C` |
-| `color/orange/700` | `#B56C09` |
-| `color/orange/800` | `#8C5407` |
-| `color/orange/900` | `#6B4005` |
-
 ### primary (10)
 
 | Figma variable | Value |
@@ -256,21 +246,6 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/primary/700` | `#036131` |
 | `color/primary/800` | `#024B26` |
 | `color/primary/900` | `#02391D` |
-
-### red dark (10)
-
-| Figma variable | Value |
-| --- | --- |
-| `color/red dark/100` | `#F3B8BA` |
-| `color/red dark/200` | `#ED9598` |
-| `color/red dark/300` | `#E4656A` |
-| `color/red dark/400` | `#DF474D` |
-| `color/red dark/50` | `#FBE8E9` |
-| `color/red dark/500` | `#D71920` |
-| `color/red dark/600` | `#C4171D` |
-| `color/red dark/700` | `#991217` |
-| `color/red dark/800` | `#760E12` |
-| `color/red dark/900` | `#5A0B0D` |
 
 ### red light (10)
 
@@ -287,7 +262,9 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/red light/800` | `#7D221C` |
 | `color/red light/900` | `#5F1A15` |
 
-### secondary dark (12)
+### secondary dark (9, deprecated)
+
+Từ 16/11/2026 các màu này đã gộp vào `color/neutral`; trong Figma chúng còn tồn tại với ghi chú `DEPRECATED` và không còn token hay component nào trỏ vào. Không dùng cho thiết kế mới.
 
 | Figma variable | Value |
 | --- | --- |
@@ -298,26 +275,8 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `color/secondary dark/300` | `#CECECE` |
 | `color/secondary dark/400` | `#BBBBBB` |
 | `color/secondary dark/50` | `#F0F0F0` |
-| `color/secondary dark/500` | `#8C8C8C` |
 | `color/secondary dark/600` | `#828282` |
 | `color/secondary dark/700` | `#636363` |
-| `color/secondary dark/800` | `#3C3C3C` |
-| `color/secondary dark/900` | `#1F1F1F` |
-
-### secondary light (10)
-
-| Figma variable | Value |
-| --- | --- |
-| `color/secondary light/100` | `#D6E8E7` |
-| `color/secondary light/200` | `#C3DDDB` |
-| `color/secondary light/300` | `#A7CDCB` |
-| `color/secondary light/400` | `#96C3C1` |
-| `color/secondary light/50` | `#F2F8F7` |
-| `color/secondary light/500` | `#7CB4B1` |
-| `color/secondary light/600` | `#71A4A1` |
-| `color/secondary light/700` | `#58807E` |
-| `color/secondary light/800` | `#446361` |
-| `color/secondary light/900` | `#344C4A` |
 
 ### semantic tokens (6)
 
@@ -347,19 +306,19 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 
 ## Danh mục Alias theo Light và Dark
 
-293 variables trong `variables.alias.json` (snapshot 02/11/2026). Cột `Nguồn Light / Dark` giữ tên alias gốc nếu variable trỏ tới Primitive; dấu `-` nghĩa là Figma lưu giá trị trực tiếp. Đây là dữ liệu quan sát, không phải tên đã được chuẩn hóa.
+293 variables trong `variables.alias.json` (snapshot 02/11/2026; các tham chiếu màu trung tính đọc lại từ Figma ngày 16/11/2026). Cột `Nguồn Light / Dark` giữ tên alias gốc nếu variable trỏ tới Primitive; dấu `-` nghĩa là Figma lưu giá trị trực tiếp. Đây là dữ liệu quan sát, không phải tên đã được chuẩn hóa.
 
 ### background (8)
 
 | Figma variable | Light | Dark | Nguồn Light / Dark |
 | --- | --- | --- | --- |
-| `background/default` | `#F7F7F8` | `#F7F7F8` | `color/gray/100` / `color/gray/100` |
-| `background/gray` | `#F7F7F8` | `#5E5F61` | `color/gray/100` / `color/gray/900` |
+| `background/default` | `#F7F7F8` | `#F7F7F8` | `color/neutral/100` / `color/neutral/100` |
+| `background/gray` | `#F7F7F8` | `#5E5F61` | `color/neutral/100` / `color/neutral/800` |
 | `background/inverse` | `#000000` | `#FFFFFF` | `color/base/black` / `color/base/white` |
 | `background/neutral` | `#FFFFFF` | `#000000` | `color/base/white` / `color/base/black` |
 | `background/primary-selected` | `#E6F3EC` | `#024B26` | `color/primary/50` / `color/primary/800` |
-| `background/secondary` | `#F0F0F0` | `#1F1F1F` | `color/secondary dark/50` / `color/secondary dark/900` |
-| `background/secondary-inverse` | `#1F1F1F` | `#F0F0F0` | `color/secondary dark/900` / `color/secondary dark/50` |
+| `background/secondary` | `#F0F2F4` | `#1F1F1F` | `color/neutral/200` / `color/neutral/950` |
+| `background/secondary-inverse` | `#1F1F1F` | `#F0F2F4` | `color/neutral/950` / `color/neutral/200` |
 | `background/sucess` | `#ECFFEA` | `#13550C` | `color/green/50` / `color/green/800` |
 
 ### border (27)
@@ -370,23 +329,23 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `border/error` | `#E33E32` | `#E33E32` | `color/red light/500` / `color/red light/500` |
 | `border/error-disable` | `#F6C3BF` | `#7D221C` | `color/red light/100` / `color/red light/800` |
 | `border/error-muted` | `#F2A6A1` | `#5F1A15` | `color/red light/200` / `color/red light/900` |
-| `border/gray` | `#F0F2F4` | `#F0F2F4` | `color/gray/200` / `color/gray/200` |
-| `border/gray-hover` | `#CBCFD3` | `#CBCFD3` | `color/gray/600` / `color/gray/600` |
-| `border/gray-muted` | `#EAECF0` | `#5E5F61` | `color/gray/300` / `color/gray/900` |
-| `border/gray-stronger` | `#DFE3E8` | `#DFE3E8` | `color/gray/500` / `color/gray/500` |
+| `border/gray` | `#F0F2F4` | `#F0F2F4` | `color/neutral/200` / `color/neutral/200` |
+| `border/gray-hover` | `#CBCFD3` | `#CBCFD3` | `color/neutral/500` / `color/neutral/500` |
+| `border/gray-muted` | `#EAECF0` | `#5E5F61` | `color/neutral/300` / `color/neutral/800` |
+| `border/gray-stronger` | `#DFE3E8` | `#DFE3E8` | `color/neutral/400` / `color/neutral/400` |
 | `border/info` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `border/info-disable` | `#C3CFFA` | `#223684` | `color/blue/100` / `color/blue/800` |
 | `border/info-muted` | `#A6B7F8` | `#1A2A65` | `color/blue/200` / `color/blue/900` |
 | `border/primary` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
-| `border/primary-disable` | `#DFE3E8` | `#036131` | `color/gray/500` / `color/primary/700` |
+| `border/primary-disable` | `#DFE3E8` | `#036131` | `color/neutral/400` / `color/primary/700` |
 | `border/primary-hover` | `#036131` | `#036131` | `color/primary/700` / `color/primary/700` |
 | `border/primary-muted` | `#8CC8A9` | `#036131` | `color/primary/200` / `color/primary/700` |
 | `border/primary-opacity-haf` | `#0488454D` | `#0488454D` | `color/opacity/primary/30` / `color/opacity/primary/30` |
-| `border/primary-press` | `#E6F3EC` | `#F2F8F7` | `color/primary/50` / `color/secondary light/50` |
-| `border/secondary` | `#8C8C8C` | `#8C8C8C` | `color/secondary dark/500` / `color/secondary dark/500` |
-| `border/secondary-disable` | `#E1E1E1` | `#3C3C3C` | `color/secondary dark/200` / `color/secondary dark/800` |
-| `border/secondary-hover` | `#636363` | `#CECECE` | `color/secondary dark/700` / `color/secondary dark/300` |
-| `border/secondary-muted` | `#E8E8E8` | `#636363` | `color/secondary dark/100` / `color/secondary dark/700` |
+| `border/primary-press` | `#E6F3EC` | `treo` | `color/primary/50` / `color/secondary light/50` (đã xóa 16/11/2026) |
+| `border/secondary` | `#8C8C8C` | `#8C8C8C` | `color/neutral/650` / `color/neutral/650` |
+| `border/secondary-disable` | `#DFE3E8` | `#3C3C3C` | `color/neutral/400` / `color/neutral/900` |
+| `border/secondary-hover` | `#5E5F61` | `#CBCFD3` | `color/neutral/800` / `color/neutral/500` |
+| `border/secondary-muted` | `#EAECF0` | `#5E5F61` | `color/neutral/300` / `color/neutral/800` |
 | `border/success` | `#229A16` | `#229A16` | `color/green/500` / `color/green/500` |
 | `border/success-disable` | `#BAE0B7` | `#13550C` | `color/green/100` / `color/green/800` |
 | `border/success-muted` | `#99D194` | `#0E4109` | `color/green/200` / `color/green/900` |
@@ -398,7 +357,7 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 
 | Figma variable | Light | Dark | Nguồn Light / Dark |
 | --- | --- | --- | --- |
-| `chart/heatmap-level-0` | `#F7F7F8` | `#FFFFFF` | `color/gray/100` / `-` |
+| `chart/heatmap-level-0` | `#F7F7F8` | `#FFFFFF` | `color/neutral/100` / `-` |
 | `chart/heatmap-level-1` | `#E6F3EC` | `#FFFFFF` | `color/primary/50` / `-` |
 | `chart/heatmap-level-2` | `#B1DAC5` | `#FFFFFF` | `color/primary/100` / `-` |
 | `chart/heatmap-level-3` | `#8CC8A9` | `#FFFFFF` | `color/primary/200` / `-` |
@@ -417,19 +376,19 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/badge/info/text-info` | `#3D63F0` | `#FFFFFF` | `color/blue/500` / `-` |
 | `component/badge/primary/surface-primary` | `#04884514` | `#FFFFFF` | `color/opacity/primary/8` / `-` |
 | `component/badge/sucess/surface-success` | `#229A16` | `#FFFFFF` | `color/green/500` / `-` |
-| `component/button group/group-icon-default` | `#3C3C3C` | `#3C3C3C` | `color/secondary dark/800` / `color/secondary dark/800` |
+| `component/button group/group-icon-default` | `#3C3C3C` | `#3C3C3C` | `color/neutral/900` / `color/neutral/900` |
 | `component/button group/group-text` | `#3C4043` | `#3C4043` | `color/base/black-weak` / `color/base/black-weak` |
-| `component/button/border/danger/default` | `#E33E32` | `#D71920` | `color/red light/500` / `color/red dark/500` |
-| `component/button/border/danger/subtle` | `#F6C3BF` | `#F3B8BA` | `color/red light/100` / `color/red dark/100` |
+| `component/button/border/danger/default` | `#E33E32` | `treo` | `color/red light/500` / `color/red dark/500` (đã xóa 16/11/2026) |
+| `component/button/border/danger/subtle` | `#F6C3BF` | `treo` | `color/red light/100` / `color/red dark/100` (đã xóa 16/11/2026) |
 | `component/button/border/focus/focus` | `#8CC8A9` | `#8CC8A9` | `color/primary/200` / `color/primary/200` |
 | `component/button/border/info/default` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `component/button/border/info/subtle` | `#C3CFFA` | `#C3CFFA` | `color/blue/100` / `color/blue/100` |
 | `component/button/border/link/default` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
-| `component/button/border/link/subtle` | `#DFE3E8` | `#DFE3E8` | `color/gray/500` / `color/gray/500` |
+| `component/button/border/link/subtle` | `#DFE3E8` | `#DFE3E8` | `color/neutral/400` / `color/neutral/400` |
 | `component/button/border/primary/default` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
 | `component/button/border/primary/select` | `#B1DAC5` | `#B1DAC5` | `color/primary/100` / `color/primary/100` |
-| `component/button/border/secondary/default` | `#DFE3E8` | `#DFE3E8` | `color/gray/500` / `color/gray/500` |
-| `component/button/border/secondary/sub` | `#CBCFD3` | `#CBCFD3` | `color/gray/600` / `color/gray/600` |
+| `component/button/border/secondary/default` | `#DFE3E8` | `#DFE3E8` | `color/neutral/400` / `color/neutral/400` |
+| `component/button/border/secondary/sub` | `#CBCFD3` | `#CBCFD3` | `color/neutral/500` / `color/neutral/500` |
 | `component/button/border/success/default` | `#229A16` | `#229A16` | `color/green/500` / `color/green/500` |
 | `component/button/border/success/subtle` | `#BAE0B7` | `#BAE0B7` | `color/green/100` / `color/green/100` |
 | `component/button/border/warning/default` | `#FAAD14` | `#FAAD14` | `color/yellow/500` / `color/yellow/500` |
@@ -438,39 +397,39 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/button/split button/surface-hover` | `#047C3F` | `#047C3F` | `color/primary/600` / `color/primary/600` |
 | `component/button/surface/danger/default` | `#E33E32` | `#E33E32` | `color/red light/500` / `color/red light/500` |
 | `component/button/surface/danger/subtle` | `#FCECEB` | `#FCECEB` | `color/red light/50` / `color/red light/50` |
-| `component/button/surface/gray/default` | `#EAECF0` | `#EAECF0` | `color/gray/300` / `color/gray/300` |
+| `component/button/surface/gray/default` | `#EAECF0` | `#EAECF0` | `color/neutral/300` / `color/neutral/300` |
 | `component/button/surface/info/default` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `component/button/surface/info/subtle` | `#ECEFFE` | `#ECEFFE` | `color/blue/50` / `color/blue/50` |
 | `component/button/surface/integrity/link-default` | `#F2F5FF` | `#FFFFFF` | `-` / `-` |
-| `component/button/surface/integrity/tertiary-fg` | `#FDFDFD` | `#FDFDFD` | `color/secondary dark/10` / `color/secondary dark/10` |
-| `component/button/surface/integrity/tertiary-fg-hover` | `#3C3C3C` | `#3C3C3C` | `color/secondary dark/800` / `color/secondary dark/800` |
+| `component/button/surface/integrity/tertiary-fg` | `#FCFCFD` | `#FCFCFD` | `color/neutral/50` / `color/neutral/50` |
+| `component/button/surface/integrity/tertiary-fg-hover` | `#3C3C3C` | `#3C3C3C` | `color/neutral/900` / `color/neutral/900` |
 | `component/button/surface/primary-accent/default` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
 | `component/button/surface/primary-subdued/default` | `#DFFCDD` | `#DFFCDD` | `color/green light/200` / `color/green light/200` |
 | `component/button/surface/primary-subdued/select` | `#F4FFF4` | `#F4FFF4` | `color/green light/50` / `color/green light/50` |
 | `component/button/surface/secondary/default` | `#FFFFFF` | `#FFFFFF` | `color/base/white` / `color/base/white` |
-| `component/button/surface/secondary/link-subtle` | `#F7F7F8` | `#F7F7F8` | `color/gray/100` / `color/gray/100` |
+| `component/button/surface/secondary/link-subtle` | `#F7F7F8` | `#F7F7F8` | `color/neutral/100` / `color/neutral/100` |
 | `component/button/surface/warning/default` | `#FAAD14` | `#FAAD14` | `color/yellow/500` / `color/yellow/500` |
 | `component/button/surface/warning/subtle` | `#FFF7E8` | `#FFF7E8` | `color/yellow/50` / `color/yellow/50` |
 | `component/card/card-default` | `#FFFFFF` | `#FFFFFF` | `color/base/white` / `color/base/white` |
-| `component/card/card-hover` | `#F7F7F8` | `#F7F7F8` | `color/gray/100` / `color/gray/100` |
+| `component/card/card-hover` | `#F7F7F8` | `#F7F7F8` | `color/neutral/100` / `color/neutral/100` |
 | `component/checkbox/default` | `#FFFFFF` | `#000000` | `color/base/white` / `color/base/black` |
-| `component/checkbox/disable` | `#F7F7F8` | `#5E5F61` | `surface/primary-disable` / `color/gray/900` |
+| `component/checkbox/disable` | `#F7F7F8` | `#5E5F61` | `surface/primary-disable` / `color/neutral/800` |
 | `component/checkbox/enable` | `#048845` | `#024B26` | `surface/primary` / `color/primary/800` |
-| `component/checkbox/hover` | `#047C3F` | `#9EA1A5` | `surface/primary-hover` / `color/gray/700` |
+| `component/checkbox/hover` | `#047C3F` | `#9EA1A5` | `surface/primary-hover` / `color/neutral/600` |
 | `component/chips/border` | `#04884514` | `#04884514` | `color/opacity/primary/8` / `color/opacity/primary/8` |
-| `component/chips/hover` | `#F7F7F8` | `#5E5F61` | `color/gray/100` / `surface/elevation` |
-| `component/chips/press` | `#EAECF0` | `#EAECF0` | `color/gray/300` / `color/gray/300` |
+| `component/chips/hover` | `#F7F7F8` | `#5E5F61` | `color/neutral/100` / `surface/elevation` |
+| `component/chips/press` | `#EAECF0` | `#EAECF0` | `color/neutral/300` / `color/neutral/300` |
 | `component/chips/selected` | `#0488451A` | `#0488451A` | `color/opacity/primary/10` / `color/opacity/primary/10` |
 | `component/creative assets/border-asset` | `#B2EFAC` | `#B2EFAC` | `-` / `-` |
 | `component/creative assets/surface-asset` | `#ECFFEA` | `#ECFFEA` | `-` / `-` |
 | `component/digital verify code/default` | `#FFFFFF` | `#FFFFFF` | `color/base/white` / `-` |
-| `component/digital verify code/hover` | `#F7F7F8` | `#FFFFFF` | `color/gray/100` / `-` |
-| `component/divider/dashed-divider-default` | `#DFE3E8` | `#FFFFFF` | `color/gray/500` / `-` |
-| `component/divider/dashed-divider-strong` | `#CBCFD3` | `#FFFFFF` | `color/gray/600` / `-` |
-| `component/divider/divider-bland` | `#FCFCFD` | `#1F1F1F` | `color/gray/50` / `color/secondary dark/900` |
-| `component/divider/divider-default` | `#F0F2F4` | `#1F1F1F` | `color/gray/200` / `color/secondary dark/900` |
-| `component/divider/divider-strong` | `#E5E9ED` | `#1F1F1F` | `color/gray/400` / `color/secondary dark/900` |
-| `component/divider/divider-subtle` | `#F7F7F8` | `#1F1F1F` | `color/gray/100` / `color/secondary dark/900` |
+| `component/digital verify code/hover` | `#F7F7F8` | `#FFFFFF` | `color/neutral/100` / `-` |
+| `component/divider/dashed-divider-default` | `#DFE3E8` | `#FFFFFF` | `color/neutral/400` / `-` |
+| `component/divider/dashed-divider-strong` | `#CBCFD3` | `#FFFFFF` | `color/neutral/500` / `-` |
+| `component/divider/divider-bland` | `#FCFCFD` | `#1F1F1F` | `color/neutral/50` / `color/neutral/950` |
+| `component/divider/divider-default` | `#F0F2F4` | `#1F1F1F` | `color/neutral/200` / `color/neutral/950` |
+| `component/divider/divider-strong` | `#E5E9ED` | `#1F1F1F` | `color/neutral/350` / `color/neutral/950` |
+| `component/divider/divider-subtle` | `#F7F7F8` | `#1F1F1F` | `color/neutral/100` / `color/neutral/950` |
 | `component/icon/common/accent` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `component/icon/common/accent-hover` | `#385ADA` | `#7D96F5` | `color/blue/600` / `color/blue/300` |
 | `component/icon/common/accent-muted` | `#A6B7F8` | `#2B46AA` | `color/blue/200` / `color/blue/700` |
@@ -483,20 +442,20 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/icon/common/info-muted` | `#ECEFFE` | `#1A2A65` | `color/blue/50` / `color/blue/900` |
 | `component/icon/common/link` | `#7D96F5` | `#7D96F5` | `color/blue/300` / `color/blue/300` |
 | `component/icon/common/link-hover` | `#6482F3` | `#6482F3` | `color/blue/400` / `color/blue/400` |
-| `component/icon/common/on-primary` | `#7B7D80` | `#FFFFFF` | `color/gray/800` / `color/base/white` |
-| `component/icon/common/on-secondary` | `#3C3C3C` | `#3C3C3C` | `color/secondary dark/800` / `color/secondary dark/800` |
-| `component/icon/common/on-white` | `#F0F0F0` | `#F0F0F0` | `color/secondary dark/50` / `color/secondary dark/50` |
-| `component/icon/common/primary` | `#9EA1A5` | `#CBCFD3` | `color/gray/700` / `color/gray/600` |
+| `component/icon/common/on-primary` | `#7B7D80` | `#FFFFFF` | `color/neutral/700` / `color/base/white` |
+| `component/icon/common/on-secondary` | `#3C3C3C` | `#3C3C3C` | `color/neutral/900` / `color/neutral/900` |
+| `component/icon/common/on-white` | `#F0F2F4` | `#F0F2F4` | `color/neutral/200` / `color/neutral/200` |
+| `component/icon/common/primary` | `#9EA1A5` | `#CBCFD3` | `color/neutral/600` / `color/neutral/500` |
 | `component/icon/common/primary-black-inverse` | `#000000` | `#FFFFFF` | `color/base/black` / `color/base/white` |
-| `component/icon/common/primary-disable` | `#CBCFD3` | `#5E5F61` | `color/gray/600` / `color/gray/900` |
+| `component/icon/common/primary-disable` | `#CBCFD3` | `#5E5F61` | `color/neutral/500` / `color/neutral/800` |
 | `component/icon/common/primary-green` | `#048845` | `#FFFFFF` | `color/primary/500` / `color/base/white` |
 | `component/icon/common/primary-inverse` | `#000000` | `#FFFFFF` | `color/base/black` / `color/base/white` |
 | `component/icon/common/primary-neutral` | `#FFFFFF` | `#000000` | `color/base/white` / `color/base/black` |
 | `component/icon/common/primary-weak-inverse` | `#3C4043` | `#FFFFFF` | `color/base/black-weak` / `color/base/white` |
-| `component/icon/common/secondary` | `#7B7D80` | `#EAECF0` | `color/gray/800` / `color/gray/300` |
-| `component/icon/common/secondary-black (main)` | `#1F1F1F` | `#FFFFFF` | `color/secondary dark/900` / `color/base/white` |
-| `component/icon/common/secondary-gray` | `#9EA1A5` | `#5E5F61` | `color/gray/700` / `color/gray/900` |
-| `component/icon/common/secondary-muted` | `#CBCFD3` | `#7B7D80` | `color/gray/600` / `color/gray/800` |
+| `component/icon/common/secondary` | `#7B7D80` | `#EAECF0` | `color/neutral/700` / `color/neutral/300` |
+| `component/icon/common/secondary-black (main)` | `#1F1F1F` | `#FFFFFF` | `color/neutral/950` / `color/base/white` |
+| `component/icon/common/secondary-gray` | `#9EA1A5` | `#5E5F61` | `color/neutral/600` / `color/neutral/800` |
+| `component/icon/common/secondary-muted` | `#CBCFD3` | `#7B7D80` | `color/neutral/500` / `color/neutral/700` |
 | `component/icon/common/success` | `#229A16` | `#229A16` | `color/green/500` / `color/green/500` |
 | `component/icon/common/success-disable` | `#BAE0B7` | `#BAE0B7` | `color/green/100` / `color/green/100` |
 | `component/icon/common/success-muted` | `#99D194` | `#186D10` | `color/green/200` / `color/green/700` |
@@ -507,7 +466,7 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/icon/file/file-accent` | `#6482F3` | `#6482F3` | `color/blue/400` / `color/blue/400` |
 | `component/icon/file/file-gray` | `#DCE1E8` | `#DCE1E8` | `-` / `-` |
 | `component/icon/file/file-red` | `#FC5144` | `#FC5144` | `-` / `-` |
-| `component/inline editable/border-inline` | `#CBCFD3` | `#CBCFD3` | `color/gray/600` / `color/gray/600` |
+| `component/inline editable/border-inline` | `#CBCFD3` | `#CBCFD3` | `color/neutral/500` / `color/neutral/500` |
 | `component/logo/3rd-party/apple-black` | `#000000` | `#000000` | `-` / `-` |
 | `component/logo/3rd-party/apple-white` | `#FFFFFF` | `#FFFFFF` | `-` / `-` |
 | `component/logo/3rd-party/facebook-blue` | `#1977F3` | `#1977F3` | `-` / `-` |
@@ -524,14 +483,14 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/progress/success` | `#229A16` | `#229A16` | `color/green/500` / `color/green/500` |
 | `component/progress/warning` | `#FAAD14` | `#FAAD14` | `color/yellow/500` / `color/yellow/500` |
 | `component/radio/default` | `#FFFFFF` | `#000000` | `color/base/white` / `color/base/black` |
-| `component/radio/disable` | `#F7F7F8` | `#5E5F61` | `color/gray/100` / `color/gray/900` |
+| `component/radio/disable` | `#F7F7F8` | `#5E5F61` | `color/neutral/100` / `color/neutral/800` |
 | `component/radio/elevation` | `#FFFFFF` | `#000000` | `color/base/white` / `color/base/black` |
-| `component/radio/enable` | `#FCFCFD` | `#024B26` | `color/gray/50` / `color/primary/800` |
+| `component/radio/enable` | `#FCFCFD` | `#024B26` | `color/neutral/50` / `color/primary/800` |
 | `component/radio/focus-green` | `#E6F3EC` | `#024B26` | `color/primary/50` / `color/primary/800` |
-| `component/radio/hover` | `#F7F7F8` | `#9EA1A5` | `color/gray/100` / `color/gray/700` |
-| `component/segmented control/press` | `#EAECF0` | `#EAECF0` | `color/gray/300` / `color/gray/300` |
-| `component/skeleton/base` | `#E5E9ED` | `#FFFFFF` | `color/gray/400` / `-` |
-| `component/skeleton/default` | `#F0F2F4` | `#FFFFFF` | `color/gray/200` / `-` |
+| `component/radio/hover` | `#F7F7F8` | `#9EA1A5` | `color/neutral/100` / `color/neutral/600` |
+| `component/segmented control/press` | `#EAECF0` | `#EAECF0` | `color/neutral/300` / `color/neutral/300` |
+| `component/skeleton/base` | `#E5E9ED` | `#FFFFFF` | `color/neutral/350` / `-` |
+| `component/skeleton/default` | `#F0F2F4` | `#FFFFFF` | `color/neutral/200` / `-` |
 | `component/state layers/on-color/default` | `#0488450A` | `#04884514` | `color/opacity/primary/4` / `-` |
 | `component/state layers/on-color/dragged` | `#04884533` | `#04884533` | `color/opacity/primary/20` / `-` |
 | `component/state layers/on-color/focus` | `#0488451A` | `#0488451A` | `color/opacity/primary/10` / `-` |
@@ -541,30 +500,30 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `component/table/cell/surface/default` | `#FFFFFF` | `#FFFFFF` | `surface/neutral-white` / `surface/neutral-white` |
 | `component/table/cell/surface/hover` | `#F7F7F8` | `#F7F7F8` | `component/table/surface/row-press` / `component/table/surface/row-press` |
 | `component/table/cell/surface/selected` | `#F7F7F8` | `#F7F7F8` | `component/table/surface/row-press` / `component/table/surface/row-press` |
-| `component/table/surface/row-hover` | `#FCFCFD` | `#FCFCFD` | `color/gray/50` / `color/gray/50` |
-| `component/table/surface/row-press` | `#F7F7F8` | `#F7F7F8` | `color/gray/100` / `color/gray/100` |
+| `component/table/surface/row-hover` | `#FCFCFD` | `#FCFCFD` | `color/neutral/50` / `color/neutral/50` |
+| `component/table/surface/row-press` | `#F7F7F8` | `#F7F7F8` | `color/neutral/100` / `color/neutral/100` |
 | `component/table/surface/tab-header` | `#F6F8FA` | `#F6F8FA` | `-` / `-` |
 | `component/tags/surface-primary` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
 | `component/text input/surface-hover` | `#F6F8FA` | `#F6F8FA` | `color/semantic tokens/color-ai-white` / `color/semantic tokens/color-ai-white` |
 | `component/toast alert/action-text` | `#B1DAC5` | `#FFFFFF` | `color/primary/100` / `-` |
-| `component/toast alert/icon-close` | `#636363` | `#636363` | `color/secondary dark/700` / `color/secondary dark/700` |
+| `component/toast alert/icon-close` | `#5E5F61` | `#5E5F61` | `color/neutral/800` / `color/neutral/800` |
 | `component/toast alert/icon-error-opacity` | `#E33E3214` | `#E33E3214` | `color/opacity/red/8` / `color/opacity/red/8` |
 | `component/toast alert/icon-info-opacity` | `#3D63F014` | `#3D63F014` | `color/opacity/blue/8` / `color/opacity/blue/8` |
 | `component/toast alert/icon-rest-opacity` | `#0000000F` | `#0000000F` | `color/opacity/black/6` / `color/opacity/black/6` |
 | `component/toast alert/icon-success-opacity` | `#229A1614` | `#229A1614` | `color/opacity/green/8` / `color/opacity/green/8` |
 | `component/toast alert/icon-warning-opacity` | `#FAAD1414` | `#FAAD1414` | `color/opacity/yellow/8` / `color/opacity/yellow/8` |
 | `component/toast alert/surface-rest` | `#3C4043` | `#FFFFFF` | `color/base/black-weak` / `-` |
-| `component/tooltip/surface-bg-black` | `#1F1F1F` | `#1F1F1F` | `color/secondary dark/900` / `color/secondary dark/900` |
-| `component/tooltip/text-sub` | `#CECECE` | `#CECECE` | `color/secondary dark/300` / `color/secondary dark/300` |
+| `component/tooltip/surface-bg-black` | `#1F1F1F` | `#1F1F1F` | `color/neutral/950` / `color/neutral/950` |
+| `component/tooltip/text-sub` | `#CBCFD3` | `#CBCFD3` | `color/neutral/500` / `color/neutral/500` |
 
 ### foreground (4)
 
 | Figma variable | Light | Dark | Nguồn Light / Dark |
 | --- | --- | --- | --- |
-| `foreground/on-background-muted` | `#F0F2F4` | `#F0F2F4` | `color/gray/200` / `color/gray/200` |
-| `foreground/on-bg` | `#CBCFD3` | `#DFE3E8` | `color/gray/600` / `color/gray/500` |
-| `foreground/on-bg-hover` | `#9EA1A5` | `#9EA1A5` | `color/gray/700` / `color/gray/700` |
-| `foreground/on-bg-press` | `#7B7D80` | `#7B7D80` | `color/gray/800` / `color/gray/800` |
+| `foreground/on-background-muted` | `#F0F2F4` | `#F0F2F4` | `color/neutral/200` / `color/neutral/200` |
+| `foreground/on-bg` | `#CBCFD3` | `#DFE3E8` | `color/neutral/500` / `color/neutral/400` |
+| `foreground/on-bg-hover` | `#9EA1A5` | `#9EA1A5` | `color/neutral/600` / `color/neutral/600` |
+| `foreground/on-bg-press` | `#7B7D80` | `#7B7D80` | `color/neutral/700` / `color/neutral/700` |
 
 ### overlay (26)
 
@@ -622,18 +581,18 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `surface/danger` | `#E33E32` | `#E33E32` | `color/red light/500` / `color/red light/500` |
 | `surface/danger-disable` | `#F6C3BF` | `#7D221C` | `color/red light/100` / `color/red light/800` |
 | `surface/danger-muted` | `#FCECEB` | `#5F1A15` | `color/red light/50` / `color/red light/900` |
-| `surface/elevation` | `#FCFCFD` | `#5E5F61` | `color/gray/50` / `color/gray/900` |
-| `surface/gray` | `#F0F2F4` | `#7B7D80` | `color/gray/200` / `color/gray/800` |
-| `surface/gray-disable` | `#E8E8E8` | `#7B7D80` | `color/secondary dark/100` / `color/gray/800` |
-| `surface/gray-hover` | `#F7F7F8` | `#7B7D80` | `color/gray/100` / `color/gray/800` |
-| `surface/gray-press` | `#F0F2F4` | `#5E5F61` | `color/gray/200` / `color/gray/900` |
+| `surface/elevation` | `#FCFCFD` | `#5E5F61` | `color/neutral/50` / `color/neutral/800` |
+| `surface/gray` | `#F0F2F4` | `#7B7D80` | `color/neutral/200` / `color/neutral/700` |
+| `surface/gray-disable` | `#EAECF0` | `#7B7D80` | `color/neutral/300` / `color/neutral/700` |
+| `surface/gray-hover` | `#F7F7F8` | `#7B7D80` | `color/neutral/100` / `color/neutral/700` |
+| `surface/gray-press` | `#F0F2F4` | `#5E5F61` | `color/neutral/200` / `color/neutral/800` |
 | `surface/info` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `surface/info-disable` | `#C3CFFA` | `#223684` | `color/blue/100` / `color/blue/800` |
 | `surface/info-muted` | `#ECEFFE` | `#1A2A65` | `color/blue/50` / `color/blue/900` |
 | `surface/neutral-white` | `#FFFFFF` | `#FFFFFF` | `color/base/white` / `color/base/white` |
 | `surface/primary` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
-| `surface/primary-default` | `#F7F7F8` | `#CBCFD3` | `color/gray/100` / `color/gray/600` |
-| `surface/primary-disable` | `#F7F7F8` | `#CBCFD3` | `color/gray/100` / `color/gray/600` |
+| `surface/primary-default` | `#F7F7F8` | `#CBCFD3` | `color/neutral/100` / `color/neutral/500` |
+| `surface/primary-disable` | `#F7F7F8` | `#CBCFD3` | `color/neutral/100` / `color/neutral/500` |
 | `surface/primary-hover` | `#047C3F` | `#036131` | `color/primary/600` / `color/primary/700` |
 | `surface/primary-press` | `#036131` | `#024B26` | `color/primary/700` / `color/primary/800` |
 | `surface/sidebar-hover` | `#EDFEEC` | `#EDFEEC` | `color/green light/100` / `color/green light/100` |
@@ -656,9 +615,9 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `text/danger` | `#E33E32` | `#E33E32` | `color/red light/500` / `color/red light/500` |
 | `text/danger-muted` | `#F2A6A1` | `#A12C24` | `color/red light/200` / `color/red light/700` |
 | `text/danger-on-surface` | `#CF382E` | `#CF382E` | `color/red light/600` / `color/red light/600` |
-| `text/disable` | `#CECECE` | `#EAECF0` | `color/secondary dark/300` / `color/gray/300` |
-| `text/gray` | `#9EA1A5` | `#EAECF0` | `color/gray/700` / `color/gray/300` |
-| `text/gray-on-surface` | `#7B7D80` | `#EAECF0` | `color/gray/800` / `color/gray/300` |
+| `text/disable` | `#CBCFD3` | `#EAECF0` | `color/neutral/500` / `color/neutral/300` |
+| `text/gray` | `#9EA1A5` | `#EAECF0` | `color/neutral/600` / `color/neutral/300` |
+| `text/gray-on-surface` | `#7B7D80` | `#EAECF0` | `color/neutral/700` / `color/neutral/300` |
 | `text/info` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `text/info-disable` | `#C3CFFA` | `#223684` | `color/blue/100` / `color/blue/800` |
 | `text/info-muted` | `#ECEFFE` | `#1A2A65` | `color/blue/50` / `color/blue/900` |
@@ -668,17 +627,17 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 | `text/link-hover` | `#3D63F0` | `#3D63F0` | `color/blue/500` / `color/blue/500` |
 | `text/on-primary-black-inverse` | `#000000` | `#FFFFFF` | `color/base/black` / `color/base/white` |
 | `text/on-primary-black-weak` | `#3C4043` | `#3C4043` | `color/base/black-weak` / `color/base/black-weak` |
-| `text/on-primary-white` | `#FCFCFD` | `#FFFFFF` | `color/gray/50` / `color/base/white` |
+| `text/on-primary-white` | `#FCFCFD` | `#FFFFFF` | `color/neutral/50` / `color/base/white` |
 | `text/primary-black` | `#000000` | `#000000` | `color/base/black` / `color/base/black` |
-| `text/primary-gray-muted` | `#CBCFD3` | `#CBCFD3` | `color/gray/600` / `color/gray/600` |
+| `text/primary-gray-muted` | `#CBCFD3` | `#CBCFD3` | `color/neutral/500` / `color/neutral/500` |
 | `text/primary-green` | `#048845` | `#048845` | `color/primary/500` / `color/primary/500` |
 | `text/primary-white` | `#FFFFFF` | `#FFFFFF` | `color/base/white` / `color/base/white` |
-| `text/secondary` | `#7B7D80` | `#DFE3E8` | `color/gray/800` / `color/gray/500` |
-| `text/secondary-black (700)` | `#3C3C3C` | `#3C3C3C` | `color/secondary dark/800` / `color/secondary dark/800` |
-| `text/secondary-black (main)` | `#1F1F1F` | `#DFE3E8` | `color/secondary dark/900` / `color/gray/500` |
-| `text/secondary-hover` | `#1F1F1F` | `#1F1F1F` | `color/secondary dark/900` / `color/secondary dark/900` |
-| `text/secondary-inverse` | `#DFE3E8` | `#9EA1A5` | `color/gray/500` / `color/gray/700` |
-| `text/secondary-muted` | `#CBCFD3` | `#7B7D80` | `color/gray/600` / `color/gray/800` |
+| `text/secondary` | `#7B7D80` | `#DFE3E8` | `color/neutral/700` / `color/neutral/400` |
+| `text/secondary-black (700)` | `#3C3C3C` | `#3C3C3C` | `color/neutral/900` / `color/neutral/900` |
+| `text/secondary-black (main)` | `#1F1F1F` | `#DFE3E8` | `color/neutral/950` / `color/neutral/400` |
+| `text/secondary-hover` | `#1F1F1F` | `#1F1F1F` | `color/neutral/950` / `color/neutral/950` |
+| `text/secondary-inverse` | `#DFE3E8` | `#9EA1A5` | `color/neutral/400` / `color/neutral/600` |
+| `text/secondary-muted` | `#CBCFD3` | `#7B7D80` | `color/neutral/500` / `color/neutral/700` |
 | `text/success` | `#229A16` | `#229A16` | `color/green/500` / `color/green/500` |
 | `text/success-muted` | `#99D194` | `#186D10` | `color/green/200` / `color/green/700` |
 | `text/success-on-surface` | `#1F8C14` | `#1F8C14` | `color/green/600` / `color/green/600` |
@@ -690,6 +649,6 @@ Bảng dưới giữ nguyên **191 tên và giá trị** từ `variables.primiti
 ## Điểm cần review
 
 - Kiểm tra lại các tên Figma có khoảng trắng, sai chính tả hoặc state chưa thống nhất (`sematic`, `sucess`, `press`, `disable`, `siver`). Không đổi tên trong tài liệu này thay cho Figma.
-- Xác nhận vai trò của `secondary light`, `secondary dark`, `gray`, `green light` và các giá trị được lưu trực tiếp trong Alias trước khi chốt quy ước đặt tên.
+- `gray` và `secondary dark` đã gộp thành `color/neutral` (16/11/2026). `secondary light`, `red dark`, `orange` đã bị xóa khỏi Figma (16/11/2026); ba alias mode Dark ghi `treo` ở bảng dưới cần trỏ lại. Xác nhận vai trò của `green light` và các giá trị được lưu trực tiếp trong Alias trước khi chốt quy ước đặt tên.
 - Review các cặp màu chưa đạt ngưỡng contrast ở trên và kiểm tra state Light/Dark, overlay, chart, component theo màn hình thật.
 - Khi Figma thay đổi: đọc lại variables/styles, cập nhật `variable-figma-export/` với ngày lấy dữ liệu, đối chiếu ID và alias, sửa bài này, build website và kiểm tra route `/foundation/colors/`.

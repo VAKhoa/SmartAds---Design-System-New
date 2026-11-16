@@ -75,16 +75,16 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/50",
-          "variableId": "VariableID:4:17"
+          "alias": "color/neutral/200",
+          "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#f0f0f0",
+        "Accessible (Light Mode)": "#f0f2f4",
         "Accessible (Dark Mode)": "#1f1f1f"
       }
     },
@@ -99,17 +99,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/50",
-          "variableId": "VariableID:4:17"
+          "alias": "color/neutral/200",
+          "variableId": "VariableID:12:317"
         }
       },
       "resolvedValues": {
         "Accessible (Light Mode)": "#1f1f1f",
-        "Accessible (Dark Mode)": "#f0f0f0"
+        "Accessible (Dark Mode)": "#f0f2f4"
       }
     },
     {
@@ -147,11 +147,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -435,7 +435,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
@@ -507,11 +507,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -531,11 +531,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -1155,11 +1155,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -1227,11 +1227,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/500",
+          "alias": "color/neutral/650",
           "variableId": "VariableID:10:28"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/500",
+          "alias": "color/neutral/650",
           "variableId": "VariableID:10:28"
         }
       },
@@ -1251,17 +1251,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/700",
-          "variableId": "VariableID:10:30"
+          "alias": "color/neutral/800",
+          "variableId": "VariableID:12:323"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/300",
-          "variableId": "VariableID:10:26"
+          "alias": "color/neutral/500",
+          "variableId": "VariableID:12:321"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#636363",
-        "Accessible (Dark Mode)": "#cecece"
+        "Accessible (Light Mode)": "#5e5f61",
+        "Accessible (Dark Mode)": "#cbcfd3"
       }
     },
     {
@@ -1275,17 +1275,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/100",
-          "variableId": "VariableID:10:24"
+          "alias": "color/neutral/300",
+          "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/700",
-          "variableId": "VariableID:10:30"
+          "alias": "color/neutral/800",
+          "variableId": "VariableID:12:323"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#e8e8e8",
-        "Accessible (Dark Mode)": "#636363"
+        "Accessible (Light Mode)": "#eaecf0",
+        "Accessible (Dark Mode)": "#5e5f61"
       }
     },
     {
@@ -1299,11 +1299,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -1323,11 +1323,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
@@ -1347,11 +1347,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         }
       },
@@ -1443,11 +1443,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -1467,11 +1467,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         }
       },
@@ -1491,11 +1491,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
@@ -1515,11 +1515,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         }
       },
@@ -1539,11 +1539,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -1563,11 +1563,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
@@ -1587,11 +1587,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         }
       },
@@ -1611,11 +1611,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -1659,11 +1659,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -1683,11 +1683,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
@@ -1707,11 +1707,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -1779,11 +1779,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -1851,11 +1851,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -1875,11 +1875,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -2283,11 +2283,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -2307,16 +2307,16 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/200",
-          "variableId": "VariableID:10:25"
+          "alias": "color/neutral/400",
+          "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#e1e1e1",
+        "Accessible (Light Mode)": "#dfe3e8",
         "Accessible (Dark Mode)": "#3c3c3c"
       }
     },
@@ -2359,7 +2359,7 @@
           "variableId": "VariableID:50:114"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         }
       },
@@ -2383,7 +2383,7 @@
           "variableId": "VariableID:50:116"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -2403,7 +2403,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
@@ -2451,11 +2451,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         }
       },
@@ -2475,11 +2475,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/900",
+          "alias": "color/neutral/800",
           "variableId": "VariableID:12:323"
         }
       },
@@ -2523,11 +2523,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
@@ -2547,16 +2547,16 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/100",
-          "variableId": "VariableID:10:24"
+          "alias": "color/neutral/300",
+          "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#e8e8e8",
+        "Accessible (Light Mode)": "#eaecf0",
         "Accessible (Dark Mode)": "#7b7d80"
       }
     },
@@ -2571,11 +2571,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -2595,11 +2595,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/700",
+          "alias": "color/neutral/600",
           "variableId": "VariableID:12:320"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -2643,7 +2643,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/800",
+          "alias": "color/neutral/700",
           "variableId": "VariableID:12:315"
         },
         "Accessible (Dark Mode)": {
@@ -2859,11 +2859,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         }
       },
@@ -2883,11 +2883,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -2979,11 +2979,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -3003,11 +3003,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -3027,11 +3027,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -3051,11 +3051,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/400",
+          "alias": "color/neutral/350",
           "variableId": "VariableID:12:319"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -3195,7 +3195,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
@@ -3536,7 +3536,9 @@
         },
         "Accessible (Dark Mode)": {
           "alias": "color/secondary light/50",
-          "variableId": "VariableID:4904:7409"
+          "variableId": "VariableID:4904:7409",
+          "deleted": true,
+          "note": "Variable đích đã bị xóa trong Figma 16/11/2026; alias đang treo, cần trỏ lại."
         }
       },
       "resolvedValues": {
@@ -3783,17 +3785,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/10",
-          "variableId": "VariableID:1618:4896"
+          "alias": "color/neutral/50",
+          "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/10",
-          "variableId": "VariableID:1618:4896"
+          "alias": "color/neutral/50",
+          "variableId": "VariableID:12:191"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#fdfdfd",
-        "Accessible (Dark Mode)": "#fdfdfd"
+        "Accessible (Light Mode)": "#fcfcfd",
+        "Accessible (Dark Mode)": "#fcfcfd"
       }
     },
     {
@@ -3807,11 +3809,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         }
       },
@@ -3879,11 +3881,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -3951,11 +3953,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -4113,11 +4115,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         }
       },
@@ -4137,11 +4139,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -4713,11 +4715,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         }
       },
@@ -4758,17 +4760,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/700",
-          "variableId": "VariableID:10:30"
+          "alias": "color/neutral/800",
+          "variableId": "VariableID:12:323"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/700",
-          "variableId": "VariableID:10:30"
+          "alias": "color/neutral/800",
+          "variableId": "VariableID:12:323"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#636363",
-        "Accessible (Dark Mode)": "#636363"
+        "Accessible (Light Mode)": "#5e5f61",
+        "Accessible (Dark Mode)": "#5e5f61"
       }
     },
     {
@@ -4923,11 +4925,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         }
       },
@@ -4971,16 +4973,16 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/300",
-          "variableId": "VariableID:10:26"
+          "alias": "color/neutral/500",
+          "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#cecece",
+        "Accessible (Light Mode)": "#cbcfd3",
         "Accessible (Dark Mode)": "#eaecf0"
       }
     },
@@ -5019,7 +5021,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -5061,11 +5063,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         }
       },
@@ -5085,7 +5087,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         },
         "Accessible (Dark Mode)": {
@@ -5109,11 +5111,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         }
       },
@@ -5181,11 +5183,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -5223,11 +5225,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/50",
+          "alias": "color/neutral/50",
           "variableId": "VariableID:12:191"
         }
       },
@@ -5316,11 +5318,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/900",
+          "alias": "color/neutral/950",
           "variableId": "VariableID:12:159"
         }
       },
@@ -5340,17 +5342,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/300",
-          "variableId": "VariableID:10:26"
+          "alias": "color/neutral/500",
+          "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/300",
-          "variableId": "VariableID:10:26"
+          "alias": "color/neutral/500",
+          "variableId": "VariableID:12:321"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#cecece",
-        "Accessible (Dark Mode)": "#cecece"
+        "Accessible (Light Mode)": "#cbcfd3",
+        "Accessible (Dark Mode)": "#cbcfd3"
       }
     },
     {
@@ -5465,7 +5467,9 @@
         },
         "Accessible (Dark Mode)": {
           "alias": "color/red dark/500",
-          "variableId": "VariableID:5714:601"
+          "variableId": "VariableID:5714:601",
+          "deleted": true,
+          "note": "Variable đích đã bị xóa trong Figma 16/11/2026; alias đang treo, cần trỏ lại."
         }
       },
       "resolvedValues": {
@@ -5556,11 +5560,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/800",
+          "alias": "color/neutral/900",
           "variableId": "VariableID:12:158"
         }
       },
@@ -5694,7 +5698,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/500",
+          "alias": "color/neutral/400",
           "variableId": "VariableID:12:322"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -5715,7 +5719,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -5736,7 +5740,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/400",
+          "alias": "color/neutral/350",
           "variableId": "VariableID:12:319"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -5757,7 +5761,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/200",
+          "alias": "color/neutral/200",
           "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -5778,7 +5782,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
@@ -5826,11 +5830,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -5850,11 +5854,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -5994,11 +5998,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/300",
+          "alias": "color/neutral/300",
           "variableId": "VariableID:12:318"
         }
       },
@@ -6282,17 +6286,17 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/secondary dark/50",
-          "variableId": "VariableID:4:17"
+          "alias": "color/neutral/200",
+          "variableId": "VariableID:12:317"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/secondary dark/50",
-          "variableId": "VariableID:4:17"
+          "alias": "color/neutral/200",
+          "variableId": "VariableID:12:317"
         }
       },
       "resolvedValues": {
-        "Accessible (Light Mode)": "#f0f0f0",
-        "Accessible (Dark Mode)": "#f0f0f0"
+        "Accessible (Light Mode)": "#f0f2f4",
+        "Accessible (Dark Mode)": "#f0f2f4"
       }
     },
     {
@@ -6335,7 +6339,9 @@
         },
         "Accessible (Dark Mode)": {
           "alias": "color/red dark/100",
-          "variableId": "VariableID:5714:597"
+          "variableId": "VariableID:5714:597",
+          "deleted": true,
+          "note": "Variable đích đã bị xóa trong Figma 16/11/2026; alias đang treo, cần trỏ lại."
         }
       },
       "resolvedValues": {
@@ -6591,7 +6597,7 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": "#ffffff"
@@ -6612,11 +6618,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/100",
+          "alias": "color/neutral/100",
           "variableId": "VariableID:12:316"
         }
       },
@@ -6732,11 +6738,11 @@
       ],
       "values": {
         "Accessible (Light Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         },
         "Accessible (Dark Mode)": {
-          "alias": "color/gray/600",
+          "alias": "color/neutral/500",
           "variableId": "VariableID:12:321"
         }
       },
@@ -6865,5 +6871,6 @@
         "Accessible (Dark Mode)": "#00000099"
       }
     }
-  ]
+  ],
+  "patched": "Đồng bộ 16/11/2026: (1) gộp color/gray + color/secondary dark thành color/neutral; (2) người dùng xóa 30 primitive color/secondary light, color/red dark, color/orange trong Figma. Đã đọc lại Figma: số variable theo collection, 22 primitive xám, 140 tham chiếu xám và 3 alias treo. Phần còn lại giữ bản chụp 14/11/2026."
 }

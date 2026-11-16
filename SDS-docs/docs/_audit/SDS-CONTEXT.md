@@ -1,5 +1,7 @@
 # SDS-CONTEXT — SmartAds Design System · v3 (14/11/2026)
 
+> **Cập nhật 16/11/2026 (Figma đã đổi, đọc lại cùng ngày):** (1) `color/gray` + `color/secondary dark` gộp thành `color/neutral/{50,100,200,300,350,400,500,600,650,700,800,900,950}` (D3); 9 token `color/secondary dark/{10,30,50,100,200,300,400,600,700}` còn tồn tại với ghi chú `DEPRECATED`, không còn tham chiếu. (2) Người dùng **xóa 30 primitive**: `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Còn **660 variable** (Primitives 226). Gate: **A 17 · B 219 · E 424** (236/660 = 36% qua gate; E gồm 309 không dùng + 115 đang dùng nhưng lỗi). 3 alias mode Dark đang treo vào màu đã xóa: `border/primary-press`, `component/button/border/danger/default`, `component/button/border/danger/subtle`. Chi tiết: `FIGMA-CHANGELOG.md`, `NEUTRAL-MERGE.md`, `UNUSED-TOKENS.md`. Các số đếm khác trong file này vẫn là của ngày 14/11/2026.
+
 > Nguồn sự thật nén cho docs site và sinh code UI. **Chỉ chứa nội dung đã qua Quality Gate** (nhóm A/B trong `SDS-RECONCILIATION.md`). Mục không qua gate nằm ở `SDS-AUDIT.md`; §11 chỉ liệt kê tên để tra cứu. Tên giữ nguyên chữ hoa/thường như Figma. Phạm vi: **Light mode only** (dark mode đã loại, quyết định 14/11/2026); component bàn giao bằng **HTML/CSS/JS thuần**.
 
 ## 1. Overview
@@ -36,14 +38,14 @@ Primitives (1 mode "Value")        Spacing ("sm")        Text ("Mode 1")       V
 - Scope: `ALL_SCOPES` cho mọi variable; chưa có code syntax (→ Audit).
 
 ## 4. Token tables (chỉ A/B; Source: F = Figma, F+R = Figma + repo)
-Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổi tên (`color/red light/*`, `color/secondary dark/*`) — giá trị đúng, tên primitive nằm ở Audit.
+Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổi tên (`color/red light/*`) — giá trị đúng, tên primitive nằm ở Audit.
 
 ### 4.1 Color — primitive (`Primitives `)
 | Scale | Bậc: hex (không `#`) | Source |
 |---|---|---|
 | `color/primary/*` (200, 300, 500: F+R) | 50:e6f3ec · 100:b1dac5 · 200:8cc8a9 · 300:57af82 · 400:36a06a · 500:048845 · 600:047c3f · 700:036131 · 800:024b26 | F |
 | `color/base/*` | black:000000 · white:ffffff · black-weak:3c4043 | F |
-| `color/gray/*` | 50:fcfcfd · 800:7b7d80 · 100:f7f7f8 · 200:f0f2f4 · 300:eaecf0 · 400:e5e9ed · 700:9ea1a5 · 600:cbcfd3 · 500:dfe3e8 · 900:5e5f61 | F |
+| `color/neutral/*` | 50:fcfcfd · 100:f7f7f8 · 200:f0f2f4 · 300:eaecf0 · 350:e5e9ed · 400:dfe3e8 · 500:cbcfd3 · 600:9ea1a5 · 650:8c8c8c · 700:7b7d80 · 800:5e5f61 · 900:3c3c3c · 950:1f1f1f (gộp từ gray + secondary dark, 16/11/2026) | F |
 | `color/green/*` | 50:ecffea · 100:bae0b7 · 200:99d194 · 600:1f8c14 · 500:229a16 | F |
 | `color/blue/*` | 50:eceffe · 100:c3cffa · 200:a6b7f8 · 400:6482f3 · 600:385ada · 500:3d63f0 | F |
 | `color/yellow/*` | 50:fff7e8 · 100:fde6b6 · 600:e49d12 · 200:fdd993 · 500:faad14 | F |
@@ -61,7 +63,7 @@ Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổ
 |---|---|---|---|
 | `background/neutral` | `color/base/white` | #ffffff | F+R |
 | `text/info` | `color/blue/500` | #3d63f0 | F |
-| `surface/elevation` | `color/gray/50` | #fcfcfd | F |
+| `surface/elevation` | `color/neutral/50` | #fcfcfd | F |
 | `surface/accent` | `color/blue/500` | #3d63f0 | F |
 | `surface/info-muted` | `color/blue/50` | #eceffe | F |
 | `surface/success` | `color/green/500` | #229a16 | F |
@@ -70,7 +72,7 @@ Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổ
 | `surface/primary` | `color/primary/500` | #048845 | F |
 | `surface/primary-hover` | `color/primary/600` | #047c3f | F |
 | `surface/primary-press` | `color/primary/700` | #036131 | F |
-| `surface/primary-disable` | `color/gray/100` | #f7f7f8 | F |
+| `surface/primary-disable` | `color/neutral/100` | #f7f7f8 | F |
 | `border/primary-muted` | `color/primary/200` | #8cc8a9 | F |
 | `border/primary` | `color/primary/500` | #048845 | F+R |
 | `border/error` | `color/red light/500` | #e33e32 | F |
@@ -82,7 +84,7 @@ Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổ
 | `border/error-muted` | `color/red light/200` | #f2a6a1 | F |
 | `surface/success-muted` | `color/green/50` | #ecffea | F |
 | `border/success-muted` | `color/green/200` | #99d194 | F |
-| `border/secondary-disable` | `color/secondary dark/200` | #e1e1e1 | F |
+| `border/secondary-disable` | `color/neutral/400` | #dfe3e8 | F |
 | `surface/sidebar-press` | `color/green light/200` | #dffcdd | F |
 | `surface/warning` | `color/yellow/500` | #faad14 | F |
 | `surface/warning-disable` | `color/yellow/100` | #fde6b6 | F |
@@ -91,7 +93,7 @@ Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổ
 | `surface/sidebar-hover` | `color/green light/100` | #edfeec | F |
 | `overlay/primary/10` | `color/opacity/primary/10` | #0488451a | F |
 | `overlay/danger/10` | `color/opacity/red/10` | #e33e321a | F |
-| `text/disable` | `color/secondary dark/300` | #cecece | F |
+| `text/disable` | `color/neutral/500` | #cbcfd3 | F |
 | `overlay/warning/10` | `color/opacity/yellow/10` | #faad141a | F |
 | `overlay/info/10` | `color/opacity/blue/10` | #3d63f01a | F |
 | `border/warning-muted` | `color/yellow/200` | #fdd993 | F |
@@ -101,7 +103,7 @@ Ghi chú: một số semantic hợp lệ alias tới primitive đang chờ đổ
 | `chart/heatmap-level-3` | `color/primary/200` | #8cc8a9 | F |
 | `chart/heatmap-level-4` | `color/primary/300` | #57af82 | F |
 | `chart/heatmap-level-5` | `color/primary/400` | #36a06a | F |
-| `chart/heatmap-level-0` | `color/gray/100` | #f7f7f8 | F |
+| `chart/heatmap-level-0` | `color/neutral/100` | #f7f7f8 | F |
 | `overlay/black/20` | `color/opacity/black/20` | #00000033 | F |
 | `overlay/black/40` | `color/opacity/black/40` | #00000066 | F |
 | `overlay/black/60` | `color/opacity/black/60` | #00000099 | F |
@@ -198,7 +200,7 @@ Source = F. Trạng thái code: chưa có (repo không có component sản phẩ
 ## 8. Mapping Figma ↔ code
 - **Quy tắc tên CSS (đề xuất duy nhất, áp cho mọi token):** `--sa-` + slug(tên Figma), slug = chữ thường, bỏ `(` `)`, thay mọi chuỗi khoảng trắng hoặc `/` bằng `-`. Ví dụ: `surface/primary-hover` → `--sa-surface-primary-hover`; `component/table/cell/padding/x-default` → `--sa-component-table-cell-padding-x-default`. Script hiện tại (`generate-theme.mjs`) chỉ thay `/` → chưa an toàn với tên có khoảng trắng (Audit TK-12).
 - **Cách consume:** component HTML/CSS/JS thuần dùng `var(--sa-…)` cho semantic/component token; không dùng primitive trực tiếp. Theme: chỉ `:root` (Light). Spacing có thể dùng thêm alias numeric docs `--sa-space-*` (repo) nhưng nguồn là `spacing/*`.
-- **Đã có code (A, 16 token):** `--sa-background-neutral`, `--sa-border-primary`, `--sa-spacing-{xs,sm,md,xl}`, `--sa-radius-{sm,md,lg}`, `--sa-typography-family-display`, và primitive `--sa-color-{primary-200,primary-300,primary-500,gray-500,gray-800,base-white}` (sinh vào `website/src/styles/figma.generated.css`; danh sách ở `website/scripts/theme-tokens.mjs`). `color/secondary dark/900` có code nhưng không qua gate (tên có khoảng trắng).
+- **Đã có code (A, 16 token):** `--sa-background-neutral`, `--sa-border-primary`, `--sa-spacing-{xs,sm,md,xl}`, `--sa-radius-{sm,md,lg}`, `--sa-typography-family-display`, và primitive `--sa-color-{primary-200,primary-300,primary-500,neutral-400,neutral-700,neutral-950,base-white}` (sinh vào `website/src/styles/figma.generated.css`; danh sách ở `website/scripts/theme-tokens.mjs`). `color/neutral/950` có code nhưng không qua gate (tên có khoảng trắng).
 - **Component:** class `sa-<component>` + modifier theo variant (vd `sa-button sa-button--primary sa-button--lg`); variant `State` ánh xạ sang pseudo-class/ARIA (`:hover`, `:focus-visible`, `[aria-disabled]`, `[aria-selected]`), không thành class trạng thái tĩnh khi có trạng thái native.
 
 ## 9. AdTech domain mapping
@@ -228,7 +230,7 @@ Source = F. Trạng thái code: chưa có (repo không có component sản phẩ
 
 ## 11. Known gaps · `[UNVERIFIED]` · `[NOT FOUND]`
 - **Đang dùng nhưng KHÔNG qua gate (121 token, chi tiết `SDS-AUDIT.md`):**
-  - Tên (60): `color/red light/*`, `color/secondary dark/*`, `color/green light/*`, `color/brand/fpt/*`, `typography/text/* (size N)`, `spacing/lg (Base)`, `spacing/lg`, `spacing/odd-7`, `component/toast alert/*`, `component/badge/sucess/*`, `component/digital verify code/*`…
+  - Tên (60): `color/red light/*`, `color/green light/*`, `color/brand/fpt/*`, `typography/text/* (size N)`, `spacing/lg (Base)`, `spacing/lg`, `spacing/odd-7`, `component/toast alert/*`, `component/badge/sucess/*`, `component/digital verify code/*`…
   - Đặt tên theo giá trị (19): `text/gray-on-surface`, `text/secondary-black (main)` (tên), `surface/neutral-white`, `border/gray-stronger`, `border/gray-muted`, `text/primary-green`, `text/on-primary-black-weak`, `surface/gray*`, `border/white`…
   - Contrast < 4.5 (12): `text/secondary`, `text/link`, `text/success`, `text/danger`, `text/warning`, `text/gray`, `text/warning-on-surface`, `text/success-on-surface`, `text/on-primary-white`…
   - Trùng lặp (12): `surface/info`=`surface/accent`, `background/default`, `text/info-on-surface`, `typography/family/text`…

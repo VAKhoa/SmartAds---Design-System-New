@@ -1,5 +1,7 @@
 # SDS-AUDIT — Audit & đề xuất · v3 (14/11/2026)
 
+> **Cập nhật 16/11/2026 (Figma đã đổi, đọc lại cùng ngày):** (1) `color/gray` + `color/secondary dark` gộp thành `color/neutral/{50,100,200,300,350,400,500,600,650,700,800,900,950}` (D3); 9 token `color/secondary dark/{10,30,50,100,200,300,400,600,700}` còn tồn tại với ghi chú `DEPRECATED`, không còn tham chiếu. (2) Người dùng **xóa 30 primitive**: `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Còn **660 variable** (Primitives 226). Gate: **A 17 · B 219 · E 424** (236/660 = 36% qua gate; E gồm 309 không dùng + 115 đang dùng nhưng lỗi). 3 alias mode Dark đang treo vào màu đã xóa: `border/primary-press`, `component/button/border/danger/default`, `component/button/border/danger/subtle`. Chi tiết: `FIGMA-CHANGELOG.md`, `NEUTRAL-MERGE.md`, `UNUSED-TOKENS.md`. Các số đếm khác trong file này vẫn là của ngày 14/11/2026.
+
 > Suy luận từ `SDS-CONTEXT.md` + `SDS-RECONCILIATION.md` (không đọc lại nguồn). Figma = root; mọi đề xuất **chưa áp dụng** vào Figma hay repo; đổi tên chỉ áp dụng sau khi được duyệt trong `tokens/rename-map.json`. Phạm vi: Light mode only; component bàn giao HTML/CSS/JS thuần. Mức độ: **High / Med / Low**.
 
 ## 1. Tóm tắt
@@ -18,8 +20,8 @@
 | TK-05 | Med | Collection lẫn tầng | `Spacing` chứa `screen/*` (42) + `typography/text/*` (13) trùng Primitives; `Alias` chứa 147 token `component/*`; boolean `Action Add`, `Subtitble` ở Primitives (F) | Sai tầng, trùng; 70/98 token Spacing không được dùng | Xoá `screen/*`, `typography/text/*` (Spacing); tách collection `Component`; chuyển boolean sang `Config` | Kiến trúc rõ Base → Semantic → Component | Thấp: các token này không được dùng |
 | TK-06 | Med | Token không dùng | 334 token (137 Primitives, 70 Spacing, 103 Alias, 6 Text, 18 Viewport) (F) | Nhiễu khi chọn token, tăng chi phí docs | Đánh dấu `deprecated` (description) 1 vòng phát hành rồi xoá; giữ thang màu 50–900 nếu cần cho data-viz | Gọn thư viện | Thấp; kiểm các trang Application UI trước khi xoá |
 | TK-07 | Med | Trùng lặp | `surface/info`=`surface/accent` (blue/500); `background/default`=`surface/primary-disable`=`surface/primary-default` (gray/100); `typography/family/text`=`display` (F) | Hai tên một nghĩa | Giữ một: `surface/info`, `surface/subtle`, `typography/family/base` | Giảm nhầm lẫn | Thấp |
-| TK-08 | Med | Hard-code trong Alias | 17 token Light không alias (15 đang dùng: logo bên thứ ba, `component/icon/file/*`, `component/table/surface/tab-header` #f6f8fa, `sematic/dashboard/*`) (F) | Không truy về primitive | Thêm primitive `color/brand/<partner>/*`, `color/gray/25`; alias lại | Toàn vẹn chuỗi alias | Thấp |
-| TK-09 | Med | Primitive mang nghĩa / khó đọc | `color/semantic tokens/color-ai-*`, `color/brand/fpt/{F,P,T}`, `color/red light|red dark`, `color/secondary dark|light` (F) | Sai tầng; "light/dark" dễ nhầm theme | `color/ai/*`, `color/brand/fpt/{blue,orange,green}`, `color/red-light|red-dark/*` (naming.md; gộp họ đỏ nếu bạn đồng ý), `color/neutral/*` (chờ D3) | Đọc được, không nhầm mode | Thấp (ID giữ) |
+| TK-08 | Med | Hard-code trong Alias | 17 token Light không alias (15 đang dùng: logo bên thứ ba, `component/icon/file/*`, `component/table/surface/tab-header` #f6f8fa, `sematic/dashboard/*`) (F) | Không truy về primitive | Thêm primitive `color/brand/<partner>/*`, `color/neutral/25`; alias lại | Toàn vẹn chuỗi alias | Thấp |
+| TK-09 | Med | Primitive mang nghĩa / khó đọc | `color/semantic tokens/color-ai-*`, `color/brand/fpt/{F,P,T}`, `color/red light` (F; `secondary dark` đã gộp vào `color/neutral`, `red dark` và `secondary light` đã xóa 16/11/2026) | Sai tầng; "light/dark" dễ nhầm theme | `color/ai/*`, `color/brand/fpt/{blue,orange,green}`, `color/red-light|red-dark/*` (naming.md; gộp họ đỏ nếu bạn đồng ý), `color/neutral/*` (chờ D3) | Đọc được, không nhầm mode | Thấp (ID giữ) |
 | TK-10 | Med | Scope & code syntax | `ALL_SCOPES` 690/690; code syntax 0/690; description 6 (F) | Dễ gán nhầm trong Figma; Dev Mode không hiện tên code | Scope theo loại; code syntax WEB `var(--sa-…)` theo quy tắc §3 | Handoff chính xác | Thấp |
 | TK-11 | Low | Casing | Viewport PascalCase (`Width/wd-xs`, `Screen/Container/…`); `typography/weight/Regular`; khoảng trắng ở 27 tên Alias (F) | Lệch quy ước đa số | Chữ thường kebab: `layout/width/xs`, `typography/weight/regular` | Slug ổn định | Thấp |
 | TK-12 | Med | Map sang code | `generate-theme.mjs` chỉ thay `/`→`-` (R) | Tên có khoảng trắng/ngoặc sinh CSS var không hợp lệ | Quy tắc slug duy nhất (§3) + test kiểm tên hợp lệ, không trùng | Build ổn định | Thấp |
@@ -84,7 +86,7 @@
 ## 4. Mapping đổi tên — Quick wins (không phá vỡ binding trong Figma vì ID giữ nguyên)
 | old_name | new_name |
 |---|---|
-| `color/red light/*` · `color/red dark/*` | `color/red-light/*` · `color/red-dark/*` (theo naming.md; gộp một họ đỏ là câu hỏi 2) |
+| `color/red light/*` | `color/red-light/*` (`color/red dark/*` đã xóa 16/11/2026) |
 | `color/green light/{50,100,200}` | `color/green-light/{50,100,200}` |
 | `color/brand/fpt/F` · `P` · `T` | `color/brand/fpt/blue` · `orange` · `green` |
 | `color/brand/fpt/Color-F-20%` (P, T) | `color/brand/fpt/blue-alpha-20` (orange, green) |
@@ -128,7 +130,7 @@ Các mục trên được ghi thành `proposed` trong `tokens/rename-map.json` (
 
 ## 6. Câu hỏi cần bạn quyết định
 1. Thang cỡ chữ (D4): dùng số (`typography/size/14`) hay t-shirt đơn điệu? Đổi `Microscope`/`Tini` thành gì?
-2. Trung tính (D3): gộp `color/gray` + `color/secondary dark` thành `color/neutral`? Giữ hay xoá `color/secondary light`, `color/red dark`, `color/orange` (không được dùng)?
+2. ~~Trung tính (D3): gộp `color/gray` + `color/secondary dark` thành `color/neutral`?~~ **Đã chốt và áp dụng 16/11/2026** (13 bậc, xem `NEUTRAL-MERGE.md`). `color/secondary light`, `color/red dark`, `color/orange` **đã được người dùng xóa 16/11/2026**.
 3. Spacing (TK-04): giữ t-shirt (`spacing/lg`) hay chuyển sang numeric như docs (`spacing/4`=16)?
 4. Cho phép **xoá** mode Dark và `Shadow/elevation-dark/*` khỏi Figma (không hoàn tác được) hay chỉ ẩn khỏi publish?
 5. Palette data-viz: 8 hay 10 màu series? Có cần bộ màu riêng cho Advertiser/Publisher?

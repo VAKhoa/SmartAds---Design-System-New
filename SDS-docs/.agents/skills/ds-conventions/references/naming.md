@@ -40,7 +40,6 @@ Trạng thái `proposed` nghĩa là chưa duyệt. Bản đầy đủ nằm ở 
 | Tên hiện tại | Đề xuất | Lý do |
 |---|---|---|
 | `color/red light/*` | `color/red-light/*` | khoảng trắng |
-| `color/red dark/*` | `color/red-dark/*` | khoảng trắng |
 | `typography/size/fs-display 2` | `typography/size/fs-display-2` | khoảng trắng |
 | `typography/size/fs-xs` (16) và `fs-lg` (12) | cần dump giá trị rồi gán lại thang | tên ngược nghĩa (D4) |
 | `spacing/xxs` | `spacing/2xs` | thang chuẩn |

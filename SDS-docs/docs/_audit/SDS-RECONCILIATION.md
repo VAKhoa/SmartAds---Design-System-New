@@ -1,5 +1,7 @@
 # SDS-RECONCILIATION — Đối chiếu Figma ↔ Repo · v3 (14/11/2026)
 
+> **Cập nhật 16/11/2026 (Figma đã đổi, đọc lại cùng ngày):** (1) `color/gray` + `color/secondary dark` gộp thành `color/neutral/{50,100,200,300,350,400,500,600,650,700,800,900,950}` (D3); 9 token `color/secondary dark/{10,30,50,100,200,300,400,600,700}` còn tồn tại với ghi chú `DEPRECATED`, không còn tham chiếu. (2) Người dùng **xóa 30 primitive**: `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Còn **660 variable** (Primitives 226). Gate: **A 17 · B 219 · E 424** (236/660 = 36% qua gate; E gồm 309 không dùng + 115 đang dùng nhưng lỗi). 3 alias mode Dark đang treo vào màu đã xóa: `border/primary-press`, `component/button/border/danger/default`, `component/button/border/danger/subtle`. Chi tiết: `FIGMA-CHANGELOG.md`, `NEUTRAL-MERGE.md`, `UNUSED-TOKENS.md`. Các số đếm khác trong file này vẫn là của ngày 14/11/2026.
+
 > Figma = root; repo = tham khảo phụ. Figma đọc live 14/11 bằng `info@smartads.tech` (script chỉ đọc), khớp 100% snapshot repo 02/11. Repo: `VAKhoa/SmartAds---Design-System-New`, `main`, commit `5571e94`. Phạm vi đã chốt 14/11/2026: **Light mode only** (dark mode loại khỏi phạm vi) và **component bàn giao = HTML/CSS/JS thuần**. Quality gate và cách tính: §3.
 
 ## 1. Quyết định đã chốt (ghi nhận)
@@ -18,7 +20,7 @@
 | Pipeline | `website/scripts/prepare.mjs` → `generateTheme()` → `src/styles/figma.generated.css` (gitignored, sinh khi dev/build); `color.generated.json`, `typography.generated.json` cho trang docs |
 | Output | **Chỉ CSS custom properties** (không Tailwind, không TS). 22 biến từ Figma: 14 màu `Alias` (2 mode) + `spacing/{xs,sm,md,xl}` + `radius/{sm,md,lg}` + `typography/family/display`; 7 biến `--sa-docs-*-size` lấy fontSize từ text style |
 | Biến tự định nghĩa | 43 khai báo trong `website/src/styles/*.css`: `--sa-docs-*` (17), `--sa-resource-*` (10), `--sa-space-*` (13, numeric), `--sa-layout-inspect`, `--sa-spacing-inspect-pink`, `--sa-spacing-surface`; 160 hex literal rải trong CSS (`globals.css` 113) |
-| Công cụ chất lượng | `scripts/ds-tokens.mjs lint|suggest` (rule R01–R08: khoảng trắng, case, ký tự, thứ tự thang, thuật ngữ, trùng, tầng, vị trí state) → trên snapshot: 810 token, 209 error, 314 warn; `tokens/rename-map.json` 85 mục (64 proposed, 21 needs-decision, 0 approved; trước 14/11 chỉ 16 mục); `tests/run-tests.mjs` chạy OK |
+| Công cụ chất lượng | `scripts/ds-tokens.mjs lint|suggest` (rule R01–R08: khoảng trắng, case, ký tự, thứ tự thang, thuật ngữ, trùng, tầng, vị trí state) → trên snapshot 16/11/2026: 780 mục, 186 error, 314 warn (14/11: 810, 209, 314); `tokens/rename-map.json` 98 mục tại 16/11/2026 (60 proposed, 21 needs-decision, 13 approved, 4 rejected; 85 mục ở 15/11, 16 mục ở 14/11); `tests/run-tests.mjs` chạy OK |
 
 ### 2.2 Component
 | Mục | Hiện trạng |
@@ -48,7 +50,7 @@
 
 | Nhóm | Token | Component | Ghi chú |
 |---|---:|---:|---|
-| A. Khớp cả hai | **16** | 0 | `background/neutral`, `border/primary`, `spacing/{xs,sm,md,xl}`, `radius/{sm,md,lg}`, `typography/family/display`, `color/{primary/200,primary/300,primary/500,gray/500,gray/800,base/white}` |
+| A. Khớp cả hai | **16** | 0 | `background/neutral`, `border/primary`, `spacing/{xs,sm,md,xl}`, `radius/{sm,md,lg}`, `typography/family/display`, `color/{primary/200,primary/300,primary/500,neutral/400,neutral/700,base/white}` |
 | B. Chỉ Figma (qua gate) | **219** | **77** (75 set + 2 component đơn) | chưa có code |
 | C. Chỉ repo | **37** (25 C-docs · 12 C-reject) | 20 (docs shell) | không đề xuất đưa vào Figma, trừ ghi chú D-01 |
 | D. Mâu thuẫn | **13** + 10 cấu trúc (§4) | — | `--sa-space-*` ↔ `spacing/*` |
@@ -68,7 +70,7 @@ Style: 60/132 qua gate (đang dùng, không lỗi) · 70 không được compone
 | Biến | Loại | Lý do |
 |---|---|---|
 | `--sa-docs-bg|panel|text|muted|border|link|selected`, `--sa-resource-surface|text|hover|pressed|action-bg|preview|divider|shadow`, `--sa-spacing-surface`, `--sa-docs-header-height` 64px, `--sa-docs-sidebar-width` 240px, 7 × `--sa-docs-*-size` | C-docs (25) | Vai trò riêng của docs, alias tới biến Figma hoặc số đo layout docs |
-| `--sa-docs-primary`, `--sa-docs-primary-fill` (#048845), `--sa-docs-on-primary-fill` (#ffffff), `--sa-docs-heading` (#1f1f1f), `--sa-resource-border` (#dfe3e8), `--sa-resource-muted` (#7b7d80) | C-reject (6) | Hex trùng giá trị Figma (`color/primary/500`, `base/white`, `secondary dark/900`, `gray/500`, `gray/800`) → phải dùng `var(--sa-…)` |
+| `--sa-docs-primary`, `--sa-docs-primary-fill` (#048845), `--sa-docs-on-primary-fill` (#ffffff), `--sa-docs-heading` (#1f1f1f), `--sa-resource-border` (#dfe3e8), `--sa-resource-muted` (#7b7d80) | C-reject (6) | Hex trùng giá trị Figma (`color/primary/500`, `base/white`, `neutral/950`, `neutral/400`, `neutral/700`) → phải dùng `var(--sa-…)` |
 | `--sa-docs-page-nav-bg` #f5f5f5, `-hover` #e7e7e7, `-active` #d9d9d9, `-text` #171717, `--sa-layout-inspect` #d026a2, `--sa-spacing-inspect-pink` #ba246d | C-reject (6) | Hex không có trong Figma |
 
 **D (13 token):** `--sa-space-{0,05,1,15,2,3,4,5,6,8,10,12,16}` ↔ `spacing/{none,xxs,xs,xs-plus,sm,md,lg (Base),xl,2xl,3xl,4xl,5xl,7xl}` — giá trị khớp 13/13, tên khác. Figma thắng; giữ numeric chỉ là alias docs (hoặc chọn numeric làm tên đích khi tái cấu trúc — Audit TK-04).
@@ -88,7 +90,7 @@ Style: 60/132 qua gate (đang dùng, không lỗi) · 70 không được compone
 | D-01 | Tên spacing | `spacing/xs, sm, md, lg (Base)…` | `--sa-space-1…16` (numeric) | Giữ Figma làm nguồn; numeric là alias docs. Nếu tái cấu trúc, chuyển Figma sang numeric (Audit TK-04) |
 | D-02 | Dark mode | Mode Dark tồn tại trong `Alias` | `themes: [light, dark]` + theme dark website | Theo Q1: ghi `themes: ["light"]` cho token sản phẩm; theme dark của website docs tách biệt (không sinh từ token sản phẩm) |
 | D-03 | Biến CSS sinh từ tên có khoảng trắng | `color/red light/500`, `spacing/lg (Base)` | `replaceAll('/', '-')` → `--sa-color-red light-500` (không hợp lệ) | Áp slug chuẩn (SDS-CONTEXT §8) |
-| D-04 | Màu docs hard-code trùng Figma | `color/primary/500`, `secondary dark/900`, `gray/500`, `gray/800` | `#048845`, `#1f1f1f`, `#dfe3e8`, `#7b7d80` | Đổi sang `var(--sa-…)` |
+| D-04 | Màu docs hard-code trùng Figma | `color/primary/500`, `neutral/950`, `neutral/400`, `neutral/700` | `#048845`, `#1f1f1f`, `#dfe3e8`, `#7b7d80` | Đổi sang `var(--sa-…)` |
 | D-05 | Rename-map tham chiếu tên không tồn tại | Không có `spacing/1 (1px)` (chỉ có `screen/1 (1px)`), không có `Alias/Primary - On Theme` local | 2 mục trong `rename-map.json` | Sửa/loại 2 mục |
 | D-06 | Quy ước tên | 209 error lint | `naming.md` (lowercase kebab, state cuối) | Dùng naming spec trong Audit làm chuẩn; Figma đổi dần |
 | D-07 | Typography docs | Body 120%, thang `Brand/*` | Docs body 200%, list 11–32px | Giữ là quy ước docs-only; không đưa vào token sản phẩm |

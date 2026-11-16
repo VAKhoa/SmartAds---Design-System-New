@@ -7,25 +7,22 @@ Giá trị dưới đây đọc trực tiếp từ Figma ngày 14/11/2026 (khớ
 | Thang | Bậc 50 → 900 (hex) |
 |---|---|
 | `color/primary` | e6f3ec · b1dac5 · 8cc8a9 · 57af82 · 36a06a · **048845** · 047c3f · 036131 · 024b26 · 02391d |
-| `color/gray` | fcfcfd · f7f7f8 · f0f2f4 · eaecf0 · e5e9ed · dfe3e8 · cbcfd3 · 9ea1a5 · 7b7d80 · 5e5f61 |
+| `color/neutral` | 50 fcfcfd · 100 f7f7f8 · 200 f0f2f4 · 300 eaecf0 · 350 e5e9ed · 400 dfe3e8 · 500 cbcfd3 · 600 9ea1a5 · 650 8c8c8c · 700 7b7d80 · 800 5e5f61 · 900 3c3c3c · 950 1f1f1f (gộp từ gray + secondary dark, 16/11/2026) |
 | `color/green` | ecffea · bae0b7 · 99d194 · 6bbb63 · 4eae45 · **229a16** · 1f8c14 · 186d10 · 13550c · 0e4109 |
 | `color/blue` | eceffe · c3cffa · a6b7f8 · 7d96f5 · 6482f3 · **3d63f0** · 385ada · 2b46aa · 223684 · 1a2a65 |
 | `color/yellow` | fff7e8 · fde6b6 · fdd993 · fcc862 · fbbd43 · **faad14** · e49d12 · b27b0e · 8a5f0b · 694908 |
 | `color/red light` | fceceb · f6c3bf · f2a6a1 · ec7e76 · e9655b · **e33e32** · cf382e · a12c24 · 7d221c · 5f1a15 |
-| `color/red dark` | fbe8e9 · f3b8ba · ed9598 · e4656a · df474d · d71920 · c4171d · 991217 · 760e12 · 5a0b0d |
-| `color/orange` | fff5e7 · ffdfb4 · ffd090 · ffba5d · ffad3d · ff980d · e88a0c · b56c09 · 8c5407 · 6b4005 |
-| `color/secondary dark` | 10 fdfdfd · 30 f4f6f5 · 50 f0f0f0 · e8e8e8 · e1e1e1 · cecece · bbbbbb · 8c8c8c · 828282 · 636363 · 3c3c3c · 1f1f1f |
-| `color/secondary light` | f2f8f7 · d6e8e7 · c3dddb · a7cdcb · 96c3c1 · 7cb4b1 · 71a4a1 · 58807e · 446361 · 344c4a |
+| `color/secondary dark` (DEPRECATED, 9 token, không còn tham chiếu) | 10 fdfdfd · 30 f4f6f5 · 50 f0f0f0 · 100 e8e8e8 · 200 e1e1e1 · 300 cecece · 400 bbbbbb · 600 828282 · 700 636363 |
 | `color/base` | black 000000 · white ffffff · black-weak 3c4043 |
 
 `color/opacity/<hue>/<α>` (hex + alpha) cho primary, gray, red, yellow, blue, green, black, white; 69 token, 33 chưa được dùng.
 
-Trạng thái dùng (14/11/2026, quét mọi variant): `color/orange`, `color/secondary light`, `color/red dark` (8/10), `color/semantic tokens/*` **không** được component nào dùng → ứng viên deprecated, xem `SDS-AUDIT.md` TK-06.
+Trạng thái (16/11/2026): `color/orange`, `color/secondary light`, `color/red dark` **đã bị xóa khỏi Figma** (không tạo lại, không tham chiếu). `color/semantic tokens/*` không được component nào dùng → ứng viên deprecated. Danh sách token không dùng: `docs/_audit/UNUSED-TOKENS.md`.
 
 ## Quy tắc đặt tên Base
 - `color/<hue>/<step>`, step là `50, 100, 200 … 900`.
-- Hue viết kebab-case: `primary`, `gray`, `green`, `blue`, `yellow`, `orange`, `red-light`, `red-dark`, `secondary-dark`, `secondary-light` (hiện Figma còn khoảng trắng — các mục đổi tên đang `proposed` trong `tokens/rename-map.json`).
-- `gray` và `secondary dark` là hai thang trung tính song song (trùng chức năng); chờ D3.
+- Hue viết kebab-case: `primary`, `neutral`, `green`, `blue`, `yellow`, `red-light` (hiện Figma còn khoảng trắng — các mục đổi tên đang `proposed` trong `tokens/rename-map.json`).
+- Thang trung tính duy nhất là `color/neutral` (D3, 16/11/2026). Không dùng `color/secondary dark/*` còn lại (deprecated) và không tạo lại `color/gray`.
 - Token tầng Base không mang nghĩa semantic: `color/semantic tokens/color-ai-*` nên thành `color/ai/*`.
 
 ## Semantic (`Alias`, mode Light)

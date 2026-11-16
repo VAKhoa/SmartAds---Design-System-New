@@ -1700,5 +1700,6 @@
         "sm": 1536
       }
     }
-  ]
+  ],
+  "patched": "Đồng bộ 16/11/2026: (1) gộp color/gray + color/secondary dark thành color/neutral; (2) người dùng xóa 30 primitive color/secondary light, color/red dark, color/orange trong Figma. Đã đọc lại Figma: số variable theo collection, 22 primitive xám, 140 tham chiếu xám và 3 alias treo. Phần còn lại giữ bản chụp 14/11/2026."
 }

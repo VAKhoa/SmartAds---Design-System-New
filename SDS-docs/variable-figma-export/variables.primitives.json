@@ -10,7 +10,7 @@
       "name": "Value"
     }
   ],
-  "count": 256,
+  "count": 226,
   "variables": [
     {
       "id": "VariableID:4:14",
@@ -33,7 +33,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/50",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/200. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -225,7 +225,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/100",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/300. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -241,7 +241,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/200",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/400. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -257,7 +257,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/300",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/500. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -273,7 +273,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/400",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/500. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -287,7 +287,7 @@
     {
       "id": "VariableID:10:28",
       "collection": "Primitives ",
-      "name": "color/secondary dark/500",
+      "name": "color/neutral/650",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -305,7 +305,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/600",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/700. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -321,7 +321,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/700",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/800. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -335,7 +335,7 @@
     {
       "id": "VariableID:12:158",
       "collection": "Primitives ",
-      "name": "color/secondary dark/800",
+      "name": "color/neutral/900",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -351,7 +351,7 @@
     {
       "id": "VariableID:12:159",
       "collection": "Primitives ",
-      "name": "color/secondary dark/900",
+      "name": "color/neutral/950",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -607,7 +607,7 @@
     {
       "id": "VariableID:12:191",
       "collection": "Primitives ",
-      "name": "color/gray/50",
+      "name": "color/neutral/50",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -623,7 +623,7 @@
     {
       "id": "VariableID:12:315",
       "collection": "Primitives ",
-      "name": "color/gray/800",
+      "name": "color/neutral/700",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -639,7 +639,7 @@
     {
       "id": "VariableID:12:316",
       "collection": "Primitives ",
-      "name": "color/gray/100",
+      "name": "color/neutral/100",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -655,7 +655,7 @@
     {
       "id": "VariableID:12:317",
       "collection": "Primitives ",
-      "name": "color/gray/200",
+      "name": "color/neutral/200",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -671,7 +671,7 @@
     {
       "id": "VariableID:12:318",
       "collection": "Primitives ",
-      "name": "color/gray/300",
+      "name": "color/neutral/300",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -687,7 +687,7 @@
     {
       "id": "VariableID:12:319",
       "collection": "Primitives ",
-      "name": "color/gray/400",
+      "name": "color/neutral/350",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -703,7 +703,7 @@
     {
       "id": "VariableID:12:320",
       "collection": "Primitives ",
-      "name": "color/gray/700",
+      "name": "color/neutral/600",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -719,7 +719,7 @@
     {
       "id": "VariableID:12:321",
       "collection": "Primitives ",
-      "name": "color/gray/600",
+      "name": "color/neutral/500",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -735,7 +735,7 @@
     {
       "id": "VariableID:12:322",
       "collection": "Primitives ",
-      "name": "color/gray/500",
+      "name": "color/neutral/400",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -751,7 +751,7 @@
     {
       "id": "VariableID:12:323",
       "collection": "Primitives ",
-      "name": "color/gray/900",
+      "name": "color/neutral/800",
       "type": "COLOR",
       "description": "",
       "scopes": [
@@ -1729,7 +1729,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/30",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/100. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -1745,7 +1745,7 @@
       "collection": "Primitives ",
       "name": "color/secondary dark/10",
       "type": "COLOR",
-      "description": "",
+      "description": "DEPRECATED 2026-11-16: dùng color/neutral/50. Không dùng token này cho thiết kế mới.",
       "scopes": [
         "ALL_SCOPES"
       ],
@@ -2861,486 +2861,6 @@
       }
     },
     {
-      "id": "VariableID:4904:7409",
-      "collection": "Primitives ",
-      "name": "color/secondary light/50",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#f2f8f7"
-      },
-      "resolvedValues": {
-        "Value": "#f2f8f7"
-      }
-    },
-    {
-      "id": "VariableID:4904:7410",
-      "collection": "Primitives ",
-      "name": "color/secondary light/100",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#d6e8e7"
-      },
-      "resolvedValues": {
-        "Value": "#d6e8e7"
-      }
-    },
-    {
-      "id": "VariableID:4904:7411",
-      "collection": "Primitives ",
-      "name": "color/secondary light/200",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#c3dddb"
-      },
-      "resolvedValues": {
-        "Value": "#c3dddb"
-      }
-    },
-    {
-      "id": "VariableID:4904:7412",
-      "collection": "Primitives ",
-      "name": "color/secondary light/300",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#a7cdcb"
-      },
-      "resolvedValues": {
-        "Value": "#a7cdcb"
-      }
-    },
-    {
-      "id": "VariableID:4904:7413",
-      "collection": "Primitives ",
-      "name": "color/secondary light/400",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#96c3c1"
-      },
-      "resolvedValues": {
-        "Value": "#96c3c1"
-      }
-    },
-    {
-      "id": "VariableID:4904:7414",
-      "collection": "Primitives ",
-      "name": "color/secondary light/500",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#7cb4b1"
-      },
-      "resolvedValues": {
-        "Value": "#7cb4b1"
-      }
-    },
-    {
-      "id": "VariableID:4904:7415",
-      "collection": "Primitives ",
-      "name": "color/secondary light/600",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#71a4a1"
-      },
-      "resolvedValues": {
-        "Value": "#71a4a1"
-      }
-    },
-    {
-      "id": "VariableID:4904:7416",
-      "collection": "Primitives ",
-      "name": "color/secondary light/700",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#58807e"
-      },
-      "resolvedValues": {
-        "Value": "#58807e"
-      }
-    },
-    {
-      "id": "VariableID:4904:7417",
-      "collection": "Primitives ",
-      "name": "color/secondary light/800",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#446361"
-      },
-      "resolvedValues": {
-        "Value": "#446361"
-      }
-    },
-    {
-      "id": "VariableID:4904:7418",
-      "collection": "Primitives ",
-      "name": "color/secondary light/900",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#344c4a"
-      },
-      "resolvedValues": {
-        "Value": "#344c4a"
-      }
-    },
-    {
-      "id": "VariableID:5714:596",
-      "collection": "Primitives ",
-      "name": "color/red dark/50",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#fbe8e9"
-      },
-      "resolvedValues": {
-        "Value": "#fbe8e9"
-      }
-    },
-    {
-      "id": "VariableID:5714:597",
-      "collection": "Primitives ",
-      "name": "color/red dark/100",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#f3b8ba"
-      },
-      "resolvedValues": {
-        "Value": "#f3b8ba"
-      }
-    },
-    {
-      "id": "VariableID:5714:598",
-      "collection": "Primitives ",
-      "name": "color/red dark/200",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ed9598"
-      },
-      "resolvedValues": {
-        "Value": "#ed9598"
-      }
-    },
-    {
-      "id": "VariableID:5714:599",
-      "collection": "Primitives ",
-      "name": "color/red dark/300",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#e4656a"
-      },
-      "resolvedValues": {
-        "Value": "#e4656a"
-      }
-    },
-    {
-      "id": "VariableID:5714:600",
-      "collection": "Primitives ",
-      "name": "color/red dark/400",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#df474d"
-      },
-      "resolvedValues": {
-        "Value": "#df474d"
-      }
-    },
-    {
-      "id": "VariableID:5714:601",
-      "collection": "Primitives ",
-      "name": "color/red dark/500",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#d71920"
-      },
-      "resolvedValues": {
-        "Value": "#d71920"
-      }
-    },
-    {
-      "id": "VariableID:5714:602",
-      "collection": "Primitives ",
-      "name": "color/red dark/600",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#c4171d"
-      },
-      "resolvedValues": {
-        "Value": "#c4171d"
-      }
-    },
-    {
-      "id": "VariableID:5714:603",
-      "collection": "Primitives ",
-      "name": "color/red dark/700",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#991217"
-      },
-      "resolvedValues": {
-        "Value": "#991217"
-      }
-    },
-    {
-      "id": "VariableID:5714:604",
-      "collection": "Primitives ",
-      "name": "color/red dark/800",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#760e12"
-      },
-      "resolvedValues": {
-        "Value": "#760e12"
-      }
-    },
-    {
-      "id": "VariableID:5714:605",
-      "collection": "Primitives ",
-      "name": "color/red dark/900",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#5a0b0d"
-      },
-      "resolvedValues": {
-        "Value": "#5a0b0d"
-      }
-    },
-    {
-      "id": "VariableID:5718:167708",
-      "collection": "Primitives ",
-      "name": "color/orange/50",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#fff5e7"
-      },
-      "resolvedValues": {
-        "Value": "#fff5e7"
-      }
-    },
-    {
-      "id": "VariableID:5718:167709",
-      "collection": "Primitives ",
-      "name": "color/orange/100",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ffdfb4"
-      },
-      "resolvedValues": {
-        "Value": "#ffdfb4"
-      }
-    },
-    {
-      "id": "VariableID:5718:167710",
-      "collection": "Primitives ",
-      "name": "color/orange/200",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ffd090"
-      },
-      "resolvedValues": {
-        "Value": "#ffd090"
-      }
-    },
-    {
-      "id": "VariableID:5718:167711",
-      "collection": "Primitives ",
-      "name": "color/orange/300",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ffba5d"
-      },
-      "resolvedValues": {
-        "Value": "#ffba5d"
-      }
-    },
-    {
-      "id": "VariableID:5718:167712",
-      "collection": "Primitives ",
-      "name": "color/orange/400",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ffad3d"
-      },
-      "resolvedValues": {
-        "Value": "#ffad3d"
-      }
-    },
-    {
-      "id": "VariableID:5718:167713",
-      "collection": "Primitives ",
-      "name": "color/orange/500",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#ff980d"
-      },
-      "resolvedValues": {
-        "Value": "#ff980d"
-      }
-    },
-    {
-      "id": "VariableID:5718:167714",
-      "collection": "Primitives ",
-      "name": "color/orange/600",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#e88a0c"
-      },
-      "resolvedValues": {
-        "Value": "#e88a0c"
-      }
-    },
-    {
-      "id": "VariableID:5718:167715",
-      "collection": "Primitives ",
-      "name": "color/orange/700",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#b56c09"
-      },
-      "resolvedValues": {
-        "Value": "#b56c09"
-      }
-    },
-    {
-      "id": "VariableID:5718:167716",
-      "collection": "Primitives ",
-      "name": "color/orange/800",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#8c5407"
-      },
-      "resolvedValues": {
-        "Value": "#8c5407"
-      }
-    },
-    {
-      "id": "VariableID:5718:167717",
-      "collection": "Primitives ",
-      "name": "color/orange/900",
-      "type": "COLOR",
-      "description": "",
-      "scopes": [
-        "ALL_SCOPES"
-      ],
-      "values": {
-        "Value": "#6b4005"
-      },
-      "resolvedValues": {
-        "Value": "#6b4005"
-      }
-    },
-    {
       "id": "VariableID:5728:35",
       "collection": "Primitives ",
       "name": "color/semantic tokens/color-ai-purple",
@@ -4108,5 +3628,6 @@
         "Value": 84
       }
     }
-  ]
+  ],
+  "patched": "Đồng bộ 16/11/2026: (1) gộp color/gray + color/secondary dark thành color/neutral; (2) người dùng xóa 30 primitive color/secondary light, color/red dark, color/orange trong Figma. Đã đọc lại Figma: số variable theo collection, 22 primitive xám, 140 tham chiếu xám và 3 alias treo. Phần còn lại giữ bản chụp 14/11/2026."
 }

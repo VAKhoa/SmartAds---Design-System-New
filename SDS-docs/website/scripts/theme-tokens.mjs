@@ -14,5 +14,5 @@ export const dimensionNames = ['spacing/xs', 'spacing/sm', 'spacing/md', 'spacin
 // Primitive màu (collection "Primitives ", mode Value) thay cho hex hard-code trong CSS docs.
 export const primitiveColorNames = [
   'color/primary/200', 'color/primary/300', 'color/primary/500',
-  'color/secondary dark/900', 'color/gray/500', 'color/gray/800', 'color/base/white',
+  'color/neutral/950', 'color/neutral/400', 'color/neutral/700', 'color/base/white',
 ];

@@ -69,8 +69,8 @@
       "collection": "Base",
       "from": "color/red dark/500",
       "to": "color/red-dark/500",
-      "reason": "Chuẩn hóa theo ds-conventions (kebab-case, thuật ngữ, vị trí trạng thái)",
-      "status": "proposed",
+      "reason": "Token đã bị người dùng xóa trong Figma ngày 16/11/2026; không còn gì để đổi tên.",
+      "status": "rejected",
       "source": "observed-in-figma"
     },
     {
@@ -151,8 +151,8 @@
       "collection": "Base",
       "from": "color/red dark/*",
       "to": "color/red-dark/*",
-      "reason": "Khoảng trắng. 8/10 bậc không component nào dùng",
-      "status": "proposed",
+      "reason": "Token đã bị người dùng xóa trong Figma ngày 16/11/2026; không còn gì để đổi tên.",
+      "status": "rejected",
       "source": "audit-2026-11-14",
       "kind": "group"
     },
@@ -160,8 +160,8 @@
       "collection": "Base",
       "from": "color/secondary dark/*",
       "to": "color/secondary-dark/*",
-      "reason": "Khoảng trắng; chờ D3 (gộp với gray thành neutral?)",
-      "status": "proposed",
+      "reason": "Thay bằng việc gộp vào color/neutral (D3, 16/11/2026). 9 token color/secondary dark còn lại là DEPRECATED, không đổi tên.",
+      "status": "rejected",
       "source": "audit-2026-11-14",
       "kind": "group"
     },
@@ -169,8 +169,8 @@
       "collection": "Base",
       "from": "color/secondary light/*",
       "to": "color/secondary-light/*",
-      "reason": "Khoảng trắng; 9/10 bậc không dùng",
-      "status": "proposed",
+      "reason": "Token đã bị người dùng xóa trong Figma ngày 16/11/2026; không còn gì để đổi tên.",
+      "status": "rejected",
       "source": "audit-2026-11-14",
       "kind": "group"
     },
@@ -735,7 +735,124 @@
       "status": "proposed",
       "source": "audit-2026-11-14",
       "kind": "component-prop"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/50",
+      "to": "color/neutral/50",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/100",
+      "to": "color/neutral/100",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/200",
+      "to": "color/neutral/200",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/300",
+      "to": "color/neutral/300",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/400",
+      "to": "color/neutral/350",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/500",
+      "to": "color/neutral/400",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/600",
+      "to": "color/neutral/500",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/700",
+      "to": "color/neutral/600",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/800",
+      "to": "color/neutral/700",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/gray/900",
+      "to": "color/neutral/800",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/secondary dark/500",
+      "to": "color/neutral/650",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/secondary dark/800",
+      "to": "color/neutral/900",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
+    },
+    {
+      "collection": "Base",
+      "from": "color/secondary dark/900",
+      "to": "color/neutral/950",
+      "reason": "Gộp gray + secondary dark thành một thang trung tính (D3)",
+      "status": "approved",
+      "source": "user-approved-2026-11-16",
+      "appliedInFigma": "2026-11-16"
     }
   ],
-  "updated": "2026-11-14"
+  "updated": "2026-11-16"
 }

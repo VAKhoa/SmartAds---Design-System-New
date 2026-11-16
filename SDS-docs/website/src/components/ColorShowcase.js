@@ -7,15 +7,11 @@ const aliasMap = new Map(catalog.aliases.map(item => [item.name, item]));
 
 const palettes = [
   ['Primary', 'primary'],
-  ['Secondary light', 'secondary light'],
-  ['Secondary dark', 'secondary dark'],
-  ['Gray', 'gray'],
+  ['Neutral', 'neutral'],
   ['Green', 'green'],
   ['Blue', 'blue'],
   ['Yellow', 'yellow'],
-  ['Orange', 'orange'],
   ['Red light', 'red light'],
-  ['Red dark', 'red dark'],
 ];
 
 const roles = [
