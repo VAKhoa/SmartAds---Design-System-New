@@ -20,7 +20,7 @@ Chỉ mở file Figma được người dùng chỉ định cho task, kiểm tra
 ## Audit và đổi tên
 
 1. Chạy `node scripts/ds-tokens.mjs lint variable-figma-export/ --json`. Ghi số lượng collection, variable theo loại, style, alias, giá trị trực tiếp và các vấn đề vào `docs/_audit/` khi cần báo cáo. Kiểm tra scope, description, tầng Base/Semantic/Component, thang kích thước và khác biệt Light/Dark; so docs với dữ liệu khi đã có docs.
-2. Đối chiếu các phát hiện với Figma và `.agents/skills/ds-conventions/references/`; không coi gợi ý từ script là quyết định đã duyệt.
+2. Đối chiếu các phát hiện với Figma và `skills-source/ds-conventions/references/`; không coi gợi ý từ script là quyết định đã duyệt.
 3. Chạy `node scripts/ds-tokens.mjs suggest variable-figma-export/` để lấy đề xuất. Gộp vào `tokens/rename-map.json` mà không ghi đè mục đã `approved` hoặc `rejected`. Mục mơ hồ để `needs-decision`, kèm lý do.
 4. Chỉ đổi tên trong Figma khi người dùng yêu cầu rõ và đã duyệt mục tương ứng. Sau thay đổi, đồng bộ lại và kiểm tra alias/binding.
 

@@ -57,7 +57,7 @@ Người dùng sản phẩm SmartAds và người dùng SDS là **hai nhóm khá
 | SmartAds đang giới thiệu sản phẩm ra thị trường như thế nào | [Website SmartAds](https://smartads.tech/) và các trang giải pháp liên quan. |
 | Tên, ID, giá trị và liên kết variable/style hiện có | [File Figma SmartAds Design System](https://www.figma.com/design/cRZ5kIi4kD6j9lh1dbh5mh/SmartAds---Design-System). |
 | Bản dữ liệu đã đọc để audit và sinh tài liệu/code | `SDS-docs/variable-figma-export/`; xem ngày đọc trong từng file JSON. |
-| Quy ước đã duyệt hoặc còn mở | `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md` và `SDS-docs/tokens/rename-map.json`. |
+| Quy ước đã duyệt hoặc còn mở | `skills-source/ds-conventions/references/open-decisions.md` và `SDS-docs/tokens/rename-map.json`. |
 | Cách vận hành thư mục này | [Hướng dẫn thư mục và vận hành](workspace-guide.md). |
 
 Tài liệu [VDS mẫu](<../../../../Prompt Docs VNE (DON'T TOUCH)/llms-full.txt>) giúp tham khảo **cách tổ chức tài liệu**, không xác định màu sắc, component hay tiếng nói thương hiệu của SmartAds.

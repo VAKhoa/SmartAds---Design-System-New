@@ -53,4 +53,4 @@ Bạn có thể giao việc cho một AI agent chính với phạm vi cụ thể
 
 ## Khi quy tắc hoặc file trong dự án thay đổi, website docs có tự cập nhật không?
 
-Không. Build chỉ sinh lại trang từ Markdown đang có. AI agent phải kiểm tra những trang bị ảnh hưởng, sửa nội dung, ví dụ và prompt đã cũ, rồi build và xem route liên quan. Khi sửa UI website, đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `SDS-docs/content/rules/website-ui-rules.md`; file thứ hai là quy tắc website. Xem quy trình và bảng tác động trên trang [AI Agents](/introduction/ai-agents/).
+Không. Build chỉ sinh lại trang từ Markdown đang có. AI agent phải kiểm tra những trang bị ảnh hưởng, sửa nội dung, ví dụ và prompt đã cũ, rồi build và xem route liên quan. Khi sửa UI website, đọc `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo và `SDS-docs/content/rules/website-ui-rules.md`; file thứ hai là quy tắc website. Xem quy trình và bảng tác động trên trang [AI Agents](/introduction/ai-agents/).

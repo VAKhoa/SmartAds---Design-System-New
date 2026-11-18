@@ -1,7 +1,7 @@
 ---
 title: Hướng dẫn thư mục và vận hành SDS Docs
 section: Introduction
-updated: 16/11/2026
+updated: 17/11/2026
 status: beta
 ---
 
@@ -36,7 +36,7 @@ Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn websit
 
 | Bạn muốn làm | Gọi AI agent và skill nào | Nguồn và file thường sửa | Điều kiện hoàn tất |
 | --- | --- | --- | --- |
-| Sửa layout, màu, nút, icon website | AI agent chính hoặc chat SDS — FE Website Builder; đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
+| Sửa layout, màu, nút, icon website | AI agent chính hoặc chat SDS — FE Website Builder; đọc `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo và `content/rules/website-ui-rules.md`; với link Figma dùng skill Figma design-to-code của môi trường. Nếu cần định nghĩa trạng thái component, đọc thêm `external-design-system` như tài liệu tham khảo. | Node Figma được gửi, `website/src/components/`, `website/src/styles/`, `website/public/brand/`. | Đối chiếu screenshot Figma, light/dark, hover/active/focus, desktop/mobile; build và kiểm tra route/asset. |
 | Build component sản phẩm từ Figma | Đọc `SDS-docs/content/rules/component-code-rules.md`; dùng hướng dẫn token/component/spec liên quan. | Node, state và token đã kiểm chứng; thư mục sản phẩm được giao. | HTML/CSS/JavaScript thuần chạy độc lập; preview cùng source; kiểm tra state, responsive, keyboard và nguồn. |
 | Viết hoặc sửa bài cho sidebar | AI agent chính; đọc `SDS-rules.md`, `content/guides/content-guide.md`, thêm `ds-conventions` nếu bài nêu quy tắc token; với Spacing đọc `sds-spacing-foundation`. | File chính trong `content/pages/` theo mục sidebar, Figma/snapshot hoặc nguồn SmartAds được dẫn. | Frontmatter, nguồn, trạng thái, route và link `.md` đúng; build, xem trang. |
 | Cập nhật thư viện Icons | AI agent chính; đọc `foundation/icons.md`, quy tắc component và FE website. | Gói public `@mingcute/svg` đã khóa trong `website/package-lock.json`, `website/scripts/generate-mingcute-catalog.mjs`, snapshot `icon/*` và `component/icon/common/*`. | Hai style cùng danh sách tên; search/filter, copy SVG/HTML, tải file và license hoạt động; không nhận alias đề xuất là token đã duyệt hoặc tự suy subset Figma. |
@@ -46,13 +46,13 @@ Tài liệu bạn đang đọc là **quy trình làm việc chung**, còn websit
 | Chỉnh script xuất/kiểm tra token | AI agent chính + `figma-token-workflow` nếu liên quan Figma. | `scripts/`, `tests/`. | `node tests/run-tests.mjs` đạt; báo giới hạn của dữ liệu mẫu. |
 | Phát hành token hoặc component sản phẩm | AI agent chính + `ds-conventions` và `figma-token-workflow`; chỉ bắt đầu sau khi phạm vi và quyết định liên quan được chốt. | Figma, rename map, token/source được kiểm chứng. | Mỗi giá trị truy được nguồn; alias/mode và state đúng; có kiểm tra đầu ra riêng. |
 
-`sds-fe-website-builder` ở `../../.agents/skills/sds-fe-website-builder/SKILL.md` bám theo Next.js, JavaScript và CSS thuần của website hiện tại. `external-design-system` ở `../../.agents/skills/external-design-system/skill-design-system.md` trỏ tới `E:\Test-Codex\design-system\SKILL.md`. Nó hữu ích cho cấu trúc token và state, nhưng đường dẫn này phụ thuộc máy đang dùng; nếu chuyển máy, cần cài lại hoặc cập nhật đường dẫn. Ví dụ màu trong skill là ví dụ chung, **không phải** giá trị SmartAds. Các skill `ds-conventions` và `figma-token-workflow` nằm ngay trong repo nên có thể chỉ đích danh bằng đường dẫn nếu lệnh `$...` không được môi trường nhận diện.
+`sds-fe-website-builder` ở `../../../skills-source/sds-fe-website-builder/SKILL.md` bám theo Next.js, JavaScript và CSS thuần của website hiện tại. `external-design-system` ở `../../../skills-source/external-design-system/skill-design-system.md` trỏ tới `E:\Test-Codex\design-system\SKILL.md`. Nó hữu ích cho cấu trúc token và state, nhưng đường dẫn này phụ thuộc máy đang dùng; nếu chuyển máy, cần cài lại hoặc cập nhật đường dẫn. Ví dụ màu trong skill là ví dụ chung, **không phải** giá trị SmartAds. Các skill `ds-conventions` và `figma-token-workflow` nằm ngay trong repo nên có thể chỉ đích danh bằng đường dẫn nếu lệnh `$...` không được môi trường nhận diện.
 
 ### Prompt mẫu để AI agent làm đúng ngay từ đầu
 
 **Component sản phẩm từ Figma:** “Đọc `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/component-code-rules.md`. Triển khai component [tên] từ node [URL] bằng HTML/CSS/JavaScript thuần trong [thư mục đích]. Giao markup, CSS, JS khi có tương tác, token/asset phụ thuộc và hướng dẫn chạy độc lập. Kiểm tra [state/viewport], keyboard, focus và nhiều instance. Ghi nguồn và phần chưa xác minh; snippet, preview và code bàn giao dùng cùng source. Website docs giữ Next.js/React và cách trình bày hiện tại.”
 
-**UI website tài liệu từ Figma:** “Trong `SDS-docs/website` (từ thư mục gốc repo), đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component] trong cấu trúc Next.js, JavaScript và CSS hiện tại. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, Tabler cho chức năng của docs shell, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Với icon sản phẩm, đối chiếu catalog MingCute và node Figma thay vì dùng Tabler. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
+**UI website tài liệu từ Figma:** “Trong `SDS-docs/website` (từ thư mục gốc repo), đọc `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo, `SDS-docs/content/rules/SDS-rules.md` và `SDS-docs/content/rules/website-ui-rules.md`. Dùng node Figma [URL] để sửa [trang/component] trong cấu trúc Next.js, JavaScript và CSS hiện tại. Giữ Public Sans, line-height 200% cho body content và 120% cho header/sidebar, Tabler cho chức năng của docs shell, prefix `sa`; triển khai light/dark, hover/active/focus và responsive [các độ rộng]. Với icon sản phẩm, đối chiếu catalog MingCute và node Figma thay vì dùng Tabler. Dùng token/asset có nguồn; ghi phần Figma chưa xác định. Rà các trang docs bị ảnh hưởng, build, kiểm tra trên trình duyệt và báo file đã sửa.”
 
 **Cập nhật Icons:** “Đọc `content/pages/foundation/icons.md`, `component-code-rules.md` và metadata của gói public `@mingcute/svg` được khóa. Tạo lại catalog bằng `npm run prepare:content`, giữ Regular/Filled, tên nguồn, SVG và license. Sơ đồ kết nối ba bước phải giữ đúng luồng GitHub → gói SVG → asset SmartAds; nút GitHub MingCute cùng kiểu với header và dẫn tới repository chính thức. Hướng dẫn cần chỉ rõ phiên bản cài đặt và cách đưa SVG vào dự án HTML/CSS/JS thuần. Đối chiếu các variable `icon/*` và `component/icon/common/*` theo ID snapshot; nếu muốn khẳng định icon đang dùng trong SmartAds, gửi node Figma cụ thể. Kiểm tra search/filter, copy/download, keyboard, light/dark và responsive; không đổi tên variable Figma khi chưa duyệt.”
 
@@ -77,7 +77,7 @@ Build chỉ chuyển nội dung Markdown thành website; nó **không tự sửa
 
 | Thay đổi ở đâu | Trang cần mở để đối chiếu |
 | --- | --- |
-| `AGENTS.md`, `SDS-rules.md`, `website-ui-rules.md`, `.agents/skills/`, `content/guides/workspace-guide.md` | **AI Agents**: cách gọi file/skill, flow, prompt, checklist; **Getting Started**: điểm bắt đầu theo vai trò; **FAQ**: câu trả lời vận hành; **Glossary** nếu thuật ngữ đổi. |
+| `AGENTS.md`, `SDS-rules.md`, `website-ui-rules.md`, `skills-source/`, `content/guides/workspace-guide.md` | **AI Agents**: cách gọi file/skill, flow, prompt, checklist; **Getting Started**: điểm bắt đầu theo vai trò; **FAQ**: câu trả lời vận hành; **Glossary** nếu thuật ngữ đổi. |
 | `ds.config.json`, `variable-figma-export/`, `tokens/rename-map.json`, quyết định D1–D8 | **Overview**: số liệu và trạng thái; **Design System?**, **Getting Started**, **AI Agents**, **FAQ**, **Glossary**: tên, nguồn, mode, mức đã duyệt. Chỉ đổi số liệu sau khi đối chiếu dữ liệu thật. |
 | `website/package.json`, script, cấu trúc thư mục, lệnh chạy hoặc quy trình build | **AI Agents**: lệnh/prompt/kiểm tra; **Getting Started**, **FAQ** khi người đọc cần thao tác; `website/README.md` và hướng dẫn này. |
 | `website/src/lib/navigation.js`, route, bài Introduction, `website/src/data/figma-files.json` | **Overview** và **FAQ**: phạm vi trang; **Getting Started**, **AI Agents**: đường dẫn và cách dùng; kiểm tra link/sidebar/trang Resource. |
@@ -95,7 +95,15 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 
 ```text
 <thư-mục-gốc-repo>/
-├─ AGENTS.md, .agents/skills/{sds-fe-website-builder/SKILL.md,external-design-system/skill-design-system.md}
+├─ AGENTS.md
+├─ skills-source/   (NGUỒN THẬT của mọi skill: mỗi thư mục con = một skill, có SKILL.md)
+│  ├─ ds-conventions/ (+ references/{naming,color,typography,spacing-radius,effects,open-decisions}.md)
+│  ├─ figma-token-workflow/ · sds-spacing-foundation/ · sds-fe-website-builder/ · ui-qa-figma-vs-code/ · sds-ui-ux-board-designer/
+│  ├─ external-design-system/skill-design-system.md   (con trỏ tới thư mục ngoài repo)
+│  └─ _packages/sds-ui-ux-board-designer.skill        (gói dẫn xuất, đóng lại khi sửa skill)
+├─ .claude/{agents/*.md,skills/,settings.json}   (agents = bản cài cho Claude Code; skills/ = lối tắt tới skills-source/; nguồn vai trò ở docs/_audit/agents/)
+├─ SDS-workspace/   (việc hằng ngày: ad-formats/ · ui-builds/ · qa-reports/ · _template/ · _scratch/; tách khỏi SDS-docs, không đồng bộ sang website; luật ở SDS-workspace/README.md)
+├─ .agents/skills/   (lối tắt tới skills-source/ cho Codex; không chứa file thật)
 └─ SDS-docs/
    ├─ README.md, ds.config.json, .gitignore
    ├─ content/
@@ -103,24 +111,19 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
    │  ├─ rules/{SDS-rules.md,component-code-rules.md,website-ui-rules.md}
    │  ├─ guides/{about-smartads.md,workspace-guide.md,content-guide.md}
    │  └─ pages/{index.md,introduction/,foundation/,components/,patterns/}
-   ├─ .agents/skills/
-   │  ├─ ds-conventions/SKILL.md
-   │  ├─ ds-conventions/references/{naming,color,typography,spacing-radius,effects,open-decisions}.md
-   │  ├─ figma-token-workflow/SKILL.md
-   │  └─ sds-spacing-foundation/SKILL.md
    ├─ scripts/{ds-tokens.mjs,css-name.mjs,build-tokens.mjs,dump-variables.figma.js,dump-styles.figma.js,dump-usage.figma.js}
    ├─ tests/{run-tests.mjs,fixtures/observed-sample.json}
    ├─ tokens/{rename-map.json,generated/}   (generated/ sinh bằng build-tokens.mjs, không commit)
    ├─ variable-figma-export/{overview.json,styles.json,usage.json,variables.*.json}
    ├─ website/               (Next.js + React, Introduction + Resource / Figma + Colors)
-   ├─ docs/_audit/{SDS-CONTEXT,SDS-AUDIT,SDS-RECONCILIATION,FIGMA-CHANGELOG,NEUTRAL-MERGE,UNUSED-TOKENS}.md + agents/{tokens-handler,components-handler,knowledge-keeper}.md
+   ├─ docs/_audit/{SDS-CONTEXT,SDS-AUDIT,SDS-RECONCILIATION,FIGMA-CHANGELOG,NEUTRAL-MERGE,UNUSED-TOKENS}.md + agents/{agent-core,tokens-handler,components-handler,knowledge-keeper}.md
    └─ docs/_knowledge/{INDEX,decisions,open-questions,glossary,agents,CHANGELOG}.md + topics/   (kho tri thức phái sinh)
 ```
 
 | Nhóm | Ý nghĩa và cách dùng |
 | --- | --- |
 | `README.md` | Trang dẫn nhập ngắn, dẫn tới tài liệu sản phẩm, hướng dẫn vận hành và bản đồ Markdown trong `content/`. |
-| `../AGENTS.md`, `../.agents/skills/` | Quy tắc vào dự án, skill FE theo cấu trúc website và skill dùng chung phụ thuộc đường dẫn ngoài repo. |
+| `../AGENTS.md`, `../skills-source/` | Quy tắc vào dự án và nguồn thật của mọi skill (FE, token, QA, board designer, con trỏ ngoài repo). |
 | `content/guides/about-smartads.md` | Giải thích sản phẩm SmartAds, mục tiêu SDS, đối tượng sử dụng và nguồn thông tin. |
 | `content/guides/workspace-guide.md` | Tài liệu bạn đang đọc: cấu trúc thư mục và cách vận hành. |
 | `content/README.md` | Bản đồ duy nhất để tìm quy tắc, hướng dẫn và bài website. |
@@ -129,8 +132,8 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 | `content/pages/` | Bài Markdown hiển thị trên website; thêm file ở đây để tạo nội dung cho route tương ứng. |
 | `ds.config.json` | Tên viết tắt `SDS`, file Figma, tên collection đang có và prefix CSS `sa` đã duyệt; cấu trúc collection đích chưa được duyệt. |
 | `.gitignore` | Bỏ qua file sinh ra, file tạm và `node_modules` trong repository Git. |
-| `.agents/skills/ds-conventions/` | Skill đặt tên token. Sáu file `references/` chứa chi tiết theo từng loại và quyết định D1–D8 (D1 đã chốt); chỉ mở mục liên quan. |
-| `.agents/skills/figma-token-workflow/` | Skill đồng bộ, audit và quản lý đề xuất đổi tên từ Figma. |
+| `../skills-source/ds-conventions/` | Skill đặt tên token. Sáu file `references/` chứa chi tiết theo từng loại và quyết định D1–D8 (D1 đã chốt); chỉ mở mục liên quan. |
+| `../skills-source/figma-token-workflow/` | Skill đồng bộ, audit và quản lý đề xuất đổi tên từ Figma. |
 | `scripts/dump-variables.figma.js` | Mã chạy trong Figma Plugin API để đọc collections và variables. |
 | `scripts/dump-styles.figma.js` | Mã đọc text/effect styles; paint/grid styles cần đọc bổ sung khi làm snapshot đầy đủ. |
 | `scripts/ds-tokens.mjs` | Lệnh `lint` kiểm tra tên và `suggest` gợi ý đổi tên từ JSON export. Không tự sửa Figma. |
@@ -142,7 +145,7 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 | `scripts/dump-usage.figma.js` | Mã chỉ-đọc chạy trong Figma Plugin API để biết variable/style nào được component dùng (ghi vào `usage.json`). |
 | `variable-figma-export/` | Bản chụp toàn bộ tên và giá trị token Figma ngày 02/11/2026 (đối chiếu Figma live 14/11/2026: khớp 100%): `overview.json`, 6 file variables theo collection, `styles.json`, và `usage.json` (token/style nào được component dùng, đọc 14/11/2026). Đây là dữ liệu đầu vào để xử lý tiếp, không phải CSS phát hành. |
 | `docs/_audit/` | Báo cáo audit (số liệu gốc 14/11/2026, đã vá ghi chú đầu file ngày 16/11/2026): `SDS-CONTEXT.md` (nguồn sự thật nén, chỉ nội dung qua gate), `SDS-RECONCILIATION.md` (đối chiếu Figma ↔ repo, nhóm A–E), `SDS-AUDIT.md` (vấn đề, đề xuất, mapping đổi tên, lộ trình, câu hỏi). **Đọc `FIGMA-CHANGELOG.md` trước** để biết Figma đã đổi gì (hiện 660 variable). `NEUTRAL-MERGE.md` ghi việc gộp `color/gray` + `color/secondary dark` thành `color/neutral`; `UNUSED-TOKENS.md` liệt kê token không được component dùng. Số liệu lấy từ snapshot + `usage.json`; cập nhật lại khi Figma đổi. |
-| `docs/_audit/agents/` | Ba file mô tả vai trò khi chia việc: `tokens-handler.md`, `components-handler.md`, `knowledge-keeper.md` (phạm vi, quy trình, trạng thái hiện tại, quy tắc thông báo và recap). Là mô tả công việc, AI nào nhận cũng làm được. Khi đổi các file này hoặc trạng thái Figma, báo các vai bị ảnh hưởng và để Knowledge Keeper recap (xem `AGENTS.md` mục 11). |
+| `docs/_audit/agents/` | Bốn file mô tả vai trò khi chia việc: `agent-core.md` (điều phối: làm rõ prompt bằng brief và câu hỏi xác nhận, bản đồ giao việc, ma trận kiểm chứng chéo người làm ≠ người kiểm, năm vai kỹ năng bổ sung, ranh giới "thiết kế mới không đồng bộ sang website"), `tokens-handler.md`, `components-handler.md`, `knowledge-keeper.md` (phạm vi, quy trình, trạng thái hiện tại, quy tắc thông báo và recap). Bản cài cho Claude Code nằm ở `.claude/agents/` ở gốc repo. Là mô tả công việc, AI nào nhận cũng làm được. Khi đổi các file này hoặc trạng thái Figma, báo các vai bị ảnh hưởng và để Knowledge Keeper recap (xem `AGENTS.md` mục 11). |
 | `docs/_knowledge/` | Kho tri thức **phái sinh** (chỉ mục, quyết định, câu hỏi mở, glossary, nhật ký `CHANGELOG.md`). Không phải nguồn: mâu thuẫn với file nguồn thì file nguồn thắng. Bắt đầu từ `INDEX.md`. |
 | `website/` | Mã website hiển thị cho người đọc. Đọc `content/rules/website-ui-rules.md` khi build UI; xem [hướng dẫn website](../../website/README.md) để biết từng file, trang Resource / Figma và cách chạy. |
 
@@ -152,7 +155,7 @@ Sau khi sửa hành vi điều hướng, theme, layout có nhiều breakpoint ho
 
 Các file dưới đây là **quy tắc và ghi chép audit ban đầu**, không phải bản export mới nhất từ Figma. AI agent chỉ cần mở file liên quan đến việc đang làm.
 
-| File trong `.agents/skills/ds-conventions/references/` | Mở khi cần |
+| File trong `../skills-source/ds-conventions/references/` | Mở khi cần |
 | --- | --- |
 | `naming.md` | Xét tên Base/Semantic/Component, trạng thái, ký tự hợp lệ và cách ánh xạ sang `--sa-*`. |
 | `color.md` | Xét thang màu, vai trò màu, Light/Dark và tương phản. Bảng giá trị ở đây chỉ là mẫu đã quan sát trước khi có export đầy đủ. |

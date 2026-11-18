@@ -16,7 +16,7 @@
 | Website docs | Next.js + React; 7 Introduction + Resource + 6 Foundation; 14 route trống | [topics/website.md](topics/website.md) | `SDS-rules.md`, `website-ui-rules.md`, `website/README.md`, `content-guide.md` | 2026-11-14 | High |
 | Quy trình & lệnh kiểm tra | Chọn việc → file; lệnh test/build; checklist đồng bộ sau mỗi thay đổi | [topics/workflow.md](topics/workflow.md) | `workspace-guide.md`, `AGENTS.md` §7–8 | 2026-11-13 | High |
 | Truy cập Figma | Chỉ đọc; `whoami` = `info@smartads.tech`; chỉ đúng file được giao | [topics/figma-access.md](topics/figma-access.md) | `AGENTS.md` §10 | 2026-11-15 | High |
-| Hệ thống agent | Agent Core + Tokens/Components Handler + Knowledge Keeper | [agents.md](agents.md) | `docs/_audit/agents/*` | 2026-11-15 | High |
+| Hệ thống agent | Agent Core + Tokens/Components Handler + Knowledge Keeper + 5 vai kỹ năng (Website Builder, UI QA Auditor, Board Designer, Ad Format Builder, Rules Verifier); kiểm chứng chéo; bản cài Claude Code ở `.claude/agents/` | [agents.md](agents.md) | `docs/_audit/agents/*` | 2026-11-17 | High |
 | Thuật ngữ | A–E, gate, Light-only, handoff… | [glossary.md](glossary.md) | nhiều file | 2026-11-15 | High |
 | Việc/câu hỏi chờ quyết + mâu thuẫn phát hiện | 9 câu Audit §6, D2–D8, lệch thông tin giữa file | [open-questions.md](open-questions.md) | `SDS-AUDIT.md` §6 + rà soát | 2026-11-15 | High |
 | Nhật ký kho | Ai duyệt, thêm/sửa gì | [CHANGELOG.md](CHANGELOG.md) | — | 2026-11-15 | — |
