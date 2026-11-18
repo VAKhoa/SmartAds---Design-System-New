@@ -12,4 +12,4 @@
 - File sinh tự động (`tokens/generated/`, `figma.generated.css`, `*.generated.json`, `out/`, `.next/`) không sửa tay.
 
 ## Bản đồ thư mục (rút gọn)
-`AGENTS.md` (điểm vào) · `.agents/skills/` (sds-fe-website-builder; external-design-system → ngoài repo) · `SDS-docs/`: `ds.config.json`, `variable-figma-export/`, `tokens/`, `scripts/`, `tests/`, `content/{rules,guides,pages}`, `docs/_audit/`, `docs/_knowledge/` (mới), `.agents/skills/{ds-conventions,figma-token-workflow,sds-spacing-foundation}`, `website/`.
+`AGENTS.md` (điểm vào) · `skills-source/` (sds-fe-website-builder; external-design-system → ngoài repo) · `SDS-docs/`: `ds.config.json`, `variable-figma-export/`, `tokens/`, `scripts/`, `tests/`, `content/{rules,guides,pages}`, `docs/_audit/`, `docs/_knowledge/` (mới), `skills-source/{ds-conventions,figma-token-workflow,sds-spacing-foundation}`, `website/`.

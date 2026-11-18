@@ -33,7 +33,7 @@ Kiểm tra nội dung, trạng thái và cách dùng thành phần có đúng v�
 
 Khi giao **component sản phẩm từ Figma**, yêu cầu đọc `SDS-docs/content/rules/component-code-rules.md`: code thực tế, snippet và handoff phải dùng HTML/CSS/JavaScript thuần, có token/asset phụ thuộc và cách chạy độc lập. Website tài liệu giữ Next.js/React; quy tắc này không yêu cầu thay đổi UI website.
 
-Cung cấp mục tiêu cụ thể, phạm vi cần thay đổi và nguồn thiết kế. Mở thư mục gốc repo để AI agent (Codex, Claude Code…) đọc quy tắc gốc; khi sửa UI website, yêu cầu đọc thêm `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo và `SDS-docs/content/rules/website-ui-rules.md`. Có thể giao phần FE cho chat SDS — FE Website Builder. Sau mỗi thay đổi trong folder, AI agent cần rà các trang website có thể đã cũ, cập nhật trang liên quan rồi build lại. Đọc [AI Agents](/introduction/ai-agents/) để xem bảng chọn skill, prompt mẫu và quy trình đồng bộ.
+Cung cấp mục tiêu cụ thể, phạm vi cần thay đổi và nguồn thiết kế. Mở thư mục gốc repo để AI agent (Codex, Claude Code…) đọc quy tắc gốc; khi sửa UI website, yêu cầu đọc thêm `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo và `SDS-docs/content/rules/website-ui-rules.md`. Có thể giao phần FE cho chat SDS — FE Website Builder. Sau mỗi thay đổi trong folder, AI agent cần rà các trang website có thể đã cũ, cập nhật trang liên quan rồi build lại. Đọc [AI Agents](/introduction/ai-agents/) để xem bảng chọn skill, prompt mẫu và quy trình đồng bộ.
 
 Nếu tạo bài Foundation, Component hoặc Pattern, chọn mục sidebar trước rồi mở `SDS-docs/content/guides/content-guide.md` để lấy đúng tên file và frontmatter. Thêm bài dựa trên nguồn thật, build website; trang và link mở Markdown gốc sẽ xuất hiện tại route của mục đó.
 

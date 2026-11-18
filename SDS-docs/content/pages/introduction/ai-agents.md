@@ -2,7 +2,7 @@
 title: AI Agents
 description: Quy trình giao việc cho AI agent (Codex, Claude Code…) trong SmartAds Design System, từ chọn nguồn và skill đến kiểm tra và bàn giao.
 section: Introduction
-updated: 16/11/2026
+updated: 17/11/2026
 status: draft
 sources:
   - label: Figma SmartAds Design System
@@ -17,7 +17,20 @@ Ngay dưới title/subtitle, khối “Tài liệu nguồn” mở `SDS-docs/con
 
 Khối **Cách sử dụng** phía trên cung cấp [đường dẫn website SDS đã triển khai](https://smart-ads-design-system-new.vercel.app/) để gửi cho AI agent. Nút **Sao chép** chỉ sao chép URL đó. Nút **Sao chép trang** ở thanh công cụ sao chép nội dung Markdown của trang AI Agents. Khi giao việc cần nguồn thiết kế cụ thể, hãy gửi thêm link đúng node Figma và phạm vi cần sửa.
 
-Trang này hướng dẫn bạn giao việc cho **AI agent (Codex, Claude Code…)** trong thư mục gốc repo. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. Chat chuyên trách **SDS — FE Website Builder** có thể nhận phần triển khai FE dưới sự điều phối của AI agent chính; một AI agent chính vẫn có thể nhận task, đọc nguồn, sửa file, kiểm tra và báo kết quả.
+Trang này hướng dẫn bạn giao việc cho **AI agent (Codex, Claude Code…)** trong thư mục gốc repo. Quy trình được rút ra từ các file đang có trong dự án: `AGENTS.md`, `SDS-docs/content/rules/SDS-rules.md`, `SDS-docs/content/guides/workspace-guide.md`, các skill nội bộ và mã nguồn website. Bạn chỉ làm việc với **Agent Core** (AI agent chính, leader/manager); Agent Core làm rõ yêu cầu rồi giao từng phần cho sub agent đúng chuyên môn và giao cho một sub agent khác kiểm chứng.
+
+## Làm việc qua Agent Core
+
+Quy trình của Agent Core nằm ở `SDS-docs/docs/_audit/agents/agent-core.md`. Mỗi yêu cầu đi qua bốn bước:
+
+1. **Làm rõ:** Agent Core diễn đạt lại yêu cầu, liệt kê điểm mơ hồ (thiếu node Figma, thiếu phạm vi, "component" là component sản phẩm hay của website docs…), đưa ra brief viết lại và hỏi bạn xác nhận. Chưa xác nhận thì chưa giao việc.
+2. **Giao việc:** mỗi phần có một sub agent sở hữu — Tokens Handler, Components Handler, Knowledge Keeper, Website Builder, UI QA Auditor, Board Designer, Ad Format Builder.
+3. **Kiểm chứng chéo:** người làm không tự kiểm. Agent Core giao kết quả cho agent khác (UI QA Auditor, Rules Verifier, hoặc Tokens/Components Handler ở chế độ chỉ đọc) và chỉ báo xong khi kết quả kiểm đạt.
+4. **Báo cáo:** file đã sửa, nguồn và ngày dữ liệu, lệnh kiểm tra, phần chưa xác minh hoặc còn chờ bạn quyết.
+
+**Thiết kế mới cho SmartAds không được đồng bộ sang website tài liệu.** Board UI/UX và ad format mới ở lại Figma hoặc thư mục được chỉ định; `SDS-docs/website/` chỉ được sửa khi bạn giao rõ việc build docs hoặc hiển thị component.
+
+Với Claude Code, các agent được cài sẵn trong `.claude/agents/` ở gốc repo; `.claude/skills/` liên kết 6 skill của repo (`ds-conventions`, `figma-token-workflow`, `sds-spacing-foundation`, `sds-fe-website-builder`, `ui-qa-figma-vs-code`, `sds-ui-ux-board-designer`) để gọi trực tiếp; `.claude/settings.json` đặt Agent Core làm agent chính. Có thể mở Claude Code ở thư mục gốc repo hoặc thư mục cha chứa nó (thư mục cha có liên kết tới cùng các file này), hoặc chạy `claude --agent agent-core`. Agent mới chỉ được nạp khi mở phiên mới. Với Codex hoặc AI khác, nhắc AI đọc `SDS-docs/docs/_audit/agents/agent-core.md` để làm theo cùng quy trình.
 
 Khi đọc Figma SmartAds, AI agent ưu tiên plugin **`figma-local@figma-local-workspace`**, gọi `whoami` để xác minh **`info@smartads.tech`** rồi dùng công cụ đọc đúng file. Nếu plugin chưa có, được dùng Figma MCP connector chỉ khi `whoami` trả đúng `info@smartads.tech`; nếu thiếu công cụ, sai tài khoản hoặc thiếu quyền, ghi rõ giới hạn; không tự chuyển sang plugin marketplace, app desktop hoặc Chrome. Khi được giao mở app desktop riêng, chọn **Dev Mode** và kiểm tra panel Inspect; URL `?m=dev` không tự xác nhận tài khoản hay quyền. Không tự gửi yêu cầu cấp quyền.
 
@@ -68,23 +81,23 @@ Bạn giao task cho **AI agent chính**. Chỉ định skill khi công việc th
 
 | Việc cần làm | Skill hoặc hướng dẫn cần đọc | Nguồn chính | Kết quả cần kiểm tra |
 | --- | --- | --- | --- |
-| Sửa UI website theo node Figma | Đọc `SDS-rules.md`, `content/rules/website-ui-rules.md` và `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo; dùng skill Figma design-to-code của môi trường khi cần đọc node. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
+| Sửa UI website theo node Figma | Đọc `SDS-rules.md`, `content/rules/website-ui-rules.md` và `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo; dùng skill Figma design-to-code của môi trường khi cần đọc node. `external-design-system` chỉ để tham khảo cấu trúc component/state khi cần. | Node Figma được giao, asset và mã website hiện tại. | Light/dark, hover/active/focus, responsive, route và asset; rà trang docs liên quan rồi build. |
 | Build component sản phẩm từ Figma | Đọc `SDS-docs/content/rules/component-code-rules.md`; dùng hướng dẫn token/component/spec liên quan. | Node, state và token đã kiểm chứng; thư mục sản phẩm được giao. | HTML/CSS/JavaScript thuần chạy độc lập; preview cùng source; kiểm tra state, responsive, keyboard và nguồn. |
 | Viết bài cho một mục sidebar | `SDS-rules.md`, `content/guides/content-guide.md`; thêm `ds-conventions` nếu bài nói về quy tắc token. | Tên file của mục, nguồn SmartAds/Figma và bài liên quan. | Frontmatter, trạng thái, nguồn, route và link `.md` gốc; build và xem trang. |
 | Thêm file vào Resource / Figma | `SDS-rules.md`; không cần skill token. | URL Figma thật và `figma-files.json`. | Tên, link, thẻ và trạng thái hiển thị; build. |
 | Đọc lại variables hoặc styles từ Figma | `figma-token-workflow`. | File Figma trong `ds.config.json` và bản export cũ. | Đếm collection, ID, mode, alias, style; ghi ngày đọc và chênh lệch. |
 | Audit hoặc đề xuất tên token | `ds-conventions` và `figma-token-workflow`. | Figma, snapshot, references và rename map. | Ghi ID, tên hiện tại, lý do, trạng thái đề xuất; không tự đổi tên. |
 | Viết Foundation về token | `ds-conventions`; đọc reference đúng loại và dữ liệu Figma. | Variable/style ID, mode và quyết định đã duyệt. | Tách dữ liệu quan sát với đề xuất; bài còn chờ duyệt phải ghi trạng thái. |
-| Viết hoặc build Foundation / Spacing | `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`, `ds-conventions`; nếu build UI, đọc thêm skill FE và `website-ui-rules.md`. | `foundation/spacing.md`, snapshot collection `Spacing` và mã website. | Đủ đối chiếu ID, px/rem, ngoại lệ, light/dark, responsive và copy; không gọi API docs là token package sản phẩm. |
+| Viết hoặc build Foundation / Spacing | `skills-source/sds-spacing-foundation/SKILL.md`, `ds-conventions`; nếu build UI, đọc thêm skill FE và `website-ui-rules.md`. | `foundation/spacing.md`, snapshot collection `Spacing` và mã website. | Đủ đối chiếu ID, px/rem, ngoại lệ, light/dark, responsive và copy; không gọi API docs là token package sản phẩm. |
 | Sửa script kiểm tra token | `figma-token-workflow` nếu cần dữ liệu Figma. | `SDS-docs/scripts/` và `SDS-docs/tests/`. | `node tests/run-tests.mjs` đạt. |
 
-Skill FE của repo nằm ở `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo; các skill nội dung/token nằm ở `SDS-docs/.agents/skills/ds-conventions/SKILL.md`, `SDS-docs/.agents/skills/figma-token-workflow/SKILL.md` và `SDS-docs/.agents/skills/sds-spacing-foundation/SKILL.md`. Nếu AI agent không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `.agents/skills/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
+Skill FE của repo nằm ở `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo; các skill nội dung/token nằm ở `skills-source/ds-conventions/SKILL.md`, `skills-source/figma-token-workflow/SKILL.md` và `skills-source/sds-spacing-foundation/SKILL.md`. Nếu AI agent không nhận cú pháp `$tên-skill`, hãy chỉ thẳng đường dẫn `SKILL.md` trong prompt. `external-design-system` có file dẫn tại `skills-source/external-design-system/skill-design-system.md`; nội dung đầy đủ của nó nằm ở `E:\Test-Codex\design-system\SKILL.md` trên máy hiện tại. Đường dẫn đó cần kiểm tra lại nếu chuyển máy, và ví dụ trong skill không phải giá trị SmartAds.
 
 ## Một task đi qua những bước nào?
 
 ### 1. Xác định đầu ra và giới hạn
 
-Nêu rõ trang, component, nhóm token hoặc script cần làm. Chỉ rõ phần nào được sửa; ví dụ “chỉ trang AI Agents” hoặc “chỉ button trên header”. Nếu chưa có nguồn cho một giá trị, yêu cầu ghi thiếu dữ liệu thay vì tự điền. Với Foundation hoặc token, xem `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md`: **D1 (`sa`) đã duyệt; D2–D8 còn mở**.
+Nêu rõ trang, component, nhóm token hoặc script cần làm. Chỉ rõ phần nào được sửa; ví dụ “chỉ trang AI Agents” hoặc “chỉ button trên header”. Nếu chưa có nguồn cho một giá trị, yêu cầu ghi thiếu dữ liệu thay vì tự điền. Với Foundation hoặc token, xem `skills-source/ds-conventions/references/open-decisions.md`: **D1 (`sa`) đã duyệt; D2–D8 còn mở**.
 
 ### 2. Đọc nguồn đúng với loại việc
 

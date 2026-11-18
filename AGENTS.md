@@ -11,19 +11,24 @@ SmartAds (smartads.tech) là nền tảng AdTech self-serve ads manager + analyt
 | Bất kỳ việc nào trong `SDS-docs/` | `SDS-docs/content/rules/SDS-rules.md` (quy tắc chung) → `SDS-docs/content/guides/workspace-guide.md` (cấu trúc thư mục, chọn quy trình và lệnh kiểm tra) |
 | Cần giá trị token, style, component, tên chuẩn | `SDS-docs/docs/_audit/SDS-CONTEXT.md` (bản nén, **chỉ nội dung qua quality gate**, có ngày đọc) → khi cần chi tiết: `SDS-docs/tokens/generated/tokens.json` (sinh bằng `node scripts/build-tokens.mjs`) hoặc `SDS-docs/variable-figma-export/` |
 | Hỏi "token/component nào tốt, nên sửa gì" | `SDS-docs/docs/_audit/SDS-AUDIT.md` (vấn đề, đề xuất, mapping đổi tên, lộ trình, câu hỏi chờ quyết) và `SDS-docs/docs/_audit/SDS-RECONCILIATION.md` (đối chiếu Figma ↔ repo, nhóm A–E) |
-| Đặt tên / đổi tên token | skill `SDS-docs/.agents/skills/ds-conventions/` (+ `references/`) và `SDS-docs/tokens/rename-map.json` |
-| Đồng bộ, audit, lint token từ Figma | skill `SDS-docs/.agents/skills/figma-token-workflow/` |
-| Spacing / radius | skill `SDS-docs/.agents/skills/sds-spacing-foundation/` + `references/spacing-radius.md` |
-| Build / sửa UI website tài liệu | `SDS-docs/content/rules/website-ui-rules.md` + skill `.agents/skills/sds-fe-website-builder/SKILL.md` + `SDS-docs/website/README.md` |
+| Đặt tên / đổi tên token | skill `skills-source/ds-conventions/` (+ `references/`) và `SDS-docs/tokens/rename-map.json` |
+| Đồng bộ, audit, lint token từ Figma | skill `skills-source/figma-token-workflow/` |
+| Spacing / radius | skill `skills-source/sds-spacing-foundation/` + `references/spacing-radius.md` |
+| Build / sửa UI website tài liệu | `SDS-docs/content/rules/website-ui-rules.md` + skill `skills-source/sds-fe-website-builder/SKILL.md` + `SDS-docs/website/README.md` |
 | Viết bài tài liệu | `SDS-docs/content/guides/content-guide.md` (đường dẫn từng bài) |
 | Viết / mô tả **component sản phẩm** (code bàn giao) | `SDS-docs/content/rules/component-code-rules.md` |
-| Chia việc theo vai (tokens / components / kho tri thức) | `SDS-docs/docs/_audit/agents/*.md` (phạm vi và quy trình từng vai); tra cứu nhanh: `SDS-docs/docs/_knowledge/INDEX.md` |
+| QA/QC UI: so Figma với code dev ("check UI", "design review", "dev code đúng design chưa") | skill `skills-source/ui-qa-figma-vs-code/SKILL.md` (+ `references/`, `scripts/`) |
+| Việc hằng ngày: build UI, ad format, QA báo cáo, thử nghiệm (không phải ghi nhận design system) | `SDS-workspace/README.md` → làm trong thư mục task `SDS-workspace/<loại>/<năm-tháng>-<slug>/` (khuôn: `SDS-workspace/_template/brief.md`); không ghi vào `SDS-docs/` |
+| Chia việc theo vai (Agent Core điều phối · tokens / components / kho tri thức · vai kỹ năng) | `SDS-docs/docs/_audit/agents/agent-core.md` (quy trình làm rõ prompt, bản đồ giao việc, ma trận kiểm chứng chéo) → `SDS-docs/docs/_audit/agents/*.md`; tra cứu nhanh: `SDS-docs/docs/_knowledge/INDEX.md`. Bản cài cho Claude Code: `.claude/agents/` (vỏ trỏ về các file này). **Máy mới / Codex / yêu cầu "tạo lại bộ chat agent":** đọc `SDS-docs/docs/_audit/agents/SESSIONS.md` (bảng chat, cách dựng lại, script `setup-agents.ps1`) |
 
 ## 3. Bản đồ cấu trúc
 ```text
 <thư-mục-gốc-repo>/
 ├─ AGENTS.md                      ← file này (CLAUDE.md = `@AGENTS.md`; .gitattributes = LF)
-├─ .agents/skills/                sds-fe-website-builder (FE docs) · external-design-system (liên kết tới thư mục ngoài repo; hỏng thì báo, không thay nguồn khác)
+├─ skills-source/                 **NGUỒN THẬT của mọi skill** (sửa ở đây): ds-conventions · figma-token-workflow · sds-spacing-foundation · sds-fe-website-builder · ui-qa-figma-vs-code · sds-ui-ux-board-designer · external-design-system (con trỏ tới thư mục ngoài repo; hỏng thì báo, không thay nguồn khác) · _packages/ (gói .skill dẫn xuất)
+├─ .claude/                       agents/ (agent-core + 8 sub agent, chỉ cho Claude Code) · skills/ (LỐI TẮT tới skills-source/, không chứa file thật) · settings.json (`agent: agent-core` = agent chính). Thư mục cha `Docs-SMA-27102026/.claude/{agents,skills}` cũng là lối tắt trỏ về đây
+├─ .agents/skills/                LỐI TẮT tới skills-source/ cho Codex và công cụ khác (tên bắt buộc theo quy ước công cụ; không chứa file thật)
+├─ SDS-workspace/                     việc hằng ngày (ad-formats · ui-builds · qa-reports · _template · _tools/check-tokens.mjs · _scratch) — TÁCH khỏi SDS-docs; đọc được SDS-docs, không ghi vào; không đồng bộ sang website. Luật: `SDS-workspace/README.md`
 └─ SDS-docs/
    ├─ ds.config.json              file key Figma · prefix CSS `sa` · themes · tên collection
    ├─ variable-figma-export/      bản chụp Figma (02/11/2026, đối chiếu live 14/11/2026, cập nhật 16/11/2026: 660 variable) + usage.json (token/style nào được component dùng)
@@ -34,7 +39,6 @@ SmartAds (smartads.tech) là nền tảng AdTech self-serve ads manager + analyt
    ├─ content/{rules,guides,pages}  quy tắc · hướng dẫn · bài hiển thị trên website
    ├─ docs/_audit/                SDS-CONTEXT · SDS-AUDIT · SDS-RECONCILIATION (báo cáo audit) · FIGMA-CHANGELOG (Figma đã đổi gì, đọc trước khi dùng số liệu) · NEUTRAL-MERGE · UNUSED-TOKENS · agents/ (mô tả vai trò sub agent: tokens, components, knowledge — mô tả công việc, không phụ thuộc công cụ)
    ├─ docs/_knowledge/            kho tri thức PHÁI SINH (chỉ mục, quyết định, câu hỏi mở, glossary) — không phải nguồn; mâu thuẫn thì file nguồn thắng
-   ├─ .agents/skills/             ds-conventions · figma-token-workflow · sds-spacing-foundation
    └─ website/                    Next.js + React (JS, CSS thuần) — website tài liệu
 ```
 
@@ -53,7 +57,7 @@ SmartAds (smartads.tech) là nền tảng AdTech self-serve ads manager + analyt
 - **D3 — trung tính** (16/11/2026, đã áp dụng trong Figma): một thang `color/neutral/{50…950}` 13 bậc, gộp từ `color/gray` + `color/secondary dark`. Không dùng lại tên `color/gray/*`; 9 token `color/secondary dark/*` còn lại là `DEPRECATED`. Chi tiết: `SDS-docs/docs/_audit/NEUTRAL-MERGE.md`.
 - **Đã xóa khỏi Figma** (16/11/2026, người dùng xóa): `color/secondary light/*`, `color/red dark/*`, `color/orange/*`. Không tạo lại, không tham chiếu. Nhật ký thay đổi Figma: `SDS-docs/docs/_audit/FIGMA-CHANGELOG.md`.
 - **D4** thang cỡ chữ dùng số px · **D11** spacing giữ t-shirt · **D12** mode Dark tạm ẩn, không xóa (16/11/2026; D4 và D12 chưa áp dụng vào Figma).
-- D2, D5–D8 và phần còn lại của D3: còn mở — xem `SDS-docs/.agents/skills/ds-conventions/references/open-decisions.md` và `SDS-docs/docs/_audit/SDS-AUDIT.md` §6.
+- D2, D5–D8 và phần còn lại của D3: còn mở — xem `skills-source/ds-conventions/references/open-decisions.md` và `SDS-docs/docs/_audit/SDS-AUDIT.md` §6.
 
 ## 6. Quy tắc đặt tên và tên CSS
 - Mọi tên CSS của token theo **một** quy tắc trong `SDS-docs/scripts/css-name.mjs`: `--sa-` + tên Figma chữ thường, bỏ ngoặc, khoảng trắng và `/` → `-` (vd `color/red light/500` → `--sa-color-red-light-500`). Không tự nghĩ tên CSS khác.
@@ -88,8 +92,9 @@ node scripts/build-tokens.mjs                          # sinh tokens/generated/t
 
 ## 11. Dùng nhiều AI song song (Claude Code + Codex + khác)
 - Mọi AI đọc **cùng** `AGENTS.md`; không có quy tắc riêng cho một công cụ. Thông tin cần cho việc phải nằm trong repo (file Markdown/JSON), không nằm trong trí nhớ hay phiên của một AI.
-- Skill nằm ở `.agents/skills/` và `SDS-docs/.agents/skills/` (định dạng `SKILL.md` dùng được cho cả hai). Claude Code không tự nạp thư mục này: mở đúng skill theo bảng mục 2.
-- Không dựa vào tính năng chỉ một công cụ có (nhắn tin giữa phiên, hook, mã phiên). Phân vai trong `docs/_audit/agents/` là mô tả công việc, ai nhận cũng làm được.
+- Mọi skill có **một** nguồn thật duy nhất: `skills-source/` (định dạng `SKILL.md` dùng được cho cả Claude Code và Codex). `.claude/skills` và `.agents/skills` chỉ là lối tắt tạo bằng `SDS-docs/docs/_audit/agents/setup-agents.ps1` (không nằm trong git). Luôn sửa ở `skills-source/`; mở đúng skill theo bảng mục 2.
+- Không dựa vào tính năng chỉ một công cụ có (nhắn tin giữa phiên, hook, mã phiên). Phân vai trong `docs/_audit/agents/` là mô tả công việc, ai nhận cũng làm được; `.claude/agents/` chỉ là lớp vỏ cho Claude Code, khi khác nhau thì `docs/_audit/agents/` thắng.
+- **Thiết kế mới cho SmartAds không đồng bộ sang FE website** (17/11/2026): board/ad format/thiết kế mới ở lại Figma hoặc `SDS-workspace/` (thư mục task do Agent Core ghi trong brief); `SDS-docs/website/` chỉ build docs và component khi người dùng giao rõ (`docs/_audit/agents/agent-core.md`).
 - Trước khi sửa: xem `git status`; không sửa cùng một file khi AI khác đang sửa. Không commit/push khi chưa được yêu cầu.
 - **Thông báo khi cập nhật (yêu cầu của người dùng 16/11/2026):** mọi thay đổi liên quan sub agent (file vai trò trong `docs/_audit/agents/`, quyết định, trạng thái Figma, quy ước, cấu trúc repo) phải kèm bước: (1) AI điều phối (Agent Core) báo cho từng sub agent bị ảnh hưởng — nội dung đổi, file nào, ngày, việc họ cần làm; (2) **Knowledge Keeper gửi recap** kiến thức mới/đã sửa (thêm/sửa gì, file, nguồn, ngày, còn gì treo) về người dùng; (3) ghi một dòng vào `docs/_knowledge/CHANGELOG.md`. Không coi việc cập nhật là xong khi chưa báo và chưa có recap. Quy trình đầy đủ: `docs/_audit/agents/knowledge-keeper.md`.
 - Một kiểu xuống dòng (LF, `.gitattributes`). File sinh ra (mục 6) chỉ tạo lại bằng script, không sửa tay.

@@ -1,0 +1,8 @@
+# Liên kết (junction/symlink) do setup-agents.ps1 tạo cho Claude Code và Codex; nguồn thật ở skills-source/ — không commit.
+/.agents/skills
+/.claude/skills
+
+# SDS-workspace/: nháp và file tạm không theo dõi
+/SDS-workspace/_scratch/*
+!/SDS-workspace/_scratch/.gitkeep
+/SDS-workspace/**/node_modules/

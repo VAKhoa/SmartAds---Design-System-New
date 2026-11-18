@@ -172,7 +172,7 @@ Mẫu thẻ lấy từ Figma `sQYYGDipDACa8UIqgdWWZq`, node `9:4767`: preview 14
 
 Sửa FAQ: mở `../content/pages/introduction/faq.md`, thay câu trả lời và updated, chạy `npm run prepare:content`, xem lại trang FAQ ở dev. Frontmatter bắt buộc gồm title, section, updated, status. Giữ draft cho nội dung chưa duyệt.
 
-Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. AI agent chính hoặc chat SDS — FE Website Builder đọc `.agents/skills/sds-fe-website-builder/SKILL.md` ở gốc repo, sửa phần tương ứng và kiểm tra lại.
+Sửa khoảng cách/độ rộng sidebar: sửa `src/styles/globals.css`. Sửa tìm kiếm/menu: sửa `src/components/DocsShell.js`. AI agent chính hoặc chat SDS — FE Website Builder đọc `skills-source/sds-fe-website-builder/SKILL.md` ở gốc repo, sửa phần tương ứng và kiểm tra lại.
 
 `../content/guides/` là hướng dẫn vận hành dự án; `../content/pages/` là nội dung trên website. Không tạo bản sao bài viết thủ công.
 

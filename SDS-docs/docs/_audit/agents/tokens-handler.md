@@ -14,7 +14,7 @@ Sub agent phụ trách **toàn bộ design token** của SDS. Nhận việc từ
 - **Không sở hữu:** code component bàn giao (Components Handler); UI website docs (phiên website, do Agent Core điều phối).
 
 ## Skill / tài liệu dùng
-- `SDS-docs/.agents/skills/ds-conventions/` (+ `references/`), `figma-token-workflow/`, `sds-spacing-foundation/`.
+- `skills-source/ds-conventions/` (+ `references/`), `figma-token-workflow/`, `sds-spacing-foundation/`.
 - Đọc nền: `AGENTS.md`, `SDS-rules.md`, `workspace-guide.md`, `SDS-CONTEXT.md`, `SDS-AUDIT.md`, `SDS-RECONCILIATION.md`, `rename-map.json`, `ds.config.json`.
 
 ## Quy trình
