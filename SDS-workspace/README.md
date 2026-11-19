@@ -6,7 +6,7 @@ Vùng làm việc **tách khỏi** `SDS-docs/` (nguồn sự thật design syste
 | Thư mục | Chứa | Người ghi (qua Agent Core) |
 |---|---|---|
 | `ad-formats/<năm-tháng>-<slug>/` | Ad format HTML/CSS/JS (prefix `sma-`) | ad-format-builder |
-| `ui-builds/<năm-tháng>-<slug>/` | Build UI/handoff theo task | components-handler (board-designer chỉ ghi Figma, không ghi file ở đây) |
+| `ui-builds/<năm-tháng>-<slug>/` | Build UI/handoff theo task | components-handler; design-handoff (nháp, ảnh state, ghi chú kiểm của task handoff — spec chính ở Figma). board-designer chỉ ghi Figma, không ghi file ở đây |
 | `qa-reports/<năm-tháng>-<slug>/` | `pairs.json`, `report.md`, ảnh — kết quả QA Figma ↔ code | ui-qa-auditor |
 | `_template/` | Khuôn một task (chép ra, đổi tên) | — |
 | `_tools/` | `check-tokens.mjs` (+ test): quét `out/` tìm màu/cỡ chữ không theo token SDS | — |

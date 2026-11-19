@@ -10,6 +10,7 @@ Mỗi thư mục con = một skill (tên thư mục trùng `name:` trong `SKILL.
 | `sds-fe-website-builder/` | Build/sửa UI website docs | website-builder |
 | `ui-qa-figma-vs-code/` | QA so Figma với code | ui-qa-auditor |
 | `sds-ui-ux-board-designer/` | Dựng board UI/UX trong Figma | board-designer |
+| `sma-design-handoff/` | Dựng handoff spec + UI cho developer trong Figma bằng bộ SmartAds - ESDS Specs (SKILL.md, references/, scripts/ chạy trong `use_figma`) | design-handoff |
 | `external-design-system/` | Con trỏ tới thư mục ngoài repo (tùy chọn, `[UNVERIFIED]`) | — |
 | `_packages/` | Gói `.skill` dẫn xuất (đóng lại từ thư mục tương ứng sau khi sửa) | — |
 
