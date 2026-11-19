@@ -1,6 +1,6 @@
 ---
 title: Agent Core (leader / manager)
-updated: 17/11/2026
+updated: 19/11/2026
 status: draft
 ---
 
@@ -43,11 +43,12 @@ Việc hằng ngày (build UI, ad format, báo cáo QA, thử nghiệm) làm tro
 | Token: tên, lint, build, đồng bộ/audit Figma, spacing/radius, `docs/_audit/*`, `rename-map.json` | Tokens Handler | `tokens-handler.md` |
 | Component sản phẩm: spec, code HTML/CSS/JS thuần, bài `content/pages/components/*` | Components Handler | `components-handler.md` |
 | Tra cứu, bằng chứng, mâu thuẫn, kho `_knowledge/`, recap | Knowledge Keeper | `knowledge-keeper.md` |
-| UI website tài liệu `SDS-docs/website/` — **chỉ khi người dùng giao rõ** | Website Builder | `skills-source/sds-fe-website-builder/SKILL.md` + `website-ui-rules.md` |
-| QA/QC Figma ↔ code (báo cáo `SDS-workspace/qa-reports/<task>/`) | UI QA Auditor (chỉ đọc code; chỉ ghi báo cáo) | `skills-source/ui-qa-figma-vs-code/SKILL.md` |
-| Thiết kế UI/UX mới, dựng board trong Figma | Board Designer | `skills-source/sds-ui-ux-board-designer/SKILL.md` |
-| Ad format quảng cáo HTML/CSS/JS prefix `sma-` (output `SDS-workspace/ad-formats/<task>/out/`) | Ad Format Builder | skill `sma-ad-format` (ngoài repo, cài trong công cụ AI) `[UNVERIFIED]` |
-| Kiểm tuân thủ rule, phạm vi, quyết định đã chốt | Rules Verifier (chỉ đọc) | AGENTS.md + `content/rules/*` |
+| UI website tài liệu `SDS-docs/website/` — **chỉ khi người dùng giao rõ** | Website Builder | `website-builder.md` + `skills-source/sds-fe-website-builder/SKILL.md` + `website-ui-rules.md` |
+| QA/QC Figma ↔ code (báo cáo `SDS-workspace/qa-reports/<task>/`) | UI QA Auditor (chỉ đọc code; chỉ ghi báo cáo) | `ui-qa-auditor.md` + `skills-source/ui-qa-figma-vs-code/SKILL.md` |
+| Thiết kế UI/UX mới, dựng board trong Figma | Board Designer | `board-designer.md` + `skills-source/sds-ui-ux-board-designer/SKILL.md` |
+| Spec bàn giao cho developer trong Figma (ESDS Specs, Do/Don't, REVIEW) | Design Handoff | `design-handoff.md` + `skills-source/sma-design-handoff/SKILL.md` |
+| Ad format quảng cáo HTML/CSS/JS prefix `sma-` (output `SDS-workspace/ad-formats/<task>/out/`) | Ad Format Builder | `ad-format-builder.md` + skill `sma-ad-format` (ngoài repo, cài trong công cụ AI) `[UNVERIFIED]` |
+| Kiểm tuân thủ rule, phạm vi, quyết định đã chốt | Rules Verifier (chỉ đọc) | `rules-verifier.md` + AGENTS.md + `content/rules/*` |
 
 Việc chạm nhiều vùng → tách task, mỗi task một chủ sở hữu, theo thứ tự phụ thuộc (ví dụ component cần token mới: Tokens Handler đề xuất vào `rename-map.json` → người dùng duyệt → Components Handler).
 
@@ -59,6 +60,7 @@ Việc chạm nhiều vùng → tách task, mỗi task một chủ sở hữu, t
 | Components Handler | UI QA Auditor | Rules Verifier; Tokens Handler chỉ đọc (token tồn tại, qua gate, không DEPRECATED) |
 | Website Builder | Rules Verifier | UI QA Auditor (khi có node Figma) |
 | Board Designer | Rules Verifier | Tokens Handler, Components Handler chỉ đọc (binding token, reuse component) |
+| Design Handoff | Rules Verifier | Tokens Handler, Components Handler chỉ đọc (số px, tên token, thành phần khớp node nguồn) |
 | Ad Format Builder | UI QA Auditor | Rules Verifier |
 | Knowledge Keeper | Rules Verifier | — |
 
@@ -67,10 +69,12 @@ Việc chạm nhiều vùng → tách task, mỗi task một chủ sở hữu, t
 - Figma chỉ đọc theo AGENTS.md §10; ghi Figma (kể cả board mới) chỉ khi có lời duyệt rõ cho đúng file và hành động.
 - Không bịa; đề xuất đổi tên chỉ ở `rename-map.json`; không sửa tay file sinh; không đảo ngược quyết định ở AGENTS.md §5; không commit/push khi chưa được yêu cầu.
 
-## Vai kỹ năng bổ sung (17/11/2026)
-Ngoài ba sub agent có file vai trò riêng, Agent Core dùng năm vai gắn với một skill. Phạm vi và giới hạn chi tiết nằm trong skill tương ứng và trong `.claude/agents/<tên>.md`:
-- **Website Builder** — sửa `SDS-docs/website/` khi brief có lời giao việc website; từ chối việc "đồng bộ thiết kế mới lên website".
-- **UI QA Auditor** — chỉ đọc; không kiểm code do chính mình viết; file làm việc không đặt trong `website/`.
-- **Board Designer** — chỉ ghi Figma khi có lời duyệt; element/variant/token mới phải chờ duyệt; không đụng `website/`.
-- **Ad Format Builder** — cần node Figma + thư mục output; không ghi vào `SDS-docs/website/` hay `content/`.
-- **Rules Verifier** — chỉ đọc; checklist: phạm vi `git diff`, website, file sinh, quyết định đã chốt, tên CSS, không bịa, Figma, rule theo loại việc, lệnh kiểm tra, giữ liền mạch.
+## Vai kỹ năng bổ sung (cập nhật 19/11/2026)
+Ngoài ba sub agent Tokens/Components Handler và Knowledge Keeper, Agent Core dùng sáu vai gắn với một skill. Mỗi vai có file vai trò riêng trong thư mục này (`<tên>.md`, nguồn cho mọi công cụ AI; `.claude/agents/<tên>.md` chỉ là vỏ cho Claude Code):
+- **Website Builder** (`website-builder.md`) — sửa `SDS-docs/website/` khi brief có lời giao việc website; từ chối việc "đồng bộ thiết kế mới lên website".
+- **UI QA Auditor** (`ui-qa-auditor.md`) — chỉ đọc code và Figma; chỉ ghi báo cáo vào `SDS-workspace/qa-reports/<task>/`; không kiểm code do chính mình viết.
+- **Board Designer** (`board-designer.md`) — dựng màn/flow mới; chỉ ghi Figma khi có lời duyệt; element/variant/token mới phải chờ duyệt; không đụng `website/`.
+- **Design Handoff** (`design-handoff.md`) — viết spec bàn giao cho thiết kế đã có bằng ESDS Specs; ghi Figma khi có lời duyệt đúng file/page; lỗi/thiếu vào Section REVIEW; Status `Pending` tới khi người dùng duyệt.
+- **Ad Format Builder** (`ad-format-builder.md`) — cần node Figma + thư mục task `SDS-workspace/ad-formats/<task>/`; không ghi vào `SDS-docs/`.
+- **Rules Verifier** (`rules-verifier.md`) — chỉ đọc; checklist: phạm vi `git diff`, website, file sinh, quyết định đã chốt, tên CSS, không bịa, Figma, rule theo loại việc, lệnh kiểm tra, giữ liền mạch.
+

@@ -22,6 +22,7 @@ Vai trò, quy trình 4 bước, bản đồ giao việc, ma trận kiểm chứn
 | Website Builder | `website-builder` |
 | UI QA Auditor | `ui-qa-auditor` |
 | Board Designer | `board-designer` |
+| Design Handoff | `design-handoff` |
 | Ad Format Builder | `ad-format-builder` |
 | Rules Verifier | `rules-verifier` |
 
